@@ -317,8 +317,4 @@
     "blockType": "apps",
     "__resolveType": "site/apps/deco/weather.ts"
   }
-}co/blocks/deco-weather.json": {
-    "blockType": "apps",
-    "__resolveType": "site/apps/deco/weather.ts"
-  }
 }
