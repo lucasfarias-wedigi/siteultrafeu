@@ -16,6 +16,9 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
       },
+      backgroundColor: {
+        bluePrimary: "#0A5DBE",
+      },
     },
   },
 };
