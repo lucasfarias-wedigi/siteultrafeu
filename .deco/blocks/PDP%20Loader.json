@@ -1,0 +1,11 @@
+{
+  "data": {
+    "__resolveType": "PDP Loader"
+  },
+  "extensions": [
+    {
+      "__resolveType": "vtex/loaders/product/extensions/detailsPage.ts"
+    }
+  ],
+  "__resolveType": "commerce/loaders/product/extensions/detailsPage.ts"
+}
