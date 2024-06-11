@@ -18,6 +18,7 @@ export default {
       },
       backgroundColor: {
         bluePrimary: "#0A5DBE",
+        orangePrimary: "#FF7512"
       },
     },
   },
