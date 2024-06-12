@@ -37,7 +37,7 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
                   i === 0
                     ? "md:border-l bg-blueSecondary border-b-2 border-orangePrimary"
                     : ""
-                } md:border-r md:border-white md:border-opacity-50`}
+                } md:border-b-0 md:border-r md:border-white md:border-opacity-50`}
               >
                 <a
                   href={item.link || "#"}
