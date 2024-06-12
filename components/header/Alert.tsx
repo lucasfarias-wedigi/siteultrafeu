@@ -29,7 +29,7 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
           {benefitsItems.map((item) => (
             <li class="text-white">
               <Image src={item.image} alt={item.text} width={24} height={24} />
-              <span>item.text</span>
+              <span>{item.text}</span>
             </li>
           ))}
         </ul>
