@@ -2,11 +2,15 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import Slider from "../../components/ui/Slider.tsx";
 import { useId } from "../../sdk/useId.ts";
 import Image from "apps/website/components/Image.tsx";
+import Icon from "../ui/Icon.tsx";
 
-interface benefitsItemsProps {
-  /** @titleBy text */
-  image: ImageWidget;
+export interface benefitsItemsProps {
+  /**
+   * @titleBy text
+   */
   text: string;
+  image: ImageWidget;
+  link: string;
 }
 
 export interface Props {
@@ -23,29 +27,68 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
   const id = useId();
 
   return (
-    <div id={id} class="bg-bluePrimary">
-      {benefitsItems && (
-        <ul>
-          {benefitsItems.map((item) => (
-            <li class="text-white flex items-center border-x-1 border-white">
-              <Image src={item.image} alt={item.text} width={24} height={24} />
-              <span>{item.text}</span>
-            </li>
-          ))}
-        </ul>
-      )}
+    <div id={id} class="bg-bluePrimary w-full">
+      <div class="flex items-center justify-center gap-5 w-full max-w-7xl m-auto">
+        {benefitsItems && (
+          <ul class="flex items-center w-full">
+            {benefitsItems.map((item, i: number) => (
+              <li
+                class={`font-medium text-sm text-white p-2 ${
+                  i === 0 ? "border-l" : ""
+                } border-r border-white border-opacity-50`}
+              >
+                <a
+                  href={item.link || "#"}
+                  class={`${
+                    item.text === "LOJA AO VIVO" ? "bg-orangePrimary" : ""
+                  } flex items-center px-1.5 py-1 gap-2`}
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.text}
+                    width={24}
+                    height={24}
+                  />
+                  <span class="">{item.text}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
 
-      <Slider class="carousel carousel-center w-screen gap-6">
-        {alerts.map((alert, index) => (
-          <Slider.Item index={index} class="carousel-item">
-            <span class="text-sm text-white flex justify-center items-center w-screen">
-              {alert}
-            </span>
-          </Slider.Item>
-        ))}
-      </Slider>
+        <div class="relative">
+          <Slider class="carousel carousel-center gap-6 w-[418px] flex items-center">
+            {alerts.map((alert, index) => (
+              <Slider.Item index={index} class="carousel-item w-full">
+                <span class="text-sm text-white flex justify-center items-center w-full">
+                  {alert}
+                </span>
+              </Slider.Item>
+            ))}
+          </Slider>
 
-      <Slider.JS rootId={id} interval={interval && interval * 1e3} />
+          <>
+            <Slider.PrevButton class="absolute top-0 left-0 flex justify-center items-center">
+              <Icon
+                size={18}
+                id="ChevronRight"
+                strokeWidth={3}
+                class="text-white rotate-180 w-full"
+              />
+            </Slider.PrevButton>
+            <Slider.NextButton class="absolute top-0 right-0 flex justify-center items-center">
+              <Icon
+                size={18}
+                id="ChevronRight"
+                strokeWidth={3}
+                class="text-white"
+              />
+            </Slider.NextButton>
+          </>
+        </div>
+
+        <Slider.JS rootId={id} interval={interval && interval * 1e3} />
+      </div>
     </div>
   );
 }

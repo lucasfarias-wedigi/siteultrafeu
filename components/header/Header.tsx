@@ -15,6 +15,7 @@ export interface benefitsItemsProps {
    */
   text: string;
   image: ImageWidget;
+  link: string;
 }
 
 export interface alertsProps {
