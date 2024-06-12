@@ -99,15 +99,82 @@ export const share = `<svg id="share" xmlns="http://www.w3.org/2000/svg" fill="n
 		<path d="M8.7 13.3l6.6 3.4"></path>
     </svg>`;
 
-export const MessageIcon = `<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const MessageIcon = `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M18.3125 30.389V29.889H17.8125H13.125C11.6775 29.889 10.5 28.7114 10.5 27.2638V13.2007C10.5 11.7531 11.6775 10.5756 13.125 10.5756H31.875C33.3225 10.5756 34.5 11.7531 34.5 13.2007V27.2638C34.5 28.7114 33.3225 29.889 31.875 29.889H25.1025H24.9358L24.8025 29.989L18.7665 34.5175C18.7659 34.5179 18.7654 34.5182 18.7649 34.5186C18.6739 34.5845 18.5577 34.5924 18.4658 34.5464C18.3725 34.4998 18.3125 34.4049 18.3125 34.2954V30.389Z" stroke="#013B6C"/>
 		<circle cx="16" cy="20.5756" r="1" fill="#013B6C"/>
 		<circle cx="22" cy="20.5756" r="1" fill="#013B6C"/>
 		<circle cx="28" cy="20.5756" r="1" fill="#013B6C"/>
-	</svg>`
+	</svg>`;
 
+export const WishlistIcon = `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M33.0723 13.5206C32.4614 12.9039 31.7361 12.4148 30.9378 12.0811C30.1396 11.7474 29.2839 11.5756 28.4199 11.5756C27.5558 11.5756 26.7001 11.7474 25.9019 12.0811C25.1036 12.4148 24.3783 12.9039 23.7674 13.5206L22.4997 14.7996L21.2319 13.5206C19.998 12.2756 18.3245 11.5762 16.5795 11.5762C14.8345 11.5762 13.161 12.2756 11.9271 13.5206C10.6932 14.7655 10 16.454 10 18.2145C10 19.9751 10.6932 21.6636 11.9271 22.9085L13.1948 24.1876L22.4997 33.5756L31.8045 24.1876L33.0723 22.9085C33.6834 22.2922 34.1682 21.5604 34.499 20.755C34.8298 19.9496 35 19.0864 35 18.2145C35 17.3427 34.8298 16.4795 34.499 15.674C34.1682 14.8686 33.6834 14.1369 33.0723 13.5206Z" stroke="#013B6C" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+export const LoginIcon = `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M26.498 20.2422C25.3064 21.4152 23.6885 22.0756 22 22.0756C20.3115 22.0756 18.6936 21.4152 17.502 20.2422C16.3107 19.0695 15.6429 17.4806 15.6429 15.8256C15.6429 14.1706 16.3107 12.5817 17.502 11.4089C18.6936 10.236 20.3115 9.57559 22 9.57559C23.6885 9.57559 25.3064 10.236 26.498 11.4089C27.6893 12.5817 28.3571 14.1706 28.3571 15.8256C28.3571 17.4806 27.6893 19.0695 26.498 20.2422ZM10.5 34.5094C10.5 29.5986 14.5437 25.6068 19.5518 25.6068H24.4482C29.4563 25.6068 33.5 29.5986 33.5 34.5094C33.5 35.0907 33.0188 35.5756 32.4089 35.5756H11.5911C10.9812 35.5756 10.5 35.0907 10.5 34.5094Z" stroke="#013B6C"/>
+</svg>`;
+export const MinicartIcon = `<svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M10.3334 25.0756C10.9777 25.0756 11.5001 24.5533 11.5001 23.9089C11.5001 23.2646 10.9777 22.7423 10.3334 22.7423C9.68908 22.7423 9.16675 23.2646 9.16675 23.9089C9.16675 24.5533 9.68908 25.0756 10.3334 25.0756Z" stroke="#013B6C" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M23.1667 25.0756C23.811 25.0756 24.3333 24.5533 24.3333 23.9089C24.3333 23.2646 23.811 22.7423 23.1667 22.7423C22.5223 22.7423 22 23.2646 22 23.9089C22 24.5533 22.5223 25.0756 23.1667 25.0756Z" stroke="#013B6C" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M1 0.575592H5.66667L8.79333 16.1973C8.90002 16.7344 9.19223 17.2169 9.6188 17.5603C10.0454 17.9037 10.5791 18.0861 11.1267 18.0756H22.4667C23.0142 18.0861 23.548 17.9037 23.9745 17.5603C24.4011 17.2169 24.6933 16.7344 24.8 16.1973L26.6667 6.40893H6.83333" stroke="#013B6C" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
 
-export const AvailableIcons = { MessageIcon, ChevronLeft, ChevronRight, ChevronUp, ChevronDown, QuestionMarkCircle, User, ShoppingCart, Bars3, Heart, MagnifyingGlass, XMark, Plus, Minus, MapPin, Phone, Elos, Mastercards, Visas, Pixs, Instagram, Truck, Discount, Return, CreditCards, Deco, Discord, FilterList, Trash, WhatsApp, ArrowsPointingOut, Star, Ruler, Message, Close, Zoom, Twitter, Facebook, Linkedin, Tiktok, Elo, Diners, Mastercard, Pix, Visa, Alert, AlertInfo, AlertSuccess, AlertWarning, AlertError, share };
+export const AvailableIcons = {
+  WishlistIcon,
+  LoginIcon,
+  MinicartIcon,
+  MessageIcon,
+  ChevronLeft,
+  ChevronRight,
+  ChevronUp,
+  ChevronDown,
+  QuestionMarkCircle,
+  User,
+  ShoppingCart,
+  Bars3,
+  Heart,
+  MagnifyingGlass,
+  XMark,
+  Plus,
+  Minus,
+  MapPin,
+  Phone,
+  Elos,
+  Mastercards,
+  Visas,
+  Pixs,
+  Instagram,
+  Truck,
+  Discount,
+  Return,
+  CreditCards,
+  Deco,
+  Discord,
+  FilterList,
+  Trash,
+  WhatsApp,
+  ArrowsPointingOut,
+  Star,
+  Ruler,
+  Message,
+  Close,
+  Zoom,
+  Twitter,
+  Facebook,
+  Linkedin,
+  Tiktok,
+  Elo,
+  Diners,
+  Mastercard,
+  Pix,
+  Visa,
+  Alert,
+  AlertInfo,
+  AlertSuccess,
+  AlertWarning,
+  AlertError,
+  share,
+};
 
 // Icons for ButtonGroup widget
 
@@ -168,4 +235,3 @@ export const Lettercase = `<svg id="letter-case" width="20" height="20" viewBox=
 export const Lowercase = `<svg id="letter-case-lower" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd" d="M5.41663 10.8334C4.26603 10.8334 3.33329 11.7661 3.33329 12.9167C3.33329 14.0673 4.26603 15 5.41663 15C6.56722 15 7.49996 14.0673 7.49996 12.9167C7.49996 11.7661 6.56722 10.8334 5.41663 10.8334ZM7.52115 9.81246C6.92111 9.40486 6.19668 9.16669 5.41663 9.16669C3.34556 9.16669 1.66663 10.8456 1.66663 12.9167C1.66663 14.9878 3.34556 16.6667 5.41663 16.6667C6.19668 16.6667 6.92111 16.4285 7.52115 16.0209C7.60624 16.3908 7.93755 16.6667 8.33329 16.6667C8.79353 16.6667 9.16663 16.2936 9.16663 15.8334V10C9.16663 9.53978 8.79353 9.16669 8.33329 9.16669C7.93755 9.16669 7.60624 9.44254 7.52115 9.81246ZM14.5833 10.8334C13.4327 10.8334 12.5 11.7661 12.5 12.9167C12.5 14.0673 13.4327 15 14.5833 15C15.7339 15 16.6666 14.0673 16.6666 12.9167C16.6666 11.7661 15.7339 10.8334 14.5833 10.8334ZM16.6878 9.81246C16.0878 9.40486 15.3633 9.16669 14.5833 9.16669C12.5122 9.16669 10.8333 10.8456 10.8333 12.9167C10.8333 14.9878 12.5122 16.6667 14.5833 16.6667C15.3633 16.6667 16.0878 16.4285 16.6878 16.0209C16.7729 16.3908 17.1042 16.6667 17.5 16.6667C17.9602 16.6667 18.3333 16.2936 18.3333 15.8334V10C18.3333 9.53978 17.9602 9.16669 17.5 9.16669C17.1042 9.16669 16.7729 9.44254 16.6878 9.81246Z" fill="inherit"/>
 	</svg>`;
-

@@ -105,35 +105,36 @@ function Navbar({
 
         <Searchbar searchbar={searchbar} />
         {!buttons?.messageButton?.hide && (
-          <a class="w-fit" href={buttons?.messageButton?.link || "#"}>
+          <a class="" href={buttons?.messageButton?.link || "#"}>
             <Icon id="MessageIcon" size={44} strokeWidth={1} />
-          </a>
-        )}
-        {!buttons?.hideAccountButton && (
-          <a
-            class="flex items-center text-xs font-thin"
-            href="/account"
-            aria-label="Account"
-          >
-            <div class="flex btn btn-circle btn-sm btn-ghost gap-1">
-              <Icon id="User" size={20} strokeWidth={0.4} />
-            </div>
           </a>
         )}
         {!buttons?.hideWishlistButton && (
           <a
-            class="flex items-center text-xs font-thin"
+            class="flex"
             href="/wishlist"
             aria-label="Wishlist"
           >
             <button
-              class="flex btn btn-circle btn-sm btn-ghost gap-1"
+              class=""
               aria-label="Wishlist"
             >
-              <Icon id="Heart" size={24} strokeWidth={0.4} />
+              <Icon id="WishlistIcon" size={44} strokeWidth={1} />
             </button>
           </a>
         )}
+        {!buttons?.hideAccountButton && (
+          <a
+            class=""
+            href="/account"
+            aria-label="Account"
+          >
+            <div class="">
+              <Icon id="LoginIcon" size={44} strokeWidth={1} />
+            </div>
+          </a>
+        )}
+        
         {!buttons?.hideCartButton && (
           <div class="flex items-center text-xs font-thin">
             {platform === "vtex" && <CartButtonVTEX />}
