@@ -34,7 +34,9 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
             {benefitsItems.map((item, i: number) => (
               <li
                 class={`font-medium text-sm text-white p-2 ${
-                  i === 0 ? "md:border-l bg-blueSecondary border-b-2 border-orangePrimary" : ""
+                  i === 0
+                    ? "md:border-l bg-blueSecondary border-b-2 border-orangePrimary"
+                    : ""
                 } md:border-r md:border-white md:border-opacity-50`}
               >
                 <a
