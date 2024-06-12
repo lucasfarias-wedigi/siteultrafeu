@@ -20,23 +20,28 @@
     "benefitsItems": [
       {
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/820490e8-90dc-48b3-b2a6-94af796e5717",
-        "text": "Institucional"
+        "text": "Institucional",
+        "link": "#"
       },
       {
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b1411daf-b7d9-4f70-a0ac-82b0c7962303",
-        "text": "Refrigeração Comercial"
+        "text": "Refrigeração Comercial",
+        "link": "#"
       },
       {
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8115f44f-ed14-4a41-b7ec-d5986f9e31d0",
-        "text": "Pronta-entrega"
+        "text": "Pronta-entrega",
+        "link": "#"
       },
       {
         "text": "Monte seu negócio",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/d9d694c7-f4fb-47c9-80f8-5b12298f0610"
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/d9d694c7-f4fb-47c9-80f8-5b12298f0610",
+        "link": "#"
       },
       {
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/92cb8628-3b16-48c5-a462-e478dcaa0d87",
-        "text": "LOJA AO VIVO"
+        "text": "LOJA AO VIVO",
+        "link": "#"
       }
     ]
   },
