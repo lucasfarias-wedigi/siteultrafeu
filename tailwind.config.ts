@@ -16,7 +16,7 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
       },
-      backgroundColor: {
+      colors: {
         bluePrimary: "#0A5DBE",
         blueSecondary: "#013B6C",
         orangePrimary: "#FF7512",
