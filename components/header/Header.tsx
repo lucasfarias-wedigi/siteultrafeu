@@ -9,10 +9,10 @@ import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
 
+/**
+ * @titleBy text
+ */
 export interface benefitsItemsProps {
-  /**
-   * @titleBy text
-   */
   text: string;
   image: ImageWidget;
   link: string;

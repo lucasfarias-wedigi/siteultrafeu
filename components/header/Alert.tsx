@@ -4,10 +4,10 @@ import { useId } from "../../sdk/useId.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../ui/Icon.tsx";
 
+/**
+ * @titleBy text
+ */
 export interface benefitsItemsProps {
-  /**
-   * @titleBy text
-   */
   text: string;
   image: ImageWidget;
   link: string;
@@ -34,7 +34,7 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
             {benefitsItems.map((item, i: number) => (
               <li
                 class={`font-medium text-sm text-white p-2 ${
-                  i === 0 ? "border-l" : ""
+                  i === 0 ? "border-l bg-blueSecondary" : ""
                 } border-r border-white border-opacity-50`}
               >
                 <a
