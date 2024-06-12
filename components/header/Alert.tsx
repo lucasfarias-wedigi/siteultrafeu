@@ -27,7 +27,7 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
       {benefitsItems && (
         <ul>
           {benefitsItems.map((item) => (
-            <li class="text-white">
+            <li class="text-white flex items-center border-x-1 border-white">
               <Image src={item.image} alt={item.text} width={24} height={24} />
               <span>{item.text}</span>
             </li>
