@@ -26,9 +26,7 @@ function CartButton({ loading, currency, total, items }: Props) {
   return (
     <div class="">
       <span
-        class={` ${
-          totalItems === 0 ? "hidden" : ""
-        }`}
+        class={` ${totalItems === 0 ? "hidden" : ""}`}
       >
         {totalItems > 9 ? "9+" : totalItems}
       </span>

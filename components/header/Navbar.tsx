@@ -134,7 +134,7 @@ function Navbar({
             </div>
           </a>
         )}
-        
+
         {!buttons?.hideCartButton && (
           <div class="flex items-center text-xs font-thin">
             {platform === "vtex" && <CartButtonVTEX />}
