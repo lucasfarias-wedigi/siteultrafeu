@@ -28,7 +28,7 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
 
   return (
     <div id={id} class="bg-bluePrimary w-full">
-      <div class="flex items-center justify-center gap-5 w-full max-w-7xl m-auto">
+      <div class="flex flex-col-reverse md:flex-row items-center justify-center md:gap-5 w-full max-w-7xl m-auto">
         {benefitsItems && (
           <ul class="flex items-center w-full">
             {benefitsItems.map((item, i: number) => (
@@ -56,35 +56,34 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
           </ul>
         )}
 
-        <div class="relative">
-          <Slider class="carousel carousel-center gap-6 w-[418px] flex items-center">
+        <div class="relative bg-white md:bg-transparent md:w-fit w-full flex items-center justify-center">
+          <Slider class="carousel carousel-center gap-6 w-full md:w-[418px] flex items-center min-h-8 md:min-h-fit">
             {alerts.map((alert, index) => (
               <Slider.Item index={index} class="carousel-item w-full">
-                <span class="text-sm text-white flex justify-center items-center w-full">
+                <span class="text-xs md:text-sm text-[#686868] md:text-white flex justify-center items-center w-full">
                   {alert}
                 </span>
               </Slider.Item>
             ))}
+            <>
+              <Slider.PrevButton class="absolute left-4 md:left-0 flex justify-center items-center">
+                <Icon
+                  size={18}
+                  id="ChevronRight"
+                  strokeWidth={3}
+                  class="text-[#686868] md:text-white rotate-180 w-full"
+                />
+              </Slider.PrevButton>
+              <Slider.NextButton class="absolute right-4 md:right-0 flex justify-center items-center">
+                <Icon
+                  size={18}
+                  id="ChevronRight"
+                  strokeWidth={3}
+                  class="text-[#686868] md:text-white"
+                />
+              </Slider.NextButton>
+            </>
           </Slider>
-
-          <>
-            <Slider.PrevButton class="absolute top-0 left-0 flex justify-center items-center">
-              <Icon
-                size={18}
-                id="ChevronRight"
-                strokeWidth={3}
-                class="text-white rotate-180 w-full"
-              />
-            </Slider.PrevButton>
-            <Slider.NextButton class="absolute top-0 right-0 flex justify-center items-center">
-              <Icon
-                size={18}
-                id="ChevronRight"
-                strokeWidth={3}
-                class="text-white"
-              />
-            </Slider.NextButton>
-          </>
         </div>
 
         <Slider.JS rootId={id} interval={interval && interval * 1e3} />
