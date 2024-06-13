@@ -25,41 +25,49 @@ export interface Props {
 
 function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
   const id = useId();
-
+  const liveStore = "loja ao vivo";
   return (
     <div id={id} class="bg-bluePrimary w-full">
       <div class="flex flex-col-reverse md:flex-row items-center justify-center md:gap-5 w-full max-w-7xl m-auto">
         {benefitsItems && (
-          <ul class="flex items-center w-full">
-            {benefitsItems.map((item, i: number) => (
-              <li
-                class={`font-medium text-sm text-white p-2 ${
-                  i === 0
-                    ? "md:border-l bg-blueSecondary border-b-2 border-orangePrimary"
-                    : ""
-                } md:border-b-0 md:border-r md:border-white md:border-opacity-50`}
-              >
-                <a
-                  href={item.link || "#"}
-                  class={`${
-                    item.text === "LOJA AO VIVO" ? "bg-orangePrimary" : ""
-                  } flex items-center px-1.5 py-1 gap-2`}
+          <div class="w-full overflow-x-scroll md:overflow-x-auto">
+            <ul class="flex min-w-full w-max md:w-full items-center">
+              {benefitsItems.map((item, i: number) => (
+                <li
+                  class={`text-xs font-normal md:font-medium md:text-sm text-white p-2 ${
+                    i === 0
+                      ? "md:border-l bg-blueSecondary border-b-2 border-orangePrimary"
+                      : ""
+                  } md:border-b-0 md:border-r md:border-white md:border-opacity-50 ${
+                    item.text.toLocaleLowerCase() === liveStore
+                      ? "hidden md:flex"
+                      : ""
+                  }`}
                 >
-                  <Image
-                    src={item.image}
-                    alt={item.text}
-                    width={24}
-                    height={24}
-                  />
-                  <span class="">{item.text}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
+                  <a
+                    href={item.link || "#"}
+                    class={`${
+                      item.text.toLocaleLowerCase() === liveStore
+                        ? "bg-orangePrimary"
+                        : ""
+                    } flex items-center px-1.5 py-1 gap-2`}
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.text}
+                      width={24}
+                      height={24}
+                    />
+                    <span class="">{item.text}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
 
-        <div class="relative bg-white md:bg-transparent md:w-fit w-full flex items-center justify-center">
-          <Slider class="carousel carousel-center gap-6 w-full md:w-[418px] flex items-center min-h-8 md:min-h-fit">
+        <div class="relative bg-white md:bg-transparent w-full md:max-w-[418px] flex items-center justify-center">
+          <Slider class="carousel carousel-center gap-6 w-full flex items-center min-h-8 md:min-h-fit">
             {alerts.map((alert, index) => (
               <Slider.Item index={index} class="carousel-item w-full">
                 <span class="text-xs md:text-sm text-[#686868] md:text-white flex justify-center items-center w-full">
