@@ -2,12 +2,13 @@
   "seo": {
     "type": "website",
     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
-    "title": "Storefront",
+    "title": "Ultrafeu",
     "jsonLDs": [],
     "noIndexing": false,
-    "description": "Improve your page performance with deco.cx ",
-    "titleTemplate": "%s | deco.cx",
-    "descriptionTemplate": "%s | Deco.cx"
+    "description": "Ultrafeu Refrigeração é referência em equipamentos para gastronomia e possui linha completa de produtos para restaurantes, panificadoras, açougues, pizzarias, supermercados e sorveterias. Confira!",
+    "titleTemplate": "Ultrafeu - Loja de Equipamentos para Gastronomia",
+    "descriptionTemplate": "%s | Deco.cx",
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2acc2681-cf09-4eea-bae3-71dfb3966cb3"
   },
   "theme": {
     "__resolveType": "Fashion theme"
