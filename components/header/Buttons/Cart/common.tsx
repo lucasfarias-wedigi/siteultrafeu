@@ -24,9 +24,9 @@ function CartButton({ loading, currency, total, items }: Props) {
   };
 
   return (
-    <div class="">
+    <div class="relative">
       <span
-        class={` ${totalItems === 0 ? "hidden" : ""}`}
+        class={`font-light text-sm pointer-events-none right-0 top-1 flex items-center justify-center rounded-full absolute w-5 h-5 bg-orangePrimary text-white ${totalItems === 0 ? "hidden" : ""}`}
       >
         {totalItems > 9 ? "9+" : totalItems}
       </span>
