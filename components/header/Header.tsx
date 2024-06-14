@@ -121,8 +121,8 @@ function Header({
               logo={logo}
               buttons={buttons}
             />
-            <div class="w-full">
-              <ul class={`flex gap-6 items-center justify-center`}>
+            <div class="w-full m-auto max-w-7xl">
+              <ul class={`flex gap-4 items-center justify-center`}>
                 {items.map((item) => <NavItem item={item} />)}
               </ul>
             </div>

@@ -71,7 +71,7 @@ function Navbar({
 
   // Desktop header
   return (
-    <div class="hidden sm:grid sm:grid-cols-3 items-center border-b border-base-200 w-full max-w-7xl m-auto">
+    <div class="hidden sm:grid sm:grid-cols-6 items-center border-b border-base-200 w-full max-w-7xl m-auto">
       <div class={`flex justify-start`}>
         {logo && (
           <a href="/" aria-label="Store logo" class="block">
@@ -91,7 +91,7 @@ function Navbar({
         ))}
       </ul> */
       }
-      <div class="flex-none flex items-center justify-end gap-6 col-span-2">
+      <div class="flex-none flex items-center justify-end gap-6 col-span-5">
         {
           /* {!buttons?.hideSearchButton && (
           <div class="flex items-center text-xs font-thin gap-1">

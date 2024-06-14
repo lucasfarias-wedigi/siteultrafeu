@@ -10,7 +10,7 @@ function NavItem({ item }: { item: MenuItens }) {
     <li class="group flex items-center">
       <a href={url} class="flex items-center gap-2 py-6">
         {icon && <Image src={icon} height={27} width={27} alt={name} />}
-        <span class="group-hover:underline text-xs font-thin">{name}</span>
+        <span class="group-hover:underline text-xs">{name}</span>
       </a>
       {children && children.length > 0 && (
         <div
