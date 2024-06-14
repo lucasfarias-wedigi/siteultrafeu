@@ -134,7 +134,7 @@
       },
       "__resolveType": "resolved"
     },
-    "placeholder": "What are you looking for?"
+    "placeholder": "Digite o que está buscando..."
   },
   "suggestions": {
     "products": [],
