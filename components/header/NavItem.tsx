@@ -1,14 +1,15 @@
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { headerHeight } from "./constants.ts";
+import { MenuItens } from "./Header.tsx";
 
-function NavItem({ item }: { item: SiteNavigationElement }) {
-  const { url, name, children } = item;
+function NavItem({ item }: { item: MenuItens }) {
+  const { url, name, children, icon } = item;
   const image = item?.image?.[0];
 
   return (
     <li class="group flex items-center">
-      <a href={url} class="py-6">
+      <a href={url} class="flex items-center gap-2 py-6">
+        {icon && <Image src={icon} height={27} width={27} alt={name} />}
         <span class="group-hover:underline text-xs font-thin">{name}</span>
       </a>
       {children && children.length > 0 && (
