@@ -8,6 +8,7 @@ import type { SectionProps } from "deco/types.ts";
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
+import NavItem from "./NavItem.tsx";
 
 /**
  * @titleBy text
@@ -54,9 +55,6 @@ export interface Props {
 
   /** @title Logo */
   logo?: Logo;
-
-  logoPosition?: "left" | "center";
-
   buttons?: Buttons;
 }
 
@@ -92,12 +90,12 @@ function Header({
     height: 16,
     alt: "Logo",
   },
-  logoPosition = "center",
   buttons,
   device,
 }: SectionProps<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
+
   return (
     <>
       <header style={{ height: headerHeight }}>
@@ -114,9 +112,13 @@ function Header({
               items={items}
               searchbar={searchbar && { ...searchbar, platform }}
               logo={logo}
-              logoPosition={logoPosition}
               buttons={buttons}
             />
+            <div class="w-full">
+              <ul class={`flex gap-6 items-center justify-center`}>
+                {items.map((item) => <NavItem item={item} />)}
+              </ul>
+            </div>
           </div>
         </Drawers>
       </header>

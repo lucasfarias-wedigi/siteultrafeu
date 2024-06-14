@@ -24,24 +24,25 @@ function CartButton({ loading, currency, total, items }: Props) {
   };
 
   return (
-    <div class="relative">
-      <span
-        class={`font-light text-sm pointer-events-none right-0 top-1 flex items-center justify-center rounded-full absolute w-5 h-5 bg-orangePrimary text-white ${
-          totalItems === 0 ? "hidden" : ""
-        }`}
-      >
-        {totalItems > 9 ? "9+" : totalItems}
-      </span>
+    <div class="relative w-11 h-11 flex items-center justify-center">
+      {loading ? <span class="loading loading-spinner" /> : (
+        <>
+          <span
+            class={`font-semibold text-sm pointer-events-none right-0 top-1 flex items-center justify-center rounded-full absolute w-5 h-5 bg-orangePrimary text-white `}
+          >
+            {totalItems > 9 ? "9+" : totalItems}
+          </span>
 
-      <Button
-        class=""
-        aria-label="open cart"
-        data-deco={displayCart.value && "open-cart"}
-        loading={loading}
-        onClick={onClick}
-      >
-        <Icon id="MinicartIcon" size={28} strokeWidth={1} />
-      </Button>
+          <Button
+            class=""
+            aria-label="open cart"
+            data-deco={displayCart.value && "open-cart"}
+            onClick={onClick}
+          >
+            <Icon id="MinicartIcon" size={44} strokeWidth={1} />
+          </Button>
+        </>
+      )}
     </div>
   );
 }

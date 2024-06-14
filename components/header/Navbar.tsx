@@ -11,24 +11,23 @@ import Searchbar from "../../islands/Header/Searchbar.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import NavItem from "./NavItem.tsx";
+// import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Buttons, Logo } from "../../components/header/Header.tsx";
 
 // Make it sure to render it on the server only. DO NOT render it on an island
 function Navbar({
-  items,
+  // items,
   searchbar,
   logo,
   buttons,
-  logoPosition = "left",
+  // logoPosition = "left",
   device,
 }: {
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   logo?: Logo;
   buttons?: Buttons;
-  logoPosition?: "left" | "center";
   device: "mobile" | "desktop" | "tablet";
 }) {
   const platform = usePlatform();
@@ -73,18 +72,7 @@ function Navbar({
   // Desktop header
   return (
     <div class="hidden sm:grid sm:grid-cols-3 items-center border-b border-base-200 w-full max-w-7xl m-auto">
-      <ul
-        class={`flex gap-6 col-span-1 ${
-          logoPosition === "left" ? "justify-center" : "justify-start"
-        }`}
-      >
-        {items.map((item) => <NavItem item={item} />)}
-      </ul>
-      <div
-        class={`flex ${
-          logoPosition === "left" ? "justify-start -order-1" : "justify-center"
-        }`}
-      >
+      <div class={`flex justify-start`}>
         {logo && (
           <a href="/" aria-label="Store logo" class="block">
             <Image
@@ -96,12 +84,21 @@ function Navbar({
           </a>
         )}
       </div>
-      <div class="flex-none flex items-center justify-end gap-6 col-span-1">
-        {!buttons?.hideSearchButton && (
+      {
+        /* <ul class={`flex gap-6 col-span-1 justify-start`}>
+        {items.map((item) => (
+          <NavItem item={item} />
+        ))}
+      </ul> */
+      }
+      <div class="flex-none flex items-center justify-end gap-6 col-span-2">
+        {
+          /* {!buttons?.hideSearchButton && (
           <div class="flex items-center text-xs font-thin gap-1">
             <SearchButton />
           </div>
-        )}
+        )} */
+        }
 
         <Searchbar searchbar={searchbar} />
         {!buttons?.messageButton?.hide && (
@@ -110,25 +107,14 @@ function Navbar({
           </a>
         )}
         {!buttons?.hideWishlistButton && (
-          <a
-            class="flex"
-            href="/wishlist"
-            aria-label="Wishlist"
-          >
-            <button
-              class=""
-              aria-label="Wishlist"
-            >
+          <a class="flex" href="/wishlist" aria-label="Wishlist">
+            <button class="" aria-label="Wishlist">
               <Icon id="WishlistIcon" size={44} strokeWidth={1} />
             </button>
           </a>
         )}
         {!buttons?.hideAccountButton && (
-          <a
-            class=""
-            href="/account"
-            aria-label="Account"
-          >
+          <a class="" href="/account" aria-label="Account">
             <div class="">
               <Icon id="LoginIcon" size={44} strokeWidth={1} />
             </div>
