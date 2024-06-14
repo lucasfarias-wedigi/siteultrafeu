@@ -45,9 +45,84 @@
       }
     ]
   },
-  "navItems": {
-    "__resolveType": "navbar"
-  },
+  "navItems": [
+    {
+      "children": [
+        {
+          "image": [],
+          "children": [],
+          "url": "/",
+          "name": "teste 1"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/",
+          "name": "teste 2"
+        }
+      ],
+      "image": [],
+      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/dfb69827-79cb-49ff-92f6-f1c13fa7687e",
+      "url": "/",
+      "name": "Equipamentos para Cocção"
+    },
+    {
+      "children": [],
+      "image": [],
+      "url": "/",
+      "name": "Maquinário de Produção",
+      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/374cb701-7149-48e0-bafa-87da23a188f4"
+    },
+    {
+      "children": [],
+      "image": [],
+      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/682a9a56-9b3a-4ab7-8ab6-62c5107f58dc",
+      "url": "/",
+      "name": "Portáteis Industriais"
+    },
+    {
+      "children": [],
+      "image": [],
+      "url": "/",
+      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/34824a5c-cbb2-419f-9411-e9f40e876bb5",
+      "name": "Expositores de Alimentos"
+    },
+    {
+      "children": [],
+      "image": [],
+      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/e234706b-d99a-4ada-8227-c78bd5d47d0f",
+      "url": "/",
+      "name": "Pesagem e Medição"
+    },
+    {
+      "children": [],
+      "image": [],
+      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/faf679b9-ffcb-4c8f-aac2-97eda99adc63",
+      "url": "/",
+      "name": "Equipamentos para Embalagens"
+    },
+    {
+      "children": [],
+      "image": [],
+      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/40f20c3c-fcec-486d-a418-eba44f8b8356",
+      "url": "/",
+      "name": "Mobiliário Comercial"
+    },
+    {
+      "children": [],
+      "image": [],
+      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/4b0b1767-d15e-4525-83b8-54636aea87a7",
+      "url": "/",
+      "name": "Por Segmento"
+    },
+    {
+      "children": [],
+      "image": [],
+      "name": "Por Marca",
+      "url": "/",
+      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b77ec8b6-e046-4daf-8fec-59e727c2f820"
+    }
+  ],
   "products": [],
   "searchbar": {
     "name": "q",
