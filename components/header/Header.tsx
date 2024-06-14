@@ -91,7 +91,8 @@ function Header({
     },
   ],
   logo = {
-    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src:
+      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -122,9 +123,7 @@ function Header({
             />
             <div class="w-full">
               <ul class={`flex gap-6 items-center justify-center`}>
-                {items.map((item) => (
-                  <NavItem item={item} />
-                ))}
+                {items.map((item) => <NavItem item={item} />)}
               </ul>
             </div>
           </div>
