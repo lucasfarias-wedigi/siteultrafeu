@@ -9,8 +9,9 @@ export interface Props {
 const Scroll = ({ style, children }: Props) => {
   const [isScrolling, setIsScrolling] = useState<number>(0);
   useEffect(() => {
-    document.addEventListener("scroll", () =>
-      setIsScrolling(globalThis.scrollY)
+    document.addEventListener(
+      "scroll",
+      () => setIsScrolling(globalThis.scrollY),
     );
   }, []);
 
