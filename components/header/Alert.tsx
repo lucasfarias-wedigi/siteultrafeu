@@ -70,7 +70,7 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
           <Slider class="carousel carousel-center gap-6 w-full flex items-center min-h-8 md:min-h-fit">
             {alerts.map((alert, index) => (
               <Slider.Item index={index} class="carousel-item w-full">
-                <span class="text-xs md:text-sm text-[#686868] md:text-white flex justify-center items-center w-full">
+                <span class="text-xs md:text-sm text-grayPrimary md:text-white flex justify-center items-center w-full">
                   {alert}
                 </span>
               </Slider.Item>
@@ -81,7 +81,7 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
                   size={18}
                   id="ChevronRight"
                   strokeWidth={3}
-                  class="text-[#686868] md:text-white rotate-180 w-full"
+                  class="text-grayPrimary md:text-white rotate-180 w-full"
                 />
               </Slider.PrevButton>
               <Slider.NextButton class="absolute right-4 md:right-0 flex justify-center items-center">
@@ -89,7 +89,7 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
                   size={18}
                   id="ChevronRight"
                   strokeWidth={3}
-                  class="text-[#686868] md:text-white"
+                  class="text-grayPrimary md:text-white"
                 />
               </Slider.NextButton>
             </>

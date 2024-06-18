@@ -20,6 +20,8 @@ export default {
         bluePrimary: "#0A5DBE",
         blueSecondary: "#013B6C",
         orangePrimary: "#FF7512",
+        grayPrimary: "#686868",
+        graySecondary: "#D9D9D9"
       },
     },
   },
