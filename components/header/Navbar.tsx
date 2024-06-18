@@ -85,17 +85,21 @@ function Navbar({
             </a>
           )}
         </div>
-        {/* <ul class={`flex gap-6 col-span-1 justify-start`}>
+        {
+          /* <ul class={`flex gap-6 col-span-1 justify-start`}>
         {items.map((item) => (
           <NavItem item={item} />
         ))}
-      </ul> */}
+      </ul> */
+        }
         <div class="flex-none flex items-center justify-end gap-6 col-span-5">
-          {/* {!buttons?.hideSearchButton && (
+          {
+            /* {!buttons?.hideSearchButton && (
           <div class="flex items-center text-xs font-thin gap-1">
             <SearchButton />
           </div>
-        )} */}
+        )} */
+          }
 
           <Searchbar searchbar={searchbar} />
           {!buttons?.messageButton?.hide && (
