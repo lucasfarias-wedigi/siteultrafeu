@@ -102,7 +102,7 @@ function Header({
 }: SectionProps<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
-  console.log(device)
+  console.log(device);
   return (
     <header style={{ height: headerHeight }}>
       <Drawers menu={{ items }} searchbar={searchbar} platform={platform}>
