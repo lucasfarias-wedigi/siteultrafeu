@@ -9,6 +9,7 @@ import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
 import NavItem from "./NavItem.tsx";
+import Scroll from "../../islands/Header/Scroll.tsx";
 
 /**
  * @titleBy text
@@ -91,8 +92,7 @@ function Header({
     },
   ],
   logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -102,14 +102,19 @@ function Header({
 }: SectionProps<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
-  console.log(device);
+
   return (
     <header style={{ height: headerHeight }}>
       <Drawers menu={{ items }} searchbar={searchbar} platform={platform}>
         <div class="bg-white fixed w-full z-50">
-          {alerts && (
-            <Alert alerts={alerts.alert} benefitsItems={alerts.benefitsItems} />
-          )}
+          <Scroll>
+            {alerts && (
+              <Alert
+                alerts={alerts.alert}
+                benefitsItems={alerts.benefitsItems}
+              />
+            )}
+          </Scroll>
           <Navbar
             device={device}
             items={items}
@@ -117,11 +122,15 @@ function Header({
             logo={logo}
             buttons={buttons}
           />
-          <div class="w-full m-auto max-w-7xl">
-            <ul class={`flex gap-4 items-center justify-center`}>
-              {items.map((item) => <NavItem item={item} />)}
-            </ul>
-          </div>
+          <Scroll>
+            <div class="w-full m-auto max-w-7xl">
+              <ul class={`flex gap-4 items-center justify-center`}>
+                {items.map((item) => (
+                  <NavItem item={item} />
+                ))}
+              </ul>
+            </div>
+          </Scroll>
         </div>
       </Drawers>
     </header>
