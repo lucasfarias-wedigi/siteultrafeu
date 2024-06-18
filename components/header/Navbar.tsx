@@ -71,66 +71,64 @@ function Navbar({
 
   // Desktop header
   return (
-    <div class="hidden sm:grid sm:grid-cols-6 items-center border-b border-base-200 w-full max-w-7xl m-auto">
-      <div class={`flex justify-start`}>
-        {logo && (
-          <a href="/" aria-label="Store logo" class="block">
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={logo.width || 100}
-              height={logo.height || 13}
-            />
-          </a>
-        )}
-      </div>
-      {
-        /* <ul class={`flex gap-6 col-span-1 justify-start`}>
+    <div class="w-full border-b border-graySecondary shadow-md">
+      <div class="hidden sm:grid sm:grid-cols-6 w-full max-w-7xl m-auto">
+        <div class={`flex`}>
+          {logo && (
+            <a href="/" aria-label="Store logo" class="block">
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={logo.width || 100}
+                height={logo.height || 13}
+              />
+            </a>
+          )}
+        </div>
+        {/* <ul class={`flex gap-6 col-span-1 justify-start`}>
         {items.map((item) => (
           <NavItem item={item} />
         ))}
-      </ul> */
-      }
-      <div class="flex-none flex items-center justify-end gap-6 col-span-5">
-        {
-          /* {!buttons?.hideSearchButton && (
+      </ul> */}
+        <div class="flex-none flex items-center justify-end gap-6 col-span-5">
+          {/* {!buttons?.hideSearchButton && (
           <div class="flex items-center text-xs font-thin gap-1">
             <SearchButton />
           </div>
-        )} */
-        }
+        )} */}
 
-        <Searchbar searchbar={searchbar} />
-        {!buttons?.messageButton?.hide && (
-          <a class="" href={buttons?.messageButton?.link || "#"}>
-            <Icon id="MessageIcon" size={44} strokeWidth={1} />
-          </a>
-        )}
-        {!buttons?.hideWishlistButton && (
-          <a class="flex" href="/wishlist" aria-label="Wishlist">
-            <button class="" aria-label="Wishlist">
-              <Icon id="WishlistIcon" size={44} strokeWidth={1} />
-            </button>
-          </a>
-        )}
-        {!buttons?.hideAccountButton && (
-          <a class="" href="/account" aria-label="Account">
-            <div class="">
-              <Icon id="LoginIcon" size={44} strokeWidth={1} />
+          <Searchbar searchbar={searchbar} />
+          {!buttons?.messageButton?.hide && (
+            <a class="" href={buttons?.messageButton?.link || "#"}>
+              <Icon id="MessageIcon" size={44} strokeWidth={1} />
+            </a>
+          )}
+          {!buttons?.hideWishlistButton && (
+            <a class="flex" href="/wishlist" aria-label="Wishlist">
+              <button class="" aria-label="Wishlist">
+                <Icon id="WishlistIcon" size={44} strokeWidth={1} />
+              </button>
+            </a>
+          )}
+          {!buttons?.hideAccountButton && (
+            <a class="" href="/account" aria-label="Account">
+              <div class="">
+                <Icon id="LoginIcon" size={44} strokeWidth={1} />
+              </div>
+            </a>
+          )}
+
+          {!buttons?.hideCartButton && (
+            <div class="flex items-center text-xs font-thin">
+              {platform === "vtex" && <CartButtonVTEX />}
+              {platform === "vnda" && <CartButtonVDNA />}
+              {platform === "wake" && <CartButtonWake />}
+              {platform === "linx" && <CartButtonLinx />}
+              {platform === "shopify" && <CartButtonShopify />}
+              {platform === "nuvemshop" && <CartButtonNuvemshop />}
             </div>
-          </a>
-        )}
-
-        {!buttons?.hideCartButton && (
-          <div class="flex items-center text-xs font-thin">
-            {platform === "vtex" && <CartButtonVTEX />}
-            {platform === "vnda" && <CartButtonVDNA />}
-            {platform === "wake" && <CartButtonWake />}
-            {platform === "linx" && <CartButtonLinx />}
-            {platform === "shopify" && <CartButtonShopify />}
-            {platform === "nuvemshop" && <CartButtonNuvemshop />}
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

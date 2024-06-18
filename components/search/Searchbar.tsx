@@ -68,7 +68,7 @@ function Searchbar({
   return (
     <form id={id} action={action} class="relative w-full m-auto md:m-0">
       <Button
-        class="absolute inset-y-1/4 right-[15px]"
+        class="absolute inset-y-1/4 right-4"
         type="submit"
         aria-label="Search"
         for={id}
@@ -99,7 +99,7 @@ function Searchbar({
         required
         ref={searchInputRef}
         id="search-input"
-        class="outline-none border px-4 py-2.5 w-full"
+        class="outline-none border border-graySecondary px-4 py-2.5 w-full"
         name={name}
         onInput={(e) => {
           const value = e.currentTarget.value;
