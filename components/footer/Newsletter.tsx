@@ -1,5 +1,4 @@
 import { invoke } from "../../runtime.ts";
-import { clx } from "../../sdk/clx.ts";
 import { useSignal } from "@preact/signals";
 import type { JSX } from "preact";
 
@@ -60,16 +59,14 @@ function Newsletter({ content }: Props) {
               <input
                 name="name"
                 class="py-3 w-full lg:max-w-[447px] px-4 text-sm text-grayPrimary"
-                placeholder={
-                  content?.form?.placeholders?.name || "Digite seu nome"
-                }
+                placeholder={content?.form?.placeholders?.name ||
+                  "Digite seu nome"}
               />
               <input
                 name="email"
                 class="py-3 px-4 w-full lg:max-w-[314px] text-sm text-grayPrimary"
-                placeholder={
-                  content?.form?.placeholders?.email || "Digite seu email"
-                }
+                placeholder={content?.form?.placeholders?.email ||
+                  "Digite seu email"}
                 required
               />
               <button

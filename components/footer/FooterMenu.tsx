@@ -26,7 +26,7 @@ export interface Props {
 const FooterMenu = ({ footerItems, SocialMedia }: Props) => {
   const isMobile = globalThis.innerWidth < 1024;
   const isLast = footerItems && footerItems.length - 1;
-  if (!isMobile)
+  if (!isMobile) {
     return (
       <>
         {/* desktop footer menu */}
@@ -50,6 +50,7 @@ const FooterMenu = ({ footerItems, SocialMedia }: Props) => {
           ))}
       </>
     );
+  }
   return (
     <>
       {/* Mobile footer menu */}
