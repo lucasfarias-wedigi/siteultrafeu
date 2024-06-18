@@ -43,8 +43,8 @@ function Newsletter({ content }: Props) {
   };
 
   return (
-    <div class="text-white bg-blueSecondary py-8 w-full px-4 md:px-0">
-      <div class="flex flex-col gap-8 lg:gap-0 items-center lg:justify-between max-w-7xl m-auto w-full">
+    <div class="text-white bg-blueSecondary py-8 w-full px-4 lg:px-0">
+      <div class="flex flex-col gap-8 lg:flex-row lg:gap-0 items-center lg:justify-between max-w-7xl m-auto w-full">
         <div class="flex flex-col gap-4 w-full lg:max-w-[352px]">
           {content?.title && (
             <h4 class="text-2xl font-semibold">{content?.title}</h4>
