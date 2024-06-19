@@ -50,11 +50,9 @@ function Drawer(props: Props) {
         aria-label={open ? "open drawer" : "closed drawer"}
       />
 
-      <div class="drawer-content">
-        {children}
-      </div>
+      <div class="drawer-content">{children}</div>
 
-      <aside class="drawer-side h-full z-[99] overflow-x-hidden overflow-y-scroll">
+      <aside class="drawer-side h-full z-[99] overflow-x-hidden overflow-y-scroll lg:overflow-y-hidden">
         <label for={id} class="drawer-overlay" />
         {!lazy.value && aside}
       </aside>
