@@ -14,6 +14,7 @@ import Image from "apps/website/components/Image.tsx";
 // import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Buttons, Logo } from "../../components/header/Header.tsx";
+import type { benefitsItemsProps } from "../header/Header.tsx";
 
 // Make it sure to render it on the server only. DO NOT render it on an island
 function Navbar({
@@ -23,14 +24,21 @@ function Navbar({
   buttons,
   // logoPosition = "left",
   device,
+  benefitsItems,
 }: {
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   logo?: Logo;
   buttons?: Buttons;
   device: "mobile" | "desktop" | "tablet";
+  benefitsItems: benefitsItemsProps[];
 }) {
   const platform = usePlatform();
+  const liveStoreItem = benefitsItems.find(
+    (item) => item.text.toLowerCase() === "loja ao vivo"
+  );
+  const liveStoreText = liveStoreItem?.text;
+  const liveStoreLink = liveStoreItem?.link;
 
   // Mobile header
   if (device === "mobile") {
@@ -57,13 +65,22 @@ function Navbar({
         )}
 
         <div class="flex justify-end gap-1">
-          <SearchButton />
-          {platform === "vtex" && <CartButtonVTEX />}
-          {platform === "vnda" && <CartButtonVDNA />}
-          {platform === "wake" && <CartButtonWake />}
-          {platform === "linx" && <CartButtonLinx />}
-          {platform === "shopify" && <CartButtonShopify />}
-          {platform === "nuvemshop" && <CartButtonNuvemshop />}
+          {liveStoreLink && (
+            <a href={liveStoreLink || "#"}>
+              <button class="bg-orangePrimary text-white font-semibold text-xs px-1.5 py-1">
+                {liveStoreText}
+              </button>
+            </a>
+          )}
+          <div class="hidden lg:flex">
+            <SearchButton />
+            {platform === "vtex" && <CartButtonVTEX />}
+            {platform === "vnda" && <CartButtonVDNA />}
+            {platform === "wake" && <CartButtonWake />}
+            {platform === "linx" && <CartButtonLinx />}
+            {platform === "shopify" && <CartButtonShopify />}
+            {platform === "nuvemshop" && <CartButtonNuvemshop />}
+          </div>
         </div>
       </div>
     );
@@ -85,21 +102,17 @@ function Navbar({
             </a>
           )}
         </div>
-        {
-          /* <ul class={`flex gap-6 col-span-1 justify-start`}>
+        {/* <ul class={`flex gap-6 col-span-1 justify-start`}>
         {items.map((item) => (
           <NavItem item={item} />
         ))}
-      </ul> */
-        }
+      </ul> */}
         <div class="flex-none flex items-center justify-end gap-6 col-span-5">
-          {
-            /* {!buttons?.hideSearchButton && (
+          {/* {!buttons?.hideSearchButton && (
           <div class="flex items-center text-xs font-thin gap-1">
             <SearchButton />
           </div>
-        )} */
-          }
+        )} */}
 
           <Searchbar searchbar={searchbar} />
           {!buttons?.messageButton?.hide && (

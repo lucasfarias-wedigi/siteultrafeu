@@ -126,4 +126,9 @@
 		<path d="M26.1667 37.0756C26.811 37.0756 27.3333 36.5533 27.3333 35.9089C27.3333 35.2646 26.811 34.7423 26.1667 34.7423C25.5223 34.7423 25 35.2646 25 35.9089C25 36.5533 25.5223 37.0756 26.1667 37.0756Z" stroke="#013B6C" stroke-linecap="round" stroke-linejoin="round"/>
 		<path d="M4 12.5756H8.66667L11.7933 28.1973C11.9 28.7344 12.1922 29.2169 12.6188 29.5603C13.0454 29.9037 13.5791 30.0861 14.1267 30.0756H25.4667C26.0142 30.0861 26.548 29.9037 26.9745 29.5603C27.4011 29.2169 27.6933 28.7344 27.8 28.1973L29.6667 18.4089H9.83333" stroke="#013B6C" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
+	<symbol id="MenuHamburguer" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M13.6667 15H23.6667" stroke="#013B6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M13.6667 22H29.6667" stroke="#013B6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M13.6667 29H29.6667" stroke="#013B6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 </svg>

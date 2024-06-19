@@ -50,7 +50,8 @@ export type AvailableIcons =
   | "MessageIcon"
   | "WishlistIcon"
   | "LoginIcon"
-  | "MinicartIcon";
+  | "MinicartIcon"
+  | "MenuHamburguer";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

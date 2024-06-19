@@ -95,30 +95,39 @@ export const AlertError = `<svg id="AlertError" xmlns="http://www.w3.org/2000/sv
        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
     </svg>`;
 export const share = `<svg id="share" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-		<path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M8.7 10.7l6.6 -3.4"></path>
-		<path d="M8.7 13.3l6.6 3.4"></path>
-    </svg>`;
+	<path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M8.7 10.7l6.6 -3.4"></path>
+	<path d="M8.7 13.3l6.6 3.4"></path>
+</svg>`;
 
-export const MessageIcon = `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M18.3125 30.389V29.889H17.8125H13.125C11.6775 29.889 10.5 28.7114 10.5 27.2638V13.2007C10.5 11.7531 11.6775 10.5756 13.125 10.5756H31.875C33.3225 10.5756 34.5 11.7531 34.5 13.2007V27.2638C34.5 28.7114 33.3225 29.889 31.875 29.889H25.1025H24.9358L24.8025 29.989L18.7665 34.5175C18.7659 34.5179 18.7654 34.5182 18.7649 34.5186C18.6739 34.5845 18.5577 34.5924 18.4658 34.5464C18.3725 34.4998 18.3125 34.4049 18.3125 34.2954V30.389Z" stroke="#013B6C"/>
-		<circle cx="16" cy="20.5756" r="1" fill="#013B6C"/>
-		<circle cx="22" cy="20.5756" r="1" fill="#013B6C"/>
-		<circle cx="28" cy="20.5756" r="1" fill="#013B6C"/>
-	</svg>`;
-export const WishlistIcon = `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const MessageIcon = `<svg id="MessageIcon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M18.3125 30.389V29.889H17.8125H13.125C11.6775 29.889 10.5 28.7114 10.5 27.2638V13.2007C10.5 11.7531 11.6775 10.5756 13.125 10.5756H31.875C33.3225 10.5756 34.5 11.7531 34.5 13.2007V27.2638C34.5 28.7114 33.3225 29.889 31.875 29.889H25.1025H24.9358L24.8025 29.989L18.7665 34.5175C18.7659 34.5179 18.7654 34.5182 18.7649 34.5186C18.6739 34.5845 18.5577 34.5924 18.4658 34.5464C18.3725 34.4998 18.3125 34.4049 18.3125 34.2954V30.389Z" stroke="#013B6C"/>
+	<circle cx="16" cy="20.5756" r="1" fill="#013B6C"/>
+	<circle cx="22" cy="20.5756" r="1" fill="#013B6C"/>
+	<circle cx="28" cy="20.5756" r="1" fill="#013B6C"/>
+</svg>`;
+
+export const WishlistIcon = `<svg id="WishlistIcon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path d="M33.0723 13.5206C32.4614 12.9039 31.7361 12.4148 30.9378 12.0811C30.1396 11.7474 29.2839 11.5756 28.4199 11.5756C27.5558 11.5756 26.7001 11.7474 25.9019 12.0811C25.1036 12.4148 24.3783 12.9039 23.7674 13.5206L22.4997 14.7996L21.2319 13.5206C19.998 12.2756 18.3245 11.5762 16.5795 11.5762C14.8345 11.5762 13.161 12.2756 11.9271 13.5206C10.6932 14.7655 10 16.454 10 18.2145C10 19.9751 10.6932 21.6636 11.9271 22.9085L13.1948 24.1876L22.4997 33.5756L31.8045 24.1876L33.0723 22.9085C33.6834 22.2922 34.1682 21.5604 34.499 20.755C34.8298 19.9496 35 19.0864 35 18.2145C35 17.3427 34.8298 16.4795 34.499 15.674C34.1682 14.8686 33.6834 14.1369 33.0723 13.5206Z" stroke="#013B6C" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`;
-export const LoginIcon = `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path d="M26.498 20.2422C25.3064 21.4152 23.6885 22.0756 22 22.0756C20.3115 22.0756 18.6936 21.4152 17.502 20.2422C16.3107 19.0695 15.6429 17.4806 15.6429 15.8256C15.6429 14.1706 16.3107 12.5817 17.502 11.4089C18.6936 10.236 20.3115 9.57559 22 9.57559C23.6885 9.57559 25.3064 10.236 26.498 11.4089C27.6893 12.5817 28.3571 14.1706 28.3571 15.8256C28.3571 17.4806 27.6893 19.0695 26.498 20.2422ZM10.5 34.5094C10.5 29.5986 14.5437 25.6068 19.5518 25.6068H24.4482C29.4563 25.6068 33.5 29.5986 33.5 34.5094C33.5 35.0907 33.0188 35.5756 32.4089 35.5756H11.5911C10.9812 35.5756 10.5 35.0907 10.5 34.5094Z" stroke="#013B6C"/>
+
+export const LoginIcon = `<svg id="LoginIcon" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <path d="M26.498 20.2422C25.3064 21.4152 23.6885 22.0756 22 22.0756C20.3115 22.0756 18.6936 21.4152 17.502 20.2422C16.3107 19.0695 15.6429 17.4806 15.6429 15.8256C15.6429 14.1706 16.3107 12.5817 17.502 11.4089C18.6936 10.236 20.3115 9.57559 22 9.57559C23.6885 9.57559 25.3064 10.236 26.498 11.4089C27.6893 12.5817 28.3571 14.1706 28.3571 15.8256C28.3571 17.4806 27.6893 19.0695 26.498 20.2422ZM10.5 34.5094C10.5 29.5986 14.5437 25.6068 19.5518 25.6068H24.4482C29.4563 25.6068 33.5 29.5986 33.5 34.5094C33.5 35.0907 33.0188 35.5756 32.4089 35.5756H11.5911C10.9812 35.5756 10.5 35.0907 10.5 34.5094Z" fill="none" stroke="white"/>
 </svg>`;
-export const MinicartIcon = `<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+export const MinicartIcon = `<svg id="MinicartIcon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.3333 37.0756C13.9776 37.0756 14.5 36.5533 14.5 35.9089C14.5 35.2646 13.9776 34.7423 13.3333 34.7423C12.689 34.7423 12.1666 35.2646 12.1666 35.9089C12.1666 36.5533 12.689 37.0756 13.3333 37.0756Z" stroke="#013B6C" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M26.1667 37.0756C26.811 37.0756 27.3333 36.5533 27.3333 35.9089C27.3333 35.2646 26.811 34.7423 26.1667 34.7423C25.5223 34.7423 25 35.2646 25 35.9089C25 36.5533 25.5223 37.0756 26.1667 37.0756Z" stroke="#013B6C" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M4 12.5756H8.66667L11.7933 28.1973C11.9 28.7344 12.1922 29.2169 12.6188 29.5603C13.0454 29.9037 13.5791 30.0861 14.1267 30.0756H25.4667C26.0142 30.0861 26.548 29.9037 26.9745 29.5603C27.4011 29.2169 27.6933 28.7344 27.8 28.1973L29.6667 18.4089H9.83333" stroke="#013B6C" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
+</svg>`;
+
+export const MenuHamburguer = `<svg id="MenuHamburguer" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M13.6667 15H23.6667" stroke="#013B6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M13.6667 22H29.6667" stroke="#013B6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M13.6667 29H29.6667" stroke="#013B6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
 
 export const AvailableIcons = {
+  MenuHamburguer,
   WishlistIcon,
   LoginIcon,
   MinicartIcon,
