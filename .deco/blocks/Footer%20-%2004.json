@@ -213,14 +213,56 @@
       "items": [
         {
           "text": "Quem somos",
-          "link": "#"
+          "link": "/institucional/quem-somos"
+        },
+        {
+          "text": "Politica de Privacidade",
+          "link": "/institucional/politica-de-privacidade"
+        },
+        {
+          "link": "/institucional/politica-de-seguranca",
+          "text": "Politica de Segurança"
+        },
+        {
+          "link": "/institucional/politica-de-entrega",
+          "text": "Politica de Entrega"
         }
       ],
       "title": "Institucional"
     },
     {
-      "items": [],
+      "items": [
+        {
+          "text": "Dúvidas Frequentes",
+          "link": "/institucional/duvidas-frequentes"
+        },
+        {
+          "text": "Como Comprar",
+          "link": "/institucional/como-comprar"
+        },
+        {
+          "text": "Prazos e formas de envio",
+          "link": "Prazos e formas de envio"
+        },
+        {
+          "text": "Fale Conosco",
+          "link": "/institucional/contato"
+        }
+      ],
       "title": "Central de Ajuda"
+    },
+    {
+      "items": [
+        {
+          "text": "Minha COnta",
+          "link": "/"
+        }
+      ],
+      "title": "Informações"
+    },
+    {
+      "items": [],
+      "title": "Televendas"
     }
   ],
   "SocialMedia": {
