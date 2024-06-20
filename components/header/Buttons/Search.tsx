@@ -7,7 +7,8 @@ export default function SearchButton() {
 
   return (
     <>
-      {/* <Button
+      {
+        /* <Button
         class="flex items-center justify-center bg-blueSecondary w-[50px] h-[50px] rounded-full"
         aria-label="search icon button"
         onClick={() => {
@@ -34,7 +35,8 @@ export default function SearchButton() {
             stroke-linejoin="round"
           />
         </svg>
-      </Button> */}
+      </Button> */
+      }
       <Button
         class="flex items-center justify-center bg-blueSecondary w-[50px] h-[50px] rounded-full"
         aria-label="search icon button"
