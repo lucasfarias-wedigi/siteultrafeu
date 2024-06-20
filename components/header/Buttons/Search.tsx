@@ -3,12 +3,12 @@ import Button from "../../../components/ui/Button.tsx";
 import { useUI } from "../../../sdk/useUI.ts";
 
 export default function SearchButton() {
-  const { displaySearchDrawer, displaySearchPopup } = useUI();
+  const { displaySearchDrawer } = useUI();
 
   return (
     <>
-      <Button
-        class=""
+      {/* <Button
+        class="flex items-center justify-center bg-blueSecondary w-[50px] h-[50px] rounded-full"
         aria-label="search icon button"
         onClick={() => {
           displaySearchPopup.value = !displaySearchPopup.value;
@@ -34,9 +34,9 @@ export default function SearchButton() {
             stroke-linejoin="round"
           />
         </svg>
-      </Button>
+      </Button> */}
       <Button
-        class=""
+        class="flex items-center justify-center bg-blueSecondary w-[50px] h-[50px] rounded-full"
         aria-label="search icon button"
         onClick={() => {
           displaySearchDrawer.value = !displaySearchDrawer.value;

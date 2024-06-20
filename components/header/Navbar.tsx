@@ -1,12 +1,12 @@
 import type { Props as SearchbarProps } from "../../components/search/Searchbar.tsx";
 import Icon from "../../components/ui/Icon.tsx";
-import { MenuButton, SearchButton } from "../../islands/Header/Buttons.tsx";
-import CartButtonLinx from "../../islands/Header/Cart/linx.tsx";
-import CartButtonShopify from "../../islands/Header/Cart/shopify.tsx";
-import CartButtonVDNA from "../../islands/Header/Cart/vnda.tsx";
+import { MenuButton } from "../../islands/Header/Buttons.tsx";
+// import CartButtonLinx from "../../islands/Header/Cart/linx.tsx";
+// import CartButtonShopify from "../../islands/Header/Cart/shopify.tsx";
+// import CartButtonVDNA from "../../islands/Header/Cart/vnda.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
-import CartButtonWake from "../../islands/Header/Cart/wake.tsx";
-import CartButtonNuvemshop from "../../islands/Header/Cart/nuvemshop.tsx";
+// import CartButtonWake from "../../islands/Header/Cart/wake.tsx";
+// import CartButtonNuvemshop from "../../islands/Header/Cart/nuvemshop.tsx";
 import Searchbar from "../../islands/Header/Searchbar.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
@@ -35,7 +35,7 @@ function Navbar({
 }) {
   const platform = usePlatform();
   const liveStoreItem = benefitsItems.find(
-    (item) => item.text.toLowerCase() === "loja ao vivo",
+    (item) => item.text.toLowerCase() === "loja ao vivo"
   );
   const liveStoreText = liveStoreItem?.text;
   const liveStoreLink = liveStoreItem?.link;
@@ -72,15 +72,6 @@ function Navbar({
               </button>
             </a>
           )}
-          <div class="hidden lg:flex">
-            <SearchButton />
-            {platform === "vtex" && <CartButtonVTEX />}
-            {platform === "vnda" && <CartButtonVDNA />}
-            {platform === "wake" && <CartButtonWake />}
-            {platform === "linx" && <CartButtonLinx />}
-            {platform === "shopify" && <CartButtonShopify />}
-            {platform === "nuvemshop" && <CartButtonNuvemshop />}
-          </div>
         </div>
       </div>
     );
@@ -102,21 +93,17 @@ function Navbar({
             </a>
           )}
         </div>
-        {
-          /* <ul class={`flex gap-6 col-span-1 justify-start`}>
+        {/* <ul class={`flex gap-6 col-span-1 justify-start`}>
         {items.map((item) => (
           <NavItem item={item} />
         ))}
-      </ul> */
-        }
+      </ul> */}
         <div class="flex-none flex items-center justify-end gap-6 col-span-5">
-          {
-            /* {!buttons?.hideSearchButton && (
+          {/* {!buttons?.hideSearchButton && (
           <div class="flex items-center text-xs font-thin gap-1">
             <SearchButton />
           </div>
-        )} */
-          }
+        )} */}
 
           <Searchbar searchbar={searchbar} />
           {!buttons?.messageButton?.hide && (
@@ -141,12 +128,12 @@ function Navbar({
 
           {!buttons?.hideCartButton && (
             <div class="flex items-center text-xs font-thin">
-              {platform === "vtex" && <CartButtonVTEX />}
-              {platform === "vnda" && <CartButtonVDNA />}
+              <button class="text-blueSecondary">{platform === "vtex" && <CartButtonVTEX />}</button>
+              {/* {platform === "vnda" && <CartButtonVDNA />}
               {platform === "wake" && <CartButtonWake />}
               {platform === "linx" && <CartButtonLinx />}
               {platform === "shopify" && <CartButtonShopify />}
-              {platform === "nuvemshop" && <CartButtonNuvemshop />}
+              {platform === "nuvemshop" && <CartButtonNuvemshop />} */}
             </div>
           )}
         </div>
