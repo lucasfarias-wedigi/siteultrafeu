@@ -66,7 +66,7 @@ function Searchbar({
   // const hasTerms = Boolean(searches.length);
 
   return (
-    <form id={id} action={action} class="relative w-full m-auto md:m-0">
+    <form id={id} action={action} class="relative w-full m-auto px-4 lg:px-0 md:m-0">
       <Button
         class="absolute inset-y-1/4 right-4"
         type="submit"

@@ -22,14 +22,20 @@ export interface Props {
   platform: ReturnType<typeof usePlatform>;
 }
 
-const Aside = (
-  { title, onClose, children }: {
-    title: string;
-    onClose?: () => void;
-    children: ComponentChildren;
-  },
-) => (
-  <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100vw]">
+const Aside = ({
+  title,
+  onClose,
+  children,
+}: {
+  title: string;
+  onClose?: () => void;
+  children: ComponentChildren;
+}) => (
+  <div
+    class={`bg-base-100 divide-y max-w-[100vw] ${
+      title === "Buscar" ? "h-36" : "h-full"
+    }`}
+  >
     <div class="flex justify-between items-center">
       <h1 class="px-4 py-3">
         <span class="font-medium text-2xl">{title}</span>
@@ -85,11 +91,11 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
       <Drawer // right drawer
         class="drawer-end"
         open={displayCart.value !== false}
-        onClose={() => displayCart.value = false}
+        onClose={() => (displayCart.value = false)}
         aside={
           <Aside
             title="Minha sacola"
-            onClose={() => displayCart.value = false}
+            onClose={() => (displayCart.value = false)}
           >
             <Cart platform={platform} />
           </Aside>
