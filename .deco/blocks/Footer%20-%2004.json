@@ -254,14 +254,26 @@
     {
       "items": [
         {
-          "text": "Minha COnta",
+          "text": "Minha Conta",
           "link": "/account"
+        },
+        {
+          "text": "Meus Pedidos",
+          "link": "/"
+        },
+        {
+          "text": "Alterar dados pessoais",
+          "link": "/"
         }
       ],
       "title": "Informações"
     },
     {
-      "items": [],
+      "items": [
+        {
+          "text": "(16) 3600-9084 -  Segunda a Sexta: 09:00 às 18:00 Sábado: 09:00 às 12:00"
+        }
+      ],
       "title": "Televendas"
     }
   ],
