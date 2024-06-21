@@ -8,7 +8,7 @@ import type { SectionProps } from "deco/types.ts";
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import NavItem from "./NavItem.tsx";
-import Scroll from "../../islands/Header/Scroll.tsx";
+import VisibilityOnScroll from "../../islands/Header/VisibilityOnScroll.tsx";
 import { SearchButton } from "../../islands/Header/Buttons.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
 
@@ -93,8 +93,7 @@ function Header({
     },
   ],
   logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -108,14 +107,14 @@ function Header({
     <header class="h-[157px] lg:h-[188px]">
       <Drawers menu={{ items }} searchbar={searchbar} platform={platform}>
         <div class="bg-white fixed w-full z-50">
-          <Scroll>
+          <VisibilityOnScroll handleShow="default">
             {alerts && (
               <Alert
                 alerts={alerts.alert}
                 benefitsItems={alerts.benefitsItems}
               />
             )}
-          </Scroll>
+          </VisibilityOnScroll>
           <Navbar
             device={device}
             items={items}
@@ -124,13 +123,15 @@ function Header({
             buttons={buttons}
             benefitsItems={alerts.benefitsItems}
           />
-          <Scroll style="">
+          <VisibilityOnScroll handleShow="default">
             <div class="hidden lg:block w-full m-auto max-w-7xl">
               <ul class={`flex gap-4 items-center justify-center`}>
-                {items.map((item) => <NavItem item={item} />)}
+                {items.map((item) => (
+                  <NavItem item={item} />
+                ))}
               </ul>
             </div>
-          </Scroll>
+          </VisibilityOnScroll>
         </div>
         <div class="flex items-center justify-center gap-16 lg:hidden fixed z-50 bottom-0 w-full bg-white bg-opacity-10 backdrop-blur-sm shadow-lg h-[66px]">
           <a class="" href="/account" aria-label="Account">
