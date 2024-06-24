@@ -11,14 +11,13 @@ import NavItem from "./NavItem.tsx";
 import VisibilityOnScroll from "../../islands/Header/VisibilityOnScroll.tsx";
 import { SearchButton } from "../../islands/Header/Buttons.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
-import { AvailableIcons } from "../ui/Icon.tsx";
 
 /**
  * @titleBy text
  */
 export interface benefitsItemsProps {
   text: string;
-  image?: AvailableIcons;
+  image: ImageWidget;
   link: string;
 }
 
@@ -75,12 +74,7 @@ export interface Props {
 
 function Header({
   alerts,
-  liveStore = {
-    text: "LOJA AO VIVO",
-    link: "#",
-  },
   searchbar,
-
   navItems = [
     {
       "@type": "SiteNavigationElement",
@@ -124,7 +118,6 @@ function Header({
               <Alert
                 alerts={alerts.alert}
                 benefitsItems={alerts.benefitsItems}
-                liveStore={liveStore}
               />
             )}
           </VisibilityOnScroll>
@@ -134,7 +127,7 @@ function Header({
             searchbar={searchbar && { ...searchbar, platform }}
             logo={logo}
             buttons={buttons}
-            liveStore={liveStore}
+            benefitsItems={alerts.benefitsItems}
           />
           <VisibilityOnScroll handleShow="default">
             <div class="hidden lg:block w-full m-auto max-w-7xl">
