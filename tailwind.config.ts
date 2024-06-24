@@ -17,11 +17,12 @@ export default {
         },
       },
       colors: {
-        bluePrimary: "#0A5DBE",
-        blueSecondary: "#013B6C",
-        orangePrimary: "#FF7512",
+        greenPrimary: "#228042",
         grayPrimary: "#686868",
-        graySecondary: "#D9D9D9",
+        graySecondary: "#E9E9E9",
+        whitePrimary: "#F6F6F6",
+        purplePrimary: "#32026A",
+        blackPrimary: "#1C1C1C"
       },
     },
   },

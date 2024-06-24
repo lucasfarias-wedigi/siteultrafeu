@@ -68,7 +68,7 @@ function Navbar({
         <div class="flex justify-end gap-1">
           {liveStoreLink && (
             <a href={liveStoreLink || "#"}>
-              <button class="bg-orangePrimary text-white font-semibold text-xs px-1.5 py-1">
+              <button class="bg-greenPrimary text-white font-semibold text-xs px-1.5 py-1">
                 {liveStoreText}
               </button>
             </a>

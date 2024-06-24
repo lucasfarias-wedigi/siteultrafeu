@@ -43,7 +43,7 @@ function Newsletter({ content }: Props) {
   };
 
   return (
-    <div class="text-white bg-blueSecondary py-8 w-full px-4 lg:px-0">
+    <div class="text-white bg-purplePrimary py-8 w-full px-4 lg:px-0">
       <div class="flex flex-col gap-8 lg:flex-row lg:gap-0 items-center lg:justify-between max-w-7xl m-auto w-full">
         <div class="flex flex-col gap-4 w-full lg:max-w-[352px]">
           {content?.title && (
@@ -58,20 +58,20 @@ function Newsletter({ content }: Props) {
             <div class="flex flex-col lg:flex-row gap-4 lg:justify-end">
               <input
                 name="name"
-                class="py-3 w-full lg:max-w-[447px] px-4 text-sm text-grayPrimary"
+                class="py-3 w-full lg:max-w-[447px] px-4 text-sm text-blackPrimary"
                 placeholder={content?.form?.placeholders?.name ||
                   "Digite seu nome"}
               />
               <input
                 name="email"
-                class="py-3 px-4 w-full lg:max-w-[314px] text-sm text-grayPrimary"
+                class="py-3 px-4 w-full lg:max-w-[314px] text-sm text-blackPrimary"
                 placeholder={content?.form?.placeholders?.email ||
                   "Digite seu email"}
                 required
               />
               <button
                 type="submit"
-                class="disabled:loading bg-orangePrimary text-white p-2.5 flex items-center justify-center self-end"
+                class="disabled:loading bg-greenPrimary text-white p-2.5 flex items-center justify-center self-end"
                 disabled={loading}
               >
                 <svg

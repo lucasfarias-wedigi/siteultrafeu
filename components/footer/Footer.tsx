@@ -70,8 +70,10 @@ function footer({
     <footer>
       <Newsletter content={newsletter} />
       {footerItems && (
-        <div class="flex flex-col gap-4 lg:gap-0 lg:flex-row max-w-7xl m-auto justify-between py-8 px-4 lg:px-0">
-          <FooterMenu footerItems={footerItems} SocialMedia={SocialMedia} />
+        <div class="w-full bg-graySecondary border-b border-white">
+          <div class="flex flex-col gap-4 lg:gap-0 lg:flex-row max-w-7xl m-auto justify-between py-8 px-4 lg:px-0">
+            <FooterMenu footerItems={footerItems} SocialMedia={SocialMedia} />
+          </div>
         </div>
       )}
       <div class="bg-graySecondary w-full py-7 px-4 lg:px-0">
@@ -84,7 +86,7 @@ function footer({
       {policies && (
         <div class="flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between items-center w-full max-w-7xl m-auto py-4 px-4 lg:px-0">
           <RichText
-            style="max-w-5xl text-[10px] text-grayPrimary"
+            style="max-w-5xl text-[10px] text-blackPrimary"
             text={policies.text}
           />
           <div class="w-full flex items-center justify-center lg:justify-end">

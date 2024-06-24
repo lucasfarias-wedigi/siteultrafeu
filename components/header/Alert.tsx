@@ -25,33 +25,20 @@ export interface Props {
 
 function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
   const id = useId();
-  const liveStore = "loja ao vivo";
+
   return (
-    <div id={id} class="bg-bluePrimary w-full">
+    <div id={id} class="bg-graySecondary w-full">
       <div class="flex flex-col-reverse md:flex-row items-center justify-center md:gap-5 w-full max-w-7xl m-auto">
         {benefitsItems && (
           <div class="w-full overflow-x-scroll md:overflow-x-auto">
             <ul class="flex min-w-full w-max md:w-full items-center">
               {benefitsItems.map((item, i: number) => (
                 <li
-                  class={`text-xs font-normal md:font-medium md:text-sm text-white p-2 ${
-                    i === 0
-                      ? "md:border-l bg-blueSecondary border-b-2 border-orangePrimary"
-                      : ""
-                  } md:border-b-0 md:border-r md:border-white md:border-opacity-50 ${
-                    item.text.toLocaleLowerCase() === liveStore
-                      ? "hidden md:flex"
-                      : ""
-                  }`}
+                  class={`text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary p-2 ${
+                    i === 0 ? "md:border-l bg-blueSecondary border-b-2" : ""
+                  } md:border-b-0 md:border-r md:border-white md:border-opacity-50`}
                 >
-                  <a
-                    href={item.link || "#"}
-                    class={`${
-                      item.text.toLocaleLowerCase() === liveStore
-                        ? "bg-orangePrimary"
-                        : ""
-                    } flex items-center px-1.5 py-1 gap-2`}
-                  >
+                  <a href={item.link || "#"} class="flex items-center">
                     <Image
                       src={item.image}
                       alt={item.text}

@@ -28,7 +28,7 @@ function CartButton({ loading, currency, total, items }: Props) {
       {loading ? <span class="loading loading-spinner" /> : (
         <>
           <span
-            class={`font-semibold text-sm pointer-events-none right-0 top-1 flex items-center justify-center rounded-full absolute w-5 h-5 bg-orangePrimary text-white `}
+            class={`font-semibold text-sm pointer-events-none right-0 top-1 flex items-center justify-center rounded-full absolute w-5 h-5 bg-greenPrimary text-white `}
           >
             {totalItems > 9 ? "9+" : totalItems}
           </span>
