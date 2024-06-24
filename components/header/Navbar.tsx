@@ -14,7 +14,6 @@ import Image from "apps/website/components/Image.tsx";
 // import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Buttons, Logo } from "../../components/header/Header.tsx";
-import type { benefitsItemsProps } from "../header/Header.tsx";
 import VisibilityOnScroll from "../../islands/Header/VisibilityOnScroll.tsx";
 
 // Make it sure to render it on the server only. DO NOT render it on an island
@@ -25,21 +24,19 @@ function Navbar({
   buttons,
   // logoPosition = "left",
   device,
-  benefitsItems,
+  liveStore,
 }: {
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   logo?: Logo;
   buttons?: Buttons;
   device: "mobile" | "desktop" | "tablet";
-  benefitsItems: benefitsItemsProps[];
+  liveStore?: {
+    link: string;
+    text: string;
+  };
 }) {
   const platform = usePlatform();
-  const liveStoreItem = benefitsItems.find(
-    (item) => item.text.toLowerCase() === "loja ao vivo",
-  );
-  const liveStoreText = liveStoreItem?.text;
-  const liveStoreLink = liveStoreItem?.link;
 
   // Mobile header
   if (device === "mobile") {
@@ -66,10 +63,10 @@ function Navbar({
         )}
 
         <div class="flex justify-end gap-1">
-          {liveStoreLink && (
-            <a href={liveStoreLink || "#"}>
-              <button class="bg-greenPrimary text-white font-semibold text-xs px-1.5 py-1">
-                {liveStoreText}
+          {liveStore && (
+            <a href={liveStore.link || "#"}>
+              <button class="bg-greenPrimary text-whitePrimary font-semibold text-xs px-1.5 py-1">
+                {liveStore.text}
               </button>
             </a>
           )}
@@ -94,21 +91,17 @@ function Navbar({
             </a>
           )}
         </div>
-        {
-          /* <ul class={`flex gap-6 col-span-1 justify-start`}>
+        {/* <ul class={`flex gap-6 col-span-1 justify-start`}>
         {items.map((item) => (
           <NavItem item={item} />
         ))}
-      </ul> */
-        }
+      </ul> */}
         <div class="flex-none flex items-center justify-end gap-6 col-span-5">
-          {
-            /* {!buttons?.hideSearchButton && (
+          {/* {!buttons?.hideSearchButton && (
           <div class="flex items-center text-xs font-thin gap-1">
             <SearchButton />
           </div>
-        )} */
-          }
+        )} */}
           <VisibilityOnScroll handleShow="inverse">
             <button class="flex items-center mr-20 w-full">
               <Icon id="MenuHamburguer" strokeWidth={1} size={44} />
@@ -142,13 +135,11 @@ function Navbar({
               <button class="text-blueSecondary">
                 {platform === "vtex" && <CartButtonVTEX />}
               </button>
-              {
-                /* {platform === "vnda" && <CartButtonVDNA />}
+              {/* {platform === "vnda" && <CartButtonVDNA />}
               {platform === "wake" && <CartButtonWake />}
               {platform === "linx" && <CartButtonLinx />}
               {platform === "shopify" && <CartButtonShopify />}
-              {platform === "nuvemshop" && <CartButtonNuvemshop />} */
-              }
+              {platform === "nuvemshop" && <CartButtonNuvemshop />} */}
             </div>
           )}
         </div>
