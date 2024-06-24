@@ -57,7 +57,14 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
           </div>
         )}
 
-        {liveStore && <a href={liveStore.text} class="bg-greenPrimary text-grayTertiary px-1.5 py-1">{liveStore.text}</a>}
+        {liveStore && (
+          <a
+            href={liveStore.text}
+            class="bg-greenPrimary text-grayTertiary px-1.5 py-1"
+          >
+            {liveStore.text}
+          </a>
+        )}
 
         <div class="relative bg-white md:bg-transparent w-full md:max-w-[418px] flex items-center justify-center">
           <Slider class="carousel carousel-center gap-6 w-full flex items-center min-h-8 md:min-h-fit">
