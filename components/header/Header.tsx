@@ -53,6 +53,11 @@ export interface MenuItens extends SiteNavigationElement {
 export interface Props {
   alerts: alertsProps;
 
+  liveStore?: {
+    link: string;
+    text: string;
+  };
+
   /** @title Search Bar */
   searchbar?: Omit<SearchbarProps, "platform">;
 
@@ -93,8 +98,7 @@ function Header({
     },
   ],
   logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -127,7 +131,9 @@ function Header({
           <VisibilityOnScroll handleShow="default">
             <div class="hidden lg:block w-full m-auto max-w-7xl">
               <ul class={`flex gap-4 items-center justify-center`}>
-                {items.map((item) => <NavItem item={item} />)}
+                {items.map((item) => (
+                  <NavItem item={item} />
+                ))}
               </ul>
             </div>
           </VisibilityOnScroll>
