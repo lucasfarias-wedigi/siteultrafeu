@@ -38,7 +38,7 @@ export default function SearchButton() {
       </Button> */
       }
       <Button
-        class="flex items-center justify-center bg-blueSecondary w-[50px] h-[50px] rounded-full"
+        class="flex items-center justify-center bg-purplePrimary w-[50px] h-[50px] rounded-full"
         aria-label="search icon button"
         onClick={() => {
           displaySearchDrawer.value = !displaySearchDrawer.value;
