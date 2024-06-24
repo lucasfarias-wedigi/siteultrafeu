@@ -20,25 +20,29 @@ export interface Props {
    * @description time (in seconds) to start the carousel autoplay
    */
   interval?: number;
+  liveStore?: {
+    link: string;
+    text: string;
+  };
   benefitsItems?: benefitsItemsProps[];
 }
 
-function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
+function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
   const id = useId();
 
   return (
     <div id={id} class="bg-graySecondary w-full">
-      <div class="flex flex-col-reverse md:flex-row items-center justify-center md:gap-5 w-full max-w-7xl m-auto">
+      <div class="flex flex-col-reverse md:flex-row items-center justify-between md:gap-5 w-full max-w-7xl m-auto">
         {benefitsItems && (
           <div class="w-full overflow-x-scroll md:overflow-x-auto">
-            <ul class="flex min-w-full w-max md:w-full items-center">
+            <ul class="flex min-w-full items-center">
               {benefitsItems.map((item, i: number) => (
-                <li
-                  class={`text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary p-2 ${
-                    i === 0 ? "md:border-l bg-blueSecondary border-b-2" : ""
-                  } md:border-b-0 md:border-r md:border-white md:border-opacity-50`}
-                >
-                  <a href={item.link || "#"} class="flex items-center">
+                <a href={item.link || "#"} class="">
+                  <li
+                    class={`flex h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary px-2 ${
+                      i === 0 ? "md:border-l border-b-2" : ""
+                    } md:border-b-0 md:border-r md:border-grayPrimary md:border-opacity-50`}
+                  >
                     <Image
                       src={item.image}
                       alt={item.text}
@@ -46,18 +50,20 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
                       height={24}
                     />
                     <span class="">{item.text}</span>
-                  </a>
-                </li>
+                  </li>
+                </a>
               ))}
             </ul>
           </div>
         )}
 
+        {liveStore && <a href={liveStore.text} class="bg-greenPrimary text-grayTertiary px-1.5 py-1">{liveStore.text}</a>}
+
         <div class="relative bg-white md:bg-transparent w-full md:max-w-[418px] flex items-center justify-center">
           <Slider class="carousel carousel-center gap-6 w-full flex items-center min-h-8 md:min-h-fit">
             {alerts.map((alert, index) => (
               <Slider.Item index={index} class="carousel-item w-full">
-                <span class="text-xs md:text-sm text-grayPrimary md:text-white flex justify-center items-center w-full">
+                <span class="text-xs md:text-sm text-grayPrimary flex justify-center items-center w-full">
                   {alert}
                 </span>
               </Slider.Item>
@@ -68,7 +74,7 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
                   size={18}
                   id="ChevronRight"
                   strokeWidth={3}
-                  class="text-grayPrimary md:text-white rotate-180 w-full"
+                  class="text-grayPrimary rotate-180 w-full"
                 />
               </Slider.PrevButton>
               <Slider.NextButton class="absolute right-4 md:right-0 flex justify-center items-center">
@@ -76,7 +82,7 @@ function Alert({ alerts = [], interval = 5, benefitsItems }: Props) {
                   size={18}
                   id="ChevronRight"
                   strokeWidth={3}
-                  class="text-grayPrimary md:text-white"
+                  class="text-grayPrimary"
                 />
               </Slider.NextButton>
             </>

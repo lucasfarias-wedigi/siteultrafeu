@@ -81,8 +81,8 @@ function Navbar({
   // Desktop header
   return (
     <div class="w-full border-b border-graySecondary shadow-md">
-      <div class="hidden sm:grid sm:grid-cols-6 w-full max-w-7xl m-auto">
-        <div class={`flex`}>
+      <div class="hidden sm:grid sm:grid-cols-6 w-full max-w-7xl m-auto py-2">
+        <div class={`flex items-center`}>
           {logo && (
             <a href="/" aria-label="Store logo" class="block">
               <Image

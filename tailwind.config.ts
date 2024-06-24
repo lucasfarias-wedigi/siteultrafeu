@@ -23,6 +23,7 @@ export default {
         whitePrimary: "#F6F6F6",
         purplePrimary: "#32026A",
         blackPrimary: "#1C1C1C",
+        grayTertiary: "#D9D9D9",
       },
     },
   },
