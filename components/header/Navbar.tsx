@@ -14,6 +14,7 @@ import Image from "apps/website/components/Image.tsx";
 // import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Buttons, Logo } from "../../components/header/Header.tsx";
+import type { benefitsItemsProps } from "../header/Header.tsx";
 import VisibilityOnScroll from "../../islands/Header/VisibilityOnScroll.tsx";
 
 // Make it sure to render it on the server only. DO NOT render it on an island
@@ -24,19 +25,21 @@ function Navbar({
   buttons,
   // logoPosition = "left",
   device,
-  liveStore,
+  benefitsItems,
 }: {
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   logo?: Logo;
   buttons?: Buttons;
   device: "mobile" | "desktop" | "tablet";
-  liveStore?: {
-    link: string;
-    text: string;
-  };
+  benefitsItems: benefitsItemsProps[];
 }) {
   const platform = usePlatform();
+  const liveStoreItem = benefitsItems.find(
+    (item) => item.text.toLowerCase() === "loja ao vivo",
+  );
+  const liveStoreText = liveStoreItem?.text;
+  const liveStoreLink = liveStoreItem?.link;
 
   // Mobile header
   if (device === "mobile") {
@@ -63,10 +66,10 @@ function Navbar({
         )}
 
         <div class="flex justify-end gap-1">
-          {liveStore && (
-            <a href={liveStore.link || "#"}>
-              <button class="bg-greenPrimary text-whitePrimary font-semibold text-xs px-1.5 py-1">
-                {liveStore.text}
+          {liveStoreLink && (
+            <a href={liveStoreLink || "#"}>
+              <button class="bg-greenPrimary text-white font-semibold text-xs px-1.5 py-1">
+                {liveStoreText}
               </button>
             </a>
           )}
