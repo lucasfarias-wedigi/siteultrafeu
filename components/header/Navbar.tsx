@@ -107,9 +107,10 @@ function Navbar({
         )} */
           }
           <VisibilityOnScroll handleShow="inverse">
-            <button class="flex items-center mr-20 w-full">
+            <button class="flex items-center mr-20 w-full text-purplePrimary">
               <Icon id="MenuHamburguer" strokeWidth={1} size={44} />
               Todos os produtos
+              <Icon id="ChevronDown" size={24} strokeWidth={1} />
             </button>
           </VisibilityOnScroll>
           <Searchbar searchbar={searchbar} />
@@ -136,7 +137,7 @@ function Navbar({
 
           {!buttons?.hideCartButton && (
             <div class="flex items-center text-xs font-thin">
-              <button class="text-blueSecondary">
+              <button class="text-purplePrimary">
                 {platform === "vtex" && <CartButtonVTEX />}
               </button>
               {

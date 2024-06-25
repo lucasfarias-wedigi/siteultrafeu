@@ -87,13 +87,13 @@ function Searchbar({
         >
           <path
             d="M11 19.5756C15.4183 19.5756 19 15.9939 19 11.5756C19 7.15731 15.4183 3.57559 11 3.57559C6.58172 3.57559 3 7.15731 3 11.5756C3 15.9939 6.58172 19.5756 11 19.5756Z"
-            stroke="#013B6C"
+            stroke="#32026A"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
           <path
             d="M21 21.5756L16.65 17.2256"
-            stroke="#013B6C"
+            stroke="#32026A"
             stroke-linecap="round"
             stroke-linejoin="round"
           />

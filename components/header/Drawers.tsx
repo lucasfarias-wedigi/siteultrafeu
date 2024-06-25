@@ -8,6 +8,8 @@ import { useUI } from "../../sdk/useUI.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { ComponentChildren } from "preact";
 import { lazy, Suspense } from "preact/compat";
+import Image from "apps/website/components/Image.tsx";
+import { Logo } from "./Header.tsx";
 
 const Menu = lazy(() => import("../../components/header/Menu.tsx"));
 const Searchbar = lazy(() => import("../../components/search/Searchbar.tsx"));
@@ -19,6 +21,7 @@ export interface Props {
    * @ignore_gen true
    */
   children?: ComponentChildren;
+  logo: Logo;
   platform: ReturnType<typeof usePlatform>;
 }
 
@@ -26,23 +29,39 @@ const Aside = ({
   title,
   onClose,
   children,
+  logo = {
+    src:
+      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    width: 100,
+    height: 16,
+    alt: "Logo",
+  },
 }: {
   title: string;
   onClose?: () => void;
   children: ComponentChildren;
+  logo: Logo;
 }) => (
   <div
-    class={`bg-base-100 divide-y max-w-[100vw] ${
+    class={`bg-base-100 divide-y-4 divide-grayTertiary max-w-[100vw] ${
       title === "Buscar" ? "h-36" : "h-full"
     }`}
   >
-    <div class="flex justify-between items-center">
-      <h1 class="px-4 py-3">
-        <span class="font-medium text-2xl">{title}</span>
-      </h1>
+    <div class="flex justify-between items-center pt-2 px-4 pb-3">
+      <div class="">
+        {/* <span class="font-medium text-2xl">{title}</span> */}
+        {logo && (
+          <Image
+            src={logo.src}
+            width={logo.width || 140}
+            height={logo.height}
+            alt={logo.alt}
+          />
+        )}
+      </div>
       {onClose && (
-        <Button aria-label="X" class="btn btn-ghost" onClick={onClose}>
-          <Icon id="XMark" size={24} strokeWidth={2} />
+        <Button aria-label="X" class="" onClick={onClose}>
+          <Icon id="XMark" size={24} strokeWidth={2} class="text-black" />
         </Button>
       )}
     </div>
@@ -58,7 +77,7 @@ const Aside = ({
   </div>
 );
 
-function Drawers({ menu, searchbar, children, platform }: Props) {
+function Drawers({ menu, searchbar, children, platform, logo }: Props) {
   const { displayCart, displayMenu, displaySearchDrawer } = useUI();
 
   return (
@@ -76,6 +95,7 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
               displaySearchDrawer.value = false;
             }}
             title={displayMenu.value ? "Menu" : "Buscar"}
+            logo={logo}
           >
             {displayMenu.value && <Menu {...menu} />}
             {searchbar && displaySearchDrawer.value && (
@@ -96,6 +116,7 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
           <Aside
             title="Minha sacola"
             onClose={() => (displayCart.value = false)}
+            logo={logo}
           >
             <Cart platform={platform} />
           </Aside>

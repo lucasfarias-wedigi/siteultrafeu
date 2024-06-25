@@ -32,14 +32,14 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
     <div id={id} class="bg-graySecondary w-full">
       <div class="flex flex-col-reverse md:flex-row items-center justify-between md:gap-5 w-full max-w-7xl m-auto">
         {benefitsItems && (
-          <div class="overflow-x-scroll md:overflow-x-auto">
+          <div class="">
             <ul class="flex min-w-full items-center">
               {benefitsItems.map((item, i: number) => (
                 <a href={item.link || "#"} class="">
                   <li
-                    class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary px-2 ${
-                      i === 0 ? "md:border-l border-b-2" : ""
-                    } md:border-b-0 md:border-r md:border-grayTertiary md:border-opacity-50`}
+                    class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary px-2 hover:bg-purplePrimary hover:text-grayTertiary ${
+                      i === 0 ? "md:border-x" : "md:border-r"
+                    } md:border-grayTertiary`}
                   >
                     {item.image && (
                       <Icon

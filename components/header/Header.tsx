@@ -12,6 +12,7 @@ import VisibilityOnScroll from "../../islands/Header/VisibilityOnScroll.tsx";
 import { SearchButton } from "../../islands/Header/Buttons.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
 import { AvailableIcons } from "../ui/Icon.tsx";
+import { headerHeight } from "./constants.ts";
 
 /**
  * @titleBy text
@@ -115,8 +116,16 @@ function Header({
   const platform = usePlatform();
   const items = navItems ?? [];
   return (
-    <header class="h-[157px] lg:h-[188px]">
-      <Drawers menu={{ items }} searchbar={searchbar} platform={platform}>
+    <header
+      class={``}
+      style={{ height: device !== "desktop" ? "148px" : headerHeight }}
+    >
+      <Drawers
+        menu={{ items }}
+        searchbar={searchbar}
+        platform={platform}
+        logo={logo}
+      >
         <div class="bg-white fixed w-full z-50">
           <VisibilityOnScroll handleShow="default">
             {alerts && (
