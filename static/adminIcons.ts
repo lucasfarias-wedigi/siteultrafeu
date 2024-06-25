@@ -135,8 +135,34 @@ export const ShoppingCartIcon = `<svg id="ShoppingCartIcon" width="24" height="2
 <path d="M2 2H2.966C3.91068 2 4.73414 2.62459 4.96326 3.51493L7.93852 15.0765C8.08887 15.6608 7.9602 16.2797 7.58824 16.7616L6.63213 18" stroke="currentColor" stroke-linecap="round"/>
 </svg>
 `;
+export const DeliveryTruckIcon = `<svg id="DeliveryTruckIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.5 17.5C19.5 18.8807 18.3807 20 17 20C15.6193 20 14.5 18.8807 14.5 17.5C14.5 16.1193 15.6193 15 17 15C18.3807 15 19.5 16.1193 19.5 17.5Z" stroke="currentColor"/>
+<path d="M9.5 17.5C9.5 18.8807 8.38071 20 7 20C5.61929 20 4.5 18.8807 4.5 17.5C4.5 16.1193 5.61929 15 7 15C8.38071 15 9.5 16.1193 9.5 17.5Z" stroke="currentColor"/>
+<path d="M14.5 17.5H9.5M2 4H12C13.4142 4 14.1213 4 14.5607 4.43934C15 4.87868 15 5.58579 15 7V15.5M15.5 6.5H17.3014C18.1311 6.5 18.5459 6.5 18.8898 6.6947C19.2336 6.8894 19.4471 7.2451 19.8739 7.95651L21.5725 10.7875C21.7849 11.1415 21.8911 11.3186 21.9456 11.5151C22 11.7116 22 11.918 22 12.331V15C22 15.9346 22 16.4019 21.799 16.75C21.6674 16.978 21.478 17.1674 21.25 17.299C20.9019 17.5 20.4346 17.5 19.5 17.5M2 13V15C2 15.9346 2 16.4019 2.20096 16.75C2.33261 16.978 2.52197 17.1674 2.75 17.299C3.09808 17.5 3.56538 17.5 4.5 17.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 7H8M2 10H6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+export const SnowIcon = `<svg id="SnowIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<line x1="13.0591" y1="1" x2="13.0591" y2="22.5221" stroke="currentColor"/>
+	<line x1="22.25" y1="6.80173" x2="4.24999" y2="17.194" stroke="currentColor"/>
+	<line x1="21.75" y1="17.1941" x2="3.74999" y2="6.80175" stroke="currentColor"/>
+	<path d="M10.2 2.11865L13.1084 3.55048L15.8378 2.11865" stroke="currentColor"/>
+	<path d="M15.8 21.4482L12.8916 20.0164L10.1622 21.4482" stroke="currentColor"/>
+	<path d="M19.2181 5L19.5287 8.22682L22.1814 9.79621" stroke="currentColor"/>
+	<path d="M6.96332 18.5488L6.65271 15.322L4.00001 13.7526" stroke="currentColor"/>
+	<path d="M22.1407 13.9949L19.419 15.7559L19.2467 18.8333" stroke="currentColor"/>
+	<path d="M3 9.83832L5.72172 8.07733L5.894 4.99997" stroke="currentColor"/>
+</svg>`;
+export const BriefCase = `<svg id="BriefCase" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M12 15V16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M3 15C3.14932 17.7069 3.30572 19.1276 4.39811 20.0259C5.58274 21 7.43054 21 11.1261 21H12.8739C16.5695 21 18.4173 21 19.6019 20.0259C20.6943 19.1276 20.8507 17.7069 21 15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M3.32891 10.4431C4.93877 13.6744 8.56977 15 12 15C15.4302 15 19.0612 13.6744 20.6711 10.4431C21.4396 8.90056 20.8577 6 18.965 6H5.03495C3.14232 6 2.56045 8.90056 3.32891 10.4431Z" stroke="currentColor"/>
+	<path d="M16 6L15.9117 5.73509C15.4717 4.41505 15.2517 3.75503 14.7279 3.37751C14.2041 3 13.5084 3 12.117 3H11.883C10.4916 3 9.79587 3 9.2721 3.37751C8.74832 3.75503 8.52832 4.41505 8.0883 5.73509L8 6" stroke="currentColor"/>
+</svg>`;
 
 export const AvailableIcons = {
+  BriefCase,
+  SnowIcon,
+  DeliveryTruckIcon,
   ShoppingCartIcon,
   MenuHamburguer,
   WishlistIcon,
