@@ -36,6 +36,7 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
             <ul class="flex min-w-full items-center">
               {benefitsItems.map((item, i: number) => (
                 <a href={item.link || "#"} class="">
+                  {console.log(item.image)}
                   <li
                     class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary px-2 ${
                       i === 0 ? "md:border-l border-b-2" : ""
