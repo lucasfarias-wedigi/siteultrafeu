@@ -39,7 +39,7 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
                   <li
                     class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary px-2 ${
                       i === 0 ? "md:border-l border-b-2" : ""
-                    } md:border-b-0 md:border-r md:border-grayPrimary md:border-opacity-50`}
+                    } md:border-b-0 md:border-r md:border-grayTertiary md:border-opacity-50`}
                   >
                     {item.image && (
                       <Icon
