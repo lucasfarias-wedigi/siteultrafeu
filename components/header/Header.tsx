@@ -11,13 +11,14 @@ import NavItem from "./NavItem.tsx";
 import VisibilityOnScroll from "../../islands/Header/VisibilityOnScroll.tsx";
 import { SearchButton } from "../../islands/Header/Buttons.tsx";
 import CartButtonVTEX from "../../islands/Header/Cart/vtex.tsx";
+import { AvailableIcons } from "../ui/Icon.tsx";
 
 /**
  * @titleBy text
  */
 export interface benefitsItemsProps {
   text: string;
-  image: ImageWidget;
+  image?: AvailableIcons;
   link: string;
 }
 

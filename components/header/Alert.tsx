@@ -1,15 +1,13 @@
-import { ImageWidget } from "apps/admin/widgets.ts";
 import Slider from "../../components/ui/Slider.tsx";
 import { useId } from "../../sdk/useId.ts";
-import Image from "apps/website/components/Image.tsx";
-import Icon from "../ui/Icon.tsx";
+import Icon, { AvailableIcons } from "../ui/Icon.tsx";
 
 /**
  * @titleBy text
  */
 export interface benefitsItemsProps {
   text: string;
-  image: ImageWidget;
+  image?: AvailableIcons;
   link: string;
 }
 
@@ -39,16 +37,18 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
               {benefitsItems.map((item, i: number) => (
                 <a href={item.link || "#"} class="">
                   <li
-                    class={`flex h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary px-2 ${
+                    class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary px-2 ${
                       i === 0 ? "md:border-l border-b-2" : ""
                     } md:border-b-0 md:border-r md:border-grayPrimary md:border-opacity-50`}
                   >
-                    <Image
-                      src={item.image}
-                      alt={item.text}
-                      width={24}
-                      height={24}
-                    />
+                    {item.image && (
+                      <Icon
+                        size={24}
+                        strokeWidth={1}
+                        id={item.image}
+                        class={item.image ? "block" : "hidden"}
+                      />
+                    )}
                     <span class="">{item.text}</span>
                   </li>
                 </a>
