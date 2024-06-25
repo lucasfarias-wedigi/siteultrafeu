@@ -24,18 +24,18 @@
         "image": "ShoppingCartIcon"
       },
       {
-        "image": "ArrowsPointingOut",
+        "image": "DeliveryTruckIcon",
         "text": "Refrigeração Comercial",
         "link": "#"
       },
       {
-        "image": "Bars3",
+        "image": "SnowIcon",
         "text": "Pronta-entrega",
         "link": "#"
       },
       {
         "text": "Monte seu negócio",
-        "image": "Bars3",
+        "image": "BriefCase",
         "link": "#"
       }
     ]
@@ -139,6 +139,6 @@
   "__resolveType": "site/sections/Header/Header.tsx",
   "liveStore": {
     "text": "LOJA AO VIVO",
-    "link": "#0"
+    "link": "#"
   }
 }
