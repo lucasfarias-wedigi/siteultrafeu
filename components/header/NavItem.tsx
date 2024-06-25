@@ -17,7 +17,7 @@ function NavItem({ item }: { item: MenuItens }) {
       {children && children.length > 0 && (
         <div
           class="fixed hidden hover:flex group-hover:flex bg-base-100 z-50 gap-6 border-t border-b-2 border-base-200 w-[179px]"
-          style={{ top: "0px", left: "0px", marginTop: headerHeight }}
+          style={{ top: "0px", marginTop: headerHeight }}
         >
           {image?.url && (
             <Image

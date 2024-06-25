@@ -32,12 +32,12 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
     <div id={id} class="bg-graySecondary w-full">
       <div class="flex flex-col-reverse md:flex-row items-center justify-between md:gap-5 w-full max-w-7xl m-auto">
         {benefitsItems && (
-          <div class="">
-            <ul class="flex min-w-full items-center">
+          <div class="w-full lg:w-fit lg:overflow-x-auto overflow-x-scroll">
+            <ul class="flex w-full min-w-full items-center">
               {benefitsItems.map((item, i: number) => (
                 <a href={item.link || "#"} class="">
                   <li
-                    class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary px-2 hover:bg-purplePrimary hover:text-grayTertiary ${
+                    class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-transparent lg:bg-whitePrimary px-2 hover:bg-purplePrimary hover:text-grayTertiary ${
                       i === 0 ? "md:border-x" : "md:border-r"
                     } md:border-grayTertiary`}
                   >
@@ -49,7 +49,7 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
                         class={item.image ? "block" : "hidden"}
                       />
                     )}
-                    <span class="">{item.text}</span>
+                    <span class="whitespace-nowrap lg:whitespace-normal">{item.text}</span>
                   </li>
                 </a>
               ))}
