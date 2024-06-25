@@ -123,6 +123,7 @@ function Header({
               <Alert
                 alerts={alerts.alert}
                 benefitsItems={alerts.benefitsItems}
+                liveStore={liveStore && liveStore}
               />
             )}
           </VisibilityOnScroll>
