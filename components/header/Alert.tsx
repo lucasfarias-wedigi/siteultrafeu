@@ -60,7 +60,7 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
         {liveStore && (
           <a
             href={liveStore.link}
-            class="flex items-center gap-2 text-sm font-medium bg-greenPrimary text-grayTertiary px-1.5 py-1"
+            class="hidden lg:flex items-center gap-2 text-sm font-medium bg-greenPrimary text-grayTertiary px-1.5 py-1"
           >
             <svg
               width="24"

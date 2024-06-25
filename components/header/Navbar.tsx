@@ -65,7 +65,7 @@ function Navbar({
         )}
 
         {liveStore && (
-          <a href={liveStore.link}>
+          <a href={liveStore.link} class="flex items-center justify-end">
             <button class="text-sm font-medium bg-greenPrimary text-grayTertiary px-1.5 py-1">
               {liveStore.text}
             </button>
