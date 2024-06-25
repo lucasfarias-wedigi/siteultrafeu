@@ -49,7 +49,9 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
                         class={item.image ? "block" : "hidden"}
                       />
                     )}
-                    <span class="whitespace-nowrap lg:whitespace-normal">{item.text}</span>
+                    <span class="whitespace-nowrap lg:whitespace-normal">
+                      {item.text}
+                    </span>
                   </li>
                 </a>
               ))}
