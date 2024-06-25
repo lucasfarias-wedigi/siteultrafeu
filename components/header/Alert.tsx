@@ -32,11 +32,10 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
     <div id={id} class="bg-graySecondary w-full">
       <div class="flex flex-col-reverse md:flex-row items-center justify-between md:gap-5 w-full max-w-7xl m-auto">
         {benefitsItems && (
-          <div class="w-full overflow-x-scroll md:overflow-x-auto">
+          <div class="overflow-x-scroll md:overflow-x-auto">
             <ul class="flex min-w-full items-center">
               {benefitsItems.map((item, i: number) => (
                 <a href={item.link || "#"} class="">
-                  {console.log(item.image)}
                   <li
                     class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-whitePrimary px-2 ${
                       i === 0 ? "md:border-l border-b-2" : ""
@@ -60,10 +59,56 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
 
         {liveStore && (
           <a
-            href={liveStore.text}
-            class="bg-greenPrimary text-grayTertiary px-1.5 py-1"
+            href={liveStore.link}
+            class="flex items-center gap-2 text-sm font-medium bg-greenPrimary text-grayTertiary px-1.5 py-1"
           >
-            {liveStore.text}
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 8C14 9.10457 13.1046 10 12 10C10.8954 10 10 9.10457 10 8C10 6.89543 10.8954 6 12 6C13.1046 6 14 6.89543 14 8Z"
+                stroke="#D9D9D9"
+                stroke-width="1.5"
+              />
+              <path
+                d="M16.9588 5C17.6186 5.86961 18 6.89801 18 8C18 9.10199 17.6186 10.1304 16.9588 11M7.04117 5C6.38143 5.86961 6 6.89801 6 8C6 9.10199 6.38143 10.1304 7.04117 11"
+                stroke="#D9D9D9"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.3159 3C21.3796 4.43008 22 6.14984 22 8C22 9.85016 21.3796 11.5699 20.3159 13M3.68409 3C2.62036 4.43008 2 6.14984 2 8C2 9.85016 2.62036 11.5699 3.68409 13"
+                stroke="#D9D9D9"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11 10L7 21"
+                stroke="#D9D9D9"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M17 21L13 10"
+                stroke="#D9D9D9"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8.5 17H15.5"
+                stroke="#D9D9D9"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>{liveStore.text}</span>
           </a>
         )}
 
