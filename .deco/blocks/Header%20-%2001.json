@@ -54,6 +54,18 @@
           "children": [],
           "url": "/",
           "name": "teste 2"
+        },
+        {
+          "image": [],
+          "children": [],
+          "name": "teste 233",
+          "url": "/"
+        },
+        {
+          "image": [],
+          "children": [],
+          "name": "sub1.4",
+          "url": "#"
         }
       ],
       "image": [],
@@ -62,7 +74,20 @@
       "name": "Equipamentos para Cocção"
     },
     {
-      "children": [],
+      "children": [
+        {
+          "image": [],
+          "children": [],
+          "name": "sub2.1",
+          "url": "#"
+        },
+        {
+          "image": [],
+          "children": [],
+          "name": "sub2.2",
+          "url": "#"
+        }
+      ],
       "image": [],
       "url": "/",
       "name": "Maquinário de Produção",
