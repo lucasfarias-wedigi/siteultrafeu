@@ -72,7 +72,7 @@ function Searchbar({
       class="relative w-full m-auto px-4 lg:px-0 md:m-0"
     >
       <Button
-        class="absolute inset-y-1/4 right-4"
+        class="absolute top-[21%] right-4"
         type="submit"
         aria-label="Search"
         for={id}
