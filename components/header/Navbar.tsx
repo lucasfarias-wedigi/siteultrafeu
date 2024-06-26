@@ -91,17 +91,21 @@ function Navbar({
             </a>
           )}
         </div>
-        {/* <ul class={`flex gap-6 col-span-1 justify-start`}>
+        {
+          /* <ul class={`flex gap-6 col-span-1 justify-start`}>
         {items.map((item) => (
           <NavItem item={item} />
         ))}
-      </ul> */}
+      </ul> */
+        }
         <div class="flex-none flex items-center justify-end gap-6 col-span-5">
-          {/* {!buttons?.hideSearchButton && (
+          {
+            /* {!buttons?.hideSearchButton && (
           <div class="flex items-center text-xs font-thin gap-1">
             <SearchButton />
           </div>
-        )} */}
+        )} */
+          }
           <VisibilityOnScroll handleShow="inverse">
             <div class="dropdown">
               <div
@@ -166,11 +170,13 @@ function Navbar({
               <button class="text-purplePrimary">
                 {platform === "vtex" && <CartButtonVTEX />}
               </button>
-              {/* {platform === "vnda" && <CartButtonVDNA />}
+              {
+                /* {platform === "vnda" && <CartButtonVDNA />}
               {platform === "wake" && <CartButtonWake />}
               {platform === "linx" && <CartButtonLinx />}
               {platform === "shopify" && <CartButtonShopify />}
-              {platform === "nuvemshop" && <CartButtonNuvemshop />} */}
+              {platform === "nuvemshop" && <CartButtonNuvemshop />} */
+              }
             </div>
           )}
         </div>
