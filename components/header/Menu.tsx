@@ -55,7 +55,7 @@ function Menu({ items }: Props) {
             <ul
               className={`flex flex-col ${
                 expandedItems[index] ||
-                (node.children && node.children.length < 4)
+                  (node.children && node.children.length < 4)
                   ? "h-auto"
                   : "h-[108px] overflow-hidden"
               }`}
@@ -79,7 +79,8 @@ function Menu({ items }: Props) {
         ))}
       </ul>
 
-      {/* <ul className="flex flex-col py-2 bg-base-200">
+      {
+        /* <ul className="flex flex-col py-2 bg-base-200">
         <li>
           <a className="flex items-center gap-4 px-4 py-2" href="/wishlist">
             <Icon id="Heart" size={24} strokeWidth={2} />
@@ -113,7 +114,8 @@ function Menu({ items }: Props) {
             <span className="text-sm">Minha conta</span>
           </a>
         </li>
-      </ul> */}
+      </ul> */
+      }
     </div>
   );
 }
