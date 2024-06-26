@@ -19,7 +19,7 @@ import VisibilityOnScroll from "../../islands/Header/VisibilityOnScroll.tsx";
 
 // Make it sure to render it on the server only. DO NOT render it on an island
 function Navbar({
-  // items,
+  items,
   searchbar,
   logo,
   buttons,
@@ -91,27 +91,45 @@ function Navbar({
             </a>
           )}
         </div>
-        {
-          /* <ul class={`flex gap-6 col-span-1 justify-start`}>
+        {/* <ul class={`flex gap-6 col-span-1 justify-start`}>
         {items.map((item) => (
           <NavItem item={item} />
         ))}
-      </ul> */
-        }
+      </ul> */}
         <div class="flex-none flex items-center justify-end gap-6 col-span-5">
-          {
-            /* {!buttons?.hideSearchButton && (
+          {/* {!buttons?.hideSearchButton && (
           <div class="flex items-center text-xs font-thin gap-1">
             <SearchButton />
           </div>
-        )} */
-          }
+        )} */}
           <VisibilityOnScroll handleShow="inverse">
-            <button class="flex items-center mr-20 w-full text-purplePrimary">
-              <Icon id="MenuHamburguer" strokeWidth={1} size={44} />
-              Todos os produtos
-              <Icon id="ChevronDown" size={24} strokeWidth={1} />
-            </button>
+            <div class="dropdown">
+              <div
+                tabIndex={0}
+                role="button"
+                class="flex items-center mr-20 w-full text-purplePrimary"
+              >
+                <Icon id="MenuHamburguer" strokeWidth={1} size={44} />
+                Todos os produtos
+                <Icon id="ChevronDown" size={24} strokeWidth={1} />
+              </div>
+              <ul
+                tabIndex={0}
+                class="dropdown-content group/customMenu min-w-[277px] divide-y divide-grayTertiary bg-white z-10"
+              >
+                {items?.map((item) => (
+                  <li class="whitespace-nowrap px-4 py-2 text-sm text-black hover:text-white hover:bg-purplePrimary">
+                    <a
+                      class="flex items-center justify-between"
+                      href={item.url}
+                    >
+                      <p>{item.name}</p>
+                      <Icon id="SubMenuArrowRight" size={24} strokeWidth={1} />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </VisibilityOnScroll>
           <Searchbar searchbar={searchbar} />
 
@@ -140,13 +158,11 @@ function Navbar({
               <button class="text-purplePrimary">
                 {platform === "vtex" && <CartButtonVTEX />}
               </button>
-              {
-                /* {platform === "vnda" && <CartButtonVDNA />}
+              {/* {platform === "vnda" && <CartButtonVDNA />}
               {platform === "wake" && <CartButtonWake />}
               {platform === "linx" && <CartButtonLinx />}
               {platform === "shopify" && <CartButtonShopify />}
-              {platform === "nuvemshop" && <CartButtonNuvemshop />} */
-              }
+              {platform === "nuvemshop" && <CartButtonNuvemshop />} */}
             </div>
           )}
         </div>
