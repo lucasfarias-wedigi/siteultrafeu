@@ -115,22 +115,30 @@ function Navbar({
               </div>
               <ul
                 tabIndex={0}
-                class="dropdown-content group/customMenu min-w-[277px] divide-y divide-grayTertiary bg-white z-10"
+                class="relative dropdown-content min-w-[277px] divide-y divide-grayTertiary bg-white z-10"
               >
                 {items?.map((item) => (
-                  <li class="whitespace-nowrap px-4 py-2 text-sm text-black hover:text-white hover:bg-purplePrimary">
+                  <li class="group">
                     <a
-                      class="flex items-center justify-between"
+                      class="flex items-center justify-between whitespace-nowrap px-4 py-2 text-sm text-black hover:text-white hover:bg-purplePrimary"
                       href={item.url}
                     >
                       <p>{item.name}</p>
                       <Icon id="SubMenuArrowRight" size={24} strokeWidth={1} />
                     </a>
+                    <ul class="absolute h-full w-full flex-wrap left-full top-0 hidden group-hover:flex flex-col bg-white z-10 border">
+                      {item?.children?.map((subItem) => (
+                        <li class="whitespace-nowrap px-4 py-2 text-sm text-black bg-white">
+                          <a href={subItem.url}>{subItem.name}</a>
+                        </li>
+                      ))}
+                    </ul>
                   </li>
                 ))}
               </ul>
             </div>
           </VisibilityOnScroll>
+
           <Searchbar searchbar={searchbar} />
 
           {!buttons?.messageButton?.hide && (
