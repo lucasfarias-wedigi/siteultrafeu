@@ -69,10 +69,10 @@ function Searchbar({
     <form
       id={id}
       action={action}
-      class="relative w-full m-auto px-4 lg:px-0 md:m-0"
+      class="relative w-full m-auto px-4 lg:px-0 my-4 lg:m-0"
     >
       <Button
-        class="absolute top-[21%] right-4"
+        class="absolute top-[21%] right-8 lg:right-4"
         type="submit"
         aria-label="Search"
         for={id}
