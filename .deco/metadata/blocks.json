@@ -316,5 +316,9 @@
   "/.deco/blocks/deco-weather.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/deco/weather.ts"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FFloatCards.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/FloatCards.tsx"
   }
 }
