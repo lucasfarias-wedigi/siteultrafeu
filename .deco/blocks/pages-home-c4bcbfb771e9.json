@@ -102,7 +102,41 @@
       ]
     },
     {
+      "__resolveType": "Preview site/sections/FloatCards.tsx"
+    },
+    {
+      "__resolveType": "site/sections/ChoiceUltrafeu.tsx",
+      "title": "Motivos para escolher a ultrafeu",
+      "items": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
+          "text": "+ de 40 anos de tradição"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
+          "text": "+ de 40 anos de tradição"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
+          "text": "+ de 40 anos de tradição"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
+          "text": "+ de 40 anos de tradição"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
+          "text": "+ de 40 anos de tradição"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
+          "text": "+ de 40 anos de tradição"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+      "title": "Best Sellers",
       "layout": {
         "headerfontSize": "Large",
         "headerAlignment": "center"
@@ -110,7 +144,6 @@
       "cardLayout": {
         "__resolveType": "Product Card Layout - 01"
       },
-      "title": "Best Sellers",
       "tabs": [
         {
           "title": "Woman",
