@@ -25,6 +25,9 @@ export default {
         blackPrimary: "#1C1C1C",
         grayTertiary: "#D9D9D9",
       },
+      borderRadius: {
+        "card": "5px",
+      },
     },
   },
 };
