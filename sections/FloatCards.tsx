@@ -23,7 +23,7 @@ export interface Props {
 
 const FloatCards = ({ cards }: Props) => {
   return (
-    <div class="flex items-center justify-center max-w-7xl m-auto">
+    <div class="flex items-center justify-center max-w-7xl mx-auto -mt-[38px]">
       teste
       {cards &&
         cards.map((item) => {
