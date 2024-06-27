@@ -1,11 +1,11 @@
-import Icon from "../components/ui/Icon.tsx";
-import { AvailableIcons } from "../components/ui/Icon.tsx";
+import Image from "apps/website/components/Image.tsx";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
 /**
  * @titleBy text
  */
 interface item {
-  image: AvailableIcons;
+  image: ImageWidget;
   text: string;
 }
 
@@ -26,7 +26,7 @@ const ChoiceUltrafeu = ({ title, items }: Props) => {
       <div class="w-full flex items-center justify-around">
         {items?.map((item) => (
           <div class="w-[152px] text-center">
-            <Icon id={item.image} strokeWidth={3} width={88} height={66} />
+            <Image src={item.image} alt={item.text} width={88} height={66} />
             <p class="text-sm text-blackPrimary">{item.text}</p>
           </div>
         ))}
