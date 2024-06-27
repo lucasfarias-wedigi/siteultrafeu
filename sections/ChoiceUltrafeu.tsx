@@ -29,7 +29,13 @@ const ChoiceUltrafeu = ({ title, items }: Props) => {
       <div class="w-full flex items-center justify-around">
         {items?.map((item) => (
           <div class="w-[152px] text-center">
-            <Image src={item.image} alt={item.text} width={88} height={66} class="m-auto" />
+            <Image
+              src={item.image}
+              alt={item.text}
+              width={88}
+              height={66}
+              class="m-auto"
+            />
             <p class="text-sm text-blackPrimary">{item.text}</p>
           </div>
         ))}
