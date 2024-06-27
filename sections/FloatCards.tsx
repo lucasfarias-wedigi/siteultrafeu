@@ -23,13 +23,15 @@ export interface Props {
 
 const FloatCards = ({ cards }: Props) => {
   return (
-    <section class="flex items-center justify-center max-w-7xl">
-      {cards?.map((item) => {
-        <div class="text-white bg-purplePrimary w-[264px] py-1 text-center text-sm font-semibold">
-          {item.title}
-        </div>;
-      })}
-    </section>
+    <div class="flex items-center justify-center max-w-7xl m-auto">
+      teste
+      {cards &&
+        cards.map((item) => {
+          <div class="text-white bg-purplePrimary w-[264px] py-1 text-center text-sm font-semibold">
+            {item.title}
+          </div>;
+        })}
+    </div>
   );
 };
 
