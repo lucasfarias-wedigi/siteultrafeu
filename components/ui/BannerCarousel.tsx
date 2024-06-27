@@ -138,14 +138,14 @@ function BannerItem(
           fetchPriority={lcp ? "high" : "auto"}
           src={mobile}
           width={430}
-          height={590}
+          height={485}
         />
         <Source
           media="(min-width: 768px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={desktop}
-          width={1440}
-          height={600}
+          width={1920}
+          height={468}
         />
         <img
           class="object-cover w-full h-full"
