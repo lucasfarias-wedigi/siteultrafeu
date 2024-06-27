@@ -22,7 +22,7 @@ const ChoiceUltrafeu = ({ title, items }: Props) => {
   return (
     <div class="w-full max-w-7xl m-auto">
       <CustomDivider>
-        <h2 class="text-center text-blackPrimary font-semibold text-2xl">
+        <h2 class="text-center text-blackPrimary font-semibold text-2xl w-full">
           {title}
         </h2>
       </CustomDivider>
