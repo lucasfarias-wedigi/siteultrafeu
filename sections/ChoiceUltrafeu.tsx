@@ -1,5 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
+import SectionDivider from "../components/SectionDivider/index.tsx";
 
 /**
  * @titleBy text
@@ -20,9 +21,11 @@ export interface Props {
 const ChoiceUltrafeu = ({ title, items }: Props) => {
   return (
     <div class="w-full max-w-7xl m-auto">
-      <h2 class="text-center text-blackPrimary font-semibold text-2xl">
-        {title}
-      </h2>
+      <SectionDivider>
+        <h2 class="text-center text-blackPrimary font-semibold text-2xl">
+          {title}
+        </h2>
+      </SectionDivider>
       <div class="w-full flex items-center justify-around">
         {items?.map((item) => (
           <div class="w-[152px] text-center">
