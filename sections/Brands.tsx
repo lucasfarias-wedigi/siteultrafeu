@@ -25,11 +25,13 @@ const Brands = ({ title, items }: Props) => {
   const id = useId();
   return (
     <div id={id} class="w-full max-w-7xl mx-auto relative md:px-0 px-4 mb-8">
-      <CustomDivider>
-        <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
-          {title}
-        </h2>
-        <div class="flex items-center justify-end gap-2.5 md:hidden">
+      <div class="relative flex items-center w-full">
+        <CustomDivider>
+          <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
+            {title}
+          </h2>
+        </CustomDivider>
+        <div class="bg-white absolute z-10 right-0 flex items-center justify-end gap-2.5 mb-8 pl-8">
           <Slider.PrevButton class="w-11 h-11 rounded-full bg-grayTertiary flex justify-center items-center">
             <Icon
               size={18}
@@ -47,10 +49,9 @@ const Brands = ({ title, items }: Props) => {
             />
           </Slider.NextButton>
         </div>
-      </CustomDivider>
+      </div>
 
-      {
-        /* <div class="w-full flex items-center justify-around">
+      {/* <div class="w-full flex items-center justify-around">
         {items?.map((item) => (
           <div class="w-[152px] text-center">
             <Image
@@ -63,10 +64,9 @@ const Brands = ({ title, items }: Props) => {
             <p class="text-sm text-blackPrimary">{item.text}</p>
           </div>
         ))}
-      </div> */
-      }
+      </div> */}
 
-      <Slider class="carousel w-full justify-between carousel-center">
+      <Slider class="carousel w-full justify-between carousel-center gap-8">
         {items?.map((item, index) => (
           <Slider.Item index={index} class="carousel-item">
             <div class="w-[100px] text-center">

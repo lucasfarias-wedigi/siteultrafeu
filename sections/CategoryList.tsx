@@ -55,7 +55,7 @@ const CategoryList = ({ title, categoryCards }: Props) => {
       <Slider class="carousel w-full justify-between carousel-center gap-8">
         {categoryCards?.map((item, index) => (
           <Slider.Item index={index} class="carousel-item">
-            <div class="text-center rounded-b-card border border-[#E2E2E2]">
+            <div class="group text-center rounded-b-card border border-[#E2E2E2] hover:bg-purplePrimary hover:border-purplePrimary">
               <a href={item.url || "#"}>
                 <Image
                   src={item.image}
@@ -63,7 +63,7 @@ const CategoryList = ({ title, categoryCards }: Props) => {
                   height={145}
                   alt={item.text}
                 />
-                <p class="text-blackPrimary text-sm px-2.5 py-2">{item.text}</p>
+                <p class="text-blackPrimary text-sm px-2.5 py-2 group-hover:text-white">{item.text}</p>
               </a>
             </div>
           </Slider.Item>
