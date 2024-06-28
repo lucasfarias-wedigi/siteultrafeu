@@ -232,6 +232,19 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Product/PromotionProducts.tsx",
+      "products": {
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+        "props": {
+          "sort": "orders:desc",
+          "collection": "150",
+          "count": 6,
+          "hideUnavailableItems": true
+        }
+      },
+      "title": "PROMOÇÃO"
+    },
+    {
       "__resolveType": "site/sections/Images/BannerGrid.tsx",
       "banners": [
         {
