@@ -129,7 +129,7 @@ export default function BannnerGrid({
   // } = { ...DEFAULT_PROPS, ...props };
 
   return (
-    <section class="container w-full px-4 md:px-0 mx-auto">
+    <section class="max-w-7xl w-full px-4 md:px-0 mx-auto mb-8">
       {title && (
         <div class="py-6 md:py-0 md:pb-[40px] flex items-center mt-6">
           <h2 class="text-lg leading-5 font-semibold uppercase">{title}</h2>
@@ -138,7 +138,7 @@ export default function BannnerGrid({
         </div>
       )}
       <div
-        class={`grid gap-4 md:gap-6 ${
+        class={`grid gap-4 md:gap-8 ${
           MOBILE_COLUMNS[itemsPerLine?.mobile ?? 2]
         } ${DESKTOP_COLUMNS[itemsPerLine?.desktop ?? 4]}`}
       >
@@ -163,7 +163,7 @@ export default function BannnerGrid({
                 height={250}
               />
               <img
-                class="w-[592px] h-[214px]"
+                class="w-full h-[214px]"
                 sizes="(max-width: 640px) 100vw, 30vw"
                 src={srcMobile}
                 alt={alt}
