@@ -49,7 +49,8 @@ const ChoiceUltrafeu = ({ title, items }: Props) => {
         </div>
       </CustomDivider>
 
-      {/* <div class="w-full flex items-center justify-around">
+      {
+        /* <div class="w-full flex items-center justify-around">
         {items?.map((item) => (
           <div class="w-[152px] text-center">
             <Image
@@ -62,7 +63,8 @@ const ChoiceUltrafeu = ({ title, items }: Props) => {
             <p class="text-sm text-blackPrimary">{item.text}</p>
           </div>
         ))}
-      </div> */}
+      </div> */
+      }
 
       <Slider class="carousel w-full justify-between carousel-center">
         {items?.map((item, index) => (

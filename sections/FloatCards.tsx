@@ -69,7 +69,8 @@ const FloatCards = ({ cards }: Props) => {
               </div>
             </Slider.Item>
           ))}
-        {/* <>
+        {
+          /* <>
           <Slider.PrevButton class="absolute left-4 md:left-0 flex justify-center items-center lg:hidden">
             <Icon
               size={18}
@@ -86,7 +87,8 @@ const FloatCards = ({ cards }: Props) => {
               class="text-grayPrimary"
             />
           </Slider.NextButton>
-        </> */}
+        </> */
+        }
       </Slider>
 
       <Slider.JS rootId={id} />
