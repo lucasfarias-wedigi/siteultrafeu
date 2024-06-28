@@ -63,7 +63,9 @@ const CategoryList = ({ title, categoryCards }: Props) => {
                   height={145}
                   alt={item.text}
                 />
-                <p class="text-blackPrimary text-sm px-2.5 py-2 group-hover:text-white">{item.text}</p>
+                <p class="text-blackPrimary text-sm px-2.5 py-2 group-hover:text-white">
+                  {item.text}
+                </p>
               </a>
             </div>
           </Slider.Item>

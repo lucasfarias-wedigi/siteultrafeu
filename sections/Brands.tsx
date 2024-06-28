@@ -51,7 +51,8 @@ const Brands = ({ title, items }: Props) => {
         </div>
       </div>
 
-      {/* <div class="w-full flex items-center justify-around">
+      {
+        /* <div class="w-full flex items-center justify-around">
         {items?.map((item) => (
           <div class="w-[152px] text-center">
             <Image
@@ -64,7 +65,8 @@ const Brands = ({ title, items }: Props) => {
             <p class="text-sm text-blackPrimary">{item.text}</p>
           </div>
         ))}
-      </div> */}
+      </div> */
+      }
 
       <Slider class="carousel w-full justify-between carousel-center gap-8">
         {items?.map((item, index) => (
