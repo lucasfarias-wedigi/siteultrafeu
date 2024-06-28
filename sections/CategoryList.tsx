@@ -5,26 +5,20 @@ import Slider from "../components/ui/Slider.tsx";
 import Icon from "../components/ui/Icon.tsx";
 import { useId } from "../sdk/useId.ts";
 
-/**
- * @titleBy text
- */
-interface item {
+interface Card {
   image: ImageWidget;
   text: string;
 }
 
-/**
- * @titleBy title
- */
 export interface Props {
   title: string;
-  items: item[];
+  categoryCards: Card[];
 }
 
-const ChoiceUltrafeu = ({ title, items }: Props) => {
+const CategoryList = ({ title, categoryCards }: Props) => {
   const id = useId();
   return (
-    <div id={id} class="w-full max-w-7xl m-auto relative md:px-0 px-4">
+    <div class="w-full max-w-7xl m-auto">
       <CustomDivider>
         <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl w-full">
           {title}
@@ -48,42 +42,24 @@ const ChoiceUltrafeu = ({ title, items }: Props) => {
           </Slider.NextButton>
         </div>
       </CustomDivider>
-
-      {/* <div class="w-full flex items-center justify-around">
-        {items?.map((item) => (
-          <div class="w-[152px] text-center">
-            <Image
-              src={item.image}
-              alt={item.text}
-              width={88}
-              height={66}
-              class="m-auto"
-            />
-            <p class="text-sm text-blackPrimary">{item.text}</p>
-          </div>
-        ))}
-      </div> */}
-
       <Slider class="carousel w-full justify-between carousel-center">
-        {items?.map((item, index) => (
+        {categoryCards?.map((item, index) => (
           <Slider.Item index={index} class="carousel-item">
-            <div class="w-[130px] lg:w-[152px] text-center">
+            <div class="text-center">
               <Image
                 src={item.image}
+                width={176}
+                height={145}
                 alt={item.text}
-                width={88}
-                height={66}
-                class="m-auto"
               />
-              <p class="text-sm text-blackPrimary">{item.text}</p>
+              <p class="text-blackPrimary text-sm">{item.text}</p>
             </div>
           </Slider.Item>
         ))}
       </Slider>
-
       <Slider.JS rootId={id} />
     </div>
   );
 };
 
-export default ChoiceUltrafeu;
+export default CategoryList;
