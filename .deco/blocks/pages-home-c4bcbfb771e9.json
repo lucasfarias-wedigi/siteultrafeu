@@ -238,7 +238,7 @@
         "props": {
           "sort": "orders:desc",
           "collection": "159",
-          "count": 6,
+          "count": 7,
           "hideUnavailableItems": true
         }
       },
