@@ -25,7 +25,7 @@ export interface Props {
 const CategoryList = ({ title, categoryCards }: Props) => {
   const id = useId();
   return (
-    <div id={id} class="w-full max-w-7xl m-auto">
+    <div id={id} class="w-full max-w-7xl m-auto mb-8">
       <div class="relative flex items-center w-full">
         <CustomDivider>
           <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
