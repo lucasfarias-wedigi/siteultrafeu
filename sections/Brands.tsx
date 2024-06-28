@@ -6,11 +6,11 @@ import Icon from "../components/ui/Icon.tsx";
 import { useId } from "../sdk/useId.ts";
 
 /**
- * @titleBy text
+ * @titleBy alt
  */
 interface item {
   image: ImageWidget;
-  text: string;
+  alt: string;
 }
 
 /**
@@ -72,12 +72,11 @@ const Brands = ({ title, items }: Props) => {
             <div class="w-[100px] text-center">
               <Image
                 src={item.image}
-                alt={item.text}
+                alt={item.alt}
                 width={100}
                 height={60}
                 class="m-auto"
               />
-              <p class="text-sm text-blackPrimary">{item.text}</p>
             </div>
           </Slider.Item>
         ))}
