@@ -312,5 +312,9 @@
   "/.deco/blocks/Preview%20site%2Fsections%2FImages%2FShoppableBanner.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Images/ShoppableBanner.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FBrands.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Brands.tsx"
   }
 }
