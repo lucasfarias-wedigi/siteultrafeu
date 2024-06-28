@@ -24,9 +24,9 @@ export interface Props {
 const ChoiceUltrafeu = ({ title, items }: Props) => {
   const id = useId();
   return (
-    <div id={id} class="w-full max-w-7xl m-auto relative md:px-0 px-4">
+    <div id={id} class="w-full max-w-7xl mx-auto relative md:px-0 px-4 mb-8">
       <CustomDivider>
-        <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl w-full">
+        <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
           {title}
         </h2>
         <div class="flex items-center justify-end gap-2.5 md:hidden">
