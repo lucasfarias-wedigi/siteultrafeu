@@ -179,6 +179,84 @@
       "__resolveType": "Product Shelf - 04"
     },
     {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+      "banners": [
+        {
+          "image": {
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2d3d6806-f042-4b05-92cd-0ab268cd6996",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2a830e05-8a7a-45df-a05c-7891bdaa5c0e"
+          },
+          "matcher": "/"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/CategoryList.tsx",
+      "title": "SEGUIMENTOS",
+      "categoryCards": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "text": "Açougue",
+          "url": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "text": "Açougue",
+          "url": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "text": "Açougue",
+          "url": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "text": "Açougue",
+          "url": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "text": "Açougue",
+          "url": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "text": "Açougue",
+          "url": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "text": "Açougue",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Images/BannerGrid.tsx",
+      "banners": [
+        {
+          "alt": "a",
+          "href": "a",
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/82727553-f670-4e7c-b9c2-9452aed1955f",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e"
+        },
+        {
+          "alt": "a",
+          "href": "a",
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/c5c6bdf6-5555-488c-8b14-719e4158dea6",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3e2b7824-d75c-4704-8d32-621bfc9b20cf"
+        }
+      ],
+      "borderRadius": {
+        "mobile": "none",
+        "desktop": "none"
+      },
+      "itemsPerLine": {
+        "mobile": 1,
+        "desktop": 2
+      }
+    },
+    {
       "__resolveType": "Footer - 04"
     }
   ],
