@@ -5,11 +5,17 @@ import Slider from "../components/ui/Slider.tsx";
 import Icon from "../components/ui/Icon.tsx";
 import { useId } from "../sdk/useId.ts";
 
+/**
+ * @titleBy text
+ */
 interface Card {
   image: ImageWidget;
   text: string;
 }
 
+/**
+ * @titleBy title
+ */
 export interface Props {
   title: string;
   categoryCards: Card[];
