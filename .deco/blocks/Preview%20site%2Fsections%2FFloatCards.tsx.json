@@ -80,26 +80,6 @@
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2339f2d0-ed6d-41d5-8a68-dd7ffbca9308",
       "title": "BAR E LANCHONETE",
       "link": "#"
-    },
-    {
-      "subItems": [
-        {
-          "text": "teste 1"
-        },
-        {
-          "text": "teste 2"
-        },
-        {
-          "text": "teste 2"
-        },
-        {
-          "text": "teste 2"
-        }
-      ],
-      "buttonText": "Ver mais",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2339f2d0-ed6d-41d5-8a68-dd7ffbca9308",
-      "title": "BAR E LANCHONETE",
-      "link": "#"
     }
   ]
 }

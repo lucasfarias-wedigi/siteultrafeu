@@ -425,7 +425,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 15.683814303638647,
+                "width": 16.18569636135508,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -447,7 +447,7 @@
               },
               {
                 "type": "stack",
-                "width": 84.31618569636136,
+                "width": 83.81430363864492,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -486,7 +486,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::world::Preview::%7B%7D": {
