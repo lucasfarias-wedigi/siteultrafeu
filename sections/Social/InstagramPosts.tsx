@@ -33,43 +33,36 @@ export interface Props {
 
 export async function loader(
   { title, facebookToken, layout }: Props,
-  _req: Request,
+  _req: Request
 ) {
   const fields = ["media_url", "media_type", "permalink"];
   const joinFields = fields.join(",");
-  const url =
-    `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
-  const response = await fetch(url);
-  const { data }: InstagramResponse = await response.json();
+  const url = `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
 
-  // const { data } = (await fetch(url)
-  //   .then((r) => r.json())
-  //   .catch((err) => {
-  //     console.error("error fetching posts from instagram", err);
-  //     console.log(data);
-  //     return { data: [] };
-  //   })) as {
-  //   data: Data[];
-  // };
-  return {
-    data: data.slice(0, layout?.numberOfPosts ?? 12),
-    title,
-    layout,
-  };
+  try {
+    const response = await fetch(url);
+    const { data }: InstagramResponse = await response.json();
+    return {
+      data: data.slice(0, layout?.numberOfPosts ?? 12),
+      title,
+      layout,
+    };
+  } catch (err) {
+    console.error("Error fetching posts from Instagram", err);
+    return {
+      data: [],
+      title,
+      layout,
+    };
+  }
 }
 
 export default function InstagramPosts({
   title,
   layout,
-  data = [
-    {
-      id: "placeholderInsta",
-      permalink: "#",
-      media_type: "IMAGE",
-      media_url: "",
-    },
-  ],
+  data,
 }: SectionProps<typeof loader>) {
+  if (data.length <= 0) return null;
   return (
     <div class="w-full px-4 py-8 flex flex-col gap-14 lg:gap-20 lg:py-10 lg:px-0">
       <div class="max-w-7xl w-full m-auto">
@@ -93,22 +86,20 @@ export default function InstagramPosts({
             title="Visite nosso instagram"
             class="rounded-lg overflow-hidden w-full max-w-[350px] sm:max-w-[350px] group"
           >
-            {item.media_type === "IMAGE"
-              ? (
-                <Image
-                  class="max-w-full max-h-full object-cover w-full group-hover:scale-110  transition duration-400 group-hover:brightness-90"
-                  src={item.media_url ?? ""}
-                  alt="Imagem do instagram"
-                  width={350}
-                  height={350}
-                  loading="lazy"
-                />
-              )
-              : (
-                <video controls class="max-w-full max-h-full object-cover">
-                  <source src={item.media_url}></source>
-                </video>
-              )}
+            {item.media_type === "IMAGE" ? (
+              <Image
+                class="max-w-full max-h-full object-cover w-full group-hover:scale-110  transition duration-400 group-hover:brightness-90"
+                src={item.media_url ?? ""}
+                alt="Imagem do instagram"
+                width={350}
+                height={350}
+                loading="lazy"
+              />
+            ) : (
+              <video controls class="max-w-full max-h-full object-cover">
+                <source src={item.media_url}></source>
+              </video>
+            )}
           </a>
         ))}
       </div>
