@@ -16,7 +16,7 @@ function VariantSelector({ product }: Props) {
     <ul class="flex flex-col gap-4">
       {Object.keys(possibilities).map((name) => (
         <li class="flex flex-col gap-2">
-          <span class="text-sm">{name}</span>
+          <span class="text-base font-medium">{name}</span>
           <ul class="flex flex-row gap-3">
             {Object.entries(possibilities[name]).map(([value, link]) => {
               const relativeUrl = relative(url);
@@ -29,8 +29,8 @@ function VariantSelector({ product }: Props) {
                       variant={relativeLink === relativeUrl
                         ? "active"
                         : relativeLink
-                        ? "default"
-                        : "disabled"}
+                          ? "default"
+                          : "disabled"}
                     />
                   </button>
                 </li>

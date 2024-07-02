@@ -43,27 +43,22 @@ function ShippingContent({ simulation }: {
   }
 
   return (
-    <ul class="flex flex-col gap-4 p-4 bg-base-200 rounded-[4px]">
+    <ul class="flex flex-col gap-4 p-4 bg-transparent border-[1px] border-grayTertiary">
       {methods.map((method) => (
-        <li class="flex justify-between items-center border-base-200 not-first-child:border-t">
-          <span class="text-button text-center">
-            Entrega {method.name}
+        <li class="flex justify-between items-center border-grayTertiary [&:not(:first-child)]:border-t-[1px] [&:not(:first-child)]:pt-[10px]">
+          <span class="min-w-[56px] text-button text-left text-sm text-grayPrimary">
+            {method.name}
           </span>
-          <span class="text-button">
-            até {formatShippingEstimate(method.shippingEstimate)}
+          <span class="text-button text-sm text-grayPrimary">
+            em até {formatShippingEstimate(method.shippingEstimate)}
           </span>
-          <span class="text-base font-semibold text-right">
+          <span class="text-sm font-normal text-black text-right">
             {method.price === 0 ? "Grátis" : (
               formatPrice(method.price / 100, currencyCode, locale)
             )}
           </span>
         </li>
       ))}
-      <span class="text-base-300">
-        Os prazos de entrega começam a contar a partir da confirmação do
-        pagamento e podem variar de acordo com a quantidade de produtos na
-        sacola.
-      </span>
     </ul>
   );
 }
@@ -92,12 +87,9 @@ function ShippingSimulation({ items }: Props) {
   }, [items, postalCode.value]);
 
   return (
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-4">
       <div class="flex flex-col">
-        <span>Calcular frete</span>
-        <span>
-          Informe seu CEP para consultar os prazos de entrega
-        </span>
+        <span class="text-base text-black font-semibold">Calcular o Frete:</span>
       </div>
 
       <form
@@ -105,12 +97,13 @@ function ShippingSimulation({ items }: Props) {
           e.preventDefault();
           handleSimulation();
         }}
+        class="flex gap-2"
       >
         <input
           as="input"
           type="text"
-          class="input input-bordered join-item w-48"
-          placeholder="Seu cep aqui"
+          class="input bg-transparent border-grayTertiary border-[1px] rounded-none join-item w-full"
+          placeholder="Digite o CEP"
           value={postalCode.value}
           maxLength={8}
           size={8}
@@ -118,7 +111,7 @@ function ShippingSimulation({ items }: Props) {
             postalCode.value = e.currentTarget.value;
           }}
         />
-        <Button type="submit" loading={loading.value} class="join-item">
+        <Button type="submit" loading={loading.value} class="join-item text-purplePrimary text-base font-bold border-[1px] border-purplePrimary border-solid p-[10px]">
           Calcular
         </Button>
       </form>

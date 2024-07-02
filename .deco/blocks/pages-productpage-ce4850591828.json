@@ -23,6 +23,32 @@
       "__resolveType": "site/sections/Product/ProductDetails.tsx"
     },
     {
+      "__resolveType": "site/sections/Images/BannerGrid.tsx",
+      "banners": [
+        {
+          "alt": "a",
+          "href": "a",
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/1cfa5611-538e-48a4-9f78-fe9025dbf79f",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a4df2b36-cc9c-487d-a46c-665fc7d0dee2"
+        },
+        {
+          "alt": "a",
+          "href": "a",
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/934b2b23-b90e-42b8-8d29-4056aee6d346",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/26edecad-3abb-4c2c-b8de-91ae284aaa62"
+        }
+      ],
+      "borderRadius": {
+        "mobile": "3xl",
+        "desktop": "3xl"
+      },
+      "itemsPerLine": {
+        "mobile": 2,
+        "desktop": 2
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
       "title": "You may also like",
       "products": {
         "slug": {
@@ -31,8 +57,7 @@
         },
         "crossSelling": "whosawalsosaw",
         "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
-      },
-      "__resolveType": "site/sections/Product/ProductShelf.tsx"
+      }
     },
     {
       "__resolveType": "Footer - 01"
