@@ -23,10 +23,10 @@ import * as $$$$$$2 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$3 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
 import * as $$$$$$4 from "./sections/Cards/ImageCardsCarousel.tsx";
 import * as $$$$$$5 from "./sections/Cards/ImageCardsCarouselWithImage.tsx";
-import * as $$$$$$6 from "./sections/Category/CategoryBanner.tsx";
-import * as $$$$$$7 from "./sections/Category/CategoryGrid.tsx";
-import * as $$$$$$8 from "./sections/Category/CategoryList.tsx";
-import * as $$$$$$9 from "./sections/CategoryList.tsx";
+import * as $$$$$$7 from "./sections/Category/CategoryBanner.tsx";
+import * as $$$$$$8 from "./sections/Category/CategoryGrid.tsx";
+import * as $$$$$$9 from "./sections/Category/CategoryList.tsx";
+import * as $$$$$$6 from "./sections/CategoryList.tsx";
 import * as $$$$$$10 from "./sections/ChoiceUltrafeu.tsx";
 import * as $$$$$$11 from "./sections/Content/Benefits.tsx";
 import * as $$$$$$12 from "./sections/Content/BlogPosts.tsx";
@@ -64,13 +64,14 @@ import * as $$$$$$43 from "./sections/Product/NotFoundChallenge.tsx";
 import * as $$$$$$44 from "./sections/Product/ProductDetails.tsx";
 import * as $$$$$$45 from "./sections/Product/ProductShelf.tsx";
 import * as $$$$$$46 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$47 from "./sections/Product/PromotionProducts.tsx";
-import * as $$$$$$48 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$49 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$50 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$51 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$52 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$53 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$47 from "./sections/Product/PromotionProductCardInHighLight.tsx";
+import * as $$$$$$48 from "./sections/Product/PromotionProducts.tsx";
+import * as $$$$$$49 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$50 from "./sections/Product/ShelfWithImage.tsx";
+import * as $$$$$$51 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$52 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$53 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$54 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -86,10 +87,10 @@ const manifest = {
     "site/sections/Cards/IconCardsCarouselWithImage.tsx": $$$$$$3,
     "site/sections/Cards/ImageCardsCarousel.tsx": $$$$$$4,
     "site/sections/Cards/ImageCardsCarouselWithImage.tsx": $$$$$$5,
-    "site/sections/Category/CategoryBanner.tsx": $$$$$$6,
-    "site/sections/Category/CategoryGrid.tsx": $$$$$$7,
-    "site/sections/Category/CategoryList.tsx": $$$$$$8,
-    "site/sections/CategoryList.tsx": $$$$$$9,
+    "site/sections/Category/CategoryBanner.tsx": $$$$$$7,
+    "site/sections/Category/CategoryGrid.tsx": $$$$$$8,
+    "site/sections/Category/CategoryList.tsx": $$$$$$9,
+    "site/sections/CategoryList.tsx": $$$$$$6,
     "site/sections/ChoiceUltrafeu.tsx": $$$$$$10,
     "site/sections/Content/Benefits.tsx": $$$$$$11,
     "site/sections/Content/BlogPosts.tsx": $$$$$$12,
@@ -127,13 +128,14 @@ const manifest = {
     "site/sections/Product/ProductDetails.tsx": $$$$$$44,
     "site/sections/Product/ProductShelf.tsx": $$$$$$45,
     "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$46,
-    "site/sections/Product/PromotionProducts.tsx": $$$$$$47,
-    "site/sections/Product/SearchResult.tsx": $$$$$$48,
-    "site/sections/Product/ShelfWithImage.tsx": $$$$$$49,
-    "site/sections/Product/Wishlist.tsx": $$$$$$50,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$51,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$52,
-    "site/sections/Theme/Theme.tsx": $$$$$$53,
+    "site/sections/Product/PromotionProductCardInHighLight.tsx": $$$$$$47,
+    "site/sections/Product/PromotionProducts.tsx": $$$$$$48,
+    "site/sections/Product/SearchResult.tsx": $$$$$$49,
+    "site/sections/Product/ShelfWithImage.tsx": $$$$$$50,
+    "site/sections/Product/Wishlist.tsx": $$$$$$51,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$52,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$53,
+    "site/sections/Theme/Theme.tsx": $$$$$$54,
   },
   "apps": {
     "site/apps/deco/algolia.ts": $$$$$$$$$$$0,
