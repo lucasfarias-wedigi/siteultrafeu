@@ -35,7 +35,7 @@ function PromotionProducts({ products, title = "PROMOÇÃO" }: Props) {
             index={0}
           />
         </div>
-        <div class="flex flex-wrap justify-center gap-4 items-center w-full h-full">
+        <div class="flex flex-wrap justify-end gap-4 items-center w-full h-full">
           {products &&
             products.map((product, index) => (
               <PromotionProductCard
