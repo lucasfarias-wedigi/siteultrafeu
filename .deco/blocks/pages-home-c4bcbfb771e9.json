@@ -113,24 +113,24 @@
           "text": "+ de 40 anos de tradição"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
-          "text": "+ de 40 anos de tradição"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/4004b820-d94c-4ea1-a382-2b35d9193c95",
+          "text": "Foco na sua  satisfação"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
-          "text": "+ de 40 anos de tradição"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8b535b40-b859-4462-ac29-630cf2d589dc",
+          "text": "Facilidade  no pagamento"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
-          "text": "+ de 40 anos de tradição"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/bb203a63-c345-4c18-8d9f-66b08a55abf3",
+          "text": "Produtos à pronta-entrega"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
-          "text": "+ de 40 anos de tradição"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/54fa7200-1c64-432c-aab5-208a85e4047d",
+          "text": "Preço justo para  seu investimento"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
-          "text": "+ de 40 anos de tradição"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/0cc96d75-8978-4247-8d9e-fbdec5b85d27",
+          "text": "variedade de itens para seu negócio"
         }
       ]
     },
@@ -235,9 +235,19 @@
           "url": "/194?map=productClusterIds"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ebc01a39-2bcc-45de-a802-8dc610402d2c",
           "text": "Açougue",
-          "url": "#"
+          "url": "/189?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/238a38ca-7873-4e20-9343-7672bf1e9034",
+          "text": "Bar e Lanchonete",
+          "url": "/190?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/e9465802-e2a6-4eb6-909a-bf75091f7d39",
+          "text": "Hotelaria",
+          "url": "/191?map=productClusterIds"
         }
       ]
     },
