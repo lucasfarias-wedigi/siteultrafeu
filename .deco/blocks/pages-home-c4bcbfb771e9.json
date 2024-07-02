@@ -67,8 +67,8 @@
                   "title": "VTEX Store",
                   "subTitle": "Visit our site and start building now:"
                 },
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/e2d94445-7441-481b-ac45-d5b8818f02fc",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a348a67d-526f-4e79-abf6-2450f8d25eba"
               },
               {
                 "alt": "Masculino",
@@ -113,24 +113,24 @@
           "text": "+ de 40 anos de tradição"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
-          "text": "+ de 40 anos de tradição"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/4004b820-d94c-4ea1-a382-2b35d9193c95",
+          "text": "Foco na sua  satisfação"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
-          "text": "+ de 40 anos de tradição"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8b535b40-b859-4462-ac29-630cf2d589dc",
+          "text": "Facilidade  no pagamento"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
-          "text": "+ de 40 anos de tradição"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/bb203a63-c345-4c18-8d9f-66b08a55abf3",
+          "text": "Produtos à pronta-entrega"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
-          "text": "+ de 40 anos de tradição"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/54fa7200-1c64-432c-aab5-208a85e4047d",
+          "text": "Preço justo para  seu investimento"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5604b013-446c-403b-af6e-fa1514aae086",
-          "text": "+ de 40 anos de tradição"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/0cc96d75-8978-4247-8d9e-fbdec5b85d27",
+          "text": "variedade de itens para seu negócio"
         }
       ]
     },
@@ -140,36 +140,167 @@
       "categoryCards": [
         {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial"
+          "text": "Refrigeração Comercial",
+          "url": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/de2a9567-ab39-4522-9895-e0a7f5e2e030",
+          "text": "Maquinário de Produção",
+          "url": "/maquinario-de-producao"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a832f01c-bb65-4994-b442-ccc76bf48cfb",
+          "text": "Expositores de Alimento",
+          "url": "/expositores-de-alimentos"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/d7159aa1-4d4c-4065-a6db-2f2ca586c886",
+          "text": "Equipamento para cocção",
+          "url": "/equipamentos-para-coccao"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/fc0f685d-1698-4210-a899-9cec6cb06c90",
+          "text": "Portáteis Industriais",
+          "url": "/portateis-industriais"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/4423ceaf-c98a-40e3-bf26-10e6d0f343bd",
+          "text": "Mobiliário Comercial",
+          "url": "/mobiliario-comercial"
         },
         {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial"
+          "text": "Refrigeração Comercial",
+          "url": "#"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/de2a9567-ab39-4522-9895-e0a7f5e2e030",
+          "text": "Maquinário de Produção",
+          "url": "/maquinario-de-producao"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial"
-        },
-        {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial"
-        },
-        {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial"
-        },
-        {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a832f01c-bb65-4994-b442-ccc76bf48cfb",
+          "text": "Expositores de Alimento",
+          "url": "/expositores-de-alimentos"
         }
       ]
     },
     {
       "__resolveType": "Product Shelf - 04"
+    },
+    {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+      "banners": [
+        {
+          "image": {
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2d3d6806-f042-4b05-92cd-0ab268cd6996",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2a830e05-8a7a-45df-a05c-7891bdaa5c0e",
+            "alt": "/gelopar"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/CategoryList.tsx",
+      "title": "SEGUIMENTOS",
+      "categoryCards": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ebc01a39-2bcc-45de-a802-8dc610402d2c",
+          "text": "Açougue",
+          "url": "/189?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/238a38ca-7873-4e20-9343-7672bf1e9034",
+          "text": "Bar e Lanchonete",
+          "url": "/190?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/e9465802-e2a6-4eb6-909a-bf75091f7d39",
+          "text": "Hotelaria",
+          "url": "/191?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "text": "Padaria e Confeitaria",
+          "url": "/192?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/cdaf461f-de0e-4e9d-a2a8-db732ffadb10",
+          "text": "Restaurante",
+          "url": "/193?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a2ddbdff-24ec-4007-92bf-cf2c00ca88ec",
+          "text": "Supermercado",
+          "url": "/194?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ebc01a39-2bcc-45de-a802-8dc610402d2c",
+          "text": "Açougue",
+          "url": "/189?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/238a38ca-7873-4e20-9343-7672bf1e9034",
+          "text": "Bar e Lanchonete",
+          "url": "/190?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/e9465802-e2a6-4eb6-909a-bf75091f7d39",
+          "text": "Hotelaria",
+          "url": "/191?map=productClusterIds"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Product/PromotionProducts.tsx",
+      "products": {
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+        "props": {
+          "sort": "orders:desc",
+          "collection": "159",
+          "count": 7,
+          "hideUnavailableItems": true
+        }
+      },
+      "title": "PROMOÇÃO"
+    },
+    {
+      "__resolveType": "site/sections/Images/BannerGrid.tsx",
+      "banners": [
+        {
+          "alt": "BNDS",
+          "href": "a",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/d533ae9d-856d-4ffc-9ef9-8062d3ff4da9",
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/027f5c7f-d7f8-4531-9cf2-0814e2704f88"
+        },
+        {
+          "alt": "CARTAO ULTRAFEU",
+          "href": "#",
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2ae5b15d-2f3c-453b-b7f0-ff252da8ea99",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/191f4766-ad8d-48dd-a420-c8996d5695a3"
+        }
+      ],
+      "borderRadius": {
+        "mobile": "none",
+        "desktop": "none"
+      },
+      "itemsPerLine": {
+        "mobile": 1,
+        "desktop": 2
+      }
+    },
+    {
+      "__resolveType": "site/sections/Social/InstagramPosts.tsx",
+      "title": "@ULTRAFEU",
+      "facebookToken": "IGQWRQUHVBUWo2dXRJb2NtZADhrTmNGNHNmbmRPN0NvazdtSXQ3SXo1ZAWhUdkIwVURHX2NyeGllZAUhSdXIzNi0yc3lTcFJ4TFQ2WHZAXczJId0I5aGJuWV9ybE5nVVI1b0hWc0tGTFVLZAHItVlNlNXVmcHhNdG15TUEZD",
+      "layout": {
+        "headerAlignment": "center",
+        "numberOfPosts": 5,
+        "postsPerLine": 1
+      }
+    },
+    {
+      "__resolveType": "Preview site/sections/Brands.tsx"
     },
     {
       "__resolveType": "Footer - 04"

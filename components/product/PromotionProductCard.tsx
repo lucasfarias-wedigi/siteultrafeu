@@ -28,33 +28,35 @@ interface Props {
   platform?: Platform;
 }
 
-const WIDTH = 200;
-const HEIGHT = 279;
+// const WIDTH = 200;
+// const HEIGHT = 279;
 
-function ProductCard({
+function PromotionProductCard({
   product,
   preload,
   itemListName,
   // platform,
   index,
 }: Props) {
-  const { url, productID, name, image: images, offers, isVariantOf } = product;
+  const { url, productID, name, image: images, offers } = product;
   const id = `product-card-${productID}`;
   // const hasVariant = isVariantOf?.hasVariant ?? [];
   // const productGroupID = isVariantOf?.productGroupID;
-  const description = product.description || isVariantOf?.description;
+  // const description = product.description || isVariantOf?.description;
   const [front, back] = images ?? [];
-  const { listPrice, price, installments } = useOffer(offers);
+  const { listPrice, price } = useOffer(offers);
   // const possibilities = useVariantPossibilities(hasVariant, product);
   // const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const relativeUrl = relative(url);
-  const aspectRatio = `${WIDTH} / ${HEIGHT}`;
+  // const aspectRatio = `${WIDTH} / ${HEIGHT}`;
+
+  if (index === 0) return null;
 
   return (
     <div
       id={id}
       data-deco="view-product"
-      class="card card-compact group w-full lg:border lg:border-transparent lg:p-4"
+      class={`w-[280px] border border-[#E2E2E2] p-2 h-[115px]`}
     >
       {/* Add click event to dataLayer */}
       <SendEventOnClick
@@ -75,16 +77,11 @@ function ProductCard({
         }}
       />
 
-      <div class="flex flex-col gap-2">
-        <figure class="relative overflow-hidden" style={{ aspectRatio }}>
+      <div class={`flex gap-2`}>
+        <figure class="" // style={{ aspectRatio }}
+        >
           {/* Wishlist button */}
-          <div
-            class={clx(
-              "absolute top-0 left-0",
-              "z-10 w-full",
-              "flex items-center justify-end",
-            )}
-          >
+          <div class={clx()}>
             {/* Discount % */}
             {
               /* <div class="text-sm px-3">
@@ -119,23 +116,18 @@ function ProductCard({
             href={relativeUrl}
             aria-label="view product"
             class={clx(
-              "absolute top-0 left-0",
-              "grid grid-cols-1 grid-rows-1",
-              "w-full",
+              // "absolute top-0 left-0",
+              // "grid grid-cols-1 grid-rows-1",
+              "flex relative m-auto w-fit",
             )}
           >
             <Image
               src={front.url!}
               alt={front.alternateName}
-              width={WIDTH}
-              height={HEIGHT}
-              style={{ aspectRatio }}
-              class={clx(
-                "bg-base-100",
-                "object-cover",
-                "rounded w-full",
-                "col-span-full row-span-full",
-              )}
+              width={96}
+              height={96}
+              // style={{ aspectRatio }}
+              class={clx("bg-base-100", "object-cover", "rounded")}
               sizes="(max-width: 640px) 50vw, 20vw"
               preload={preload}
               loading={preload ? "eager" : "lazy"}
@@ -144,15 +136,11 @@ function ProductCard({
             <Image
               src={back?.url ?? front.url!}
               alt={back?.alternateName ?? front.alternateName}
-              width={WIDTH}
-              height={HEIGHT}
-              style={{ aspectRatio }}
+              width={96}
+              height={96}
+              // style={{ aspectRatio }}
               class={clx(
-                "bg-base-100",
-                "object-cover",
-                "rounded w-full",
-                "col-span-full row-span-full",
-                "transition-opacity opacity-0 lg:group-hover:opacity-100",
+                "absolute opacity-0 z-10 hover:opacity-100 transition-opacity",
               )}
               sizes="(max-width: 640px) 50vw, 20vw"
               loading="lazy"
@@ -171,11 +159,13 @@ function ProductCard({
                 <a href={link}>
                   <Avatar
                     content={value}
-                    variant={link === relativeUrl
-                      ? "active"
-                      : link
-                      ? "default"
-                      : "disabled"}
+                    variant={
+                      link === relativeUrl
+                        ? "active"
+                        : link
+                        ? "default"
+                        : "disabled"
+                    }
                   />
                 </a>
               </li>
@@ -185,79 +175,40 @@ function ProductCard({
 
         {/* Name/Description */}
         <div class="flex flex-col">
-          <h2
-            class="text-xs font-bold text-blackPrimary"
-            dangerouslySetInnerHTML={{ __html: name ?? "" }}
-          />
+          <div class="flex flex-col">
+            <h2
+              class="truncate text-sm text-blackPrimary"
+              dangerouslySetInnerHTML={{ __html: name ?? "" }}
+            />
 
-          <div
-            class="truncate text-sm text-blackPrimary"
+            {
+              /* <div
+            class="truncate text-xs"
             dangerouslySetInnerHTML={{ __html: description ?? "" }}
-          />
-        </div>
+          /> */
+            }
+          </div>
 
-        {/* Price from/to */}
-        <div class="flex flex-col gap-2">
-          <span class="line-through text-base text-grayPrimary">
-            {formatPrice(listPrice, offers?.priceCurrency)}
-          </span>
-          <span class="text-purplePrimary font-bold text-xl">
-            <span class="text-blackPrimary text-sm font-normal mr-2.5">
-              À vista
+          {/* Price from/to */}
+          <div class="flex gap-2 items-center justify-end">
+            <span class="line-through text-[10px] text-grayPrimary">
+              {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
-            {formatPrice(price, offers?.priceCurrency)}
-          </span>
+            <span class="text-purplePrimary text-sm font-bold">
+              {formatPrice(price, offers?.priceCurrency)}
+            </span>
+          </div>
+
+          {/* Installments */}
+          {
+            /* <span class="flex justify-end gap-2 font-light text-sm truncate">
+            ou {installments}
+          </span> */
+          }
         </div>
-
-        {/* Installments */}
-        <span class="gap-2 text-blackPrimary truncate">
-          Ou até {installments}
-        </span>
-
-        <a
-          href={relativeUrl}
-          aria-label="view product"
-          class="flex w-full h-[41px] font-bold textsm items-center justify-center text-white bg-purplePrimary lg:hidden gap-2.5"
-        >
-          <svg
-            width="18"
-            height="19"
-            viewBox="0 0 18 19"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6 12.5L12.5401 11.955C14.5865 11.7845 15.0458 11.3375 15.2726 9.29667L15.75 5"
-              stroke="white"
-              stroke-linecap="round"
-            />
-            <path d="M4.5 5H16.5" stroke="white" stroke-linecap="round" />
-            <path
-              d="M4.5 17C5.32843 17 6 16.3284 6 15.5C6 14.6716 5.32843 14 4.5 14C3.67157 14 3 14.6716 3 15.5C3 16.3284 3.67157 17 4.5 17Z"
-              fill="white"
-              stroke="white"
-            />
-            <path
-              d="M12.75 17C13.5784 17 14.25 16.3284 14.25 15.5C14.25 14.6716 13.5784 14 12.75 14C11.9216 14 11.25 14.6716 11.25 15.5C11.25 16.3284 11.9216 17 12.75 17Z"
-              fill="white"
-              stroke="white"
-            />
-            <path d="M6 15.5H11.25" stroke="white" stroke-linecap="round" />
-            <path
-              d="M1.5 2H2.2245C2.93301 2 3.55061 2.46844 3.72245 3.1362L5.95389 11.8074C6.06665 12.2456 5.97015 12.7098 5.69118 13.0712L4.9741 14"
-              stroke="white"
-              stroke-linecap="round"
-            />
-            <path
-              d="M15.75 5H4.125L6.375 12.5C7.75 12.5 10.95 12.425 12.75 12.125C14.55 11.825 15 10.75 15 10.25L15.75 5Z"
-              fill="white"
-            />
-          </svg>
-          Ver produto
-        </a>
       </div>
     </div>
   );
 }
 
-export default ProductCard;
+export default PromotionProductCard;

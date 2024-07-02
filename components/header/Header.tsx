@@ -123,7 +123,7 @@ function Header({
 }: SectionProps<typeof loader>) {
   const platform = usePlatform();
   const items = navItems ?? [];
-  console.log(openSearchMobile);
+
   return (
     <header
       class={``}

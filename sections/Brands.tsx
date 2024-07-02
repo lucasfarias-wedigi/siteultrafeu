@@ -6,12 +6,11 @@ import Icon from "../components/ui/Icon.tsx";
 import { useId } from "../sdk/useId.ts";
 
 /**
- * @titleBy text
+ * @titleBy alt
  */
-interface Card {
+interface item {
   image: ImageWidget;
-  text: string;
-  url: string;
+  alt: string;
 }
 
 /**
@@ -19,13 +18,13 @@ interface Card {
  */
 export interface Props {
   title: string;
-  categoryCards: Card[];
+  items: item[];
 }
 
-const CategoryList = ({ title, categoryCards }: Props) => {
+const Brands = ({ title, items }: Props) => {
   const id = useId();
   return (
-    <div id={id} class="w-full max-w-7xl m-auto mb-8">
+    <div id={id} class="w-full max-w-7xl mx-auto relative md:px-0 px-4 mb-8">
       <div class="relative flex items-center w-full">
         <CustomDivider>
           <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
@@ -52,28 +51,42 @@ const CategoryList = ({ title, categoryCards }: Props) => {
         </div>
       </div>
 
+      {
+        /* <div class="w-full flex items-center justify-around">
+        {items?.map((item) => (
+          <div class="w-[152px] text-center">
+            <Image
+              src={item.image}
+              alt={item.text}
+              width={88}
+              height={66}
+              class="m-auto"
+            />
+            <p class="text-sm text-blackPrimary">{item.text}</p>
+          </div>
+        ))}
+      </div> */
+      }
+
       <Slider class="carousel w-full justify-between carousel-center gap-8">
-        {categoryCards?.map((item, index) => (
+        {items?.map((item, index) => (
           <Slider.Item index={index} class="carousel-item">
-            <div class="group text-center rounded-b-card border border-[#E2E2E2] hover:bg-purplePrimary hover:border-purplePrimary">
-              <a href={item.url || "#"}>
-                <Image
-                  src={item.image}
-                  width={176}
-                  height={145}
-                  alt={item.text}
-                />
-                <p class="text-blackPrimary text-sm px-2.5 py-2 group-hover:text-white">
-                  {item.text}
-                </p>
-              </a>
+            <div class="w-[100px] text-center">
+              <Image
+                src={item.image}
+                alt={item.alt}
+                width={100}
+                height={60}
+                class="m-auto"
+              />
             </div>
           </Slider.Item>
         ))}
       </Slider>
+
       <Slider.JS rootId={id} />
     </div>
   );
 };
 
-export default CategoryList;
+export default Brands;

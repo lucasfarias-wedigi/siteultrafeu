@@ -1,9 +1,8 @@
 import type { SectionProps } from "deco/mod.ts";
 import Image from "apps/website/components/Image.tsx";
-import Header from "../../components/ui/SectionHeader.tsx";
+import CustomDivider from "../../components/CustomDivider.tsx";
 
 export interface layout {
-  headerAlignment?: "center" | "left";
   /** @description Default is 12 */
   numberOfPosts?: number;
   /** @description Up to 6. Default is 4 */
@@ -19,7 +18,6 @@ export interface Data {
 
 export interface Props {
   title?: string;
-  description?: string;
   /**
    * @description Get it in Facebook app. Expires every 90 days.
    * @format textarea
@@ -29,37 +27,26 @@ export interface Props {
 }
 
 export async function loader(
-  {
-    title,
-    description,
-    facebookToken,
-    layout,
-  }: Props,
+  { title, facebookToken, layout }: Props,
   _req: Request,
 ) {
   const fields = ["media_url", "media_type", "permalink"];
   const joinFields = fields.join(",");
   const url =
     `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
+  const response = await fetch(url);
+  const data: Data[] = await response.json();
 
-  const { data } = (await fetch(url).then((r) => r.json()).catch((err) => {
-    console.error("error fetching posts from instagram", err);
-    return { data: [] };
-  })) as {
-    data: Data[];
-  };
-
+  console.log(data);
   return {
     data: data.slice(0, layout?.numberOfPosts ?? 12),
     title,
-    description,
     layout,
   };
 }
 
 export default function InstagramPosts({
   title,
-  description,
   layout,
   data = [
     {
@@ -71,13 +58,15 @@ export default function InstagramPosts({
   ],
 }: SectionProps<typeof loader>) {
   return (
-    <div class="w-full container px-4 py-8 flex flex-col gap-14 lg:gap-20 lg:py-10 lg:px-0">
-      <Header
-        title={title}
-        description={description}
-        alignment={layout?.headerAlignment || "center"}
-      />
-      <div class="hidden lg:grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 lg:grid-cols-5 lg:grid-cols-6">
+    <div class="w-full px-4 flex flex-col gap-8 mb-8 lg:px-0">
+      <div class="w-full max-w-7xl m-auto">
+        <CustomDivider>
+          <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
+            {title}
+          </h2>
+        </CustomDivider>
+      </div>
+      <div class="hidden lg:grid-cols-6">
       </div>
       <div
         class={`grid grid-cols-2 lg:grid-cols-${

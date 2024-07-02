@@ -3,12 +3,12 @@ import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalytic
 import { SendEventOnView } from "../../components/Analytics.tsx";
 import ProductCard from "../../components/product/ProductCard.tsx";
 import Icon from "../../components/ui/Icon.tsx";
-import Header from "../../components/ui/SectionHeader.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
+import CustomDivider from "../CustomDivider.tsx";
 
 export interface Props {
   products: Product[] | null;
@@ -25,12 +25,7 @@ export interface Props {
   };
 }
 
-function ProductShelf({
-  products,
-  title,
-  description,
-  layout,
-}: Props) {
+function ProductShelf({ products, title, layout }: Props) {
   const id = useId();
   const platform = usePlatform();
 
@@ -53,23 +48,51 @@ function ProductShelf({
     5: "w-1/5",
   };
   return (
-    <div class="w-full container py-8 flex flex-col gap-6 lg:py-10">
-      <Header
+    <div
+      id={id}
+      class="w-full max-w-7xl m-auto py-8 flex flex-col gap-6 lg:py-10"
+    >
+      {
+        /* <Header
         title={title || ""}
         description={description || ""}
         fontSize={layout?.headerfontSize || "Large"}
         alignment={layout?.headerAlignment || "center"}
-      />
-
+      /> */
+      }
+      <div class="relative flex items-center w-full">
+        <CustomDivider>
+          <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
+            {title}
+          </h2>
+        </CustomDivider>
+        <div class="bg-white absolute z-10 right-0 flex items-center justify-end gap-2.5 mb-8 pl-8">
+          <Slider.PrevButton class="w-11 h-11 rounded-full bg-grayTertiary flex justify-center items-center">
+            <Icon
+              size={18}
+              id="ChevronRight"
+              strokeWidth={3}
+              class="text-purplePrimary rotate-180 w-full"
+            />
+          </Slider.PrevButton>
+          <Slider.NextButton class="w-11 h-11 rounded-full bg-grayTertiary flex justify-center items-center">
+            <Icon
+              size={18}
+              id="ChevronRight"
+              strokeWidth={3}
+              class="text-purplePrimary"
+            />
+          </Slider.NextButton>
+        </div>
+      </div>
       <div
-        id={id}
-        class={clx(
-          "grid",
-          layout?.showArrows && "grid-cols-[48px_1fr_48px]",
-          "px-0 md:px-5 container",
-        )}
+        // class={clx(
+        //   "grid",
+        //   layout?.showArrows && "grid-cols-[48px_1fr_48px]",
+        //   "px-0 md:px-5 container"
+        // )}
       >
-        <Slider class="carousel carousel-center sm:carousel-end sm:gap-1 row-start-2 row-end-5">
+        <Slider class="w-full carousel carousel-center sm:carousel-end sm:gap-1 row-start-2 row-end-5">
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
@@ -89,20 +112,6 @@ function ProductShelf({
           ))}
         </Slider>
 
-        {layout?.showArrows && (
-          <>
-            <div class="relative block z-10 col-start-1 row-start-3">
-              <Slider.PrevButton class="absolute w-12 h-12 flex justify-center items-center">
-                <Icon size={24} id="ChevronLeft" strokeWidth={3} class="w-5" />
-              </Slider.PrevButton>
-            </div>
-            <div class="relative block z-10 col-start-3 row-start-3">
-              <Slider.NextButton class="absolute w-12 h-12 flex justify-center items-center">
-                <Icon size={24} id="ChevronRight" strokeWidth={3} />
-              </Slider.NextButton>
-            </div>
-          </>
-        )}
         <Slider.JS rootId={id} />
         <SendEventOnView
           id={id}
@@ -114,7 +123,7 @@ function ProductShelf({
                 mapProductToAnalyticsItem({
                   index,
                   product,
-                  ...(useOffer(product.offers)),
+                  ...useOffer(product.offers),
                 })
               ),
             },

@@ -4,82 +4,82 @@
     {
       "subItems": [
         {
-          "text": "teste 1"
+          "text": "Chapa e Sanduicheira"
         },
         {
-          "text": "teste 2"
+          "text": "Fritadeira Industrial"
         },
         {
-          "text": "teste 2"
+          "text": "Expositor e Refrigerador"
         },
         {
-          "text": "teste 2"
+          "text": "Liquidificador Industrial"
         }
       ],
       "buttonText": "Ver mais",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2339f2d0-ed6d-41d5-8a68-dd7ffbca9308",
-      "title": "BAR E LANCHONETE",
-      "link": "#"
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/126ab628-6441-4bf3-b15c-f4bb8e7f0a50",
+      "title": "RESTAURANTE",
+      "link": "/193?map=productClusterIds"
     },
     {
       "subItems": [
         {
-          "text": "teste 1"
+          "text": "Estufa para Salgados"
         },
         {
-          "text": "teste 2"
+          "text": "Cervejeira"
         },
         {
-          "text": "teste 2"
+          "text": "Balcão Refrigerado"
         },
         {
-          "text": "teste 2"
+          "text": "Vitrine Fria"
         }
       ],
       "buttonText": "Ver mais",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2339f2d0-ed6d-41d5-8a68-dd7ffbca9308",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/63e3bf89-16f0-43b1-9212-beed35c0c939",
       "title": "BAR E LANCHONETE",
-      "link": "#"
+      "link": "/190?map=productClusterIds"
     },
     {
       "subItems": [
         {
-          "text": "teste 1"
+          "text": "Masseira"
         },
         {
-          "text": "teste 2"
+          "text": "Forno Turbo"
         },
         {
-          "text": "teste 2"
+          "text": "Fogão Industrial"
         },
         {
-          "text": "teste 2"
+          "text": "Cilindro de Massa"
         }
       ],
       "buttonText": "Ver mais",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2339f2d0-ed6d-41d5-8a68-dd7ffbca9308",
-      "title": "BAR E LANCHONETE",
-      "link": "#"
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/73cb5cfb-63bf-4585-b751-986096afc129",
+      "title": "PADARIA E CONFEITARIA",
+      "link": "/192?map=productClusterIds"
     },
     {
       "subItems": [
         {
-          "text": "teste 1"
+          "text": "Seladora"
         },
         {
-          "text": "teste 2"
+          "text": "Balcão de Açougue"
         },
         {
-          "text": "teste 2"
+          "text": "Ilha para Congelados"
         },
         {
-          "text": "teste 2"
+          "text": "Freezer Horizontal"
         }
       ],
       "buttonText": "Ver mais",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2339f2d0-ed6d-41d5-8a68-dd7ffbca9308",
-      "title": "BAR E LANCHONETE",
-      "link": "#"
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/7dffaf7a-c434-45b6-99bc-f19d3f29eeeb",
+      "title": "AÇOUGUE",
+      "link": "/189?map=productClusterIds"
     }
   ]
 }
