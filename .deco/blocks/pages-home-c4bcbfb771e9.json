@@ -139,9 +139,34 @@
       "title": "CATEGORIAS",
       "categoryCards": [
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5f9b3115-7de1-479c-929a-d5ed81f0d982",
-          "text": "Açougue",
-          "url": "/189?map=productClusterIds"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "text": "Refrigeração Comercial",
+          "url": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/de2a9567-ab39-4522-9895-e0a7f5e2e030",
+          "text": "Maquinário de Produção",
+          "url": "/maquinario-de-producao"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a832f01c-bb65-4994-b442-ccc76bf48cfb",
+          "text": "Expositores de Alimento",
+          "url": "/expositores-de-alimentos"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/d7159aa1-4d4c-4065-a6db-2f2ca586c886",
+          "text": "Equipamento para cocção",
+          "url": "/equipamentos-para-coccao"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/fc0f685d-1698-4210-a899-9cec6cb06c90",
+          "text": "Portáteis Industriais",
+          "url": "/portateis-industriais"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/4423ceaf-c98a-40e3-bf26-10e6d0f343bd",
+          "text": "Mobiliário Comercial",
+          "url": "/mobiliario-comercial"
         },
         {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
@@ -149,29 +174,14 @@
           "url": "#"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial",
-          "url": "#"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/de2a9567-ab39-4522-9895-e0a7f5e2e030",
+          "text": "Maquinário de Produção",
+          "url": "/maquinario-de-producao"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial",
-          "url": "#"
-        },
-        {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial",
-          "url": "#"
-        },
-        {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial",
-          "url": "#"
-        },
-        {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Refrigeração Comercial",
-          "url": "#"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a832f01c-bb65-4994-b442-ccc76bf48cfb",
+          "text": "Expositores de Alimento",
+          "url": "/expositores-de-alimentos"
         }
       ]
     },
@@ -195,34 +205,34 @@
       "title": "SEGUIMENTOS",
       "categoryCards": [
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ebc01a39-2bcc-45de-a802-8dc610402d2c",
           "text": "Açougue",
-          "url": "#"
+          "url": "/189?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/238a38ca-7873-4e20-9343-7672bf1e9034",
+          "text": "Bar e Lanchonete",
+          "url": "/190?map=productClusterIds"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/e9465802-e2a6-4eb6-909a-bf75091f7d39",
+          "text": "Hotelaria",
+          "url": "/191?map=productClusterIds"
         },
         {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Açougue",
-          "url": "#"
+          "text": "Padaria e Confeitaria",
+          "url": "/192?map=productClusterIds"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Açougue",
-          "url": "#"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/cdaf461f-de0e-4e9d-a2a8-db732ffadb10",
+          "text": "Restaurante",
+          "url": "/193?map=productClusterIds"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Açougue",
-          "url": "#"
-        },
-        {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Açougue",
-          "url": "#"
-        },
-        {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
-          "text": "Açougue",
-          "url": "#"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a2ddbdff-24ec-4007-92bf-cf2c00ca88ec",
+          "text": "Supermercado",
+          "url": "/194?map=productClusterIds"
         },
         {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/8797f4f6-8611-41be-8330-d6cb02bf629b",
