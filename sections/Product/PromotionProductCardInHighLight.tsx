@@ -181,7 +181,7 @@ function PromotionProductCard({
             <span class="line-through text-sm text-grayPrimary">
               {formatPrice(listPrice, offers?.priceCurrency)}
               {/* Discount % */}
-              <span class="font-bold bg-[#E2E2E2] px-4 py-0.5 text-greenPrimary text-xs rounded-card">
+              <span class="font-bold bg-[#E2E2E2] px-2 py-0.5 text-greenPrimary text-xs rounded-card ml-1.5">
                 {listPrice && price
                   ? `-${
                     Math.round(((listPrice - price) / listPrice) * 100)

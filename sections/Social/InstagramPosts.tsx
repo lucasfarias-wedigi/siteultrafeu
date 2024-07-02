@@ -2,7 +2,12 @@ import type { SectionProps } from "deco/mod.ts";
 import Image from "apps/website/components/Image.tsx";
 import CustomDivider from "../../components/CustomDivider.tsx";
 
+export interface InstagramResponse {
+  data: Data[];
+}
+
 export interface layout {
+  headerAlignment?: "center" | "left";
   /** @description Default is 12 */
   numberOfPosts?: number;
   /** @description Up to 6. Default is 4 */
@@ -28,16 +33,23 @@ export interface Props {
 
 export async function loader(
   { title, facebookToken, layout }: Props,
-  _req: Request,
+  _req: Request
 ) {
   const fields = ["media_url", "media_type", "permalink"];
   const joinFields = fields.join(",");
-  const url =
-    `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
+  const url = `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
   const response = await fetch(url);
-  const data: Data[] = await response.json();
+  const { data }: InstagramResponse = await response.json();
 
-  console.log(data);
+  // const { data } = (await fetch(url)
+  //   .then((r) => r.json())
+  //   .catch((err) => {
+  //     console.error("error fetching posts from instagram", err);
+  //     console.log(data);
+  //     return { data: [] };
+  //   })) as {
+  //   data: Data[];
+  // };
   return {
     data: data.slice(0, layout?.numberOfPosts ?? 12),
     title,
@@ -58,16 +70,15 @@ export default function InstagramPosts({
   ],
 }: SectionProps<typeof loader>) {
   return (
-    <div class="w-full px-4 flex flex-col gap-8 mb-8 lg:px-0">
-      <div class="w-full max-w-7xl m-auto">
+    <div class="w-full px-4 py-8 flex flex-col gap-14 lg:gap-20 lg:py-10 lg:px-0">
+      <div class="max-w-7xl w-full m-auto">
         <CustomDivider>
           <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
             {title}
           </h2>
         </CustomDivider>
       </div>
-      <div class="hidden lg:grid-cols-6">
-      </div>
+      <div class="hidden lg:grid-cols-6"></div>
       <div
         class={`grid grid-cols-2 lg:grid-cols-${
           layout?.postsPerLine || 4
@@ -81,22 +92,20 @@ export default function InstagramPosts({
             title="Visite nosso instagram"
             class="rounded-lg overflow-hidden w-full max-w-[350px] sm:max-w-[350px] group"
           >
-            {item.media_type === "IMAGE"
-              ? (
-                <Image
-                  class="max-w-full max-h-full object-cover w-full group-hover:scale-110  transition duration-400 group-hover:brightness-90"
-                  src={item.media_url ?? ""}
-                  alt="Imagem do instagram"
-                  width={350}
-                  height={350}
-                  loading="lazy"
-                />
-              )
-              : (
-                <video controls class="max-w-full max-h-full object-cover">
-                  <source src={item.media_url}></source>
-                </video>
-              )}
+            {item.media_type === "IMAGE" ? (
+              <Image
+                class="max-w-full max-h-full object-cover w-full group-hover:scale-110  transition duration-400 group-hover:brightness-90"
+                src={item.media_url ?? ""}
+                alt="Imagem do instagram"
+                width={350}
+                height={350}
+                loading="lazy"
+              />
+            ) : (
+              <video controls class="max-w-full max-h-full object-cover">
+                <source src={item.media_url}></source>
+              </video>
+            )}
           </a>
         ))}
       </div>
