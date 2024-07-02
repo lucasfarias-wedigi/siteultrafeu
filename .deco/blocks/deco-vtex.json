@@ -1,1 +1,10 @@
-{"__resolveType":"site/apps/deco/vtex.ts","account":"ultrafeu","platform":"vtex","publicUrl":"ultrafeu.com.br","salesChannel":"1","defaultSegment":{"channelPrivacy":"public"}}
+{
+  "__resolveType": "site/apps/deco/vtex.ts",
+  "account": "ultrafeu",
+  "platform": "vtex",
+  "publicUrl": "www.ultrafeu.com.br",
+  "salesChannel": "1",
+  "defaultSegment": {
+    "channelPrivacy": "public"
+  }
+}
