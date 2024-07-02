@@ -295,7 +295,8 @@
       "facebookToken": "IGQWRQUHVBUWo2dXRJb2NtZADhrTmNGNHNmbmRPN0NvazdtSXQ3SXo1ZAWhUdkIwVURHX2NyeGllZAUhSdXIzNi0yc3lTcFJ4TFQ2WHZAXczJId0I5aGJuWV9ybE5nVVI1b0hWc0tGTFVLZAHItVlNlNXVmcHhNdG15TUEZD",
       "layout": {
         "headerAlignment": "center",
-        "postsPerLine": 5
+        "numberOfPosts": 5,
+        "postsPerLine": 1
       }
     },
     {
