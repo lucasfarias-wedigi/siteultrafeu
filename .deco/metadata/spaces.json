@@ -776,7 +776,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 24.982935153583618,
+                "width": 18.839590443686006,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -798,7 +798,7 @@
               },
               {
                 "type": "stack",
-                "width": 75.01706484641637,
+                "width": 81.160409556314,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -837,8 +837,7 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null,
-            "value": null
+            "__signal": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::visibility::Preview::%7B%7D": {
@@ -3288,7 +3287,7 @@
       "id": "/.deco/blocks/Preview%20site%2Fsections%2FBrands.tsx.json",
       "name": "Preview site/sections/Brands.tsx",
       "pinned": false,
-      "icon": "package",
+      "icon": "block",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -3328,7 +3327,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 17.063989962358846,
+                "width": 12.491467576791809,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3350,19 +3349,19 @@
               },
               {
                 "type": "stack",
-                "width": 82.93601003764115,
+                "width": 87.5085324232082,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::world::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::world::Preview::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::visibility::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::visibility::Preview::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::world::Preview::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::visibility::Preview::%7B%7D"
                     },
                     "width": 70,
                     "isClosable": true,
@@ -3392,14 +3391,14 @@
             "__signal": null
           }
         },
-        "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::world::Preview::%7B%7D": {
+        "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::visibility::Preview::%7B%7D": {
           "name": "Preview",
-          "icon": "world",
+          "icon": "visibility",
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
           "width": 70,
-          "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::world::Preview::%7B%7D",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::visibility::Preview::%7B%7D",
           "state": {
             "__signal": null
           }
