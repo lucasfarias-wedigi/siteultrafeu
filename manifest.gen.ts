@@ -11,7 +11,8 @@ import * as $$$$$$$$$$$5 from "./apps/deco/records.ts";
 import * as $$$$$$$$$$$6 from "./apps/deco/vtex.ts";
 import * as $$$$$$$$$$$7 from "./apps/deco/weather.ts";
 import * as $$$$$$$$$$$8 from "./apps/deco/workflows.ts";
-import * as $$$$$$$$$$$9 from "./apps/site.ts";
+import * as $$$$$$$$$$$9 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$10 from "./apps/site.ts";
 import * as $$$2 from "./loaders/availableIcons.ts";
 import * as $$$3 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
@@ -22,10 +23,10 @@ import * as $$$$$$2 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$3 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
 import * as $$$$$$4 from "./sections/Cards/ImageCardsCarousel.tsx";
 import * as $$$$$$5 from "./sections/Cards/ImageCardsCarouselWithImage.tsx";
-import * as $$$$$$6 from "./sections/Category/CategoryBanner.tsx";
-import * as $$$$$$7 from "./sections/Category/CategoryGrid.tsx";
-import * as $$$$$$8 from "./sections/Category/CategoryList.tsx";
-import * as $$$$$$9 from "./sections/CategoryList.tsx";
+import * as $$$$$$7 from "./sections/Category/CategoryBanner.tsx";
+import * as $$$$$$8 from "./sections/Category/CategoryGrid.tsx";
+import * as $$$$$$9 from "./sections/Category/CategoryList.tsx";
+import * as $$$$$$6 from "./sections/CategoryList.tsx";
 import * as $$$$$$10 from "./sections/ChoiceUltrafeu.tsx";
 import * as $$$$$$11 from "./sections/Content/Benefits.tsx";
 import * as $$$$$$12 from "./sections/Content/BlogPosts.tsx";
@@ -86,10 +87,10 @@ const manifest = {
     "site/sections/Cards/IconCardsCarouselWithImage.tsx": $$$$$$3,
     "site/sections/Cards/ImageCardsCarousel.tsx": $$$$$$4,
     "site/sections/Cards/ImageCardsCarouselWithImage.tsx": $$$$$$5,
-    "site/sections/Category/CategoryBanner.tsx": $$$$$$6,
-    "site/sections/Category/CategoryGrid.tsx": $$$$$$7,
-    "site/sections/Category/CategoryList.tsx": $$$$$$8,
-    "site/sections/CategoryList.tsx": $$$$$$9,
+    "site/sections/Category/CategoryBanner.tsx": $$$$$$7,
+    "site/sections/Category/CategoryGrid.tsx": $$$$$$8,
+    "site/sections/Category/CategoryList.tsx": $$$$$$9,
+    "site/sections/CategoryList.tsx": $$$$$$6,
     "site/sections/ChoiceUltrafeu.tsx": $$$$$$10,
     "site/sections/Content/Benefits.tsx": $$$$$$11,
     "site/sections/Content/BlogPosts.tsx": $$$$$$12,
@@ -146,7 +147,8 @@ const manifest = {
     "site/apps/deco/vtex.ts": $$$$$$$$$$$6,
     "site/apps/deco/weather.ts": $$$$$$$$$$$7,
     "site/apps/deco/workflows.ts": $$$$$$$$$$$8,
-    "site/apps/site.ts": $$$$$$$$$$$9,
+    "site/apps/decohub.ts": $$$$$$$$$$$9,
+    "site/apps/site.ts": $$$$$$$$$$$10,
   },
   "name": "site",
   "baseUrl": import.meta.url,
