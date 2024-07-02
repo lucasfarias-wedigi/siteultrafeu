@@ -6,14 +6,6 @@ export interface InstagramResponse {
   data: Data[];
 }
 
-export interface layout {
-  headerAlignment?: "center" | "left";
-  /** @description Default is 12 */
-  numberOfPosts?: number;
-  /** @description Up to 6. Default is 4 */
-  postsPerLine?: number;
-}
-
 export interface Data {
   id: string;
   permalink: string;
@@ -28,13 +20,9 @@ export interface Props {
    * @format textarea
    */
   facebookToken: string;
-  layout?: layout;
 }
 
-export async function loader(
-  { title, facebookToken, layout }: Props,
-  _req: Request
-) {
+export async function loader({ title, facebookToken }: Props, _req: Request) {
   const fields = ["media_url", "media_type", "permalink"];
   const joinFields = fields.join(",");
   const url = `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
@@ -43,23 +31,20 @@ export async function loader(
     const response = await fetch(url);
     const { data }: InstagramResponse = await response.json();
     return {
-      data: data.slice(0, layout?.numberOfPosts ?? 12),
+      data: data.slice(0, 5),
       title,
-      layout,
     };
   } catch (err) {
     console.error("Error fetching posts from Instagram", err);
     return {
       data: [],
       title,
-      layout,
     };
   }
 }
 
 export default function InstagramPosts({
   title,
-  layout,
   data,
 }: SectionProps<typeof loader>) {
   if (data.length <= 0) return null;
@@ -72,11 +57,9 @@ export default function InstagramPosts({
           </h2>
         </CustomDivider>
       </div>
-      <div class="hidden lg:grid-cols-6"></div>
+
       <div
-        class={`grid grid-cols-2 lg:grid-cols-${
-          layout?.postsPerLine || 4
-        } gap-4 items-center justify-center place-items-center`}
+        class={`grid grid-cols-2 lg:grid-cols-5 items-center justify-center place-items-center`}
       >
         {data.map((item) => (
           <a
