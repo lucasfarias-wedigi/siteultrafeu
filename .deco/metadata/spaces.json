@@ -776,7 +776,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 18.839590443686006,
+                "width": 18.61198738170347,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -798,7 +798,7 @@
               },
               {
                 "type": "stack",
-                "width": 81.160409556314,
+                "width": 81.38801261829653,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1722,7 +1722,7 @@
       "id": "/.deco/blocks/Header%20-%2001.json",
       "name": "Header - 01",
       "pinned": false,
-      "icon": "block",
+      "icon": "package",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -1762,7 +1762,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 18.907849829351537,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1784,19 +1784,19 @@
               },
               {
                 "type": "stack",
-                "width": 81.09215017064845,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::visibility::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::visibility::Preview::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::world::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::world::Preview::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::visibility::Preview::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::world::Preview::%7B%7D"
                     },
                     "width": 70,
                     "isClosable": true,
@@ -1823,17 +1823,18 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
-        "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::visibility::Preview::%7B%7D": {
+        "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::world::Preview::%7B%7D": {
           "name": "Preview",
-          "icon": "visibility",
+          "icon": "world",
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
           "width": 70,
-          "id": "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::visibility::Preview::%7B%7D",
+          "id": "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
           }
@@ -2803,7 +2804,7 @@
       "id": "/.deco/blocks/Preview%20site%2Fsections%2FFloatCards.tsx.json",
       "name": "Preview site/sections/FloatCards.tsx",
       "pinned": false,
-      "icon": "block",
+      "icon": "package",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -2843,7 +2844,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 16.655290102389078,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2865,19 +2866,19 @@
               },
               {
                 "type": "stack",
-                "width": 83.34470989761093,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FFloatCards.tsx.json::Preview::visibility::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FFloatCards.tsx.json::Preview::visibility::Preview::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FFloatCards.tsx.json::Preview::world::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FFloatCards.tsx.json::Preview::world::Preview::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FFloatCards.tsx.json::Preview::visibility::Preview::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FFloatCards.tsx.json::Preview::world::Preview::%7B%7D"
                     },
                     "width": 70,
                     "isClosable": true,
@@ -2907,14 +2908,14 @@
             "__signal": null
           }
         },
-        "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FFloatCards.tsx.json::Preview::visibility::Preview::%7B%7D": {
+        "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FFloatCards.tsx.json::Preview::world::Preview::%7B%7D": {
           "name": "Preview",
-          "icon": "visibility",
+          "icon": "world",
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
           "width": 70,
-          "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FFloatCards.tsx.json::Preview::visibility::Preview::%7B%7D",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FFloatCards.tsx.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
           }
@@ -3287,7 +3288,7 @@
       "id": "/.deco/blocks/Preview%20site%2Fsections%2FBrands.tsx.json",
       "name": "Preview site/sections/Brands.tsx",
       "pinned": false,
-      "icon": "block",
+      "icon": "package",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -3327,7 +3328,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 12.491467576791809,
+                "width": 17.063989962358846,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3349,19 +3350,19 @@
               },
               {
                 "type": "stack",
-                "width": 87.5085324232082,
+                "width": 82.93601003764115,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::visibility::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::visibility::Preview::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::world::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::world::Preview::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::visibility::Preview::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::world::Preview::%7B%7D"
                     },
                     "width": 70,
                     "isClosable": true,
@@ -3391,14 +3392,14 @@
             "__signal": null
           }
         },
-        "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::visibility::Preview::%7B%7D": {
+        "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::world::Preview::%7B%7D": {
           "name": "Preview",
-          "icon": "visibility",
+          "icon": "world",
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
           "width": 70,
-          "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::visibility::Preview::%7B%7D",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520site%252Fsections%252FBrands.tsx.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
           }

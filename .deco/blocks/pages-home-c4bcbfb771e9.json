@@ -196,7 +196,8 @@
             "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2d3d6806-f042-4b05-92cd-0ab268cd6996",
             "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2a830e05-8a7a-45df-a05c-7891bdaa5c0e",
             "alt": "/gelopar"
-          }
+          },
+          "matcher": "/"
         }
       ]
     },
@@ -259,10 +260,12 @@
           "sort": "orders:desc",
           "collection": "159",
           "count": 7,
-          "hideUnavailableItems": true
+          "hideUnavailableItems": true,
+          "similars": false
         }
       },
-      "title": "PROMOÇÃO"
+      "title": "PROMOÇÃO",
+      "productInHighlight": "1"
     },
     {
       "__resolveType": "site/sections/Images/BannerGrid.tsx",
@@ -292,7 +295,7 @@
     {
       "__resolveType": "site/sections/Social/InstagramPosts.tsx",
       "title": "@ULTRAFEU",
-      "facebookToken": "IGQWRQUHVBUWo2dXRJb2NtZADhrTmNGNHNmbmRPN0NvazdtSXQ3SXo1ZAWhUdkIwVURHX2NyeGllZAUhSdXIzNi0yc3lTcFJ4TFQ2WHZAXczJId0I5aGJuWV9ybE5nVVI1b0hWc0tGTFVLZAHItVlNlNXVmcHhNdG15TUEZD",
+      "facebookToken": "IGQWROeVkyQ0ZAUNjFfVmJ5XzZAiVmVvMTVoSXlkY3hBNVRLQmZAxUy1TalVnUmZAiNmpSNTdoZAm9sUnUzSXNRS1lPc2J5VUhUaXZACY09JdVBxc0pnRDlEYkZAsMUNkeWJmZAGxUMGtYSVJwVTRmdE1RSG5UUmk5RUtXSDgZD",
       "layout": {
         "headerAlignment": "center",
         "numberOfPosts": 5,
