@@ -20,23 +20,23 @@
     "benefitsItems": [
       {
         "text": "Institucional",
-        "link": "#",
+        "link": "/institucional/quem-somos",
         "image": "ShoppingCartIcon"
       },
       {
         "image": "DeliveryTruckIcon",
         "text": "Refrigeração Comercial",
-        "link": "#"
+        "link": "/refrigeracao-comercial"
       },
       {
         "image": "SnowIcon",
         "text": "Pronta-entrega",
-        "link": "#"
+        "link": "/pronta-entrega"
       },
       {
         "text": "Monte seu negócio",
         "image": "BriefCase",
-        "link": "#"
+        "link": "/monte-seu-negocio"
       }
     ]
   },

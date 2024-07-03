@@ -293,10 +293,12 @@
     "icons": {
       "icons": [
         {
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b4b4e74e-fcc6-4026-a80a-c77f99306e75"
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/750b3469-1b99-4802-b7ee-edd98f61ed3e",
+          "link": "https://vtex.com/pt-br/"
         },
         {
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5c073df5-4d84-4e64-8a26-cf63526b1701"
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/c33e2039-5796-480f-baf5-c606d767411c",
+          "link": "https://wedigi.com.br/"
         }
       ]
     },
