@@ -1,13 +1,12 @@
 {
   "data": {
-    "sort": "price:desc",
+    "sort": "price:asc",
     "count": 12,
     "fuzzy": "automatic",
     "pageOffset": 1,
     "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-    "selectedFacets": [
-      {}
-    ]
+    "selectedFacets": [],
+    "query": "/s"
   },
   "extensions": [
     {
