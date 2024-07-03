@@ -195,7 +195,8 @@
           "image": {
             "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2d3d6806-f042-4b05-92cd-0ab268cd6996",
             "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2a830e05-8a7a-45df-a05c-7891bdaa5c0e",
-            "alt": "/gelopar"
+            "alt": "/gelopar",
+            "url": "/gelopar"
           },
           "matcher": "/"
         }
