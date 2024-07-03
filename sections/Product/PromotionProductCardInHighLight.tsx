@@ -75,7 +75,7 @@ function PromotionProductCard({
         }}
       />
 
-      <div class={`flex w-full gap-4 h-full`}>
+      <div class={`flex flex-col lg:flex-row w-full gap-4 h-full`}>
         <figure class="w-full h-full" // style={{ aspectRatio }}
         >
           {/* Wishlist button */}

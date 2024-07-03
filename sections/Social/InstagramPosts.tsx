@@ -22,7 +22,7 @@ export interface Props {
   facebookToken: string;
 }
 
-export async function loader({ title, facebookToken }: Props, _req: Request) {
+export async function loader({ title, facebookToken }: Props) {
   const fields = ["media_url", "media_type", "permalink"];
   const joinFields = fields.join(",");
   const url =
@@ -52,7 +52,7 @@ export default function InstagramPosts({
   return (
     <div class="w-full px-4 py-8 flex flex-col gap-14 lg:gap-20 lg:py-10 lg:px-0">
       <CustomDivider>
-        <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
+        <h2 class="text-start md:text-center text-blackPrimary font-semibold text-base lg:text-2xl whitespace-nowrap">
           {title}
         </h2>
       </CustomDivider>

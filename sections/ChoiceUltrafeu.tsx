@@ -26,7 +26,7 @@ const ChoiceUltrafeu = ({ title, items }: Props) => {
   return (
     <div id={id} class="w-full max-w-7xl mx-auto relative md:px-0 px-4 mb-8">
       <CustomDivider>
-        <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
+        <h2 class="text-start md:text-center text-blackPrimary font-semibold text-base lg:text-2xl lg:whitespace-nowrap w-[183px] lg:w-fit">
           {title}
         </h2>
         <div class="flex items-center justify-end gap-2.5 md:hidden">

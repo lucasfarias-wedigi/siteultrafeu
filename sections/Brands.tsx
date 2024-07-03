@@ -28,7 +28,7 @@ const Brands = ({ title, items }: Props) => {
     <div id={id} class="w-full max-w-7xl mx-auto relative md:px-0 px-4 mb-8">
       <div class="relative flex items-center w-full">
         <CustomDivider>
-          <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
+          <h2 class="text-start md:text-center text-blackPrimary font-semibold text-base lg:text-2xl lg:whitespace-nowrap w-[183px] lg:w-fit">
             {title}
           </h2>
         </CustomDivider>
