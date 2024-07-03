@@ -776,7 +776,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 41.66666666666667,
+                "width": 16.727941176470587,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -798,7 +798,7 @@
               },
               {
                 "type": "stack",
-                "width": 58.333333333333336,
+                "width": 83.27205882352942,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -837,7 +837,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::visibility::Preview::%7B%7D": {
@@ -1640,7 +1641,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 41.66666666666667,
+                "width": 19.621451104100945,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1662,7 +1663,7 @@
               },
               {
                 "type": "stack",
-                "width": 58.333333333333336,
+                "width": 80.37854889589906,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3694,7 +3695,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 16.277602523659308,
+                "width": 17.708333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3716,7 +3717,7 @@
               },
               {
                 "type": "stack",
-                "width": 83.72239747634069,
+                "width": 82.29166666666666,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3755,7 +3756,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-search-2f446eadce44.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-search-2f446eadce44.json::Preview::visibility::Preview::%7B%7D": {
@@ -3816,7 +3818,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 23.84858044164038,
+                "width": 29.589905362776026,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3838,7 +3840,7 @@
               },
               {
                 "type": "stack",
-                "width": 76.15141955835962,
+                "width": 70.41009463722398,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",

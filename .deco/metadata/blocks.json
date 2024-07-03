@@ -253,9 +253,9 @@
   },
   "/.deco/blocks/pages-search-2f446eadce44.json": {
     "name": "Search",
-    "path": "/s",
     "blockType": "pages",
-    "__resolveType": "website/pages/Page.tsx"
+    "__resolveType": "website/pages/Page.tsx",
+    "path": "/s"
   },
   "/.deco/blocks/site.json": {
     "blockType": "apps",
