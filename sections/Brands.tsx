@@ -11,6 +11,7 @@ import { useId } from "../sdk/useId.ts";
 interface item {
   image: ImageWidget;
   alt: string;
+  url: string
 }
 
 /**
@@ -71,15 +72,17 @@ const Brands = ({ title, items }: Props) => {
       <Slider class="carousel w-full justify-between carousel-center gap-8">
         {items?.map((item, index) => (
           <Slider.Item index={index} class="carousel-item">
-            <div class="w-[100px] text-center">
-              <Image
-                src={item.image}
-                alt={item.alt}
-                width={100}
-                height={60}
-                class="m-auto"
-              />
-            </div>
+            <a href={item.url || "#"}>
+              <div class="w-[100px] text-center">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  width={100}
+                  height={60}
+                  class="m-auto"
+                />
+              </div>
+            </a>
           </Slider.Item>
         ))}
       </Slider>

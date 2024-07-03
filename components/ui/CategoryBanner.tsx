@@ -13,6 +13,7 @@ export interface Banner {
   /** @description text to be rendered on top of the image */
   subtitle?: string;
   image: {
+    url: string;
     /** @description Image for big screens */
     desktop: ImageWidget;
     /** @description Image for small screens */
@@ -31,6 +32,7 @@ const DEFAULT_PROPS = {
         desktop:
           "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ec597b6a-dcf1-48ca-a99d-95b3c6304f96",
         alt: "a",
+        url: "#",
       },
       title: "Woman",
       matcher: "/*",
@@ -50,32 +52,29 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
 
   return (
     <div class="grid grid-cols-1 grid-rows-1 mb-8">
-      <Picture preload class="col-start-1 col-span-1 row-start-1 row-span-1">
-        <Source
-          src={image.mobile}
-          width={360}
-          height={120}
-          media="(max-width: 767px)"
-        />
-        <Source
-          src={image.desktop}
-          width={1440}
-          height={200}
-          media="(min-width: 767px)"
-        />
-        <img class="w-full" src={image.desktop} alt={image.alt ?? title} />
-      </Picture>
-
+      <a href={image.url || "#"}>
+        <Picture preload class="col-start-1 col-span-1 row-start-1 row-span-1">
+          <Source
+            src={image.mobile}
+            width={360}
+            height={120}
+            media="(max-width: 767px)"
+          />
+          <Source
+            src={image.desktop}
+            width={1440}
+            height={200}
+            media="(min-width: 767px)"
+          />
+          <img class="w-full" src={image.desktop} alt={image.alt ?? title} />
+        </Picture>
+      </a>
       <div class="container flex flex-col items-center justify-center sm:items-start col-start-1 col-span-1 row-start-1 row-span-1 w-full">
         <h1>
-          <span class="text-5xl font-medium text-base-100">
-            {title}
-          </span>
+          <span class="text-5xl font-medium text-base-100">{title}</span>
         </h1>
         <h2>
-          <span class="text-xl font-medium text-base-100">
-            {subtitle}
-          </span>
+          <span class="text-xl font-medium text-base-100">{subtitle}</span>
         </h2>
       </div>
     </div>
