@@ -18,7 +18,7 @@
       "layout": {
         "columns": {
           "mobile": 2,
-          "desktop": 4
+          "desktop": 3
         },
         "variant": "aside"
       },
