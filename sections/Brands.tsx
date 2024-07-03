@@ -11,7 +11,7 @@ import { useId } from "../sdk/useId.ts";
 interface item {
   image: ImageWidget;
   alt: string;
-  url: string
+  url: string;
 }
 
 /**

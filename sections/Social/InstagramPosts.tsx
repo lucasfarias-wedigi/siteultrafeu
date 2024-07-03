@@ -25,7 +25,8 @@ export interface Props {
 export async function loader({ title, facebookToken }: Props, _req: Request) {
   const fields = ["media_url", "media_type", "permalink"];
   const joinFields = fields.join(",");
-  const url = `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
+  const url =
+    `https://graph.instagram.com/me/media?access_token=${facebookToken}&fields=${joinFields}`;
 
   try {
     const response = await fetch(url);
@@ -67,20 +68,22 @@ export default function InstagramPosts({
             title="Visite nosso instagram"
             class="rounded-lg overflow-hidden w-full max-w-[350px] sm:max-w-[350px] group"
           >
-            {item.media_type === "IMAGE" ? (
-              <Image
-                class="max-w-full max-h-full object-cover w-full group-hover:scale-110  transition duration-400 group-hover:brightness-90"
-                src={item.media_url ?? ""}
-                alt="Imagem do instagram"
-                width={350}
-                height={350}
-                loading="lazy"
-              />
-            ) : (
-              <video controls class="max-w-full max-h-full object-cover">
-                <source src={item.media_url}></source>
-              </video>
-            )}
+            {item.media_type === "IMAGE"
+              ? (
+                <Image
+                  class="max-w-full max-h-full object-cover w-full group-hover:scale-110  transition duration-400 group-hover:brightness-90"
+                  src={item.media_url ?? ""}
+                  alt="Imagem do instagram"
+                  width={350}
+                  height={350}
+                  loading="lazy"
+                />
+              )
+              : (
+                <video controls class="max-w-full max-h-full object-cover">
+                  <source src={item.media_url}></source>
+                </video>
+              )}
           </a>
         ))}
       </div>
