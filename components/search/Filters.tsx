@@ -20,9 +20,8 @@ function ValueItem(
 ) {
   return (
     <a href={url} rel="nofollow" class="flex items-center gap-2">
-      <div aria-checked={selected} class="checkbox" />
-      <span class="text-sm">{label}</span>
-      {quantity > 0 && <span class="text-sm text-base-300">({quantity})</span>}
+      <div aria-checked={selected} class={`checkbox rounded-card [--chkbg:theme(colors.purplePrimary)] [--chkfg:white]`} />
+      <span class="text-sm w-[260px]">{label} {quantity > 0 && <span class="">({quantity})</span>}</span>
     </a>
   );
 }
@@ -33,7 +32,7 @@ function FilterValues({ key, values }: FilterToggle) {
     : "flex-col";
 
   return (
-    <ul class={`flex flex-wrap gap-2 ${flexDirection}`}>
+    <ul class={`flex flex-wrap gap-4 ${flexDirection}`}>
       {values.map((item) => {
         const { url, selected, value } = item;
 
@@ -67,12 +66,12 @@ function FilterValues({ key, values }: FilterToggle) {
 
 function Filters({ filters }: Props) {
   return (
-    <ul class="flex flex-col gap-6 p-4">
+    <ul class="flex flex-col gap-4 w-fit divide-y-4 divide-grayTertiary lg:divide-y-0">
       {filters
         .filter(isToggle)
         .map((filter) => (
-          <li class="flex flex-col gap-4">
-            <span>{filter.label}</span>
+          <li class="flex flex-col gap-4 p-4 lg:p-0">
+            <span class="text-sm font-bold text-purplePrimary">{filter.label}</span>
             <FilterValues {...filter} />
           </li>
         ))}

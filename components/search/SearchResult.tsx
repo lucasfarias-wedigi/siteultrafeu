@@ -7,6 +7,7 @@ import SearchControls from "../../islands/SearchControls.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
+import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
 export type Format = "Show More" | "Pagination";
 
@@ -29,6 +30,10 @@ export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
   layout?: Layout;
+  /**
+   * @hide
+   */
+  openFilter: boolean;
 
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
@@ -47,6 +52,7 @@ function Result({
   layout,
   startingPage = 0,
   url: _url,
+  openFilter = true,
 }: Omit<Props, "page"> & {
   page: ProductListingPage;
   url: string;
@@ -54,36 +60,117 @@ function Result({
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const perPage = pageInfo?.recordPerPage || products.length;
   const url = new URL(_url);
-
   const { format = "Show More" } = layout ?? {};
-
   const id = useId();
-
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
-
   const isPartial = url.searchParams.get("partial") === "true";
   const isFirstPage = !pageInfo.previousPage;
 
   return (
     <>
-      <div class="container px-4 sm:py-10">
+      <div class="max-w-7xl m-auto w-full lg:px-0 sm:py-10">
         {(isFirstPage || !isPartial) && (
-          <SearchControls
-            sortOptions={sortOptions}
-            filters={filters}
-            breadcrumb={breadcrumb}
-            displayFilter={layout?.variant === "drawer"}
-          />
+          <div class="flex lg:border lg:border-grayTertiary h-14  mb-8 items-center">
+            <button
+              class="hidden lg:flex items-center gap-4 text-sm p-4 border-r border-grayTertiary"
+              {...usePartialSection({
+                props: { openFilter: !openFilter },
+              })}
+            >
+              Filtrar
+              <svg
+                class="pointer-events-none"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 21V18"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 21V15"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 6V3"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7 9V3"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7 18C6.06812 18 5.60218 18 5.23463 17.8478C4.74458 17.6448 4.35523 17.2554 4.15224 16.7654C4 16.3978 4 15.9319 4 15C4 14.0681 4 13.6022 4.15224 13.2346C4.35523 12.7446 4.74458 12.3552 5.23463 12.1522C5.60218 12 6.06812 12 7 12C7.93188 12 8.39782 12 8.76537 12.1522C9.25542 12.3552 9.64477 12.7446 9.84776 13.2346C10 13.6022 10 14.0681 10 15C10 15.9319 10 16.3978 9.84776 16.7654C9.64477 17.2554 9.25542 17.6448 8.76537 17.8478C8.39782 18 7.93188 18 7 18Z"
+                  stroke="black"
+                />
+                <path
+                  d="M17 12C16.0681 12 15.6022 12 15.2346 11.8478C14.7446 11.6448 14.3552 11.2554 14.1522 10.7654C14 10.3978 14 9.93188 14 9C14 8.06812 14 7.60218 14.1522 7.23463C14.3552 6.74458 14.7446 6.35523 15.2346 6.15224C15.6022 6 16.0681 6 17 6C17.9319 6 18.3978 6 18.7654 6.15224C19.2554 6.35523 19.6448 6.74458 19.8478 7.23463C20 7.60218 20 8.06812 20 9C20 9.93188 20 10.3978 19.8478 10.7654C19.6448 11.2554 19.2554 11.6448 18.7654 11.8478C18.3978 12 17.9319 12 17 12Z"
+                  stroke="black"
+                />
+              </svg>
+            </button>
+            <SearchControls
+              sortOptions={sortOptions}
+              filters={filters}
+              breadcrumb={breadcrumb}
+              displayFilter={layout?.variant === "drawer"}
+            />
+            <span class="hidden lg:block text-sm m-auto">Mostrando {pageInfo.records} produtos de {pageInfo.recordPerPage}</span>
+            {format == "Pagination" && (
+              <div class="hidden lg:flex justify-center my-4">
+                <div class="join">
+                  <a
+                    aria-label="previous page link"
+                    rel="prev"
+                    href={pageInfo.previousPage ?? "#"}
+                    class="btn btn-ghost join-item"
+                  >
+                    <Icon id="ChevronLeft" size={24} strokeWidth={2} />
+                  </a>
+                  <span class="btn btn-ghost join-item">
+                    Page {zeroIndexedOffsetPage + 1}
+                  </span>
+                  <a
+                    aria-label="next page link"
+                    rel="next"
+                    href={pageInfo.nextPage ?? "#"}
+                    class="btn btn-ghost join-item"
+                  >
+                    <Icon id="ChevronRight" size={24} strokeWidth={2} />
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
         )}
 
-        <div class="flex flex-row">
-          {layout?.variant === "aside" && filters.length > 0 &&
+        <div class="flex flex-row gap-9 px-4 lg:px-0">
+          {layout?.variant === "aside" &&
+            filters.length > 0 &&
             (isFirstPage || !isPartial) && (
-            <aside class="hidden sm:block w-min min-w-[250px]">
-              <Filters filters={filters} />
-            </aside>
-          )}
+              <aside
+                class={`hidden transition-all duration-500 sm:block ${
+                  openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
+                } overflow-hidden`}
+              >
+                <h4 class="text-purplePrimary text-sm font-bold mb-5">
+                  FILTRO
+                </h4>
+                <Filters filters={filters} />
+              </aside>
+            )}
           <div class="flex-grow" id={id}>
             <ProductGallery
               products={products}
@@ -94,32 +181,6 @@ function Result({
             />
           </div>
         </div>
-
-        {format == "Pagination" && (
-          <div class="flex justify-center my-4">
-            <div class="join">
-              <a
-                aria-label="previous page link"
-                rel="prev"
-                href={pageInfo.previousPage ?? "#"}
-                class="btn btn-ghost join-item"
-              >
-                <Icon id="ChevronLeft" size={24} strokeWidth={2} />
-              </a>
-              <span class="btn btn-ghost join-item">
-                Page {zeroIndexedOffsetPage + 1}
-              </span>
-              <a
-                aria-label="next page link"
-                rel="next"
-                href={pageInfo.nextPage ?? "#"}
-                class="btn btn-ghost join-item"
-              >
-                <Icon id="ChevronRight" size={24} strokeWidth={2} />
-              </a>
-            </div>
-          </div>
-        )}
       </div>
       <SendEventOnView
         id={id}
@@ -131,7 +192,7 @@ function Result({
             item_list_id: breadcrumb.itemListElement?.at(-1)?.item,
             items: page.products?.map((product, index) =>
               mapProductToAnalyticsItem({
-                ...(useOffer(product.offers)),
+                ...useOffer(product.offers),
                 index: offset + index,
                 product,
                 breadcrumbList: page.breadcrumb,
@@ -144,9 +205,7 @@ function Result({
   );
 }
 
-function SearchResult(
-  { page, ...props }: ReturnType<typeof loader>,
-) {
+function SearchResult({ page, ...props }: ReturnType<typeof loader>) {
   if (!page) {
     return <NotFound />;
   }
