@@ -22,7 +22,8 @@
         "variant": "aside",
         "format": "Pagination"
       },
-      "__resolveType": "site/sections/Product/SearchResult.tsx"
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "startingPage": 0
     },
     {
       "__resolveType": "Footer - 04"
