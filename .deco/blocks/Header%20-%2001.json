@@ -114,18 +114,88 @@
         {
           "image": [],
           "children": [],
-          "name": "sub2.1",
-          "url": "#"
+          "name": "Amaciador De Carne",
+          "url": "/maquinario-de-producao/amaciador-de-carne"
         },
         {
           "image": [],
           "children": [],
-          "name": "sub2.2",
-          "url": "#"
+          "url": "/maquinario-de-producao/batedeira-industrial",
+          "name": "Batedeira Industrial"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/cilindro-de-massa",
+          "name": "Cilindro De Massa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/desfiador-de-carnes",
+          "name": "Desfiador De Carnes"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/divisora-de-massa",
+          "name": "Divisora De Massa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/fatiadeira-de-pao",
+          "name": "Fatiadeira De Pão"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/masseira",
+          "name": "Masseira"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/misturador-de-carnes",
+          "name": "Misturador De Carnes"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/misturela",
+          "name": "Misturela"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/modeladora-de-pao",
+          "name": "Modeladora De Pão"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/moedor-de-carne-industrial",
+          "name": "Moedor De Carne Industrial"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/processador-de-alimentos-industrial",
+          "name": "Processador De Alimentos Industrial"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/ralador-industrial",
+          "name": "Ralador Industrial"
+        },
+        {
+          "image": [],
+          "children": []
         }
       ],
       "image": [],
-      "url": "/",
+      "url": "/maquinario-de-producao",
       "name": "Maquinário de Produção",
       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/374cb701-7149-48e0-bafa-87da23a188f4"
     },
