@@ -554,7 +554,44 @@
       "name": "Mobiliário Comercial"
     },
     {
-      "children": [],
+      "children": [
+        {
+          "image": [],
+          "children": [],
+          "url": "/192?map=productClusterIds",
+          "name": "Padaria"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/190?map=productClusterIds",
+          "name": "Bar e Lanchonete"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/193?map=productClusterIds",
+          "name": "Restaurante"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/189?map=productClusterIds",
+          "name": "Açougue"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/194?map=productClusterIds",
+          "name": "Super mercado"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/179?map=productClusterIds",
+          "name": "Ambulantes"
+        }
+      ],
       "image": [],
       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/4b0b1767-d15e-4525-83b8-54636aea87a7",
       "url": "/",
@@ -564,7 +601,7 @@
       "children": [],
       "image": [],
       "name": "Por Marca",
-      "url": "/",
+      "url": "/brand?layout=list&order=OrderByTopSaleDESC",
       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b77ec8b6-e046-4daf-8fec-59e727c2f820"
     }
   ],
