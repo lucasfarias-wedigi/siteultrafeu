@@ -8,7 +8,7 @@ const PAGE_QUERY_PARAM = "page";
 const useSort = () =>
   useMemo(() => {
     const urlSearchParams = new URLSearchParams(
-      globalThis.window.location?.search
+      globalThis.window.location?.search,
     );
     return urlSearchParams.get(SORT_QUERY_PARAM) ?? "";
   }, []);
@@ -16,7 +16,7 @@ const useSort = () =>
 // TODO: Replace with "search utils"
 const applySort = (e: JSX.TargetedEvent<HTMLSelectElement, Event>) => {
   const urlSearchParams = new URLSearchParams(
-    globalThis.window.location.search
+    globalThis.window.location.search,
   );
 
   urlSearchParams.delete(PAGE_QUERY_PARAM);
@@ -57,7 +57,7 @@ function Sort({ sortOptions }: Props) {
             value,
             label:
               portugueseMappings[label as keyof typeof portugueseMappings] ??
-              label,
+                label,
           }))
           .filter(({ label }) => label)
           .map(({ value, label }) => (

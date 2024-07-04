@@ -127,7 +127,9 @@ function Result({
               breadcrumb={breadcrumb}
               displayFilter={layout?.variant === "drawer"}
             />
-            <span class="hidden lg:block text-sm m-auto">Mostrando {pageInfo.records} produtos de {pageInfo.recordPerPage}</span>
+            <span class="hidden lg:block text-sm m-auto">
+              Mostrando {pageInfo.records} produtos de {pageInfo.recordPerPage}
+            </span>
             {format == "Pagination" && (
               <div class="hidden lg:flex justify-center my-4">
                 <div class="join">
@@ -160,17 +162,17 @@ function Result({
           {layout?.variant === "aside" &&
             filters.length > 0 &&
             (isFirstPage || !isPartial) && (
-              <aside
-                class={`hidden transition-all duration-500 sm:block ${
-                  openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
-                } overflow-hidden`}
-              >
-                <h4 class="text-purplePrimary text-sm font-bold mb-5">
-                  FILTRO
-                </h4>
-                <Filters filters={filters} />
-              </aside>
-            )}
+            <aside
+              class={`hidden transition-all duration-500 sm:block ${
+                openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
+              } overflow-hidden`}
+            >
+              <h4 class="text-purplePrimary text-sm font-bold mb-5">
+                FILTRO
+              </h4>
+              <Filters filters={filters} />
+            </aside>
+          )}
           <div class="flex-grow" id={id}>
             <ProductGallery
               products={products}

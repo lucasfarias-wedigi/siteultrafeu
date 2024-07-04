@@ -20,8 +20,13 @@ function ValueItem(
 ) {
   return (
     <a href={url} rel="nofollow" class="flex items-center gap-2">
-      <div aria-checked={selected} class={`checkbox rounded-card [--chkbg:theme(colors.purplePrimary)] [--chkfg:white]`} />
-      <span class="text-sm w-[260px]">{label} {quantity > 0 && <span class="">({quantity})</span>}</span>
+      <div
+        aria-checked={selected}
+        class={`checkbox rounded-card [--chkbg:theme(colors.purplePrimary)] [--chkfg:white]`}
+      />
+      <span class="text-sm w-[260px]">
+        {label} {quantity > 0 && <span class="">({quantity})</span>}
+      </span>
     </a>
   );
 }
@@ -71,7 +76,9 @@ function Filters({ filters }: Props) {
         .filter(isToggle)
         .map((filter) => (
           <li class="flex flex-col gap-4 p-4 lg:p-0">
-            <span class="text-sm font-bold text-purplePrimary">{filter.label}</span>
+            <span class="text-sm font-bold text-purplePrimary">
+              {filter.label}
+            </span>
             <FilterValues {...filter} />
           </li>
         ))}
