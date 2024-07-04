@@ -414,6 +414,18 @@
           "children": [],
           "url": "/expositores-de-alimentos/vitrine-seca-neutra",
           "name": "Vitrine Seca/Neutra"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/expositores-de-alimentos/expositor-de-paes",
+          "name": "Expositor De Pães"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/expositores-de-alimentos/pista-aquecida",
+          "name": "Pista Aquecida"
         }
       ],
       "image": [],
@@ -422,24 +434,123 @@
       "url": "/expositores-de-alimentos"
     },
     {
-      "children": [],
+      "children": [
+        {
+          "image": [],
+          "children": [],
+          "url": "/pesagem-e-medicao/balanca-eletronica",
+          "name": "Balança Eletrônica"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/pesagem-e-medicao/balanca-mecanica",
+          "name": "Balança Mecânica"
+        }
+      ],
       "image": [],
       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/e234706b-d99a-4ada-8227-c78bd5d47d0f",
-      "url": "/",
+      "url": "/pesagem-e-medicao",
       "name": "Pesagem e Medição"
     },
     {
-      "children": [],
+      "children": [
+        {
+          "image": [],
+          "children": [],
+          "url": "/equipamentos-para-embalagens/embaladora",
+          "name": "Embaladora"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/equipamentos-para-embalagens/seladora",
+          "name": "Seladora"
+        }
+      ],
       "image": [],
       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/faf679b9-ffcb-4c8f-aac2-97eda99adc63",
-      "url": "/",
+      "url": "/equipamentos-para-embalagens",
       "name": "Equipamentos para Embalagens"
     },
     {
-      "children": [],
+      "children": [
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/armario-de-paes",
+          "name": "Armário De Pães"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/caixa-termica",
+          "name": "Caixa Térmica"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/check-out",
+          "name": "Check Out"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/climatizador",
+          "name": "Climatizador"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/conservador-de-frituras",
+          "name": "Conservador De Frituras"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/estante-aberta-para-assadeiras",
+          "name": "Estante Aberta Para Assadeiras"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/estantes",
+          "name": "Estantes"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/exaustor",
+          "name": "Exaustor"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/gaveta-de-dinheiro",
+          "name": "Gaveta De Dinheiro"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/lavatorio-em-inox-automatico",
+          "name": "Lavatório Em Inox Automático"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/mesa-e-cadeira",
+          "name": "Mesa E Cadeira"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mobiliario-comercial/mesa-para-manipulacao",
+          "name": "Mesa Para Manipulação"
+        }
+      ],
       "image": [],
       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/40f20c3c-fcec-486d-a418-eba44f8b8356",
-      "url": "/",
+      "url": "/mobiliario-comercial",
       "name": "Mobiliário Comercial"
     },
     {
