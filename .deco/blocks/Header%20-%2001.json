@@ -366,11 +366,60 @@
       "name": "Portáteis Industriais"
     },
     {
-      "children": [],
+      "children": [
+        {
+          "image": [],
+          "children": [],
+          "url": "/expositores-de-alimentos/balcao-caixa",
+          "name": "Balcão Caixa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/expositores-de-alimentos/balcao-estufa",
+          "name": "Balcão Estufa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/expositores-de-alimentos/buffet-refrigerado",
+          "name": "Buffet Refrigerado"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/expositores-de-alimentos/buffet-termico",
+          "name": "Buffet Térmico"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/expositores-de-alimentos/estufa-para-salgados",
+          "name": "Estufa Para Salgados"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/expositores-de-alimentos/fruteiras-vascas-hortifrutis",
+          "name": "Fruteiras/Vascas Hortifrutis"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/expositores-de-alimentos/vitrine-fria",
+          "name": "Vitrine Fria"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/expositores-de-alimentos/vitrine-seca-neutra",
+          "name": "Vitrine Seca/Neutra"
+        }
+      ],
       "image": [],
-      "url": "/",
       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/34824a5c-cbb2-419f-9411-e9f40e876bb5",
-      "name": "Expositores de Alimentos"
+      "name": "Expositores de Alimentos",
+      "url": "/expositores-de-alimentos"
     },
     {
       "children": [],
