@@ -69,8 +69,8 @@ function Result({
   const filtersSelecteds = filters.reduce((total, filter) => {
     const selectedCount = Array.isArray(filter.values)
       ? filter.values.reduce((count, value) => {
-          return value.selected ? count + 1 : count;
-        }, 0)
+        return value.selected ? count + 1 : count;
+      }, 0)
       : 0;
     return total + selectedCount;
   }, 0);
@@ -186,17 +186,17 @@ function Result({
           {layout?.variant === "aside" &&
             filters.length > 0 &&
             (isFirstPage || !isPartial) && (
-              <aside
-                class={`hidden transition-all duration-500 sm:block ${
-                  openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
-                } overflow-hidden`}
-              >
-                <h4 class="text-purplePrimary text-sm font-bold mb-5">
-                  FILTRO
-                </h4>
-                <Filters filters={filters} />
-              </aside>
-            )}
+            <aside
+              class={`hidden transition-all duration-500 sm:block ${
+                openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
+              } overflow-hidden`}
+            >
+              <h4 class="text-purplePrimary text-sm font-bold mb-5">
+                FILTRO
+              </h4>
+              <Filters filters={filters} />
+            </aside>
+          )}
           <div class="flex-grow" id={id}>
             <ProductGallery
               products={products}
