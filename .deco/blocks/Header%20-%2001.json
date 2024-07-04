@@ -191,7 +191,9 @@
         },
         {
           "image": [],
-          "children": []
+          "children": [],
+          "url": "/maquinario-de-producao/serra-fita-para-ossos",
+          "name": "Serra Fita Para Ossos"
         }
       ],
       "image": [],
@@ -200,10 +202,101 @@
       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/374cb701-7149-48e0-bafa-87da23a188f4"
     },
     {
-      "children": [],
+      "children": [
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/batedor-de-milk-shake",
+          "name": "Batedor De Milk Shake"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/cafeteira-comercial",
+          "name": "Cafeteira Comercial"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/chocolateira",
+          "name": "Chocolateira"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/cortador-de-legumes",
+          "name": "Cortador De Legumes"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/cutter",
+          "name": "Cutter"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/derretedeira-de-chocolate",
+          "name": "Derretedeira De Chocolate"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/descascador",
+          "name": "Descascador"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/despolpadeira",
+          "name": "Despolpadora"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/despolpador-de-tomate",
+          "name": "Despolpador De Tomate"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/ensacadeira",
+          "name": "Ensacadeira"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/extrator-de-suco-industrial",
+          "name": "Extrator De Suco Industrial"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/fatiador-de-carne",
+          "name": "Fatiador De Carne"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/fatiador-de-frios",
+          "name": "Fatiador De Frios"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/lava-loucas-industrial",
+          "name": "Lava Louças Industrial"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/liquidificador-industrial",
+          "name": "Liquidificador Industrial"
+        }
+      ],
       "image": [],
       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/682a9a56-9b3a-4ab7-8ab6-62c5107f58dc",
-      "url": "/",
+      "url": "/portateis-industriais",
       "name": "Portáteis Industriais"
     },
     {
