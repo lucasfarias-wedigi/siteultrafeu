@@ -776,7 +776,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 16.115196078431374,
+                "width": 25.703073904512753,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -798,7 +798,7 @@
               },
               {
                 "type": "stack",
-                "width": 83.88480392156863,
+                "width": 74.29692609548725,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1763,7 +1763,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 41.66666666666667,
+                "width": 28.253760627861347,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1785,7 +1785,7 @@
               },
               {
                 "type": "stack",
-                "width": 58.333333333333336,
+                "width": 71.74623937213866,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1824,7 +1824,7 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": "error"
           }
         },
         "%2F.deco%2Fblocks%2FHeader%2520-%252001.json::Preview::visibility::Preview::%7B%7D": {

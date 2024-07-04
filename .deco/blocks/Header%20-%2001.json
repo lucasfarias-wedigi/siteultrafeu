@@ -46,31 +46,67 @@
         {
           "image": [],
           "children": [],
-          "url": "/",
-          "name": "teste 1"
+          "url": "/equipamentos-para-coccao/chapa-e-sanduicheira",
+          "name": "Chapa E Sanduicheira"
         },
         {
           "image": [],
           "children": [],
-          "url": "/",
-          "name": "teste 2"
+          "url": "/equipamentos-para-coccao/char-broiler",
+          "name": "Char Broiler"
         },
         {
           "image": [],
           "children": [],
-          "name": "teste 233",
-          "url": "/"
+          "name": "Fogão Industrial",
+          "url": "/equipamentos-para-coccao/fogao-industrial"
         },
         {
           "image": [],
           "children": [],
-          "name": "sub1.4",
-          "url": "#"
+          "name": "Forno Industrial",
+          "url": "/equipamentos-para-coccao/forno-industrial"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/equipamentos-para-coccao/forno-turbo",
+          "name": "Forno Turbo"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/equipamentos-para-coccao/frangueira",
+          "name": "Frangueira"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/masseira",
+          "name": "Masseira"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/equipamentos-para-coccao/fritadeira-industrial",
+          "name": "Fritadeira Industrial"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/equipamentos-para-coccao/marmiteiro",
+          "name": "Marmiteiro"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/equipamentos-para-coccao/cozedor-de-massas",
+          "name": "Cozedor De Massas"
         }
       ],
       "image": [],
       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/dfb69827-79cb-49ff-92f6-f1c13fa7687e",
-      "url": "/",
+      "url": "/equipamentos-para-coccao",
       "name": "Equipamentos para Cocção"
     },
     {
