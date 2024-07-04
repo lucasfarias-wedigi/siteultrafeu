@@ -194,6 +194,12 @@
           "children": [],
           "url": "/maquinario-de-producao/serra-fita-para-ossos",
           "name": "Serra Fita Para Ossos"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/maquinario-de-producao/modeladora-de-salgados",
+          "name": "Modeladora De Salgados"
         }
       ],
       "image": [],
@@ -292,6 +298,66 @@
           "children": [],
           "url": "/portateis-industriais/liquidificador-industrial",
           "name": "Liquidificador Industrial"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/maquina-de-algodao-doce",
+          "name": "Máquina De Algodão Doce"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/maquina-de-crepe",
+          "name": "Máquina De Crepe"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/masseira-de-churros",
+          "name": "Masseira De Churros"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/moedor-de-cafe",
+          "name": "Moedor De Café"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/moinho-de-pao",
+          "name": "Moinho De Pão"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/panquequeira",
+          "name": "Panquequeira"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/recheadeira-de-churros",
+          "name": "Recheadeira De Churros"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/torre-de-chope",
+          "name": "Torre De Chope"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/mixers",
+          "name": "Mixers"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/portateis-industriais/pipoqueira",
+          "name": "Pipoqueira"
         }
       ],
       "image": [],
