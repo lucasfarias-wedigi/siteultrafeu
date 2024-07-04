@@ -7,14 +7,12 @@ import Drawer from "../../components/ui/Drawer.tsx";
 import { useSignal } from "@preact/signals";
 import type { ProductListingPage } from "apps/commerce/types.ts";
 
-export type Props =
-  & Pick<
-    ProductListingPage,
-    "filters" | "breadcrumb" | "sortOptions"
-  >
-  & {
-    displayFilter?: boolean;
-  };
+export type Props = Pick<
+  ProductListingPage,
+  "filters" | "breadcrumb" | "sortOptions"
+> & {
+  displayFilter?: boolean;
+};
 
 function SearchControls({
   filters,
@@ -33,9 +31,7 @@ function SearchControls({
         <>
           <div class="bg-base-100 flex flex-col h-full divide-y-4 divide-grayTertiary lg:divide-y-0 overflow-y-hidden">
             <div class="flex justify-between items-center">
-              <h1 class="text-purplePrimary font-bold text-sm pl-4">
-                Filtrar
-              </h1>
+              <h1 class="text-purplePrimary font-bold text-sm pl-4">Filtrar</h1>
               <Button
                 class="btn btn-ghost"
                 onClick={() => (open.value = false)}
@@ -50,14 +46,12 @@ function SearchControls({
         </>
       }
     >
-      <div class="flex flex-col p-0 sm:flex-row sm:h-[56px] border border-grayTertiary lg:border-none">
-        {
-          /* <div class="flex flex-row items-center sm:p-0 mb-2">
+      <div class="flex flex-col p-0 sm:flex-row sm:h-[56px]">
+        
+        {/* <div class="flex flex-row items-center sm:p-0 mb-2">
           <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
-        </div> */
-        }
-        {
-          /* <button
+        </div> */}
+        {/* <button
           class="flex items-center gap-4 text-sm p-4 border-r border-grayTertiary"
         >
           Filtrar
@@ -101,13 +95,14 @@ function SearchControls({
               stroke="black"
             />
           </svg>
-        </button> */
-        }
+        </button> */}
         <div class="flex flex-row items-center px-4">
           <Button
-            class={displayFilter
-              ? "btn-ghost"
-              : "sm:hidden flex items-center gap-4 border-x border-grayTertiary h-14 px-4"}
+            class={
+              displayFilter
+                ? "btn-ghost"
+                : "sm:hidden flex items-center gap-4 border-x border-grayTertiary h-14 px-4"
+            }
             onClick={() => {
               open.value = true;
             }}

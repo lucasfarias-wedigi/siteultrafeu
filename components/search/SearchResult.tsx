@@ -66,12 +66,25 @@ function Result({
   const offset = zeroIndexedOffsetPage * perPage;
   const isPartial = url.searchParams.get("partial") === "true";
   const isFirstPage = !pageInfo.previousPage;
-
+  const filtersSelecteds = filters.reduce((total, filter) => {
+    const selectedCount = Array.isArray(filter.values)
+      ? filter.values.reduce((count, value) => {
+          return value.selected ? count + 1 : count;
+        }, 0)
+      : 0;
+    return total + selectedCount;
+  }, 0);
+  const startIndex = _url.indexOf("/s?q=");
+  let endIndex = _url.indexOf("&", startIndex);
+  if (endIndex === -1) {
+    endIndex = _url.length;
+  }
+  const initialUrl = _url.substring(startIndex, endIndex);
   return (
     <>
       <div class="max-w-7xl m-auto w-full lg:px-0 sm:py-10">
         {(isFirstPage || !isPartial) && (
-          <div class="flex lg:border lg:border-grayTertiary h-14  mb-8 items-center">
+          <div class="flex border border-grayTertiary h-14  mb-8 items-center px-4 lg:px-0">
             <button
               class="hidden lg:flex items-center gap-4 text-sm p-4 border-r border-grayTertiary"
               {...usePartialSection({
@@ -127,6 +140,17 @@ function Result({
               breadcrumb={breadcrumb}
               displayFilter={layout?.variant === "drawer"}
             />
+            {filtersSelecteds > 0 && (
+              <div class="hidden lg:flex items-center text-sm gap-4">
+                <span class="hidden lg:block">Filtro ({filtersSelecteds})</span>
+                <a href={initialUrl}>
+                  <button class="flex gap-1 justify-center items-center bg-whitePrimary w-[81px] h-[34px] rounded-card border-grayTertiary border">
+                    <Icon id="XMark" size={18} strokeWidth={2} />
+                    Limpar
+                  </button>
+                </a>
+              </div>
+            )}
             <span class="hidden lg:block text-sm m-auto">
               Mostrando {pageInfo.records} produtos de {pageInfo.recordPerPage}
             </span>
@@ -162,17 +186,17 @@ function Result({
           {layout?.variant === "aside" &&
             filters.length > 0 &&
             (isFirstPage || !isPartial) && (
-            <aside
-              class={`hidden transition-all duration-500 sm:block ${
-                openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
-              } overflow-hidden`}
-            >
-              <h4 class="text-purplePrimary text-sm font-bold mb-5">
-                FILTRO
-              </h4>
-              <Filters filters={filters} />
-            </aside>
-          )}
+              <aside
+                class={`hidden transition-all duration-500 sm:block ${
+                  openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
+                } overflow-hidden`}
+              >
+                <h4 class="text-purplePrimary text-sm font-bold mb-5">
+                  FILTRO
+                </h4>
+                <Filters filters={filters} />
+              </aside>
+            )}
           <div class="flex-grow" id={id}>
             <ProductGallery
               products={products}
