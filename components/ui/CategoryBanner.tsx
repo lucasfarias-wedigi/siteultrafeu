@@ -10,8 +10,6 @@ export interface Banner {
   matcher: string;
   /** @description text to be rendered on top of the image */
   title?: string;
-  /** @description text to be rendered on top of the image */
-  subtitle?: string;
   image: {
     url: string;
     /** @description Image for big screens */
@@ -36,7 +34,6 @@ const DEFAULT_PROPS = {
       },
       title: "Woman",
       matcher: "/*",
-      subtitle: "As",
     },
   ],
 };
@@ -48,35 +45,28 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
     return null;
   }
 
-  const { title, subtitle, image } = banner;
+  const { title, image } = banner;
 
   return (
-    <div class="grid grid-cols-1 grid-rows-1 mb-8">
+    <div class="w-full flex items-center justify-center mb-8 relative">
       <a href={image.url || "#"}>
         <Picture preload class="col-start-1 col-span-1 row-start-1 row-span-1">
           <Source
             src={image.mobile}
             width={360}
-            height={120}
+            height={96}
             media="(max-width: 767px)"
           />
           <Source
             src={image.desktop}
-            width={1440}
-            height={200}
+            width={1920}
+            height={149}
             media="(min-width: 767px)"
           />
           <img class="w-full" src={image.desktop} alt={image.alt ?? title} />
         </Picture>
       </a>
-      <div class="container flex flex-col items-center justify-center sm:items-start col-start-1 col-span-1 row-start-1 row-span-1 w-full">
-        <h1>
-          <span class="text-5xl font-medium text-base-100">{title}</span>
-        </h1>
-        <h2>
-          <span class="text-xl font-medium text-base-100">{subtitle}</span>
-        </h2>
-      </div>
+      <h1 class="absolute z-[2] text-white font-semibold text-base">{title}</h1>
     </div>
   );
 }
