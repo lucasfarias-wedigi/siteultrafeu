@@ -42,7 +42,7 @@ function Sort({ sortOptions }: Props) {
   const sort = useSort();
 
   return (
-    <div class="flex items-center lg:gap-4 border-r border-grayTertiary h-14 px-4">
+    <div class="flex items-center lg:gap-4 border-r border-grayTertiary h-full px-4 py-[15px]">
       <label for="sort" class="sr-only">
         Ordenar por
       </label>
@@ -50,7 +50,7 @@ function Sort({ sortOptions }: Props) {
         id="sort"
         name="sort"
         onInput={applySort}
-        class="w-min text-sm cursor-pointer outline-none appearance-none"
+        class="lg:group-hover:bg-whitePrimary w-min text-sm cursor-pointer outline-none appearance-none h-full"
       >
         {sortOptions
           .map(({ value, label }) => ({

@@ -48,7 +48,7 @@ function SearchControls({
         </>
       }
     >
-      <div class="flex flex-col p-0 sm:flex-row sm:h-[56px]">
+      <div class="flex flex-col p-0 sm:flex-row h-full">
         {
           /* <div class="flex flex-row items-center sm:p-0 mb-2">
           <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
@@ -101,11 +101,11 @@ function SearchControls({
           </svg>
         </button> */
         }
-        <div class="flex flex-row items-center px-4">
+        <div class="group lg:hover:bg-whitePrimary flex flex-row items-center px-4 lg:px-0 h-full">
           <Button
             class={displayFilter
               ? "btn-ghost"
-              : "sm:hidden flex items-center gap-4 border-x border-grayTertiary h-14 px-4"}
+              : "sm:hidden flex items-center gap-4 border-x border-grayTertiary h-full px-4"}
             onClick={() => {
               open.value = true;
             }}
