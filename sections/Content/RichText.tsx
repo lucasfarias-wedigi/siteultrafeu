@@ -22,7 +22,7 @@ export default function RichText({
   return (
     <div
       dangerouslySetInnerHTML={{ __html: text }}
-      class={style || ""}
+      class={style || "m-auto"}
       style={{ maxWidth: container }}
     />
   );
