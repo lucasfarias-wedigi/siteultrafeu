@@ -7,7 +7,8 @@
         "url": "#",
         "alt": "banner"
       },
-      "matcher": "/*"
+      "matcher": "/*",
+      "title": "TITULO"
     }
   ],
   "__resolveType": "site/sections/Category/CategoryBanner.tsx"
