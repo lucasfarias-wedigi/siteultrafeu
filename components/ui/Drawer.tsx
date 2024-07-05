@@ -40,7 +40,7 @@ function Drawer(props: Props) {
   }, []);
 
   return (
-    <div class={`drawer ${_class}`}>
+    <div class={`drawer lg:w-fit ${_class}`}>
       <input
         id={id}
         checked={open}

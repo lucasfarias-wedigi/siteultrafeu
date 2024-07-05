@@ -50,7 +50,7 @@ function ProductShelf({ products, title, layout }: Props) {
   return (
     <div
       id={id}
-      class="w-full max-w-7xl m-auto py-8 flex flex-col gap-6 lg:py-10"
+      class="w-full max-w-7xl m-auto px-4 lg:px-0"
     >
       {
         /* <Header
@@ -62,7 +62,7 @@ function ProductShelf({ products, title, layout }: Props) {
       }
       <div class="relative flex items-center w-full">
         <CustomDivider>
-          <h2 class="text-start md:text-center text-blackPrimary font-semibold text-2xl whitespace-nowrap">
+          <h2 class="text-start md:text-center text-blackPrimary font-semibold text-base lg:text-2xl whitespace-nowrap">
             {title}
           </h2>
         </CustomDivider>
