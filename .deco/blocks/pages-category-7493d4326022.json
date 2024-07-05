@@ -24,12 +24,13 @@
           "desktop": 3
         },
         "variant": "aside",
-        "pagination": "show-more"
+        "pagination": "show-more",
+        "format": "Pagination"
       },
       "cardLayout": {
         "__resolveType": "Product Card Layout - 01"
       },
-      "startingPage": 1,
+      "startingPage": 0,
       "__resolveType": "site/sections/Product/SearchResult.tsx"
     },
     {
