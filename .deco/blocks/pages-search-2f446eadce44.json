@@ -26,6 +26,25 @@
       "startingPage": 0
     },
     {
+      "__resolveType": "DualBanners"
+    },
+    {
+      "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+      "banners": [
+        {
+          "image": {
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/bd8d2102-dcb2-49ae-bdb4-2c5b336c612d",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/04f20527-b856-4d59-adc2-f9055f028389",
+            "url": "#",
+            "alt": "banner"
+          },
+          "matcher": "/*",
+          "title": "titulo",
+          "subtitle": "subtitulo"
+        }
+      ]
+    },
+    {
       "__resolveType": "Footer - 04"
     }
   ],
