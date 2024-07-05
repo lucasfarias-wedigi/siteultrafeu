@@ -81,7 +81,7 @@ function Result({
     endIndex = _url.length;
   }
   const initialUrl = _url.substring(startIndex, endIndex);
-
+  console.log(breadcrumb);
   return (
     <>
       <div class="py-10">
