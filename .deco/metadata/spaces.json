@@ -828,6 +828,18 @@
         "maximisedItemId": null
       },
       "tabs": {
+        "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::visibility::Preview::%7B%7D": {
+          "name": "Preview",
+          "icon": "visibility",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Preview",
+          "width": 70,
+          "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::visibility::Preview::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        },
         "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Properties::list::Properties::%7B%7D": {
           "name": "Properties",
           "icon": "list",
@@ -839,18 +851,6 @@
           "state": {
             "__signal": null,
             "value": null
-          }
-        },
-        "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::visibility::Preview::%7B%7D": {
-          "name": "Preview",
-          "icon": "visibility",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Preview",
-          "width": 70,
-          "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::visibility::Preview::%7B%7D",
-          "state": {
-            "__signal": null
           }
         }
       }
@@ -3694,7 +3694,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 17.728706624605678,
+                "width": 13.438485804416404,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3716,7 +3716,7 @@
               },
               {
                 "type": "stack",
-                "width": 82.27129337539432,
+                "width": 86.5615141955836,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
