@@ -18,7 +18,7 @@ export default function RichText({
   style,
   containerWidth,
 }: Props) {
-  const container = containerWidth + "px" || "100%";
+  const container = containerWidth ? `${containerWidth}px` : "100%";
   return (
     <div
       dangerouslySetInnerHTML={{ __html: text }}
