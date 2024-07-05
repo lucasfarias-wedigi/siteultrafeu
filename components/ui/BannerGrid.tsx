@@ -153,14 +153,14 @@ export default function BannnerGrid({
               <Source
                 media="(max-width: 767px)"
                 src={srcMobile}
-                width={100}
-                height={100}
+                width={624}
+                height={214}
               />
               <Source
                 media="(min-width: 768px)"
                 src={srcDesktop ? srcDesktop : srcMobile}
-                width={250}
-                height={250}
+                width={624}
+                height={214}
               />
               <img
                 class="w-full h-[214px]"
