@@ -42,7 +42,10 @@ export default function AddToCartButton(props: Props) {
   const btnProps = useAddToCart(props);
 
   return (
-    <Button {...btnProps} class="bg-purplePrimary text-white uppercase text-base font-bold py-4 flex items-center justify-center gap-2 w-full">
+    <Button
+      {...btnProps}
+      class="bg-purplePrimary text-white uppercase text-base font-bold py-4 flex items-center justify-center gap-2 w-full"
+    >
       <Icon
         id={"FilledMinicart"}
         width={18}

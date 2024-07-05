@@ -17,10 +17,15 @@
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/Social/WhatsApp.tsx",
+      "phone": 9
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductDetails.tsx",
       "page": {
         "__resolveType": "PDP Loader"
       },
-      "__resolveType": "site/sections/Product/ProductDetails.tsx"
+      "mdColors": []
     },
     {
       "__resolveType": "site/sections/Images/BannerGrid.tsx",

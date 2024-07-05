@@ -15,8 +15,11 @@ import { useOffer } from "../../sdk/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import ProductSelector from "./ProductVariantSelector.tsx";
-import Icon, { AvailableIcons } from "../../components/ui/Icon.tsx";
+import ProductSelector from "../../islands/ProductVariantSelector.tsx";
+import Icon from "../../components/ui/Icon.tsx";
+import ShareProductButton from "../../islands/ShareProductButton.tsx";
+import ProductViewPayments from "../../islands/ProductViewPayments.tsx";
+import { Data } from "../../sections/Product/ProductDetails.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -28,9 +31,10 @@ interface Props {
      */
     name?: "concat" | "productGroup" | "product";
   };
+  mdColors: Data[];
 }
 
-function ProductInfo({ page, layout }: Props) {
+function ProductInfo({ page, layout, mdColors }: Props) {
   const platform = usePlatform();
   const id = useId();
 
@@ -38,7 +42,7 @@ function ProductInfo({ page, layout }: Props) {
     throw new Error("Missing Product Details Page Info");
   }
 
-  const { breadcrumbList, product } = page;
+  const { product } = page;
   const {
     productID,
     offers,
@@ -49,8 +53,12 @@ function ProductInfo({ page, layout }: Props) {
   } = product;
   const description = product.description || isVariantOf?.description;
   const brandName = product?.brand?.name;
-  const technicalDescription = isVariantOf?.additionalProperty.find((item) => item.name === "Descrição Técnica")?.value;
-  const lines = technicalDescription?.split('\n').filter(line => line.trim() !== '');
+  const technicalDescription = isVariantOf?.additionalProperty.find((item) =>
+    item.name === "Descrição Técnica"
+  )?.value;
+  const lines = technicalDescription?.split("\n").filter((line) =>
+    line.trim() !== ""
+  );
   const {
     price = 0,
     listPrice,
@@ -64,13 +72,29 @@ function ProductInfo({ page, layout }: Props) {
     price,
     listPrice,
   });
-  const discountPercentage = ((Number(listPrice) - Number(price)) / Number(listPrice)) * 100;
+  const discountPercentage =
+    ((Number(listPrice) - Number(price)) / Number(listPrice)) * 100;
   const pixFactor = 0.10; // 10%
   const pixListPrice = Number(listPrice) * (1 - pixFactor);
   const pixPrice = price * (1 - pixFactor);
   const pixSavingsPrice = price * pixFactor;
 
-  console.log(isVariantOf?.name, "name errado pq");
+  function getTechnicalInfoValue(
+    lines: string[] | undefined,
+    key: string,
+  ): string | null {
+    if (!lines) return null;
+
+    const line = lines.find((line) => line.startsWith(key));
+    if (!line) return null;
+
+    const parts = line.split(":");
+    if (parts.length > 1) {
+      return parts.slice(1).join(":").trim();
+    }
+
+    return null;
+  }
 
   return (
     <div class="flex flex-col px-4" id={id}>
@@ -86,20 +110,31 @@ function ProductInfo({ page, layout }: Props) {
                   : name}
             </span>
           </h1>
-          <WishlistButtonVtex
-            variant="full"
-            productID={productID}
-            productGroupID={productGroupID}
-          />
+          <div class="flex flex-col items-center">
+            <WishlistButtonVtex
+              variant="full"
+              productID={productID}
+              productGroupID={productGroupID}
+            />
+            <ShareProductButton productName="share" />
+          </div>
         </div>
         <div class="flex items-center justify-between max-w-[291px]">
-          {gtin && <span class="text-xs text-grayPrimary">Código: <strong class="text-black">{gtin}</strong></span>}
-          {brandName && <span class="text-xs text-grayPrimary">Marca: <strong class="text-black">{brandName}</strong></span>}
+          {gtin && (
+            <span class="text-xs text-grayPrimary">
+              Código: <strong class="text-black">{gtin}</strong>
+            </span>
+          )}
+          {brandName && (
+            <span class="text-xs text-grayPrimary">
+              Marca: <strong class="text-black">{brandName}</strong>
+            </span>
+          )}
         </div>
       </div>
       {/* Sku Selector */}
       <div class="mt-4 sm:mt-6">
-        <ProductSelector product={product} />
+        <ProductSelector mdColors={mdColors} product={product} />
       </div>
       {/* Prices */}
       <div class="mt-4">
@@ -112,40 +147,24 @@ function ProductInfo({ page, layout }: Props) {
           <span class="font-medium text-xl text-black">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
-          {(listPrice ?? 0) > price && (<span class="bg-grayQuaternary rounded-[5px] text-greenPrimary text-xs font-bold py-[2px] px-2 flex items-center gap-1">-{Math.round(discountPercentage)}%  <Icon
-            id={"MiniDownArrow"}
-            width={8}
-            height={9}
-            fill="currentColor"
-          /></span>)}
+          {(listPrice ?? 0) > price && (
+            <span class="bg-grayQuaternary rounded-[5px] text-greenPrimary text-xs font-bold py-[2px] px-2 flex items-center gap-1">
+              -{Math.round(discountPercentage)}%{" "}
+              <Icon
+                id={"MiniDownArrow"}
+                width={8}
+                height={9}
+                fill="currentColor"
+              />
+            </span>
+          )}
         </div>
-        <span class="text-xs text-[#2D2D2D]">Ou até {installments}</span>
+        {installments && (
+          <span class="text-xs text-[#2D2D2D]">Ou até {installments}</span>
+        )}
       </div>
       {/* Payment Methods */}
-      <div class="flex justify-between bg-white rounded-[5px] py-[9px] px-2 my-4">
-        <div class="flex gap-4">
-          <Icon
-            id={"CreditCard"}
-            width={28}
-            height={19}
-            fill="currentColor"
-          />
-          <Icon
-            id={"NewPix"}
-            width={22}
-            height={22}
-            fill="currentColor"
-          />
-          <span class="text-sm font-medium underline text-grayPrimary">Ver mais formas de pagamento</span>
-        </div>
-        <Icon
-          id={"ChevronRight"}
-          width={24}
-          height={24}
-          fill="currentColor"
-          class="text-grayPrimary"
-        />
-      </div>
+      <ProductViewPayments price={price} />
       {/* Pix Prices */}
       <div class="flex flex-col">
         {(listPrice ?? 0) > price && (
@@ -153,16 +172,25 @@ function ProductInfo({ page, layout }: Props) {
             <span class="line-through text-[#B7B7B7] text-sm">
               {formatPrice(pixListPrice, offers?.priceCurrency)}
             </span>
-            <span class="bg-grayQuaternary rounded-[5px] text-greenPrimary text-xs font-bold py-[2px] px-2 flex items-center gap-1">-{Math.round(discountPercentage)}%<Icon
-              id={"MiniDownArrow"}
-              width={8}
-              height={9}
-              fill="currentColor"
-            /></span>
+            <span class="bg-grayQuaternary rounded-[5px] text-greenPrimary text-xs font-bold py-[2px] px-2 flex items-center gap-1">
+              -{Math.round(discountPercentage)}%<Icon
+                id={"MiniDownArrow"}
+                width={8}
+                height={9}
+                fill="currentColor"
+              />
+            </span>
           </div>
         )}
-        <span class="text-[20px] text-purplePrimary"><strong class="text-[32px]">{formatPrice(pixPrice, offers?.priceCurrency)}</strong> à vista no PIX</span>
-        <span class="w-fit uppercase text-xs text-white bg-greenPrimary rounded-[5px] py-[6px] px-1">Economia de {formatPrice(pixSavingsPrice, offers?.priceCurrency)}</span>
+        <span class="text-[20px] text-purplePrimary">
+          <strong class="text-[32px]">
+            {formatPrice(pixPrice, offers?.priceCurrency)}
+          </strong>{" "}
+          à vista no PIX
+        </span>
+        <span class="w-fit uppercase text-xs text-white bg-greenPrimary rounded-[5px] py-[6px] px-1">
+          Economia de {formatPrice(pixSavingsPrice, offers?.priceCurrency)}
+        </span>
       </div>
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 sm:mt-10 flex flex-col gap-2">
@@ -176,11 +204,13 @@ function ProductInfo({ page, layout }: Props) {
                     productID={productID}
                     seller={seller}
                   />
-                  {/* <WishlistButtonVtex
+                  {
+                    /* <WishlistButtonVtex
                     variant="full"
                     productID={productID}
                     productGroupID={productGroupID}
-                  /> */}
+                  /> */
+                  }
                 </>
               )}
               {platform === "wake" && (
@@ -256,26 +286,116 @@ function ProductInfo({ page, layout }: Props) {
         </span>
       </div>
       {/* Technical Description */}
-      <div class="mt-4 sm:mt-6">
+      <div class="mt-4 sm:mt-6 border-t-[1px] border-grayTertiary pt-4">
         <span class="text-sm">
           {technicalDescription && (
-            <div>
-              <span class="text-black font-semibold text-base">Descrição Técnica:</span>
-              <ul class="mt-2 text-sm">
-                {lines.map((line, index) => {
-                  const parts = line.split(':');
+            <div class="">
+              <span class="text-black font-semibold text-base">
+                Informações técnicas
+              </span>
+              <ul class="flex flex-wrap gap-4 mt-4 justify-between">
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"PesoLiquido1"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Peso líquido:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Peso líquido")}
+                    </strong>
+                  </div>
+                </li>
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"Consumo"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Consumo:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Consumo")}
+                    </strong>
+                  </div>
+                </li>
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"Tensao"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Tensão:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Tensão")}
+                    </strong>
+                  </div>
+                </li>
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"Altura"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Altura:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Altura")}
+                    </strong>
+                  </div>
+                </li>
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"Frente"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Frente:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Frente")}
+                    </strong>
+                  </div>
+                </li>
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"Profundidade"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Profundidade:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Profundidade")}
+                    </strong>
+                  </div>
+                </li>
+              </ul>
+              <ul class="mt-4 text-sm">
+                {lines?.map((line, index) => {
+                  const parts = line.split(":");
                   return (
                     <li
                       key={index}
-                      className={`${index % 2 === 0 ? 'bg-gray-200' : 'bg-white'} p-2`}
+                      className={`${index % 2 === 0 ? "bg-white" : "bg-grayTertiary"
+                        } p-2`}
                     >
-                      {parts.length > 1 ? (
-                        <>
-                          {parts[0]}: <strong>{parts.slice(1).join(':')}</strong>
-                        </>
-                      ) : (
-                        line
-                      )}
+                      {parts.length > 1
+                        ? (
+                          <>
+                            {parts[0]}:{" "}
+                            <strong>{parts.slice(1).join(":")}</strong>
+                          </>
+                        )
+                        : line}
                     </li>
                   );
                 })}

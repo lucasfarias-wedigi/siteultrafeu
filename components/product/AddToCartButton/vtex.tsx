@@ -26,7 +26,7 @@ function AddToCartButton({ seller, productID, eventParams }: Props) {
       orderItems: [{
         id: productID,
         seller: seller,
-        quantity: itemsQuantity
+        quantity: itemsQuantity,
       }],
     });
 

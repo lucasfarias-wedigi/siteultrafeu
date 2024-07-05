@@ -89,7 +89,9 @@ function ShippingSimulation({ items }: Props) {
   return (
     <div class="flex flex-col gap-4">
       <div class="flex flex-col">
-        <span class="text-base text-black font-semibold">Calcular o Frete:</span>
+        <span class="text-base text-black font-semibold">
+          Calcular o Frete:
+        </span>
       </div>
 
       <form
@@ -111,7 +113,11 @@ function ShippingSimulation({ items }: Props) {
             postalCode.value = e.currentTarget.value;
           }}
         />
-        <Button type="submit" loading={loading.value} class="join-item text-purplePrimary text-base font-bold border-[1px] border-purplePrimary border-solid p-[10px]">
+        <Button
+          type="submit"
+          loading={loading.value}
+          class="join-item text-purplePrimary text-base font-bold border-[1px] border-purplePrimary border-solid p-[10px]"
+        >
           Calcular
         </Button>
       </form>

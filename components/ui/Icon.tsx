@@ -24,8 +24,10 @@ export type AvailableIcons =
   | "MagnifyingGlass"
   | "Mastercard"
   | "Message"
+  | "Close"
   | "Phone"
   | "Pix"
+  | "Pix2"
   | "Plus"
   | "QuestionMarkCircle"
   | "Return"
@@ -39,6 +41,7 @@ export type AvailableIcons =
   | "User"
   | "Visa"
   | "WhatsApp"
+  | "WhatsAppWhite"
   | "XMark"
   | "Zoom"
   | "Alert"
@@ -47,6 +50,7 @@ export type AvailableIcons =
   | "AlertWarning"
   | "AlertError"
   | "share"
+  | "sharePdp"
   | "MessageIcon"
   | "WishlistIcon"
   | "LoginIcon"
@@ -61,7 +65,16 @@ export type AvailableIcons =
   | "NewPix"
   | "FilledMinicart"
   | "MiniDownArrow"
-  | "WishlistHeart";
+  | "WishlistHeart"
+  | "ScrollbarPdp"
+  | "ScrollRightHand"
+  | "CartaoBndes"
+  | "PesoLiquido1"
+  | "Consumo"
+  | "Tensao"
+  | "Altura"
+  | "Frente"
+  | "Profundidade";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
