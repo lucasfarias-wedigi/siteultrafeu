@@ -269,29 +269,7 @@
       "productInHighlight": "1"
     },
     {
-      "__resolveType": "site/sections/Images/BannerGrid.tsx",
-      "banners": [
-        {
-          "alt": "BNDS",
-          "href": "a",
-          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/d533ae9d-856d-4ffc-9ef9-8062d3ff4da9",
-          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/027f5c7f-d7f8-4531-9cf2-0814e2704f88"
-        },
-        {
-          "alt": "CARTAO ULTRAFEU",
-          "href": "#",
-          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2ae5b15d-2f3c-453b-b7f0-ff252da8ea99",
-          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/191f4766-ad8d-48dd-a420-c8996d5695a3"
-        }
-      ],
-      "borderRadius": {
-        "mobile": "none",
-        "desktop": "none"
-      },
-      "itemsPerLine": {
-        "mobile": 1,
-        "desktop": 2
-      }
+      "__resolveType": "DualBanners"
     },
     {
       "__resolveType": "site/sections/Social/InstagramPosts.tsx",

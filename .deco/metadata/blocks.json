@@ -316,5 +316,9 @@
   "/.deco/blocks/Preview%20site%2Fsections%2FBrands.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Brands.tsx"
+  },
+  "/.deco/blocks/DualBanners.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/BannerGrid.tsx"
   }
 }
