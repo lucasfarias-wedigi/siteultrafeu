@@ -18,6 +18,125 @@ export default defineApp(async (_req, ctx) => {
 
       {/* Include Icons and manifest */}
       <Head>
+        {/* Add custom font*/}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: normal;
+                font-weight: 100;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-Thin.otf) format('opentype');
+          }
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-Extralight.otf) format('opentype');
+          }
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: italic;
+                font-weight: 200;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-ExtralightItalic.otf) format('opentype');
+          }
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-Light.otf) format('opentype');
+          }
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: italic;
+                font-weight: 300;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-LightItalic.otf) format('opentype');
+          }
+                              @font-face {
+                font-family: 'MinorkSans';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-Regular.otf) format('opentype');
+          }
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-Medium.otf) format('opentype');
+          }
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: italic;
+                font-weight: 500;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-MediumItalic.otf) format('opentype');
+          }
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-Semibold.otf) format('opentype');
+          }
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: italic;
+                font-weight: 600;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-SemiboldItalic.otf) format('opentype');
+          }
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-Bold.otf) format('opentype');
+          }
+              @font-face {
+                font-family: 'MinorkSans';
+                font-style: italic;
+                font-weight: 700;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-BoldItalic.otf) format('opentype');
+          }
+                              @font-face {
+                font-family: 'MinorkSans';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-Extrabold.otf) format('opentype');
+          }
+                                              @font-face {
+                font-family: 'MinorkSans';
+                font-style: italic;
+                font-weight: 800;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-ExtraboldItalic.otf) format('opentype');
+          }
+                                              @font-face {
+                font-family: 'MinorkSans';
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-Extrablack.otf) format('opentype');
+          }
+                                              @font-face {
+                font-family: 'MinorkSans';
+                font-style: italic;
+                font-weight: 900;
+                font-display: swap;
+                src: url(/fonts/MinorkSans-ExtrablackItalic.otf) format('opentype');
+          }
+            `,
+          }}
+        />
         {/* Enable View Transitions API */}
         <meta name="view-transition" content="same-origin" />
 

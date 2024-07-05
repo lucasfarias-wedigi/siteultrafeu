@@ -7,6 +7,9 @@ export default {
   theme: {
     container: { center: true },
     extend: {
+      fontFamily: {
+        minorksans: ["MinorkSans", "sans-serif"],
+      },
       animation: {
         sliding: "sliding 30s linear infinite",
       },
@@ -20,10 +23,11 @@ export default {
         greenPrimary: "#228042",
         grayPrimary: "#686868",
         graySecondary: "#E9E9E9",
+        grayTertiary: "#D9D9D9",
+        grayQuaternary: "#ECECEC",
         whitePrimary: "#F6F6F6",
         purplePrimary: "#32026A",
         blackPrimary: "#1C1C1C",
-        grayTertiary: "#D9D9D9",
       },
       borderRadius: {
         "card": "5px",

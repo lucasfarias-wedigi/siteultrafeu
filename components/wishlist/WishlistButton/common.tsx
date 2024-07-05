@@ -76,12 +76,11 @@ function ButtonCommon({
       }}
     >
       <Icon
-        id="Heart"
-        size={24}
-        strokeWidth={2}
-        fill={inWishlist ? "black" : "none"}
+        id="WishlistHeart"
+        size={27}
+        strokeWidth={1}
+        fill={inWishlist ? "#32026A" : "none"}
       />
-      {variant === "icon" ? null : inWishlist ? "Remover" : "Favoritar"}
     </Button>
   );
 }

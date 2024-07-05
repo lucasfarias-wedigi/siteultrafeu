@@ -1,10 +1,8 @@
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import Icon from "../../../components/ui/Icon.tsx";
 import Slider from "../../../components/ui/Slider.tsx";
 import ProductImageZoom from "../../../islands/ProductImageZoom.tsx";
 import { useId } from "../../../sdk/useId.ts";
-
 export interface Props {
   /** @title Integration */
   page: ProductDetailsPage | null;
@@ -33,22 +31,45 @@ export default function GallerySlider(props: Props) {
     layout,
   } = props;
 
-  const { width, height } = layout || { width: 300, height: 370 };
+  let videoUrl = props.page.product.isVariantOf?.hasVariant?.[0]?.video?.[0]
+    ?.contentUrl;
 
+  if (videoUrl && videoUrl.includes("youtube.com/watch")) {
+    const videoId = new URL(videoUrl).searchParams.get("v");
+    if (videoId) {
+      videoUrl = `https://www.youtube.com/embed/${videoId}`;
+    }
+  }
+
+  const { width, height } = layout || { width: 300, height: 370 };
   const aspectRatio = `${width} / ${height}`;
 
   return (
-    <div id={id} class="grid grid-flow-row sm:grid-flow-col">
+    <div id={id} class="grid grid-flow-row lg:max-h-[735px]">
       {/* Image Slider */}
-      <div class="relative order-1 sm:order-2">
-        <Slider class="carousel carousel-center gap-6 w-screen sm:w-[40vw]">
+      <div class="bg-white relative flex justify-center lg:block lg:max-h-[735px]">
+        <Slider class="carousel carousel-center gap-6 w-screen sm:w-[41.7vw] lg:max-h-[735px] xl:w-[800px] lg:hidden">
+          {videoUrl && (
+            <Slider.Item
+              index={0}
+              class="carousel-item w-full lg:max-h-[735px]"
+            >
+              <iframe
+                allowFullScreen
+                width="800"
+                height="735"
+                src={`${videoUrl}?autoplay=1&mute=1`}
+              >
+              </iframe>
+            </Slider.Item>
+          )}
           {images.map((img, index) => (
             <Slider.Item
-              index={index}
-              class="carousel-item w-full"
+              index={videoUrl ? index + 1 : index}
+              class="carousel-item w-full lg:max-h-[735px]"
             >
               <Image
-                class="w-full"
+                class="w-full object-contain"
                 sizes="(max-width: 640px) 100vw, 40vw"
                 style={{ aspectRatio }}
                 src={img.url!}
@@ -63,7 +84,35 @@ export default function GallerySlider(props: Props) {
           ))}
         </Slider>
 
-        <Slider.PrevButton
+        <div class="hidden lg:flex flex-wrap gap-6 w-screen sm:w-[41.7vw] lg:w-[63.7vw] xl:w-[800px] lg:max-h-[735px]">
+          {videoUrl &&
+            (
+              <iframe
+                allowFullScreen
+                width="800"
+                height="735"
+                src={`${videoUrl}?autoplay=1&mute=1`}
+              >
+              </iframe>
+            )}
+          {images.map((img, index) => (
+            <Image
+              class={`${
+                index === 0 && !videoUrl ? "w-full" : "w-[314px] xl:w-[388px]"
+              } object-contain lg:max-h-[735px]`}
+              sizes="(max-width: 640px) 100vw, 40vw"
+              style={{ aspectRatio }}
+              src={img.url!}
+              alt={img.alternateName}
+              width={width}
+              height={height}
+              preload={index === 0}
+              loading={index === 0 ? "eager" : "lazy"}
+            />
+          ))}
+        </div>
+        {
+          /* <Slider.PrevButton
           class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline"
           disabled
         >
@@ -75,9 +124,10 @@ export default function GallerySlider(props: Props) {
           disabled={images.length < 2}
         >
           <Icon size={24} id="ChevronRight" strokeWidth={3} />
-        </Slider.NextButton>
+        </Slider.NextButton> */
+        }
 
-        <div class="absolute top-2 right-2 bg-base-100 rounded-full">
+        <div class="absolute top-2 right-2 bg-base-100 rounded-full hidden">
           <ProductImageZoom
             images={images}
             width={700}
@@ -87,18 +137,19 @@ export default function GallerySlider(props: Props) {
       </div>
 
       {/* Dots */}
-      <ul class="carousel carousel-center gap-1 px-4 sm:px-0 sm:flex-col order-2 sm:order-1">
-        {images.map((img, index) => (
-          <li class="carousel-item min-w-[63px] sm:min-w-[100px]">
-            <Slider.Dot index={index}>
-              <Image
-                style={{ aspectRatio }}
-                class="group-disabled:border-base-300 border rounded "
-                width={100}
-                height={123}
-                src={img.url!}
-                alt={img.alternateName}
-              />
+
+      <ul class="carousel carousel-center gap-4 justify-center px-4 bg-white py-4 lg:hidden">
+        {videoUrl && (
+          <li class="carousel-item">
+            <Slider.Dot index={0}>
+              <div class="w-3 h-3 rounded-full group-disabled:bg-greenPrimary bg-transparent border-[1px] border-grayTertiary" />
+            </Slider.Dot>
+          </li>
+        )}
+        {images.map((_img, index) => (
+          <li class="carousel-item">
+            <Slider.Dot index={videoUrl ? index + 1 : index}>
+              <div class="w-3 h-3 rounded-full group-disabled:bg-greenPrimary bg-transparent border-[1px] border-grayTertiary" />
             </Slider.Dot>
           </li>
         ))}

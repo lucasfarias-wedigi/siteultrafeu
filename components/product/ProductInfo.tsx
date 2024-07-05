@@ -1,5 +1,4 @@
 import { SendEventOnView } from "../../components/Analytics.tsx";
-import Breadcrumb from "../../components/ui/Breadcrumb.tsx";
 import AddToCartButtonLinx from "../../islands/AddToCartButton/linx.tsx";
 import AddToCartButtonShopify from "../../islands/AddToCartButton/shopify.tsx";
 import AddToCartButtonVNDA from "../../islands/AddToCartButton/vnda.tsx";
@@ -16,7 +15,11 @@ import { useOffer } from "../../sdk/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import ProductSelector from "./ProductVariantSelector.tsx";
+import ProductSelector from "../../islands/ProductVariantSelector.tsx";
+import Icon from "../../components/ui/Icon.tsx";
+import ShareProductButton from "../../islands/ShareProductButton.tsx";
+import ProductViewPayments from "../../islands/ProductViewPayments.tsx";
+import { Data } from "../../sections/Product/ProductDetails.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -24,13 +27,14 @@ interface Props {
     /**
      * @title Product Name
      * @description How product title will be displayed. Concat to concatenate product and sku names.
-     * @default product
+     * @default productGroup
      */
     name?: "concat" | "productGroup" | "product";
   };
+  mdColors: Data[];
 }
 
-function ProductInfo({ page, layout }: Props) {
+function ProductInfo({ page, layout, mdColors }: Props) {
   const platform = usePlatform();
   const id = useId();
 
@@ -38,7 +42,7 @@ function ProductInfo({ page, layout }: Props) {
     throw new Error("Missing Product Details Page Info");
   }
 
-  const { breadcrumbList, product } = page;
+  const { product } = page;
   const {
     productID,
     offers,
@@ -48,6 +52,13 @@ function ProductInfo({ page, layout }: Props) {
     additionalProperty = [],
   } = product;
   const description = product.description || isVariantOf?.description;
+  const brandName = product?.brand?.name;
+  const technicalDescription = isVariantOf?.additionalProperty.find((item) =>
+    item.name === "Descrição Técnica"
+  )?.value;
+  const lines = technicalDescription?.split("\n").filter((line) =>
+    line.trim() !== ""
+  );
   const {
     price = 0,
     listPrice,
@@ -56,54 +67,130 @@ function ProductInfo({ page, layout }: Props) {
     availability,
   } = useOffer(offers);
   const productGroupID = isVariantOf?.productGroupID ?? "";
-  const breadcrumb = {
-    ...breadcrumbList,
-    itemListElement: breadcrumbList?.itemListElement.slice(0, -1),
-    numberOfItems: breadcrumbList.numberOfItems - 1,
-  };
-
   const eventItem = mapProductToAnalyticsItem({
     product,
-    breadcrumbList: breadcrumb,
     price,
     listPrice,
   });
+  const discountPercentage =
+    ((Number(listPrice) - Number(price)) / Number(listPrice)) * 100;
+  const pixFactor = 0.10; // 10%
+  const pixListPrice = Number(listPrice) * (1 - pixFactor);
+  const pixPrice = price * (1 - pixFactor);
+  const pixSavingsPrice = price * pixFactor;
+
+  function getTechnicalInfoValue(
+    lines: string[] | undefined,
+    key: string,
+  ): string | null {
+    if (!lines) return null;
+
+    const line = lines.find((line) => line.startsWith(key));
+    if (!line) return null;
+
+    const parts = line.split(":");
+    if (parts.length > 1) {
+      return parts.slice(1).join(":").trim();
+    }
+
+    return null;
+  }
 
   return (
     <div class="flex flex-col px-4" id={id}>
-      <Breadcrumb itemListElement={breadcrumb.itemListElement} />
-      {/* Code and name */}
+      {/* Code, brand name, name and wishlist*/}
       <div class="mt-4 sm:mt-8">
-        <div>
-          {gtin && <span class="text-sm text-base-300">Cod. {gtin}</span>}
+        <div class="flex justify-between items-center">
+          <h1>
+            <span class="font-semibold text-xl capitalize">
+              {layout?.name === "concat"
+                ? `${isVariantOf?.name} ${name}`
+                : layout?.name === "productGroup"
+                  ? isVariantOf?.name
+                  : name}
+            </span>
+          </h1>
+          <div class="flex flex-col items-center">
+            <WishlistButtonVtex
+              variant="full"
+              productID={productID}
+              productGroupID={productGroupID}
+            />
+            <ShareProductButton productName="share" />
+          </div>
         </div>
-        <h1>
-          <span class="font-medium text-xl capitalize">
-            {layout?.name === "concat"
-              ? `${isVariantOf?.name} ${name}`
-              : layout?.name === "productGroup"
-              ? isVariantOf?.name
-              : name}
-          </span>
-        </h1>
-      </div>
-      {/* Prices */}
-      <div class="mt-4">
-        <div class="flex flex-row gap-2 items-center">
-          {(listPrice ?? 0) > price && (
-            <span class="line-through text-base-300 text-xs">
-              {formatPrice(listPrice, offers?.priceCurrency)}
+        <div class="flex items-center justify-between max-w-[291px]">
+          {gtin && (
+            <span class="text-xs text-grayPrimary">
+              Código: <strong class="text-black">{gtin}</strong>
             </span>
           )}
-          <span class="font-medium text-xl text-secondary">
-            {formatPrice(price, offers?.priceCurrency)}
-          </span>
+          {brandName && (
+            <span class="text-xs text-grayPrimary">
+              Marca: <strong class="text-black">{brandName}</strong>
+            </span>
+          )}
         </div>
-        <span class="text-sm text-base-300">{installments}</span>
       </div>
       {/* Sku Selector */}
       <div class="mt-4 sm:mt-6">
-        <ProductSelector product={product} />
+        <ProductSelector mdColors={mdColors} product={product} />
+      </div>
+      {/* Prices */}
+      <div class="mt-4">
+        <div class="flex flex-row gap-2 items-center border-t-[1px] border-solid border-grayTertiary pt-4">
+          {(listPrice ?? 0) > price && (
+            <span class="line-through text-[#B7B7B7] text-sm">
+              {formatPrice(listPrice, offers?.priceCurrency)}
+            </span>
+          )}
+          <span class="font-medium text-xl text-black">
+            {formatPrice(price, offers?.priceCurrency)}
+          </span>
+          {(listPrice ?? 0) > price && (
+            <span class="bg-grayQuaternary rounded-[5px] text-greenPrimary text-xs font-bold py-[2px] px-2 flex items-center gap-1">
+              -{Math.round(discountPercentage)}%{" "}
+              <Icon
+                id={"MiniDownArrow"}
+                width={8}
+                height={9}
+                fill="currentColor"
+              />
+            </span>
+          )}
+        </div>
+        {installments && (
+          <span class="text-xs text-[#2D2D2D]">Ou até {installments}</span>
+        )}
+      </div>
+      {/* Payment Methods */}
+      <ProductViewPayments price={price} />
+      {/* Pix Prices */}
+      <div class="flex flex-col">
+        {(listPrice ?? 0) > price && (
+          <div class="flex items-center gap-[6px]">
+            <span class="line-through text-[#B7B7B7] text-sm">
+              {formatPrice(pixListPrice, offers?.priceCurrency)}
+            </span>
+            <span class="bg-grayQuaternary rounded-[5px] text-greenPrimary text-xs font-bold py-[2px] px-2 flex items-center gap-1">
+              -{Math.round(discountPercentage)}%<Icon
+                id={"MiniDownArrow"}
+                width={8}
+                height={9}
+                fill="currentColor"
+              />
+            </span>
+          </div>
+        )}
+        <span class="text-[20px] text-purplePrimary">
+          <strong class="text-[32px]">
+            {formatPrice(pixPrice, offers?.priceCurrency)}
+          </strong>{" "}
+          à vista no PIX
+        </span>
+        <span class="w-fit uppercase text-xs text-white bg-greenPrimary rounded-[5px] py-[6px] px-1">
+          Economia de {formatPrice(pixSavingsPrice, offers?.priceCurrency)}
+        </span>
       </div>
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 sm:mt-10 flex flex-col gap-2">
@@ -117,11 +204,13 @@ function ProductInfo({ page, layout }: Props) {
                     productID={productID}
                     seller={seller}
                   />
-                  <WishlistButtonVtex
+                  {
+                    /* <WishlistButtonVtex
                     variant="full"
                     productID={productID}
                     productGroupID={productGroupID}
-                  />
+                  /> */
+                  }
                 </>
               )}
               {platform === "wake" && (
@@ -186,13 +275,132 @@ function ProductInfo({ page, layout }: Props) {
       <div class="mt-4 sm:mt-6">
         <span class="text-sm">
           {description && (
-            <details>
-              <summary class="cursor-pointer">Descrição</summary>
+            <div>
+              <span class="text-black font-semibold text-base">Descrição:</span>
               <div
-                class="ml-2 mt-2"
+                class="mt-2 text-sm"
                 dangerouslySetInnerHTML={{ __html: description }}
               />
-            </details>
+            </div>
+          )}
+        </span>
+      </div>
+      {/* Technical Description */}
+      <div class="mt-4 sm:mt-6 border-t-[1px] border-grayTertiary pt-4">
+        <span class="text-sm">
+          {technicalDescription && (
+            <div class="">
+              <span class="text-black font-semibold text-base">
+                Informações técnicas
+              </span>
+              <ul class="flex flex-wrap gap-4 mt-4 justify-between">
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"PesoLiquido1"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Peso líquido:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Peso líquido")}
+                    </strong>
+                  </div>
+                </li>
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"Consumo"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Consumo:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Consumo")}
+                    </strong>
+                  </div>
+                </li>
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"Tensao"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Tensão:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Tensão")}
+                    </strong>
+                  </div>
+                </li>
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"Altura"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Altura:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Altura")}
+                    </strong>
+                  </div>
+                </li>
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"Frente"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Frente:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Frente")}
+                    </strong>
+                  </div>
+                </li>
+                <li class="flex items-center min-w-[142px]">
+                  <Icon
+                    id={"Profundidade"}
+                    width={34}
+                    height={34}
+                    strokeWidth={1}
+                  />
+                  <div class="flex flex-col text-grayPrimary font-normal text-[10px] leading-3">
+                    Profundidade:{" "}
+                    <strong class="text-black text-sm">
+                      {getTechnicalInfoValue(lines, "Profundidade")}
+                    </strong>
+                  </div>
+                </li>
+              </ul>
+              <ul class="mt-4 text-sm">
+                {lines?.map((line, index) => {
+                  const parts = line.split(":");
+                  return (
+                    <li
+                      key={index}
+                      className={`${index % 2 === 0 ? "bg-white" : "bg-grayTertiary"
+                        } p-2`}
+                    >
+                      {parts.length > 1
+                        ? (
+                          <>
+                            {parts[0]}:{" "}
+                            <strong>{parts.slice(1).join(":")}</strong>
+                          </>
+                        )
+                        : line}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           )}
         </span>
       </div>
