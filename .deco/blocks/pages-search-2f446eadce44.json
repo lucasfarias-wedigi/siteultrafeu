@@ -29,11 +29,14 @@
       "__resolveType": "DualBanners"
     },
     {
-      "__resolveType": "Footer - 04"
+      "__resolveType": "Category Banner - 01"
     },
     {
       "__resolveType": "site/sections/Content/RichText.tsx",
       "containerWidth": 800
+    },
+    {
+      "__resolveType": "Footer - 04"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
