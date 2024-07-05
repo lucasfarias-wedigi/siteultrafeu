@@ -49,8 +49,8 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
 
   return (
     <div class="w-full flex items-center justify-center mb-8 relative">
-      <a href={image.url || "#"}>
-        <Picture preload class="col-start-1 col-span-1 row-start-1 row-span-1">
+      <a href={image.url || "#"} class="w-full">
+        <Picture preload class="w-full">
           <Source
             src={image.mobile}
             width={360}
