@@ -40,6 +40,7 @@ export interface Props {
   startingPage?: 0 | 1;
 }
 
+
 function NotFound() {
   return (
     <div class="w-full flex justify-center items-center py-10">
@@ -81,7 +82,7 @@ function Result({
     endIndex = _url.length;
   }
   const initialUrl = _url.substring(startIndex, endIndex);
-  console.log(breadcrumb);
+  const itemsQuantity = (pageInfo.recordPerPage || products.length) * (pageInfo.currentPage - 1) + products.length;
   return (
     <>
       <div class="py-10">
@@ -157,7 +158,7 @@ function Result({
                 </div>
               )}
               <span class="hidden lg:block text-sm m-auto">
-                Mostrando {products.length} produtos de {pageInfo.records}
+                Mostrando {itemsQuantity} produtos de {pageInfo.records}
               </span>
               {format == "Pagination" && (
                 <CustomPagination
