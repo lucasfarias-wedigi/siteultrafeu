@@ -35,6 +35,9 @@
     },
     {
       "__resolveType": "Footer - 04"
+    },
+    {
+      "__resolveType": "site/sections/Theme/Theme.tsx"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
