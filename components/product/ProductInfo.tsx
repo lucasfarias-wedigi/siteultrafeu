@@ -106,8 +106,8 @@ function ProductInfo({ page, layout, mdColors }: Props) {
               {layout?.name === "concat"
                 ? `${isVariantOf?.name} ${name}`
                 : layout?.name === "productGroup"
-                  ? isVariantOf?.name
-                  : name}
+                ? isVariantOf?.name
+                : name}
             </span>
           </h1>
           <div class="flex flex-col items-center">
@@ -385,8 +385,9 @@ function ProductInfo({ page, layout, mdColors }: Props) {
                   return (
                     <li
                       key={index}
-                      className={`${index % 2 === 0 ? "bg-white" : "bg-grayTertiary"
-                        } p-2`}
+                      className={`${
+                        index % 2 === 0 ? "bg-white" : "bg-grayTertiary"
+                      } p-2`}
                     >
                       {parts.length > 1
                         ? (

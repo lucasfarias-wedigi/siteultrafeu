@@ -40,7 +40,6 @@ export interface Props {
   startingPage?: 0 | 1;
 }
 
-
 function NotFound() {
   return (
     <div class="w-full flex justify-center items-center py-10">
@@ -82,7 +81,9 @@ function Result({
     endIndex = _url.length;
   }
   const initialUrl = _url.substring(startIndex, endIndex);
-  const itemsQuantity = (pageInfo.recordPerPage || products.length) * (pageInfo.currentPage - 1) + products.length;
+  const itemsQuantity =
+    (pageInfo.recordPerPage || products.length) * (pageInfo.currentPage - 1) +
+    products.length;
   return (
     <>
       <div class="py-10">
