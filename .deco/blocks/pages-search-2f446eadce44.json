@@ -11,6 +11,16 @@
       "__resolveType": "Header - 01"
     },
     {
+      "layout": {
+        "categoryCard": {
+          "textPosition": "bottom",
+          "textAlignment": "center"
+        }
+      },
+      "__resolveType": "site/sections/Category/CategoryList.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
         "__resolveType": "PLP Loader"
       },
@@ -22,7 +32,6 @@
         "variant": "aside",
         "format": "Pagination"
       },
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
       "startingPage": 0
     },
     {
