@@ -21,9 +21,7 @@ const BreadcrumbSlider = ({ items, breadcrumb }: Props) => {
       {items && (
         <Carousel
           layout={{ itemWidth: 121 }}
-          children={items.map((item) => (
-            <BreadcrumbSliderCard {...item} />
-          ))}
+          children={items.map((item) => <BreadcrumbSliderCard {...item} />)}
         />
       )}
     </div>
