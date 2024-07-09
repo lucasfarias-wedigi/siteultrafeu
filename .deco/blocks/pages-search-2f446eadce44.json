@@ -12,25 +12,16 @@
     },
     {
       "layout": {
-        "categoryCard": {
-          "textPosition": "bottom",
-          "textAlignment": "center"
-        }
-      },
-      "__resolveType": "site/sections/Category/CategoryList.tsx"
-    },
-    {
-      "__resolveType": "site/sections/Product/SearchResult.tsx",
-      "page": {
-        "__resolveType": "PLP Loader"
-      },
-      "layout": {
         "columns": {
           "mobile": 2,
           "desktop": 3
         },
         "variant": "aside",
         "format": "Pagination"
+      },
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "page": {
+        "__resolveType": "PLP Loader"
       },
       "startingPage": 0
     },
