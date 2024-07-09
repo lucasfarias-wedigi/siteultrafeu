@@ -1,7 +1,7 @@
 import { BreadcrumbList } from "apps/commerce/types.ts";
-import Carousel from "../../components/layout/Carousel.tsx";
+import Carousel from "./layout/Carousel.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import BreadcrumbSliderCard from "../../components/BreadcrumbSliderCard.tsx";
+import BreadcrumbSliderCard from "./BreadcrumbSliderCard.tsx";
 
 export interface item {
   title: string;
