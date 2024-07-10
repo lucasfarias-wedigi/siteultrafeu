@@ -4,9 +4,9 @@ import { item as Props } from "./BreadcrumbSlider.tsx";
 const BreadcrumbSliderCard = ({ title, image, link }: Props) => {
   return (
     <a href={link || "#"}>
-      <div class="bg-white">
+      <div class="bg-white px-2.5 py-2">
         <Image src={image} width={121} height={103} alt={title} />
-        <p class="text-xs text-center">{title}</p>
+        <p class="text-xs text-center mt-2.5">{title}</p>
       </div>
     </a>
   );

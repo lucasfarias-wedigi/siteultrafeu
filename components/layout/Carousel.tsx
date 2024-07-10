@@ -45,7 +45,7 @@ function Section({ interval = 0, layout, style, children }: Props) {
 
   const controlClx = clx(
     buttonClasses[style?.controlsColor || "Default"],
-    style?.controlsOutline && "btn-outline",
+    style?.controlsOutline && "btn-outline"
   );
 
   return (
@@ -53,10 +53,10 @@ function Section({ interval = 0, layout, style, children }: Props) {
       <div
         id={id}
         class={clx(
-          "grid grid-rows-[1fr_48px_1fr_40px]",
+          "grid",
           !layout?.hide?.controls
-            ? "grid-cols-[48px_1fr_48px] sm:grid-cols-[48px_1fr_48px]"
-            : "grid-cols-[0_1fr_0]",
+            ? "lg:grid-cols-[48px_1fr_48px] grid-cols-[16px_1fr_0]"
+            : "grid-cols-[0_1fr_0] grid-rows-1"
         )}
       >
         <Slider
@@ -67,7 +67,7 @@ function Section({ interval = 0, layout, style, children }: Props) {
               : grid.gap.mobile[2],
             layout?.gap?.desktop
               ? grid.gap.desktop[layout.gap.desktop]
-              : grid.gap.mobile[4],
+              : grid.gap.mobile[4]
           )}
         >
           {items?.map((item, index) => (
@@ -83,24 +83,24 @@ function Section({ interval = 0, layout, style, children }: Props) {
 
         {!layout?.hide?.controls && (
           <>
-            <div class="flex items-center justify-start z-10 col-start-1 row-start-2">
+            <div class="hidden lg:flex items-center justify-start z-10 col-start-1 row-start-2">
               <Slider.PrevButton
-                class={clx(controlClx, "btn btn-circle btn-sm")}
+                class={clx(controlClx, "btn btn-circle btn-sm w-10 h-10")}
               >
                 <Icon
-                  class="text-base-content"
+                  class="text-purplePrimary"
                   size={24}
                   id="ChevronLeft"
                   strokeWidth={3}
                 />
               </Slider.PrevButton>
             </div>
-            <div class="flex items-center justify-end z-10 col-start-3 row-start-2">
+            <div class="hidden lg:flex items-center justify-end z-10 col-start-3 row-start-2">
               <Slider.NextButton
-                class={clx(controlClx, "btn btn-circle btn-sm")}
+                class={clx(controlClx, "btn btn-circle btn-sm w-10 h-10")}
               >
                 <Icon
-                  class="text-base-content"
+                  class="text-purplePrimary"
                   size={24}
                   id="ChevronRight"
                   strokeWidth={3}
@@ -110,7 +110,7 @@ function Section({ interval = 0, layout, style, children }: Props) {
           </>
         )}
 
-        {!layout?.hide?.indicators && (
+        {layout?.hide?.indicators && (
           <ul class="carousel items-end justify-center col-span-full gap-4 z-10 row-start-4">
             {items?.map((_, index) => (
               <li class="carousel-item">
