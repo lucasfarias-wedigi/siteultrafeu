@@ -24,20 +24,19 @@ export interface Props {
 
 const BuildYourBusiness = ({
   banner,
-  description =
-    `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
+  description = `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
   businessCards,
 }: Props) => {
   return (
     <div class="mb-4">
       <div class="w-full border-t border-grayTertiary py-2">
-        <div class="max-w-7xl m-auto w-full flex items-center text-grayPrimary text-[11px] gap-2.5">
+        <div class="max-w-7xl m-auto w-full flex items-center text-grayPrimary text-[11px] gap-2.5 px-4 lg:px-0">
           <a href="/">HOME</a>
           <span>{">"}</span>
           <a href="/monteseunegocio">MONTE SEU NEGÓCIO</a>
         </div>
       </div>
-      <div class="flex items-center justify-center relative w-full h-[172px] mb-4">
+      <div class="flex items-center justify-center h-fit relative w-full mb-4">
         <Picture>
           <Source
             media="(max-width: 767px)"
@@ -49,11 +48,18 @@ const BuildYourBusiness = ({
           <Source
             media="(min-width: 768px)"
             fetchPriority={"high"}
-            src={banner?.imageDesktop
-              ? banner?.imageDesktop
-              : banner?.imageMobile}
+            src={
+              banner?.imageDesktop ? banner?.imageDesktop : banner?.imageMobile
+            }
             width={1920}
             height={468}
+          />
+          <img
+            sizes="(max-width: 640px) 100vw, 30vw"
+            src={banner?.imageMobile}
+            alt={banner.title}
+            decoding="async"
+            loading="eager"
           />
         </Picture>
         {banner?.title && (
@@ -71,7 +77,7 @@ const BuildYourBusiness = ({
             {businessCards.map((item) => (
               <div class="max-w-[163px] lg:max-w-[280px] w-full p-2 rounded-card border border-grayTertiary">
                 <div class="relative w-full mb-2.5">
-                  <div class="absolute top-0 bg-purplePrimary w-full text-white font-semibold text-sm flex items-center justify-center py-1">
+                  <div class="lg:absolute top-0 bg-purplePrimary w-full text-white font-semibold text-sm flex items-center justify-center py-1">
                     {item.title}
                   </div>
                   <Image
