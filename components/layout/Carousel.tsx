@@ -45,7 +45,7 @@ function Section({ interval = 0, layout, style, children }: Props) {
 
   const controlClx = clx(
     buttonClasses[style?.controlsColor || "Default"],
-    style?.controlsOutline && "btn-outline"
+    style?.controlsOutline && "btn-outline",
   );
 
   return (
@@ -56,7 +56,7 @@ function Section({ interval = 0, layout, style, children }: Props) {
           "grid",
           !layout?.hide?.controls
             ? "lg:grid-cols-[48px_1fr_48px] grid-cols-[16px_1fr_0]"
-            : "grid-cols-[0_1fr_0] grid-rows-1"
+            : "grid-cols-[0_1fr_0] grid-rows-1",
         )}
       >
         <Slider
@@ -67,7 +67,7 @@ function Section({ interval = 0, layout, style, children }: Props) {
               : grid.gap.mobile[2],
             layout?.gap?.desktop
               ? grid.gap.desktop[layout.gap.desktop]
-              : grid.gap.mobile[4]
+              : grid.gap.mobile[4],
           )}
         >
           {items?.map((item, index) => (
