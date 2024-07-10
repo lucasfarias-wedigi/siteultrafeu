@@ -24,8 +24,7 @@ export interface Props {
 
 const BuildYourBusiness = ({
   banner,
-  description =
-    `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
+  description = `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
   businessCards,
 }: Props) => {
   return (
@@ -37,42 +36,31 @@ const BuildYourBusiness = ({
           <a href="/monteseunegocio">MONTE SEU NEGÓCIO</a>
         </div>
       </div>
-      {banner.imageDesktop ||
-        (banner.imageMobile && (
-          <div class="flex items-center justify-center relative w-full h-[172px] mb-4">
-            <Picture>
-              <Source
-                media="(max-width: 767px)"
-                fetchPriority={"high"}
-                src={banner.imageMobile}
-                width={430}
-                height={122}
-              />
-              <Source
-                media="(min-width: 768px)"
-                fetchPriority={"high"}
-                src={banner?.imageDesktop
-                  ? banner?.imageDesktop
-                  : banner?.imageMobile}
-                width={1920}
-                height={468}
-              />
-              <img
-                class="object-cover w-full h-full"
-                sizes="(max-width: 640px) 100vw, 30vw"
-                loading={"eager"}
-                src={banner.imageMobile}
-                alt={banner.title}
-                decoding="async"
-              />
-            </Picture>
-            {banner?.title && (
-              <h1 class="absolute text-2xl lg:text-[40px] font-bold text-purplePrimary">
-                {banner.title}
-              </h1>
-            )}
-          </div>
-        ))}
+      <div class="flex items-center justify-center relative w-full h-[172px] mb-4">
+        <Picture>
+          <Source
+            media="(max-width: 767px)"
+            fetchPriority={"high"}
+            src={banner.imageMobile}
+            width={430}
+            height={122}
+          />
+          <Source
+            media="(min-width: 768px)"
+            fetchPriority={"high"}
+            src={
+              banner?.imageDesktop ? banner?.imageDesktop : banner?.imageMobile
+            }
+            width={1920}
+            height={468}
+          />
+        </Picture>
+        {banner?.title && (
+          <h1 class="absolute text-2xl lg:text-[40px] font-bold text-purplePrimary">
+            {banner.title}
+          </h1>
+        )}
+      </div>
       <div class="max-w-7xl w-full m-auto">
         {description && (
           <RichText text={description} style="text-base mb-4 px-4 lg:px-0" />
