@@ -24,8 +24,7 @@ export interface Props {
 
 const BuildYourBusiness = ({
   banner,
-  description =
-    `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
+  description = `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
   businessCards,
 }: Props) => {
   return (
@@ -51,15 +50,21 @@ const BuildYourBusiness = ({
               <Source
                 media="(min-width: 768px)"
                 fetchPriority={"high"}
-                src={banner.imageDesktop}
+                src={
+                  banner?.imageDesktop
+                    ? banner?.imageDesktop
+                    : banner?.imageMobile
+                }
                 width={1920}
                 height={468}
               />
               <img
                 class="object-cover w-full h-full"
+                sizes="(max-width: 640px) 100vw, 30vw"
                 loading={"eager"}
-                src={banner.imageDesktop}
+                src={banner.imageMobile}
                 alt={banner.title}
+                decoding="async"
               />
             </Picture>
             {banner?.title && (
@@ -74,7 +79,7 @@ const BuildYourBusiness = ({
           <RichText text={description} style="text-base mb-4 px-4 lg:px-0" />
         )}
         {businessCards && (
-          <div class="flex justify-center w-full gap-8 flex-wrap">
+          <div class="flex justify-center lg:justify-start w-full gap-8 flex-wrap">
             {businessCards.map((item) => (
               <div class="max-w-[163px] lg:max-w-[280px] w-full p-2 rounded-card border border-grayTertiary">
                 <div class="relative w-full mb-2.5">
