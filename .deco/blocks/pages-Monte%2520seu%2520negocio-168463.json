@@ -9,7 +9,9 @@
       "__resolveType": "site/sections/BuildYourBusiness/index.tsx",
       "banner": {
         "title": "MONTE SEU NEGOCIO",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/542f448e-9bda-4a56-b055-a6f149f3e67a"
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/542f448e-9bda-4a56-b055-a6f149f3e67a",
+        "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/542f448e-9bda-4a56-b055-a6f149f3e67a",
+        "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5c8fbc02-20f3-4781-831b-160d0f1f0a89"
       },
       "businessType": [
         {
@@ -36,16 +38,38 @@
           "title": "AÇOUGUE",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
           "buttonText": "Escolher"
+        }
+      ],
+      "businessCards": [
+        {
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "title": "AÇOUGUE"
         },
         {
-          "title": "AÇOUGUE",
+          "buttonText": "Escolher",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
-          "buttonText": "Escolher"
+          "title": "AÇOUGUE"
         },
         {
-          "title": "AÇOUGUE",
+          "buttonText": "Escolher",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
-          "buttonText": "Escolher"
+          "title": "AÇOUGUE"
+        },
+        {
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "title": "AÇOUGUE"
+        },
+        {
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "title": "AÇOUGUE"
+        },
+        {
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "title": "AÇOUGUE"
         }
       ]
     },
