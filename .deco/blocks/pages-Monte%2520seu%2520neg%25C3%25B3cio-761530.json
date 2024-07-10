@@ -6,6 +6,50 @@
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/BuildYourBusiness/index.tsx",
+      "banner": {
+        "title": "MONTE SEU NEGOCIO",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/542f448e-9bda-4a56-b055-a6f149f3e67a"
+      },
+      "businessType": [
+        {
+          "title": "AÇOUGUE",
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb"
+        },
+        {
+          "title": "AÇOUGUE",
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb"
+        },
+        {
+          "title": "AÇOUGUE",
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb"
+        },
+        {
+          "title": "AÇOUGUE",
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb"
+        },
+        {
+          "title": "AÇOUGUE",
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb"
+        },
+        {
+          "title": "AÇOUGUE",
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb"
+        },
+        {
+          "title": "AÇOUGUE",
+          "buttonText": "Escolher",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb"
+        }
+      ]
+    },
+    {
       "__resolveType": "Footer - 04"
     }
   ],
