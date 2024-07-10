@@ -2,6 +2,9 @@ import { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import RichText from "../Content/RichText.tsx";
 
+/**
+ * @titleBy title
+ */
 interface business {
   title: string;
   image: ImageWidget;
@@ -19,12 +22,11 @@ export interface Props {
 
 const BuildYourBusiness = ({
   banner,
-  description =
-    `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
+  description = `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
   businessType,
 }: Props) => {
   return (
-    <div>
+    <div class="mb-4">
       {banner?.image && (
         <div class="flex items-center justify-center relative w-full h-[172px] mb-4">
           <Image
@@ -34,26 +36,37 @@ const BuildYourBusiness = ({
             height={172}
           />
           {banner?.title && (
-            <h1 class="text-[40px] font-bold text-purplePrimary">
+            <h1 class="absolute text-[40px] font-bold text-purplePrimary">
               {banner.title}
             </h1>
           )}
         </div>
       )}
-      {description && <RichText text={description} style="text-base mb-4" />}
-      {businessType?.map((item) => (
-        <div class="max-w-[280px] w-full p-2 rounded-card">
-          <div class="w-full">
-            <div class="bg-purplePrimary w-full text-white font-semibold text-sm flex items-center justify-center py-1">
-              {item.title}
-            </div>
-            <Image src={item.image} width={264} height={100} alt={item.title} />
+      <div class="max-w-7xl w-full m-auto">
+        {description && <RichText text={description} style="text-base mb-4" />}
+        {businessType && (
+          <div class="w-full gap-8 flex-wrap">
+            {businessType.map((item) => (
+              <div class="max-w-[280px] w-full p-2 rounded-card border border-grayTertiary">
+                <div class="w-full mb-2.5">
+                  <div class="absolute top-0 bg-purplePrimary w-full text-white font-semibold text-sm flex items-center justify-center py-1">
+                    {item.title}
+                  </div>
+                  <Image
+                    src={item.image}
+                    width={264}
+                    height={100}
+                    alt={item.title}
+                  />
+                </div>
+                <button class="flex items-center justify-center w-full py-2 rounded-card border border-purplePrimary text-purplePrimary text-base font-bold">
+                  {item.buttonText}
+                </button>
+              </div>
+            ))}
           </div>
-          <button class="flex w-full py-2 rounded-card border border-purplePrimary text-purplePrimary text-base font-bold">
-            {item.buttonText}
-          </button>
-        </div>
-      ))}
+        )}
+      </div>
     </div>
   );
 };
