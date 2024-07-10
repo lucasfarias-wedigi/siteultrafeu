@@ -19,7 +19,8 @@ export interface Props {
 
 const BuildYourBusiness = ({
   banner,
-  description = `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
+  description =
+    `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
   businessType,
 }: Props) => {
   return (
