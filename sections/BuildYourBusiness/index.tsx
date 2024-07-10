@@ -16,14 +16,13 @@ export interface Props {
     title: string;
     image: ImageWidget;
   };
-  description: HTMLWidget;
+  description?: HTMLWidget;
   businessType: business[];
 }
 
 const BuildYourBusiness = ({
   banner,
-  description =
-    `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
+  description = `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
   businessType,
 }: Props) => {
   return (
