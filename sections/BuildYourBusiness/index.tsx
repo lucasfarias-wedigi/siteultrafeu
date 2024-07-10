@@ -29,6 +29,13 @@ const BuildYourBusiness = ({
 }: Props) => {
   return (
     <div class="mb-4">
+      <div class="w-full border-t border-grayTertiary py-2">
+        <div class="max-w-7xl m-auto w-full flex items-center text-grayPrimary text-[11px] gap-2.5">
+          <a href="/">HOME</a>
+          <span>{">"}</span>
+          <a href="/monteseunegocio">MONTE SEU NEGÓCIO</a>
+        </div>
+      </div>
       {banner.imageDesktop ||
         (banner.imageMobile && (
           <div class="flex items-center justify-center relative w-full h-[172px] mb-4">
