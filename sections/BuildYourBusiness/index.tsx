@@ -24,7 +24,8 @@ export interface Props {
 
 const BuildYourBusiness = ({
   banner,
-  description = `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
+  description =
+    `<p><b>Monte seu negócio de forma simples e rápida:</b> escolha o ramo de atuação!<p>`,
   businessCards,
 }: Props) => {
   return (
@@ -48,9 +49,9 @@ const BuildYourBusiness = ({
           <Source
             media="(min-width: 768px)"
             fetchPriority={"high"}
-            src={
-              banner?.imageDesktop ? banner?.imageDesktop : banner?.imageMobile
-            }
+            src={banner?.imageDesktop
+              ? banner?.imageDesktop
+              : banner?.imageMobile}
             width={1920}
             height={468}
           />
