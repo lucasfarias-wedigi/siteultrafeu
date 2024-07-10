@@ -321,9 +321,9 @@
     "blockType": "sections",
     "__resolveType": "site/sections/Images/BannerGrid.tsx"
   },
-  "/.deco/blocks/pages-Monte%2520seu%2520neg%25C3%25B3cio-761530.json": {
-    "name": "Monte seu negócio",
-    "path": "/monte-seu-negocio",
+  "/.deco/blocks/pages-Monte%2520seu%2520negocio-168463.json": {
+    "name": "Monte seu negocio",
+    "path": "/monteseunegocio",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   }
