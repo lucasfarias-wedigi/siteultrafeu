@@ -320,5 +320,11 @@
   "/.deco/blocks/DualBanners.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Images/BannerGrid.tsx"
+  },
+  "/.deco/blocks/pages-Monte%2520seu%2520neg%25C3%25B3cio-761530.json": {
+    "name": "Monte seu negócio",
+    "path": "/monte-seu-negocio",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
