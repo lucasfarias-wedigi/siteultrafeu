@@ -24,10 +24,10 @@ import * as $$$$$$3 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$4 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
 import * as $$$$$$5 from "./sections/Cards/ImageCardsCarousel.tsx";
 import * as $$$$$$6 from "./sections/Cards/ImageCardsCarouselWithImage.tsx";
-import * as $$$$$$7 from "./sections/Category/CategoryBanner.tsx";
-import * as $$$$$$8 from "./sections/Category/CategoryGrid.tsx";
-import * as $$$$$$9 from "./sections/Category/CategoryList.tsx";
-import * as $$$$$$10 from "./sections/CategoryList.tsx";
+import * as $$$$$$8 from "./sections/Category/CategoryBanner.tsx";
+import * as $$$$$$9 from "./sections/Category/CategoryGrid.tsx";
+import * as $$$$$$10 from "./sections/Category/CategoryList.tsx";
+import * as $$$$$$7 from "./sections/CategoryList.tsx";
 import * as $$$$$$11 from "./sections/ChoiceUltrafeu.tsx";
 import * as $$$$$$12 from "./sections/Content/Benefits.tsx";
 import * as $$$$$$13 from "./sections/Content/BlogPosts.tsx";
@@ -89,10 +89,10 @@ const manifest = {
     "site/sections/Cards/IconCardsCarouselWithImage.tsx": $$$$$$4,
     "site/sections/Cards/ImageCardsCarousel.tsx": $$$$$$5,
     "site/sections/Cards/ImageCardsCarouselWithImage.tsx": $$$$$$6,
-    "site/sections/Category/CategoryBanner.tsx": $$$$$$7,
-    "site/sections/Category/CategoryGrid.tsx": $$$$$$8,
-    "site/sections/Category/CategoryList.tsx": $$$$$$9,
-    "site/sections/CategoryList.tsx": $$$$$$10,
+    "site/sections/Category/CategoryBanner.tsx": $$$$$$8,
+    "site/sections/Category/CategoryGrid.tsx": $$$$$$9,
+    "site/sections/Category/CategoryList.tsx": $$$$$$10,
+    "site/sections/CategoryList.tsx": $$$$$$7,
     "site/sections/ChoiceUltrafeu.tsx": $$$$$$11,
     "site/sections/Content/Benefits.tsx": $$$$$$12,
     "site/sections/Content/BlogPosts.tsx": $$$$$$13,
