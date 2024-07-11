@@ -326,5 +326,11 @@
     "path": "/monteseunegocio",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-monte%2520seu%2520a%25C3%25A7ougue-950634.json": {
+    "name": "monte seu açougue",
+    "path": "/monte-seu-negocio/açougue",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

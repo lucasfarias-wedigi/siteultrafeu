@@ -1,0 +1,49 @@
+{
+  "name": "monte seu açougue",
+  "path": "/monte-seu-negocio/açougue",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx",
+      "levels": [
+        {
+          "link": "/",
+          "name": "HOME"
+        },
+        {
+          "name": "MONTE SEU NEGÓCIO",
+          "link": "HOME"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBanner.tsx",
+      "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/542f448e-9bda-4a56-b055-a6f149f3e67a",
+      "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/7c39d55b-863f-4796-92fd-d2f047257d75",
+      "title": "MONTE SEU NEGÓCIO",
+      "marginBottom": false
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessGoBackLink.tsx",
+      "title": "AÇOUGUE",
+      "link": {
+        "url": "/monteseunegócio",
+        "text": "Voltar para escolher outro negócio"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Content/RichText.tsx",
+      "containerWidth": 1280,
+      "text": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Monte seu negócio de forma simples e rápida:</strong> selecione os maquinários necessários, opte pelo modelo ou marca de sua preferência e visualize suas escolhas com um resumo completo. Adicione todos os itens ao carrinho com um clique. Se precisar de ajuda, entre em contato conosco. Boas compras!</span></p>"
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
