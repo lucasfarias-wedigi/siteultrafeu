@@ -33,7 +33,7 @@ const CustomPagination = ({ pageInfo, totalProducts }: PageComponentProps) => {
     }
   };
   return (
-    <div class="hidden lg:flex items-center join justify-end max-w-[766px] w-full">
+    <div class="hidden lg:flex items-center join justify-end max-w-[766px]">
       <a
         aria-label="previous page link"
         rel="prev"
