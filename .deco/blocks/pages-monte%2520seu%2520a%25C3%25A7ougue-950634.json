@@ -14,7 +14,7 @@
         },
         {
           "name": "MONTE SEU NEGÓCIO",
-          "link": "HOME"
+          "link": "/monteseunegocio"
         }
       ]
     },
@@ -29,7 +29,7 @@
       "__resolveType": "site/sections/BuildYourBusiness/BusinessGoBackLink.tsx",
       "title": "AÇOUGUE",
       "link": {
-        "url": "/monteseunegócio",
+        "url": "/monteseunegocio",
         "text": "Voltar para escolher outro negócio"
       }
     },
