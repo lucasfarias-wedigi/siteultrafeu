@@ -26,9 +26,9 @@ const InstitutionalWithSidebar = ({ loader, sections }: Props) => {
                   href={url}
                   class={`hover:bg-grayTertiary text-sm border-x border-grayTertiary w-full py-4 flex items-center justify-center ${
                     index === 0 ? "border-t" : ""
-                  } ${index === (loader?.links.length - 1) ? "!border-b" : ""} ${
-                    isActive ? " bg-grayTertiary" : "bg-white"
-                  }`}
+                  } ${
+                    index === (loader?.links.length - 1) ? "!border-b" : ""
+                  } ${isActive ? " bg-grayTertiary" : "bg-white"}`}
                 >
                   {label}
                 </a>
