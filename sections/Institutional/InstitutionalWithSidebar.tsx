@@ -12,10 +12,10 @@ interface Props {
 
 const InstitutionalWithSidebar = ({ loader, sections }: Props) => {
   return (
-    <div class="pt-8 px-4 lg:px-9">
-      <div class="flex">
-        <div class="w-full max-w-sm hidden lg:block">
-          <nav>
+    <div class="bg-whitePrimary py-4">
+      <div class="flex max-w-7xl w-full mx-auto">
+        <div class="max-w-[280px] w-full hidden lg:block">
+          <nav class="divide-y divide-grayTertiary">
             {loader?.links.map(({ label, url }, index) => {
               const isActive = index === loader.activeIndex;
 
@@ -24,10 +24,11 @@ const InstitutionalWithSidebar = ({ loader, sections }: Props) => {
                   data-active={isActive}
                   key={url}
                   href={url}
-                  class={"w-full max-w-56 block py-3 px-4 rounded-3xl" +
-                    (
-                      isActive ? " bg-middleGray" : ""
-                    )}
+                  class={`hover:bg-grayTertiary text-sm border-x border-grayTertiary w-full py-4 flex items-center justify-center ${
+                    index === 0 ? "border-t" : ""
+                  } ${index === (loader?.links.length - 1) ? "!border-b" : ""} ${
+                    isActive ? " bg-grayTertiary" : "bg-white"
+                  }`}
                 >
                   {label}
                 </a>
@@ -37,9 +38,10 @@ const InstitutionalWithSidebar = ({ loader, sections }: Props) => {
         </div>
         <div class="w-full">
           <div class="max-w-3xl">
-            {sections && sections?.map(({ Component, props }) =>
-              Component ? <Component key={useId()} {...props} /> : <></>
-            )}
+            {sections &&
+              sections?.map(({ Component, props }) =>
+                Component ? <Component key={useId()} {...props} /> : <></>
+              )}
           </div>
         </div>
       </div>
