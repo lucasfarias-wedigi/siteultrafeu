@@ -20,7 +20,7 @@ export interface NavigationLoader {
 
 export default function loader(
   { links }: Props,
-  req: Request
+  req: Request,
 ): NavigationLoader {
   const activeIndex = links.findIndex((nav) => {
     const pattern = new URLPattern({ pathname: nav.url });
