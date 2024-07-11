@@ -8,6 +8,10 @@ interface businessCard {
   title: string;
   image: ImageWidget;
   buttonText: string;
+
+  /**
+   * @description coloque o mesmo nome da página criada exepmplo: açougue
+   */
   link: string;
 }
 
