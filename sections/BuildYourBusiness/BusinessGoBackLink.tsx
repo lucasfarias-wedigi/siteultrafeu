@@ -39,9 +39,8 @@ const BusinessGoBackLink = ({ title, link }: Props) => {
             </a>
           </div>
         )}
-        {title && (
-          <h4 class="font-bold text-base text-white m-auto">{title}</h4>
-        )}
+        {title && <h4 class="font-bold text-base text-white m-auto">{title}
+        </h4>}
       </div>
     </div>
   );
