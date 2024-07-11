@@ -335,19 +335,19 @@
   },
   "/.deco/blocks/pages-Monte%2520seu%2520negocio%2520Copy-216729.json": {
     "name": "quem somos",
-    "path": "/institucial/quem-somos",
+    "path": "/institucional/quem-somos",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
   "/.deco/blocks/pages-Monte%2520seu%2520negocio%2520Copy%2520Copy-567799.json": {
     "name": "trabalhe conosco",
-    "path": "/institucial/trabalhe-conosco",
+    "path": "/institucional/trabalhe-conosco",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
   "/.deco/blocks/pages-contato-875770.json": {
     "name": "contato",
-    "path": "/institucial/contato",
+    "path": "/institucional/contato",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   }
