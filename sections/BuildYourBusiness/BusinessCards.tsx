@@ -10,7 +10,7 @@ interface businessCard {
   buttonText: string;
 
   /**
-   * @description coloque o mesmo nome da página criada exepmplo: /oque-voce-preferir/açougue ou açougue
+   * @description coloque o mesmo nome da página criada exepmplo: /oque-voce-preferir/açougue ou /açougue
    */
   link: string;
 }
