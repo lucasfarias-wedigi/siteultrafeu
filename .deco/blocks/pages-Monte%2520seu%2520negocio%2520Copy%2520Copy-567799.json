@@ -6,55 +6,6 @@
       "__resolveType": "Header - 01"
     },
     {
-      "__resolveType": "site/sections/Institutional/InstitutionalWithSidebar.tsx",
-      "loader": {
-        "activeIndex": 1,
-        "links": [
-          {
-            "url": "/institucional/quem-somos",
-            "label": "Quem Somos"
-          },
-          {
-            "url": "/institucional/politica-de-trocas-e-devolucoes",
-            "label": "Política Trocas e Devoluções"
-          },
-          {
-            "label": "Política de Privacidade",
-            "url": "#"
-          },
-          {
-            "label": "Política de Segurança",
-            "url": "#"
-          },
-          {
-            "url": "#",
-            "label": "Política de Entrega"
-          },
-          {
-            "label": "Dúvidas Frequentes",
-            "url": "#"
-          },
-          {
-            "label": "Como Comprar",
-            "url": "#"
-          },
-          {
-            "label": "Prazos e Formas de Envio",
-            "url": "#"
-          },
-          {
-            "label": "Trabalhe Conosco",
-            "url": "#"
-          },
-          {
-            "label": "Contato",
-            "url": "#"
-          }
-        ]
-      },
-      "sections": []
-    },
-    {
       "__resolveType": "Footer - 04"
     }
   ],
