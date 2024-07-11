@@ -1,6 +1,6 @@
 {
-  "name": "quem somos",
-  "path": "/institucial/quem-somos",
+  "name": "contato",
+  "path": "/institucial/contato",
   "sections": [
     {
       "__resolveType": "Header - 01"
