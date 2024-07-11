@@ -4,6 +4,8 @@
  * License: MIT (https://github.com/saadeghi/daisyui/blob/37bca23444bc9e4d304362c14b7088f9a08f1c74/LICENSE)
  * https://github.com/saadeghi/daisyui/blob/37bca23444bc9e4d304362c14b7088f9a08f1c74/src/docs/src/routes/theme-generator.svelte
  */
+//@ts-nocheck theme update
+
 import SiteTheme, { Font } from "apps/website/components/Theme.tsx";
 import Color from "npm:colorjs.io";
 import type { ComponentChildren } from "preact";
