@@ -10,7 +10,7 @@ interface businessCard {
   buttonText: string;
 
   /**
-   * @description coloque o mesmo nome da página criada exepmplo: açougue
+   * @description coloque o mesmo nome da página criada exepmplo: oque-voce-preferir/açougue ou açougue
    */
   link: string;
 }
@@ -25,7 +25,7 @@ const BusinessCards = ({ businessCards }: Props) => {
     <div class="flex justify-center lg:justify-start w-full gap-8 flex-wrap my-4 max-w-7xl mx-auto">
       {businessCards.map((item) => (
         <div class="max-w-[163px] lg:max-w-[280px] w-full p-2 rounded-card border border-grayTertiary">
-          <a href={`/monteseunegocio/${item.link}`}>
+          <a href={`/${item.link}`}>
             <div class="relative w-full mb-2.5">
               <div class="lg:absolute top-0 bg-purplePrimary w-full text-white font-semibold text-sm flex items-center justify-center py-1">
                 {item.title}
