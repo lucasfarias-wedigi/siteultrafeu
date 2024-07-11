@@ -5,7 +5,7 @@ interface Props {
   title: string;
   imageDesktop: ImageWidget;
   imageMobile: ImageWidget;
-  marginBottom: boolean;
+  marginBottom?: boolean;
 }
 
 const BusinessBanner = ({
