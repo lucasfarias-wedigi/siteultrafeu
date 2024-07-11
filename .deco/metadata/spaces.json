@@ -3897,7 +3897,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 18.61198738170347,
+                "width": 21.514195583596216,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3919,7 +3919,7 @@
               },
               {
                 "type": "stack",
-                "width": 81.38801261829653,
+                "width": 78.48580441640378,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -4629,7 +4629,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 22.271293375394322,
+                "width": 19.43217665615142,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -4651,7 +4651,7 @@
               },
               {
                 "type": "stack",
-                "width": 77.72870662460568,
+                "width": 80.56782334384857,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
