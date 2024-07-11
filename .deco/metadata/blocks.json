@@ -332,5 +332,11 @@
     "path": "/monte-seu-negocio/açougue",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Monte%2520seu%2520negocio%2520Copy-216729.json": {
+    "name": "Monte seu negocio Copy",
+    "path": "/institucial/quem-somos",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
