@@ -5019,7 +5019,7 @@
     },
     {
       "id": "/.deco/blocks/pages-Monte%2520seu%2520negocio%2520Copy-216729.json",
-      "name": "Monte seu negocio Copy",
+      "name": "quem somos",
       "pinned": false,
       "icon": "file",
       "layout": {
@@ -5061,7 +5061,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 41.66666666666667,
+                "width": 25.615141955835963,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -5083,7 +5083,7 @@
               },
               {
                 "type": "stack",
-                "width": 58.333333333333336,
+                "width": 74.38485804416403,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
