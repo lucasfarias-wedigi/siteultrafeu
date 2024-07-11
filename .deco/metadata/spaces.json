@@ -5061,7 +5061,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 25.615141955835963,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -5083,7 +5083,7 @@
               },
               {
                 "type": "stack",
-                "width": 74.38485804416403,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -5141,7 +5141,7 @@
     },
     {
       "id": "/.deco/blocks/pages-Monte%2520seu%2520negocio%2520Copy%2520Copy-567799.json",
-      "name": "Monte seu negocio Copy Copy",
+      "name": "trabalhe conosco",
       "pinned": false,
       "icon": "file",
       "layout": {
@@ -5305,7 +5305,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 22.586750788643535,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -5327,7 +5327,7 @@
               },
               {
                 "type": "stack",
-                "width": 77.41324921135646,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
