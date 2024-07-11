@@ -6,6 +6,23 @@
       "__resolveType": "Header - 01"
     },
     {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx",
+      "levels": [
+        {
+          "link": "/",
+          "name": "HOME"
+        },
+        {
+          "link": "#",
+          "name": "INSTITUCIONAL"
+        },
+        {
+          "name": "QUEM SOMOS",
+          "link": "/institucional/quem-somos"
+        }
+      ]
+    },
+    {
       "__resolveType": "menu institucional"
     },
     {
