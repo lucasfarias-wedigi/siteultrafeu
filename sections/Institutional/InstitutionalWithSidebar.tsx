@@ -13,7 +13,7 @@ interface Props {
 const InstitutionalWithSidebar = ({ loader, sections }: Props) => {
   return (
     <div class="bg-whitePrimary py-4">
-      <div class="flex max-w-7xl w-full mx-auto">
+      <div class="flex gap-8 max-w-7xl w-full mx-auto">
         <div class="max-w-[280px] w-full hidden lg:block">
           <nav class="divide-y divide-grayTertiary">
             {loader?.links.map(({ label, url }, index) => {
