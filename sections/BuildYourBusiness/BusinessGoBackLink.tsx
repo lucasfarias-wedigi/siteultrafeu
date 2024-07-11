@@ -5,7 +5,13 @@ export interface Props {
     text: string;
   };
 }
-const BusinessGoBackLink = ({ title, link }: Props) => {
+const BusinessGoBackLink = ({
+  title,
+  link = {
+    url: "/monteseunegocio",
+    text: "Voltar para escolher outro negócio",
+  },
+}: Props) => {
   return (
     <div class="bg-purplePrimary w-full">
       <div class="relative flex items-center py-1 w-full max-w-7xl mb-4 mx-auto">
@@ -39,8 +45,9 @@ const BusinessGoBackLink = ({ title, link }: Props) => {
             </a>
           </div>
         )}
-        {title && <h4 class="font-bold text-base text-white m-auto">{title}
-        </h4>}
+        {title && (
+          <h4 class="font-bold text-base text-white m-auto">{title}</h4>
+        )}
       </div>
     </div>
   );
