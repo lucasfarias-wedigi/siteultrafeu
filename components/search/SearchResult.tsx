@@ -208,7 +208,7 @@ function Result({
                 displayFilter={layout?.variant === "drawer"}
               />
               {filtersSelecteds > 0 && (
-                <div class="hidden lg:flex items-center text-sm gap-4 px-4">
+                <div class="flex items-center text-sm gap-4 px-4">
                   <span class="hidden lg:block">
                     Filtro ({filtersSelecteds})
                   </span>

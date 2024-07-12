@@ -101,11 +101,11 @@ function SearchControls({
           </svg>
         </button> */
         }
-        <div class="group lg:hover:bg-whitePrimary flex flex-row items-center px-4 lg:px-0 h-full">
+        <div class="group lg:hover:bg-whitePrimary flex flex-row items-center px-0 h-full">
           <Button
             class={displayFilter
               ? "btn-ghost"
-              : "sm:hidden flex items-center gap-4 border-x border-grayTertiary h-full px-4"}
+              : "sm:hidden flex items-center gap-4 border-x border-grayTertiary h-full px-2 lg:px-4"}
             onClick={() => {
               open.value = true;
             }}
