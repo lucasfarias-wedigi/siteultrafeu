@@ -23,7 +23,15 @@
       ]
     },
     {
-      "__resolveType": "menu institucional"
+      "__resolveType": "site/sections/Institutional/InstitutionalWithSidebar.tsx",
+      "loader": {
+        "__resolveType": "Preview site/loaders/sidebarMenu.ts"
+      },
+      "sections": [
+        {
+          "__resolveType": "site/sections/Institutional/InstitutionalAboutUs.tsx"
+        }
+      ]
     },
     {
       "__resolveType": "Footer - 04"

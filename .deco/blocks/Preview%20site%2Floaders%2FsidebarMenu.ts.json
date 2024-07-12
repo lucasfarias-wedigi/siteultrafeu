@@ -1,0 +1,17 @@
+{
+  "__resolveType": "site/loaders/sidebarMenu.ts",
+  "links": [
+    {
+      "url": "/institucional/quem-somos",
+      "label": "Quem somos"
+    },
+    {
+      "url": "/institucional/trabalhe-conosco",
+      "label": "Trabalhe conosco"
+    },
+    {
+      "url": "/institucional/contato",
+      "label": "Contato"
+    }
+  ]
+}

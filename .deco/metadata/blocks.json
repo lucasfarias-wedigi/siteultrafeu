@@ -354,5 +354,9 @@
   "/.deco/blocks/menu%20institucional.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Institutional/InstitutionalWithSidebar.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Floaders%2FsidebarMenu.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/sidebarMenu.ts"
   }
 }
