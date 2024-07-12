@@ -22,7 +22,7 @@ const InstitutionalAboutUs = ({
   return (
     <div class="w-full">
       {firstText && <RichText text={firstText} style="w-full" />}
-      {video && <video src={video} class="w-full" />}
+      {video && <video src={video} class="w-full" controls />}
       {secondText && <RichText text={secondText} />}
       {banners && (
         <BannnerGrid
