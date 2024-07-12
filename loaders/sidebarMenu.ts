@@ -15,10 +15,6 @@ interface Props {
 
 export interface NavigationLoader {
   links: Link[];
-
-  /**
-   * @hide
-   */
   activeIndex?: number;
 }
 
@@ -28,7 +24,6 @@ export default function loader(
 ): NavigationLoader {
   const activeIndex = links.findIndex((nav) => {
     const pattern = new URLPattern({ pathname: nav.url });
-    console.log(pattern);
     return pattern.test(req.url);
   });
 
