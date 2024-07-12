@@ -21,9 +21,9 @@ const InstitutionalAboutUs = ({
 }: Props) => {
   return (
     <div class="w-full">
-      {firstText && <RichText text={firstText} style="w-full" />}
-      {video && <video src={video} class="w-full my-8" controls />}
-      {secondText && <RichText text={secondText} />}
+      {firstText && <RichText text={firstText} style="px-4 lg:px-0" />}
+      {video && <video src={video} class="w-full my-8 px-4 lg:px-0" controls />}
+      {secondText && <RichText text={secondText} style="px-4 lg:px-0" />}
       {banners && (
         <div class="my-8">
           <BannnerGrid
@@ -34,7 +34,7 @@ const InstitutionalAboutUs = ({
           />
         </div>
       )}
-      {lastText && <RichText text={lastText} />}
+      {lastText && <RichText text={lastText} style="px-4 lg:px-0" />}
     </div>
   );
 };
