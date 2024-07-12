@@ -22,15 +22,17 @@ const InstitutionalAboutUs = ({
   return (
     <div class="w-full">
       {firstText && <RichText text={firstText} style="w-full" />}
-      {video && <video src={video} class="w-full" controls />}
+      {video && <video src={video} class="w-full my-8" controls />}
       {secondText && <RichText text={secondText} />}
       {banners && (
-        <BannnerGrid
-          banners={banners.banners}
-          borderRadius={banners.borderRadius}
-          itemsPerLine={banners.itemsPerLine}
-          title={banners.title}
-        />
+        <div class="my-8">
+          <BannnerGrid
+            banners={banners.banners}
+            borderRadius={banners.borderRadius}
+            itemsPerLine={banners.itemsPerLine}
+            title={banners.title}
+          />
+        </div>
       )}
       {lastText && <RichText text={lastText} />}
     </div>
