@@ -29,7 +29,8 @@
       },
       "sections": [
         {
-          "__resolveType": "site/sections/Institutional/InstitutionalContactForm.tsx"
+          "__resolveType": "site/sections/Institutional/InstitutionalContactForm.tsx",
+          "otherContacts": "<p><strong>Outros contatos</strong></p><p><strong><br data-mce-bogus=\"1\"></strong></p><p><strong><br data-mce-bogus=\"1\"></strong></p><p><strong>Televendas </strong></p><p>(16) 3600-9084 </p><p>Segunda a Sexta: 09:00 às 18:00 </p><p>Sábado: 09:00 às 12:00</p><p><br data-mce-bogus=\"1\"></p><p><strong>Whatsapp</strong></p><p>(16) 3600-9084</p><p><br data-mce-bogus=\"1\"></p><p><strong>E-mail:</strong></p><p><a href=\"mailto:ultrafeu@ultrafeu.com.br\">ultrafeu@ultrafeu.com.br</a></p><p><br data-mce-bogus=\"1\"></p><p><strong>Loja Física:</strong> </p><p>Avenida Presidente Vargas, 1741, Carmo – Araraquara/SP –</p><p>&nbsp;CEP: 14.801-062</p><p>&nbsp;CNPJ: 02.485.014/0001-78 </p><p>(16) 3600-9084</p>"
         }
       ]
     },
