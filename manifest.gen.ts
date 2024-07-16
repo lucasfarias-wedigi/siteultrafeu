@@ -2,6 +2,7 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $$$$$$$$$0 from "./actions/tableMasterData.ts";
 import * as $$$$$$$$$$$0 from "./apps/deco/algolia.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/analytics.ts";
 import * as $$$$$$$$$$$2 from "./apps/deco/brand-assistant.ts";
@@ -156,6 +157,9 @@ const manifest = {
     "site/sections/Social/InstagramPosts.tsx": $$$$$$61,
     "site/sections/Social/WhatsApp.tsx": $$$$$$62,
     "site/sections/Theme/Theme.tsx": $$$$$$63,
+  },
+  "actions": {
+    "site/actions/tableMasterData.ts": $$$$$$$$$0,
   },
   "apps": {
     "site/apps/deco/algolia.ts": $$$$$$$$$$$0,

@@ -16,9 +16,10 @@ export interface Props {
   mdColors: Data[];
 }
 
-export default function ProductDetails(
-  { page, mdColors }: SectionProps<typeof loader>,
-) {
+export default function ProductDetails({
+  page,
+  mdColors,
+}: SectionProps<typeof loader>) {
   if (!page?.seo) {
     return <NotFound />;
   }
@@ -40,13 +41,8 @@ export default function ProductDetails(
       <div class="bg-whitePrimary mb-4 relative">
         <div class="w-full max-w-7xl mx-auto lg:py-4 flex flex-col gap-6">
           <div class="flex flex-col lg:gap-6 lg:flex-row lg:justify-center">
-            <ImageGallerySlider
-              page={page}
-            />
-            <ProductInfo
-              page={page}
-              mdColors={mdColors}
-            />
+            <ImageGallerySlider page={page} />
+            <ProductInfo page={page} mdColors={mdColors} />
           </div>
         </div>
       </div>
@@ -78,8 +74,6 @@ export const loader = async (props: Props, _req: Request) => {
   );
 
   const data = await response.json<Data[]>();
-
-  console.log(data, "log do Loader");
 
   return {
     ...props,

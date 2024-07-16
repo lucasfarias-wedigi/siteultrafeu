@@ -2,7 +2,6 @@ import Avatar from "../../components/ui/Avatar.tsx";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { relative } from "../../sdk/url.ts";
-import { useEffect } from "preact/hooks";
 import { Data } from "../../sections/Product/ProductDetails.tsx";
 export interface Props {
   product: Product;
@@ -13,10 +12,6 @@ function VariantSelector({ product, mdColors }: Props) {
   const { url, isVariantOf } = product;
   const hasVariant = isVariantOf?.hasVariant ?? [];
   const possibilities = useVariantPossibilities(hasVariant, product);
-
-  useEffect(() => {
-    console.log(mdColors, "mdColors");
-  }, []);
 
   return (
     <ul class="flex flex-col gap-4">
