@@ -39,6 +39,9 @@
       "text": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Monte seu negócio de forma simples e rápida:</strong> selecione os maquinários necessários, opte pelo modelo ou marca de sua preferência e visualize suas escolhas com um resumo completo. Adicione todos os itens ao carrinho com um clique. Se precisar de ajuda, entre em contato conosco. Boas compras!</span></p>"
     },
     {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBuilder.tsx"
+    },
+    {
       "__resolveType": "DualBanners"
     },
     {
