@@ -445,7 +445,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 33.333333333333336,
+                "width": 21.20658135283364,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -466,7 +466,7 @@
               },
               {
                 "type": "stack",
-                "width": 33.333333333333336,
+                "width": 45.460085313833034,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -524,7 +524,7 @@
           "id": "themes::Theme%20Selector::palette::Theme%20Selector::%7B%7D",
           "state": {
             "__signal": null,
-            "value": "error"
+            "value": null
           }
         },
         "themes::Theme%20Viewer::palette::Theme%20Viewer::%7B%7D": {
