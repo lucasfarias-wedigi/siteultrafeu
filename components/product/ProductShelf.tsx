@@ -50,7 +50,7 @@ function ProductShelf({ products, title, layout }: Props) {
   return (
     <div
       id={id}
-      class="w-full max-w-7xl m-auto px-4 lg:px-0"
+      class="w-full max-w-7xl mx-auto mb-8 px-4 lg:px-0"
     >
       {
         /* <Header
@@ -92,7 +92,7 @@ function ProductShelf({ products, title, layout }: Props) {
         //   "px-0 md:px-5 container"
         // )}
       >
-        <Slider class="w-full carousel carousel-center sm:carousel-end sm:gap-1 row-start-2 row-end-5">
+        <Slider class="w-full carousel sm:carousel-end gap-4 row-start-2 row-end-5">
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
