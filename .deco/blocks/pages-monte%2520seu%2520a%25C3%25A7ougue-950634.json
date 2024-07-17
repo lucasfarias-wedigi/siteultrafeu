@@ -39,7 +39,106 @@
       "text": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Monte seu negócio de forma simples e rápida:</strong> selecione os maquinários necessários, opte pelo modelo ou marca de sua preferência e visualize suas escolhas com um resumo completo. Adicione todos os itens ao carrinho com um clique. Se precisar de ajuda, entre em contato conosco. Boas compras!</span></p>"
     },
     {
-      "__resolveType": "site/sections/BuildYourBusiness/BusinessBuilder.tsx"
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBuilder.tsx",
+      "tabIndex": 0,
+      "tabs": [
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "153",
+              "count": 4,
+              "hideUnavailableItems": true
+            }
+          },
+          "title": "Frangueiras"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "206",
+              "count": 4,
+              "hideUnavailableItems": true
+            }
+          },
+          "title": "Seladoras"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "153",
+              "count": 4,
+              "hideUnavailableItems": true
+            }
+          },
+          "title": "Frangueiras"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "206",
+              "count": 4,
+              "hideUnavailableItems": true
+            }
+          },
+          "title": "Seladoras"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "153",
+              "count": 4,
+              "hideUnavailableItems": true
+            }
+          },
+          "title": "Frangueiras"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "206",
+              "count": 4,
+              "hideUnavailableItems": true
+            }
+          },
+          "title": "Seladoras"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "153",
+              "count": 4,
+              "hideUnavailableItems": true
+            }
+          },
+          "title": "Frangueiras"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "206",
+              "count": 4,
+              "hideUnavailableItems": true
+            }
+          },
+          "title": "Seladoras"
+        }
+      ]
     },
     {
       "__resolveType": "DualBanners"
