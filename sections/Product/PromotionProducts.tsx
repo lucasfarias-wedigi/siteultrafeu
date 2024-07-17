@@ -24,7 +24,7 @@ export const loader = (props: Props, _req: Request, ctx: AppContext) => {
 function PromotionProducts({
   device,
   products,
-  title = "PROMOÇÃO",
+  title,
 }: SectionProps<typeof loader>) {
   const id = useId();
   if (!products || products.length === 0) {
@@ -36,11 +36,11 @@ function PromotionProducts({
       {device === "desktop"
         ? (
           <>
-            <CustomDivider>
+            {title && <CustomDivider>
               <h2 class="text-start md:text-center text-blackPrimary text-base lg:text-2xl font-semibold whitespace-nowrap">
                 {title}
               </h2>
-            </CustomDivider>
+            </CustomDivider>}
             <div class="w-full flex justify-between">
               <div class="flex w-full">
                 <PromotionProductCardInHighLight
