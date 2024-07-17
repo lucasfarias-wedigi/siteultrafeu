@@ -23,18 +23,18 @@ import { Data } from "../../sections/Product/ProductDetails.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
-  layout?: {
-    /**
-     * @title Product Name
-     * @description How product title will be displayed. Concat to concatenate product and sku names.
-     * @default productGroup
-     */
-    name?: "concat" | "productGroup" | "product";
-  };
+  // layout?: {
+  //   /**
+  //    * @title Product Name
+  //    * @description How product title will be displayed. Concat to concatenate product and sku names.
+  //    * @default productGroup
+  //    */
+  //   name?: "concat" | "productGroup" | "product";
+  // };
   mdColors: Data[];
 }
 
-function ProductInfo({ page, layout, mdColors }: Props) {
+function ProductInfo({ page, mdColors }: Props) {
   const platform = usePlatform();
   const id = useId();
 
@@ -46,7 +46,6 @@ function ProductInfo({ page, layout, mdColors }: Props) {
   const {
     productID,
     offers,
-    name = "",
     gtin,
     isVariantOf,
     additionalProperty = [],
@@ -103,11 +102,8 @@ function ProductInfo({ page, layout, mdColors }: Props) {
         <div class="flex justify-between items-center">
           <h1>
             <span class="font-semibold text-xl capitalize">
-              {layout?.name === "concat"
-                ? `${isVariantOf?.name} ${name}`
-                : layout?.name === "productGroup"
-                ? isVariantOf?.name
-                : name}
+              
+                {isVariantOf?.name}
             </span>
           </h1>
           <div class="flex flex-col items-center">
