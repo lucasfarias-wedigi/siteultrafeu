@@ -259,10 +259,10 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "159",
           "count": 7,
           "hideUnavailableItems": true,
-          "similars": false
+          "similars": false,
+          "collection": "159"
         }
       },
       "title": "PROMOÇÃO",

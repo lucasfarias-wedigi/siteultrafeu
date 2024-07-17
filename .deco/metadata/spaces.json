@@ -868,13 +868,13 @@
           }
         }
       },
+      "category": "Management",
       "tags": [
         {
           "label": "PRO",
           "color": "positive"
         }
-      ],
-      "category": "Management"
+      ]
     },
     {
       "id": "logs",
@@ -1012,10 +1012,10 @@
             "content": [
               {
                 "type": "stack",
+                "width": 100,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
-                "width": 100,
                 "activeItemIndex": 0,
                 "content": [
                   {
@@ -1184,7 +1184,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 41.66666666666667,
+                "width": 16.782334384858043,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1206,7 +1206,7 @@
               },
               {
                 "type": "stack",
-                "width": 58.333333333333336,
+                "width": 83.21766561514195,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1300,24 +1300,24 @@
         "content": [
           {
             "type": "stack",
-            "width": 100,
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
-            "activeItemIndex": 0,
             "content": [
               {
-                "id": "Staging::Environment::rocket::Environment::%7B%7D",
-                "title": "<div class=\"contents text-base-700\" id=\"header-Staging::Environment::rocket::Environment::%7B%7D\" />",
                 "type": "component",
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "<div class=\"contents text-base-700\" id=\"header-Staging::Environment::rocket::Environment::%7B%7D\" />",
+                "id": "Staging::Environment::rocket::Environment::%7B%7D",
                 "componentName": "component",
                 "componentState": {
                   "id": "Staging::Environment::rocket::Environment::%7B%7D"
-                },
-                "isClosable": true,
-                "reorderEnabled": true
+                }
               }
-            ]
+            ],
+            "width": 100,
+            "activeItemIndex": 0
           }
         ],
         "isClosable": true,
@@ -1423,9 +1423,9 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2Fsite.json::Properties::list::Properties::%7B%7D"
                     },
-                    "width": 30,
                     "isClosable": true,
-                    "reorderEnabled": true
+                    "reorderEnabled": true,
+                    "width": 30
                   }
                 ]
               },
@@ -5005,7 +5005,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 17.22397476340694,
+                "width": 18.29652996845426,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -5027,7 +5027,7 @@
               },
               {
                 "type": "stack",
-                "width": 82.77602523659307,
+                "width": 81.70347003154575,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -5127,7 +5127,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 25.362776025236595,
+                "width": 22.3675604970569,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -5149,7 +5149,7 @@
               },
               {
                 "type": "stack",
-                "width": 74.6372239747634,
+                "width": 77.6324395029431,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",

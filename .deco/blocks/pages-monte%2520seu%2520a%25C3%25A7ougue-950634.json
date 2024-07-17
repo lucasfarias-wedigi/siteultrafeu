@@ -39,112 +39,49 @@
       "text": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Monte seu negócio de forma simples e rápida:</strong> selecione os maquinários necessários, opte pelo modelo ou marca de sua preferência e visualize suas escolhas com um resumo completo. Adicione todos os itens ao carrinho com um clique. Se precisar de ajuda, entre em contato conosco. Boas compras!</span></p>"
     },
     {
-      "__resolveType": "site/sections/BuildYourBusiness/BusinessBuilder.tsx",
-      "tabIndex": 0,
-      "tabs": [
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "153",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Frangueira"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "206",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Amaciador de carne"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "206",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Seladoras"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "153",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Misturadora"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "206",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Serra fita pra ossos"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "153",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Mesa manipulação"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "206",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Balança eletrônica"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "153",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Ensacadeira"
-        }
-      ]
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBuilder.tsx"
     },
     {
       "__resolveType": "DualBanners"
     },
     {
       "__resolveType": "Footer - 04"
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+      "tabs": [
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "159",
+              "hideUnavailableItems": true,
+              "count": 7
+            }
+          },
+          "title": "teste 2"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "195",
+              "hideUnavailableItems": true,
+              "count": 6
+            }
+          },
+          "title": "teste 3"
+        }
+      ],
+      "layout": {
+        "headerAlignment": "left",
+        "headerfontSize": "Normal"
+      },
+      "description": "teste",
+      "title": "teste",
+      "tabIndex": 0
     }
   ],
   "seo": {
