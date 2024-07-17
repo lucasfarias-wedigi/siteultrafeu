@@ -36,11 +36,13 @@ function PromotionProducts({
       {device === "desktop"
         ? (
           <>
-            {title && <CustomDivider>
-              <h2 class="text-start md:text-center text-blackPrimary text-base lg:text-2xl font-semibold whitespace-nowrap">
-                {title}
-              </h2>
-            </CustomDivider>}
+            {title && (
+              <CustomDivider>
+                <h2 class="text-start md:text-center text-blackPrimary text-base lg:text-2xl font-semibold whitespace-nowrap">
+                  {title}
+                </h2>
+              </CustomDivider>
+            )}
             <div class="w-full flex justify-between">
               <div class="flex w-full">
                 <PromotionProductCardInHighLight

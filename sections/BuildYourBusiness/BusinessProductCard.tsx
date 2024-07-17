@@ -72,23 +72,28 @@ function BusinessProductCard({
       />
       <figure class="relative overflow-hidden w-[214px] h-[214px]">
         {/* Wishlist button */}
-        {/* <div
+        {
+          /* <div
           class={clx(
             "absolute top-0 left-0",
             "z-10 w-full",
             "flex items-center justify-end"
           )}
-        > */}
+        > */
+        }
         {/* Discount % */}
-        {/* <div class="text-sm px-3">
+        {
+          /* <div class="text-sm px-3">
               <span class="font-bold">
                 {listPrice && price
                   ? `${Math.round(((listPrice - price) / listPrice) * 100)}% `
                   : ""}
               </span>
               OFF
-            </div> */}
-        {/* <div class="lg:group-hover:block">
+            </div> */
+        }
+        {
+          /* <div class="lg:group-hover:block">
               {platform === "vtex" && (
                 <WishlistButtonVtex
                   productGroupID={productGroupID}
@@ -101,7 +106,8 @@ function BusinessProductCard({
                   productID={productID}
                 />
               )}
-            </div> */}
+            </div> */
+        }
         {/* </div> */}
 
         {/* Product Images */}
@@ -128,7 +134,7 @@ function BusinessProductCard({
             height={214}
             class={clx(
               "object-cover",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100"
+              "transition-opacity opacity-0 lg:group-hover:opacity-100",
             )}
             sizes="(max-width: 640px) 50vw, 20vw"
             loading="lazy"
@@ -146,13 +152,11 @@ function BusinessProductCard({
                 <a href={link}>
                   <Avatar
                     content={value}
-                    variant={
-                      link === relativeUrl
-                        ? "active"
-                        : link
-                        ? "default"
-                        : "disabled"
-                    }
+                    variant={link === relativeUrl
+                      ? "active"
+                      : link
+                      ? "default"
+                      : "disabled"}
                   />
                 </a>
               </li>
