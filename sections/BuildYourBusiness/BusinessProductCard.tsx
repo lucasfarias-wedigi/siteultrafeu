@@ -35,7 +35,7 @@ function BusinessProductCard({
   // platform,
   index,
 }: Props) {
-  const { url, productID, name, image: images, offers, isVariantOf } = product;
+  const { url, productID, image: images, offers, isVariantOf } = product;
   const id = `product-card-${productID}`;
   const hasVariant = isVariantOf?.hasVariant ?? [];
   //   const productGroupID = isVariantOf?.productGroupID;
@@ -166,8 +166,8 @@ function BusinessProductCard({
         {/* Name/Description */}
         <div class="flex flex-col">
           <h2
-            class="text-xs font-bold text-blackPrimary"
-            dangerouslySetInnerHTML={{ __html: name ?? "" }}
+            class="text-xs font-bold text-blackPrimary line-clamp-3 mb-1"
+            dangerouslySetInnerHTML={{ __html: isVariantOf?.name ?? "" }}
           />
 
           <p class="truncate text-sm text-blackPrimary">{description}</p>
