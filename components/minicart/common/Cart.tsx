@@ -63,14 +63,16 @@ function Cart({
         : (
           <>
             {/* Free Shipping Bar */}
-            {/* <div class="px-2 py-4 w-full">
+            {
+              /* <div class="px-2 py-4 w-full">
               <FreeShippingProgressBar
                 total={total}
                 locale={locale}
                 currency={currency}
                 target={freeShippingTarget}
               />
-            </div> */}
+            </div> */
+            }
 
             {/* Cart Items */}
             <ul
@@ -92,7 +94,7 @@ function Cart({
             </ul>
 
             {/* Cart Footer */}
-            <footer class="w-full" style={{marginTop: "100%"}}>
+            <footer class="w-full" style={{ marginTop: "100%" }}>
               {/* Subtotal */}
               <div class="border-t border-base-200 py-2 flex flex-col">
                 {discounts > 0 && (
