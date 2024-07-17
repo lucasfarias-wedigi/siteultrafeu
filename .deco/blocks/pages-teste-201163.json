@@ -1,0 +1,88 @@
+{
+  "name": "teste",
+  "path": "/tita",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx",
+      "levels": [
+        {
+          "link": "/",
+          "name": "HOME"
+        },
+        {
+          "name": "MONTE SEU NEGÓCIO",
+          "link": "HOME"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBanner.tsx",
+      "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/542f448e-9bda-4a56-b055-a6f149f3e67a",
+      "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/7c39d55b-863f-4796-92fd-d2f047257d75",
+      "title": "MONTE SEU NEGÓCIO",
+      "marginBottom": true
+    },
+    {
+      "__resolveType": "site/sections/Content/RichText.tsx",
+      "containerWidth": 1280,
+      "text": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Monte seu negócio de forma simples e rápida:</strong> escolha o ramo de atuação!</span></p>"
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessCards.tsx",
+      "businessCards": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "buttonText": "Escolher",
+          "title": "AÇOUGUE",
+          "link": "/monte-seu-negocio/açougue"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "buttonText": "Escolher",
+          "title": "AÇOUGUE",
+          "link": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "buttonText": "Escolher",
+          "title": "AÇOUGUE",
+          "link": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "buttonText": "Escolher",
+          "title": "AÇOUGUE",
+          "link": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "buttonText": "Escolher",
+          "title": "AÇOUGUE",
+          "link": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "buttonText": "Escolher",
+          "title": "AÇOUGUE",
+          "link": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "buttonText": "Escolher",
+          "title": "AÇOUGUE",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
