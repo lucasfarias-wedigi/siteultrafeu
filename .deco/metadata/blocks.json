@@ -358,5 +358,11 @@
   "/.deco/blocks/Preview%20site%2Floaders%2FsidebarMenu.ts.json": {
     "blockType": "loaders",
     "__resolveType": "site/loaders/sidebarMenu.ts"
+  },
+  "/.deco/blocks/pages-Gelo%2520Par-980327.json": {
+    "name": "Gelo Par",
+    "path": "/gelopar",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
