@@ -26,7 +26,8 @@ const LinkItem = ({ url, label, index, activeIndex }: any) => {
 const SidebarMenuMobile = ({ loader }: SidebarMenuMobileProps) => {
   return (
     <div class="px-4 lg:hidden mb-4">
-      {/* <Carrousel
+      {
+        /* <Carrousel
         {...sliders}
         children={loader.links.map((item, index) => (
           <LinkItem
@@ -36,7 +37,8 @@ const SidebarMenuMobile = ({ loader }: SidebarMenuMobileProps) => {
             activeIndex={loader.activeIndex}
           />
         ))}
-      /> */}
+      /> */
+      }
       <div className="dropdown w-full bg-white">
         <div
           tabIndex={0}
