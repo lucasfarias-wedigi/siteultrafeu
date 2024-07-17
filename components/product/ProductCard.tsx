@@ -190,10 +190,10 @@ function ProductCard({
             dangerouslySetInnerHTML={{ __html: name ?? "" }}
           />
 
-          <div
-            class="truncate text-sm text-blackPrimary"
-            dangerouslySetInnerHTML={{ __html: description ?? "" }}
-          />
+          <p
+            class="line-clamp-2 text-sm text-blackPrimary"
+            
+          >{description}</p>
         </div>
 
         {/* Price from/to */}

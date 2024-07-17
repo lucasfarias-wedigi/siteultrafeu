@@ -38,11 +38,11 @@ function PromotionProductCard({
   // platform,
   index,
 }: Props) {
-  const { url, productID, name, image: images, offers } = product;
+  const { url, productID, name, image: images, offers, isVariantOf } = product;
   const id = `product-card-${productID}`;
   // const hasVariant = isVariantOf?.hasVariant ?? [];
   // const productGroupID = isVariantOf?.productGroupID;
-  // const description = product.description || isVariantOf?.description;
+  const description = product.description || isVariantOf?.description;
   const [front, back] = images ?? [];
   const { listPrice, price, installments } = useOffer(offers);
   // const possibilities = useVariantPossibilities(hasVariant, product);
@@ -75,13 +75,13 @@ function PromotionProductCard({
         }}
       />
 
-      <div class={`flex flex-col lg:flex-row w-full gap-4 h-full`}>
-        <figure class="w-full h-full" // style={{ aspectRatio }}
+      <div class={`flex flex-col lg:flex-row w-full gap-4 max-w-[592px] h-full`}>
+        <figure
+          class="min-w-[295px] h-full" // style={{ aspectRatio }}
         >
           {/* Wishlist button */}
           <div class={clx()}>
-            {
-              /* <div class="lg:group-hover:block">
+            {/* <div class="lg:group-hover:block">
               {platform === "vtex" && (
                 <WishlistButtonVtex
                   productGroupID={productGroupID}
@@ -94,8 +94,7 @@ function PromotionProductCard({
                   productID={productID}
                 />
               )}
-            </div> */
-            }
+            </div> */}
           </div>
 
           {/* Product Images */}
@@ -105,7 +104,7 @@ function PromotionProductCard({
             class={clx(
               // "absolute top-0 left-0",
               // "grid grid-cols-1 grid-rows-1",
-              "flex relative m-auto w-full",
+              "flex relative m-auto w-full"
             )}
           >
             <Image
@@ -127,7 +126,7 @@ function PromotionProductCard({
               height={329}
               // style={{ aspectRatio }}
               class={clx(
-                "absolute opacity-0 z-10 hover:opacity-100 transition-opacity",
+                "absolute opacity-0 z-10 hover:opacity-100 transition-opacity"
               )}
               sizes="(max-width: 640px) 50vw, 20vw"
               loading="lazy"
@@ -137,8 +136,7 @@ function PromotionProductCard({
         </figure>
 
         {/* SKU Selector */}
-        {
-          /* <ul class="flex items-center justify-center gap-2">
+        {/* <ul class="flex items-center justify-center gap-2">
           {variants
             .map(([value, link]) => [value, relative(link)] as const)
             .map(([value, link]) => (
@@ -157,23 +155,19 @@ function PromotionProductCard({
                 </a>
               </li>
             ))}
-        </ul> */
-        }
+        </ul> */}
 
         {/* Name/Description */}
         <div class="flex flex-col justify-between w-full">
           <div class="flex flex-col">
             <h2
-              class="truncate text-base font-semibold text-blackPrimary"
+              class="truncate text-base font-semibold text-blackPrimary mb-4"
               dangerouslySetInnerHTML={{ __html: name ?? "" }}
             />
 
-            {
-              /* <div
-              class="truncate text-sm text-blackPrimary first:hidden"
-              dangerouslySetInnerHTML={{ __html: description ?? "" }}
-            /> */
-            }
+            <p class="line-clamp-3 text-sm text-blackPrimary first:hidden max-w-[265px]">
+              {description}
+            </p>
           </div>
 
           {/* Price from/to */}
@@ -185,11 +179,7 @@ function PromotionProductCard({
               {/* Discount % */}
               <span class="font-bold bg-[#E2E2E2] px-2 py-0.5 text-greenPrimary text-xs rounded-card ml-1.5">
                 {listPrice && price
-                  ? `-${
-                    Math.round(
-                      ((listPrice - price) / listPrice) * 100,
-                    )
-                  }% ↓`
+                  ? `-${Math.round(((listPrice - price) / listPrice) * 100)}% ↓`
                   : ""}
               </span>
             </div>
