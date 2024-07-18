@@ -5,7 +5,7 @@ import { SendEventOnView } from "../../components/Analytics.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
-import BusinessProductCard from "./BusinessProductCard.tsx";
+import BusinessProductCard from "../../components/Institutional/BusinessProductCard.tsx";
 
 /** @titleBy title */
 interface Tab {
@@ -21,14 +21,16 @@ export interface Props {
 const BusinessBuilder = ({ tabs, tabIndex }: Props) => {
   const id = useId();
   const platform = usePlatform();
-  const ti = typeof tabIndex === "number"
-    ? Math.min(Math.max(tabIndex, 0), tabs.length)
-    : 0;
+  const ti =
+    typeof tabIndex === "number"
+      ? Math.min(Math.max(tabIndex, 0), tabs.length)
+      : 0;
   const { products } = tabs[ti];
 
   if (!products || products.length === 0) {
     return null;
   }
+
   return (
     <div class="max-w-7xl mx-auto w-full flex gap-6 justify-between my-8">
       <div class="max-w-[280px] w-full">
