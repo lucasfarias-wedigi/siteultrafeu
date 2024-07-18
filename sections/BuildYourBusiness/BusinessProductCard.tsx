@@ -63,7 +63,7 @@ function BusinessProductCard({
     <div
       id={id}
       data-deco="view-product"
-      class="w-full flex my-8 p-4 business-build-card"
+      class="w-full flex my-8 p-4 business-build-card gap-2"
     >
       {/* Add click event to dataLayer */}
       <SendEventOnClick
