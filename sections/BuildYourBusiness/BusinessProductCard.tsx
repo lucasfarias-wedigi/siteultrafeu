@@ -13,6 +13,8 @@ import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
+import AddToCartButtonVTEX from "../../islands/AddToCartButton/vtex.tsx";
+import OutOfStock from "../../islands/OutOfStock.tsx";
 
 interface Props {
   product: Product;
@@ -32,19 +34,30 @@ function BusinessProductCard({
   product,
   preload,
   itemListName,
-  // platform,
+  platform,
   index,
 }: Props) {
   const { url, productID, image: images, offers, isVariantOf } = product;
   const id = `product-card-${productID}`;
   const hasVariant = isVariantOf?.hasVariant ?? [];
   //   const productGroupID = isVariantOf?.productGroupID;
-  const description = product.description || isVariantOf?.description;
+  // const description = product.description || isVariantOf?.description;
   const [front, back] = images ?? [];
-  const { listPrice, price, installments } = useOffer(offers);
+  const {
+    listPrice,
+    price,
+    installments,
+    seller = "1",
+    availability,
+  } = useOffer(offers);
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const relativeUrl = relative(url);
+  const eventItem = mapProductToAnalyticsItem({
+    product,
+    price,
+    listPrice,
+  });
 
   return (
     <div
@@ -70,30 +83,25 @@ function BusinessProductCard({
           },
         }}
       />
-      <figure class="relative overflow-hidden w-[214px] h-[214px]">
+      <figure class="relative overflow-hidden min-w-[214px] h-[214px]">
         {/* Wishlist button */}
-        {
-          /* <div
+        {/* <div
           class={clx(
             "absolute top-0 left-0",
             "z-10 w-full",
             "flex items-center justify-end"
           )}
-        > */
-        }
+        > */}
         {/* Discount % */}
-        {
-          /* <div class="text-sm px-3">
+        {/* <div class="text-sm px-3">
               <span class="font-bold">
                 {listPrice && price
                   ? `${Math.round(((listPrice - price) / listPrice) * 100)}% `
                   : ""}
               </span>
               OFF
-            </div> */
-        }
-        {
-          /* <div class="lg:group-hover:block">
+            </div> */}
+        {/* <div class="lg:group-hover:block">
               {platform === "vtex" && (
                 <WishlistButtonVtex
                   productGroupID={productGroupID}
@@ -106,8 +114,7 @@ function BusinessProductCard({
                   productID={productID}
                 />
               )}
-            </div> */
-        }
+            </div> */}
         {/* </div> */}
 
         {/* Product Images */}
@@ -134,7 +141,7 @@ function BusinessProductCard({
             height={214}
             class={clx(
               "object-cover",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100",
+              "transition-opacity opacity-0 lg:group-hover:opacity-100"
             )}
             sizes="(max-width: 640px) 50vw, 20vw"
             loading="lazy"
@@ -142,35 +149,36 @@ function BusinessProductCard({
           />
         </a>
       </figure>
-      <div class="flex gap-2">
-        {/* SKU Selector */}
-        <ul class="flex items-center justify-center gap-2">
-          {variants
-            .map(([value, link]) => [value, relative(link)] as const)
-            .map(([value, link]) => (
-              <li>
-                <a href={link}>
-                  <Avatar
-                    content={value}
-                    variant={link === relativeUrl
-                      ? "active"
-                      : link
-                      ? "default"
-                      : "disabled"}
-                  />
-                </a>
-              </li>
-            ))}
-        </ul>
-
+      <div class="flex gap-2 flex-col w-full">
         {/* Name/Description */}
         <div class="flex flex-col">
           <h2
-            class="text-xs font-bold text-blackPrimary line-clamp-3 mb-1"
+            class="text-sm text-blackPrimary line-clamp-3 mb-1"
             dangerouslySetInnerHTML={{ __html: isVariantOf?.name ?? "" }}
           />
-
-          <p class="truncate text-sm text-blackPrimary">{description}</p>
+          {/* <p class="truncate text-sm text-blackPrimary">{description}</p> */}
+          {/* SKU Selector */}
+          <p class="text-xs font-semibold my-2">SELECIONE A VOLTAGEM:</p>
+          <ul class="flex items-center gap-2 mb-2">
+            {variants
+              .map(([value, link]) => [value, relative(link)] as const)
+              .map(([value, link]) => (
+                <li class="flex flex-items justify-center border border-[#7A7A7A] py-2 px-6 shadow-md">
+                  <a href={link}>
+                    <Avatar
+                      content={value}
+                      variant={
+                        link === relativeUrl
+                          ? "active"
+                          : link
+                          ? "default"
+                          : "disabled"
+                      }
+                    />
+                  </a>
+                </li>
+              ))}
+          </ul>
           {/* Price from/to */}
           <div class="flex flex-col gap-2">
             <span class="line-through text-base text-grayPrimary">
@@ -185,11 +193,34 @@ function BusinessProductCard({
           </div>
 
           {/* Installments */}
-          <span class="gap-2 text-blackPrimary truncate">
-            Ou até {installments}
-          </span>
-
-          <a
+          {installments && (
+            <span class="text-blackPrimary truncate text-base">
+              Ou até {installments}
+            </span>
+          )}
+          <div class="mt-4 sm:mt-10 flex flex-col gap-2">
+            {availability === "https://schema.org/InStock" ? (
+              <>
+                {platform === "vtex" && (
+                  <>
+                    <AddToCartButtonVTEX
+                      eventParams={{ items: [eventItem] }}
+                      productID={productID}
+                      seller={seller}
+                    />
+                    {/* <WishlistButtonVtex
+                    variant="full"
+                    productID={productID}
+                    productGroupID={productGroupID}
+                  /> */}
+                  </>
+                )}
+              </>
+            ) : (
+              <OutOfStock productID={productID} />
+            )}
+          </div>
+          {/* <a
             href={relativeUrl}
             aria-label="view product"
             class="flex w-full h-[41px] font-bold textsm items-center justify-center text-white bg-purplePrimary lg:hidden gap-2.5"
@@ -229,7 +260,7 @@ function BusinessProductCard({
               />
             </svg>
             Ver produto
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
