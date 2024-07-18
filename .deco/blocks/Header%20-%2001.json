@@ -625,7 +625,6 @@
   "logoPosition": "left",
   "__resolveType": "site/sections/Header/Header.tsx",
   "liveStore": {
-    "text": "LOJA AO VIVO",
-    "link": "#"
+    "text": "LOJA AO VIVO"
   }
 }
