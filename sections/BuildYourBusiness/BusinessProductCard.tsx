@@ -13,8 +13,8 @@ import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
-import AddToCartButtonVTEX from "../../islands/AddToCartButton/vtex.tsx";
-import OutOfStock from "../../islands/OutOfStock.tsx";
+// import AddToCartButtonVTEX from "../../islands/AddToCartButton/vtex.tsx";
+// import OutOfStock from "../../islands/OutOfStock.tsx";
 
 interface Props {
   product: Product;
@@ -34,7 +34,7 @@ function BusinessProductCard({
   product,
   preload,
   itemListName,
-  platform,
+  // platform,
   index,
 }: Props) {
   const { url, productID, image: images, offers, isVariantOf } = product;
@@ -47,17 +47,17 @@ function BusinessProductCard({
     listPrice,
     price,
     installments,
-    seller = "1",
-    availability,
+    // seller = "1",
+    // availability,
   } = useOffer(offers);
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const relativeUrl = relative(url);
-  const eventItem = mapProductToAnalyticsItem({
-    product,
-    price,
-    listPrice,
-  });
+  // const eventItem = mapProductToAnalyticsItem({
+  //   product,
+  //   price,
+  //   listPrice,
+  // });
 
   return (
     <div
@@ -203,7 +203,8 @@ function BusinessProductCard({
             </span>
           )}
           <div class="mt-4 sm:mt-10 flex flex-col gap-2">
-            {availability === "https://schema.org/InStock"
+            {
+              /* availability === "https://schema.org/InStock"
               ? (
                 <>
                   {platform === "vtex" && (
@@ -218,13 +219,53 @@ function BusinessProductCard({
                     variant="full"
                     productID={productID}
                     productGroupID={productGroupID}
-                  /> */
+                  />
                       }
                     </>
                   )}
                 </>
               )
-              : <OutOfStock productID={productID} />}
+              : <OutOfStock productID={productID} /> */
+            }
+            <button
+              class={`bg-purplePrimary h-11 px-4 flex items-center justify-center gap-2.5 text-white`}
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 12L12.5401 11.455C14.5865 11.2845 15.0458 10.8375 15.2726 8.79667L15.75 4.5"
+                  stroke="white"
+                  stroke-linecap="round"
+                />
+                <path d="M4.5 4.5H16.5" stroke="white" stroke-linecap="round" />
+                <path
+                  d="M4.5 16.5C5.32843 16.5 6 15.8284 6 15C6 14.1716 5.32843 13.5 4.5 13.5C3.67157 13.5 3 14.1716 3 15C3 15.8284 3.67157 16.5 4.5 16.5Z"
+                  fill="white"
+                  stroke="white"
+                />
+                <path
+                  d="M12.75 16.5C13.5784 16.5 14.25 15.8284 14.25 15C14.25 14.1716 13.5784 13.5 12.75 13.5C11.9216 13.5 11.25 14.1716 11.25 15C11.25 15.8284 11.9216 16.5 12.75 16.5Z"
+                  fill="white"
+                  stroke="white"
+                />
+                <path d="M6 15H11.25" stroke="white" stroke-linecap="round" />
+                <path
+                  d="M1.5 1.5H2.2245C2.93301 1.5 3.55061 1.96844 3.72245 2.6362L5.95389 11.3074C6.06665 11.7456 5.97015 12.2098 5.69118 12.5712L4.9741 13.5"
+                  stroke="white"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M15.75 4.5H4.125L6.375 12C7.75 12 10.95 11.925 12.75 11.625C14.55 11.325 15 10.25 15 9.75L15.75 4.5Z"
+                  fill="white"
+                />
+              </svg>
+              Selecionar
+            </button>
           </div>
           {
             /* <a
