@@ -85,23 +85,28 @@ function BusinessProductCard({
       />
       <figure class="relative overflow-hidden min-w-[214px] h-[214px]">
         {/* Wishlist button */}
-        {/* <div
+        {
+          /* <div
           class={clx(
             "absolute top-0 left-0",
             "z-10 w-full",
             "flex items-center justify-end"
           )}
-        > */}
+        > */
+        }
         {/* Discount % */}
-        {/* <div class="text-sm px-3">
+        {
+          /* <div class="text-sm px-3">
               <span class="font-bold">
                 {listPrice && price
                   ? `${Math.round(((listPrice - price) / listPrice) * 100)}% `
                   : ""}
               </span>
               OFF
-            </div> */}
-        {/* <div class="lg:group-hover:block">
+            </div> */
+        }
+        {
+          /* <div class="lg:group-hover:block">
               {platform === "vtex" && (
                 <WishlistButtonVtex
                   productGroupID={productGroupID}
@@ -114,7 +119,8 @@ function BusinessProductCard({
                   productID={productID}
                 />
               )}
-            </div> */}
+            </div> */
+        }
         {/* </div> */}
 
         {/* Product Images */}
@@ -141,7 +147,7 @@ function BusinessProductCard({
             height={214}
             class={clx(
               "object-cover",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100"
+              "transition-opacity opacity-0 lg:group-hover:opacity-100",
             )}
             sizes="(max-width: 640px) 50vw, 20vw"
             loading="lazy"
@@ -167,13 +173,11 @@ function BusinessProductCard({
                   <a href={link}>
                     <Avatar
                       content={value}
-                      variant={
-                        link === relativeUrl
-                          ? "active"
-                          : link
-                          ? "default"
-                          : "disabled"
-                      }
+                      variant={link === relativeUrl
+                        ? "active"
+                        : link
+                        ? "default"
+                        : "disabled"}
                     />
                   </a>
                 </li>
@@ -199,28 +203,31 @@ function BusinessProductCard({
             </span>
           )}
           <div class="mt-4 sm:mt-10 flex flex-col gap-2">
-            {availability === "https://schema.org/InStock" ? (
-              <>
-                {platform === "vtex" && (
-                  <>
-                    <AddToCartButtonVTEX
-                      eventParams={{ items: [eventItem] }}
-                      productID={productID}
-                      seller={seller}
-                    />
-                    {/* <WishlistButtonVtex
+            {availability === "https://schema.org/InStock"
+              ? (
+                <>
+                  {platform === "vtex" && (
+                    <>
+                      <AddToCartButtonVTEX
+                        eventParams={{ items: [eventItem] }}
+                        productID={productID}
+                        seller={seller}
+                      />
+                      {
+                        /* <WishlistButtonVtex
                     variant="full"
                     productID={productID}
                     productGroupID={productGroupID}
-                  /> */}
-                  </>
-                )}
-              </>
-            ) : (
-              <OutOfStock productID={productID} />
-            )}
+                  /> */
+                      }
+                    </>
+                  )}
+                </>
+              )
+              : <OutOfStock productID={productID} />}
           </div>
-          {/* <a
+          {
+            /* <a
             href={relativeUrl}
             aria-label="view product"
             class="flex w-full h-[41px] font-bold textsm items-center justify-center text-white bg-purplePrimary lg:hidden gap-2.5"
@@ -260,7 +267,8 @@ function BusinessProductCard({
               />
             </svg>
             Ver produto
-          </a> */}
+          </a> */
+          }
         </div>
       </div>
     </div>

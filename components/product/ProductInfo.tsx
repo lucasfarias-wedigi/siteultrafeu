@@ -102,8 +102,7 @@ function ProductInfo({ page, mdColors }: Props) {
         <div class="flex justify-between items-center">
           <h1>
             <span class="font-semibold text-xl capitalize">
-              
-                {isVariantOf?.name}
+              {isVariantOf?.name}
             </span>
           </h1>
           <div class="flex flex-col items-center">
