@@ -6,12 +6,36 @@
       "label": "Quem somos"
     },
     {
-      "url": "/institucional/trabalhe-conosco",
-      "label": "Trabalhe conosco"
+      "url": "/institucional/politica-de-seguranca",
+      "label": "Politica de Privacidade"
+    },
+    {
+      "url": "/institucional/politica-de-seguranca",
+      "label": "Politica de Segurança"
+    },
+    {
+      "label": "Politica de Entrega",
+      "url": "/institucional/politica-de-entrega"
+    },
+    {
+      "label": "Dúvidas Frequentes",
+      "url": "/institucional/duvidas-frequentes"
+    },
+    {
+      "label": "Como Comprar",
+      "url": "/institucional/como-comprar"
+    },
+    {
+      "url": "/institucional/Prazos-e-formas-de-envio",
+      "label": "Prazos e formas de envio"
     },
     {
       "url": "/institucional/contato",
-      "label": "Contato"
+      "label": "Fale Conosco"
+    },
+    {
+      "label": "Trabalhe conosco",
+      "url": "/institucional/trabalhe-conosco"
     }
   ]
 }
