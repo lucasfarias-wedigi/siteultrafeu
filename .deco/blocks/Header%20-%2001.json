@@ -36,7 +36,7 @@
       {
         "text": "Monte seu negócio",
         "image": "BriefCase",
-        "link": "/monte-seu-negocio"
+        "link": "/monteseunegocio"
       }
     ]
   },
@@ -625,6 +625,7 @@
   "logoPosition": "left",
   "__resolveType": "site/sections/Header/Header.tsx",
   "liveStore": {
-    "text": "LOJA AO VIVO"
+    "text": "LOJA AO VIVO",
+    "link": "https://live.ultrafeu.com.br/"
   }
 }
