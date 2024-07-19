@@ -60,26 +60,25 @@
             "arrows": true,
             "images": [
               {
-                "alt": "Feminino",
+                "alt": "Banner 1",
                 "action": {
-                  "href": "/feminino",
+                  "href": "//maquinario-de-producao",
                   "label": "Explore collection",
-                  "title": "VTEX Store",
                   "subTitle": "Visit our site and start building now:"
                 },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/e2d94445-7441-481b-ac45-d5b8818f02fc",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a348a67d-526f-4e79-abf6-2450f8d25eba"
               },
               {
-                "alt": "Masculino",
+                "alt": "Banner 2",
                 "action": {
-                  "href": "/masculino",
+                  "href": "Banner 2 ",
                   "label": "Explore collection",
-                  "title": "VTEX Store",
+                  "title": "Banner 2 ",
                   "subTitle": "Visit our site and start building now:"
                 },
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5"
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/e2d94445-7441-481b-ac45-d5b8818f02fc",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b0febb13-8cb3-4cbb-bdab-f85c455441d8"
               },
               {
                 "alt": "Vestidos",
