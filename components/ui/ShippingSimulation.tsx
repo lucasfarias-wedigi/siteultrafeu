@@ -46,7 +46,7 @@ function ShippingContent({ simulation }: {
     <ul class="flex flex-col gap-4 p-4 bg-transparent border-[1px] border-grayTertiary">
       {methods.map((method) => (
         <li class="flex justify-between items-center border-grayTertiary [&:not(:first-child)]:border-t-[1px] [&:not(:first-child)]:pt-[10px]">
-          <span class="min-w-[68px] text-button text-left text-sm text-grayPrimary">
+          <span class="min-w-[56px] text-button text-left text-sm text-grayPrimary">
             {method.name}
           </span>
           <span class="text-button text-sm text-grayPrimary">

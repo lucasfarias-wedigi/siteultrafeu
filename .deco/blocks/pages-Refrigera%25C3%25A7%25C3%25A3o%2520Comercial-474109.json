@@ -148,7 +148,8 @@
       "cardLayout": {
         "__resolveType": "Product Card Layout - 01"
       },
-      "startingPage": 0
+      "startingPage": 0,
+      "SliderItems": []
     },
     {
       "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",

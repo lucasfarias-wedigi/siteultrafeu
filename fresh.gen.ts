@@ -10,7 +10,6 @@ import * as $AddToCartButton_vnda from "./islands/AddToCartButton/vnda.tsx";
 import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
 import * as $AddToCartButton_wake from "./islands/AddToCartButton/wake.tsx";
 import * as $ContactForm from "./islands/ContactForm.tsx";
-import * as $Filters from "./islands/Filters.tsx";
 import * as $FooterMenu from "./islands/FooterMenu.tsx";
 import * as $Header_Buttons from "./islands/Header/Buttons.tsx";
 import * as $Header_Cart_linx from "./islands/Header/Cart/linx.tsx";
@@ -22,7 +21,6 @@ import * as $Header_Cart_wake from "./islands/Header/Cart/wake.tsx";
 import * as $Header_Drawers from "./islands/Header/Drawers.tsx";
 import * as $Header_Searchbar from "./islands/Header/Searchbar.tsx";
 import * as $Header_VisibilityOnScroll from "./islands/Header/VisibilityOnScroll.tsx";
-import * as $ImageSlider from "./islands/ImageSlider.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
@@ -48,7 +46,6 @@ const manifest = {
     "./islands/AddToCartButton/vtex.tsx": $AddToCartButton_vtex,
     "./islands/AddToCartButton/wake.tsx": $AddToCartButton_wake,
     "./islands/ContactForm.tsx": $ContactForm,
-    "./islands/Filters.tsx": $Filters,
     "./islands/FooterMenu.tsx": $FooterMenu,
     "./islands/Header/Buttons.tsx": $Header_Buttons,
     "./islands/Header/Cart/linx.tsx": $Header_Cart_linx,
@@ -60,7 +57,6 @@ const manifest = {
     "./islands/Header/Drawers.tsx": $Header_Drawers,
     "./islands/Header/Searchbar.tsx": $Header_Searchbar,
     "./islands/Header/VisibilityOnScroll.tsx": $Header_VisibilityOnScroll,
-    "./islands/ImageSlider.tsx": $ImageSlider,
     "./islands/Newsletter.tsx": $Newsletter,
     "./islands/OutOfStock.tsx": $OutOfStock,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,
