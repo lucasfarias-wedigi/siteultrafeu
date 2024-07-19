@@ -1,0 +1,610 @@
+{
+  "name": "Refrigeração Comercial",
+  "path": "/refrigeracao-comercial",
+  "sections": [
+    {
+      "jsonLD": {
+        "__resolveType": "PLP Loader"
+      },
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Header/Header.tsx",
+      "cart": {
+        "freeShippingObjectiveQuantity": 600
+      },
+      "logo": {
+        "alt": "logo ultrafeu",
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f830fdb0-79cf-44d8-bc64-d5d3e1fd46e7",
+        "width": 164,
+        "height": 22
+      },
+      "alerts": {
+        "0": "Frete grátis para todo o Brasil",
+        "1": "teste 2",
+        "2": "teste 3",
+        "alert": [
+          "EXCLUSIVO PIX E BOLETO 10% de desconto",
+          "7% DE DESCONTO À VISTA débito e crédito",
+          "CARTÃO BNDES Compre até 48x"
+        ],
+        "benefitsItems": [
+          {
+            "text": "Institucional",
+            "link": "/institucional/quem-somos",
+            "image": "ShoppingCartIcon"
+          },
+          {
+            "image": "DeliveryTruckIcon",
+            "text": "Refrigeração Comercial",
+            "link": "/refrigeracao-comercial"
+          },
+          {
+            "image": "SnowIcon",
+            "text": "Pronta-entrega",
+            "link": "/pronta-entrega"
+          },
+          {
+            "text": "Monte seu negócio",
+            "image": "BriefCase",
+            "link": "/monteseunegocio"
+          }
+        ]
+      },
+      "navItems": [
+        {
+          "children": [],
+          "image": [],
+          "url": "/215?map=productClusterIds",
+          "name": "Cervajeira"
+        },
+        {
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "name": "Amaciador De Carne",
+              "url": "/maquinario-de-producao/amaciador-de-carne"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/batedeira-industrial",
+              "name": "Batedeira Industrial"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/cilindro-de-massa",
+              "name": "Cilindro De Massa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/desfiador-de-carnes",
+              "name": "Desfiador De Carnes"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/divisora-de-massa",
+              "name": "Divisora De Massa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/fatiadeira-de-pao",
+              "name": "Fatiadeira De Pão"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/masseira",
+              "name": "Masseira"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/misturador-de-carnes",
+              "name": "Misturador De Carnes"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/misturela",
+              "name": "Misturela"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/modeladora-de-pao",
+              "name": "Modeladora De Pão"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/moedor-de-carne-industrial",
+              "name": "Moedor De Carne Industrial"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/processador-de-alimentos-industrial",
+              "name": "Processador De Alimentos Industrial"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/ralador-industrial",
+              "name": "Ralador Industrial"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/serra-fita-para-ossos",
+              "name": "Serra Fita Para Ossos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/maquinario-de-producao/modeladora-de-salgados",
+              "name": "Modeladora De Salgados"
+            }
+          ],
+          "image": [],
+          "url": "/maquinario-de-producao",
+          "name": "Maquinário de Produção",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/374cb701-7149-48e0-bafa-87da23a188f4"
+        },
+        {
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/batedor-de-milk-shake",
+              "name": "Batedor De Milk Shake"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/cafeteira-comercial",
+              "name": "Cafeteira Comercial"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/chocolateira",
+              "name": "Chocolateira"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/cortador-de-legumes",
+              "name": "Cortador De Legumes"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/cutter",
+              "name": "Cutter"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/derretedeira-de-chocolate",
+              "name": "Derretedeira De Chocolate"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/descascador",
+              "name": "Descascador"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/despolpadeira",
+              "name": "Despolpadora"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/despolpador-de-tomate",
+              "name": "Despolpador De Tomate"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/ensacadeira",
+              "name": "Ensacadeira"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/extrator-de-suco-industrial",
+              "name": "Extrator De Suco Industrial"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/fatiador-de-carne",
+              "name": "Fatiador De Carne"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/fatiador-de-frios",
+              "name": "Fatiador De Frios"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/lava-loucas-industrial",
+              "name": "Lava Louças Industrial"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/liquidificador-industrial",
+              "name": "Liquidificador Industrial"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/maquina-de-algodao-doce",
+              "name": "Máquina De Algodão Doce"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/maquina-de-crepe",
+              "name": "Máquina De Crepe"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/masseira-de-churros",
+              "name": "Masseira De Churros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/moedor-de-cafe",
+              "name": "Moedor De Café"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/moinho-de-pao",
+              "name": "Moinho De Pão"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/panquequeira",
+              "name": "Panquequeira"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/recheadeira-de-churros",
+              "name": "Recheadeira De Churros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/torre-de-chope",
+              "name": "Torre De Chope"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/mixers",
+              "name": "Mixers"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/portateis-industriais/pipoqueira",
+              "name": "Pipoqueira"
+            }
+          ],
+          "image": [],
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/682a9a56-9b3a-4ab7-8ab6-62c5107f58dc",
+          "url": "/portateis-industriais",
+          "name": "Portáteis Industriais"
+        },
+        {
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/expositores-de-alimentos/balcao-caixa",
+              "name": "Balcão Caixa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/expositores-de-alimentos/balcao-estufa",
+              "name": "Balcão Estufa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/expositores-de-alimentos/buffet-refrigerado",
+              "name": "Buffet Refrigerado"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/expositores-de-alimentos/buffet-termico",
+              "name": "Buffet Térmico"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/expositores-de-alimentos/estufa-para-salgados",
+              "name": "Estufa Para Salgados"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/expositores-de-alimentos/fruteiras-vascas-hortifrutis",
+              "name": "Fruteiras/Vascas Hortifrutis"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/expositores-de-alimentos/vitrine-fria",
+              "name": "Vitrine Fria"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/expositores-de-alimentos/vitrine-seca-neutra",
+              "name": "Vitrine Seca/Neutra"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/expositores-de-alimentos/expositor-de-paes",
+              "name": "Expositor De Pães"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/expositores-de-alimentos/pista-aquecida",
+              "name": "Pista Aquecida"
+            }
+          ],
+          "image": [],
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/34824a5c-cbb2-419f-9411-e9f40e876bb5",
+          "name": "Expositores de Alimentos",
+          "url": "/expositores-de-alimentos"
+        },
+        {
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/pesagem-e-medicao/balanca-eletronica",
+              "name": "Balança Eletrônica"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/pesagem-e-medicao/balanca-mecanica",
+              "name": "Balança Mecânica"
+            }
+          ],
+          "image": [],
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/e234706b-d99a-4ada-8227-c78bd5d47d0f",
+          "url": "/pesagem-e-medicao",
+          "name": "Pesagem e Medição"
+        },
+        {
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/equipamentos-para-embalagens/embaladora",
+              "name": "Embaladora"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/equipamentos-para-embalagens/seladora",
+              "name": "Seladora"
+            }
+          ],
+          "image": [],
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/faf679b9-ffcb-4c8f-aac2-97eda99adc63",
+          "url": "/equipamentos-para-embalagens",
+          "name": "Equipamentos para Embalagens"
+        },
+        {
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/armario-de-paes",
+              "name": "Armário De Pães"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/caixa-termica",
+              "name": "Caixa Térmica"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/check-out",
+              "name": "Check Out"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/climatizador",
+              "name": "Climatizador"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/conservador-de-frituras",
+              "name": "Conservador De Frituras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/estante-aberta-para-assadeiras",
+              "name": "Estante Aberta Para Assadeiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/estantes",
+              "name": "Estantes"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/exaustor",
+              "name": "Exaustor"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/gaveta-de-dinheiro",
+              "name": "Gaveta De Dinheiro"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/lavatorio-em-inox-automatico",
+              "name": "Lavatório Em Inox Automático"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/mesa-e-cadeira",
+              "name": "Mesa E Cadeira"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mobiliario-comercial/mesa-para-manipulacao",
+              "name": "Mesa Para Manipulação"
+            }
+          ],
+          "image": [],
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/40f20c3c-fcec-486d-a418-eba44f8b8356",
+          "url": "/mobiliario-comercial",
+          "name": "Mobiliário Comercial"
+        },
+        {
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/192?map=productClusterIds",
+              "name": "Padaria"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/190?map=productClusterIds",
+              "name": "Bar e Lanchonete"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/193?map=productClusterIds",
+              "name": "Restaurante"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/189?map=productClusterIds",
+              "name": "Açougue"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/194?map=productClusterIds",
+              "name": "Super mercado"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/179?map=productClusterIds",
+              "name": "Ambulantes"
+            }
+          ],
+          "image": [],
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/4b0b1767-d15e-4525-83b8-54636aea87a7",
+          "url": "/",
+          "name": "Por Segmento"
+        },
+        {
+          "children": [],
+          "image": [],
+          "name": "Por Marca",
+          "url": "/brand?layout=list&order=OrderByTopSaleDESC",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b77ec8b6-e046-4daf-8fec-59e727c2f820"
+        }
+      ],
+      "products": [],
+      "searchbar": {
+        "name": "q",
+        "action": "/s",
+        "loader": {
+          "data": {
+            "count": 4,
+            "__resolveType": "vtex/loaders/intelligentSearch/suggestions.ts"
+          },
+          "__resolveType": "resolved"
+        },
+        "placeholder": "Digite o que está buscando..."
+      },
+      "suggestions": {
+        "products": [],
+        "searches": []
+      },
+      "logoPosition": "left",
+      "liveStore": {
+        "text": "LOJA AO VIVO",
+        "link": "https://live.ultrafeu.com.br/"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "page": {
+        "__resolveType": "PLP Loader"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 3
+        },
+        "variant": "aside",
+        "pagination": "show-more",
+        "format": "Pagination"
+      },
+      "cardLayout": {
+        "__resolveType": "Product Card Layout - 01"
+      },
+      "startingPage": 0
+    },
+    {
+      "__resolveType": "Footer - 04"
+    },
+    {
+      "__resolveType": "site/sections/Theme/Theme.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -400,5 +400,11 @@
     "path": "/institucional/prazos-e-formas-de-envio",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Refrigera%25C3%25A7%25C3%25A3o%2520Comercial-474109.json": {
+    "name": "Refrigeração Comercial",
+    "path": "/refrigeracao-comercial",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
