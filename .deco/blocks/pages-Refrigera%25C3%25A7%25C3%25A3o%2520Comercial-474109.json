@@ -102,6 +102,13 @@
           "url": "/220?map=productClusterIds",
           "name": "Freezers verticais",
           "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2"
+        },
+        {
+          "children": [],
+          "image": [],
+          "name": "Marcas",
+          "url": "/marcas",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b77ec8b6-e046-4daf-8fec-59e727c2f820"
         }
       ],
       "products": [],
