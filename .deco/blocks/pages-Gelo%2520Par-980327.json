@@ -12,8 +12,10 @@
       "__resolveType": "Header - 01"
     },
     {
-      "__resolveType": "site/sections/Content/RichText.tsx",
-      "text": "<p>NOva página</p>"
+      "__resolveType": "site/sections/BannerText.tsx",
+      "text": "<p>A Croydon iniciou em 1962 em Bonsucesso - RJ, expandindo suas linhas de produtos e espaço físico. Hoje, localizada em um Parque Industrial de 15.000m² em Duque de Caxias - RJ, é líder no mercado nacional e reconhecida mundialmente. Exporta mais de 50% da produção e mantém um compromisso com a qualidade e durabilidade dos produtos. Com mais de 4 milhões de equipamentos fabricados, a Croydon participa de muitas histórias de sucesso.</p>",
+      "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f2ba7920-35a8-4956-aff6-6acc74250599",
+      "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/119287b7-8c38-4f19-b510-a563a65e99ac"
     },
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
