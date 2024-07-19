@@ -21,6 +21,7 @@ export interface Props {
   liveStore?: {
     link: string;
     text: string;
+    active?: boolean;
   };
   benefitsItems?: benefitsItemsProps[];
 }
@@ -37,9 +38,8 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
               {benefitsItems.map((item, i: number) => (
                 <a href={item.link || "#"} class="">
                   <li
-                    class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-transparent lg:bg-whitePrimary px-2 hover:bg-purplePrimary hover:text-grayTertiary ${
-                      i === 0 ? "md:border-x" : "md:border-r"
-                    } md:border-grayTertiary`}
+                    class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-transparent lg:bg-whitePrimary px-2 hover:bg-purplePrimary hover:text-grayTertiary ${i === 0 ? "md:border-x" : "md:border-r"
+                      } md:border-grayTertiary`}
                   >
                     {item.image && (
                       <Icon
@@ -60,9 +60,10 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
         )}
 
         {liveStore && (
+          liveStore.active &&
           <a
             href={liveStore.link}
-            class="hidden lg:flex items-center gap-2 text-sm font-medium bg-greenPrimary text-grayTertiary px-1.5 py-1"
+            class={`hidden lg:flex items-center gap-2 text-sm font-medium bg-greenPrimary text-grayTertiary px-1.5 py-1`}
           >
             <svg
               width="24"

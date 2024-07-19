@@ -1,5 +1,5 @@
 import { ProductDetailsPage } from "apps/commerce/types.ts";
-import ImageGallerySlider from "../../components/product/Gallery/ImageSlider.tsx";
+import ImageGallerySlider from "../../islands/ImageSlider.tsx";
 import ProductInfo from "../../components/product/ProductInfo.tsx";
 import NotFound from "../../sections/Product/NotFound.tsx";
 import Breadcrumb from "../../components/ui/Breadcrumb.tsx";

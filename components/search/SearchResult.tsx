@@ -1,7 +1,7 @@
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { SendEventOnView } from "../../components/Analytics.tsx";
-import Filters from "../../components/search/Filters.tsx";
+import Filters from "../../islands/Filters.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import SearchControls from "../../islands/SearchControls.tsx";
 import { useId } from "../../sdk/useId.ts";
@@ -237,17 +237,16 @@ function Result({
           {layout?.variant === "aside" &&
             filters.length > 0 &&
             (isFirstPage || !isPartial) && (
-            <aside
-              class={`hidden transition-all duration-500 sm:block ${
-                openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
-              } overflow-hidden`}
-            >
-              <h4 class="text-purplePrimary text-sm font-bold mb-5">
-                FILTRO
-              </h4>
-              <Filters filters={filters} />
-            </aside>
-          )}
+              <aside
+                class={`hidden transition-all duration-500 sm:block ${openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
+                  } overflow-hidden`}
+              >
+                <h4 class="text-purplePrimary text-sm font-bold mb-5">
+                  FILTRO
+                </h4>
+                <Filters filters={filters} />
+              </aside>
+            )}
           <div class="flex-grow flex-col" id={id}>
             <ProductGallery
               products={products}
