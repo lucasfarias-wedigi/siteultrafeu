@@ -1,5 +1,5 @@
-import Slider from "../../components/ui/Slider.tsx";
 import { useId } from "../../sdk/useId.ts";
+import Slider from "../../components/ui/Slider.tsx";
 import Icon, { AvailableIcons } from "../ui/Icon.tsx";
 
 /**
@@ -27,6 +27,7 @@ export interface Props {
 
 function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
   const id = useId();
+  const linkAtual = window.location.pathname;
 
   return (
     <div id={id} class="bg-graySecondary w-full">
@@ -34,10 +35,18 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
         {benefitsItems && (
           <div class="w-full lg:w-fit lg:overflow-x-auto overflow-x-scroll">
             <ul class="flex w-full min-w-full items-center">
-              {benefitsItems.map((item, i: number) => (
-                <a href={item.link || "#"} class="">
+              {benefitsItems.map((item, i) => (
+                <a
+                  key={i}
+                  href={item.link || "#"}
+                  class={`relative ${
+                    linkAtual === item.link
+                      ? "bg-purplePrimary text-grayTertiary"
+                      : "bg-transparent text-grayPrimary"
+                  } flex`}
+                >
                   <li
-                    class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm text-grayPrimary bg-transparent lg:bg-whitePrimary px-2 hover:bg-purplePrimary hover:text-grayTertiary ${
+                    class={`flex gap-2 h-10 items-center text-xs font-normal md:font-medium md:text-sm px-2 hover:bg-purplePrimary hover:text-grayTertiary ${
                       i === 0 ? "md:border-x" : "md:border-r"
                     } md:border-grayTertiary`}
                   >

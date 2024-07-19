@@ -370,5 +370,13 @@
     "path": "/institucional/politica-de-privacidade",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Floaders%2FPagesHeader.tsx.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/PagesHeader.tsx"
+  },
+  "/.deco/blocks/PagesHeader.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/PagesHeader.ts"
   }
 }

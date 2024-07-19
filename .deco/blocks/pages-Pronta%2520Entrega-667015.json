@@ -1,0 +1,159 @@
+{
+  "__resolveType": "website/pages/Page.tsx",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/Images/BannerSimples.tsx",
+      "imageDesk": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/590da8fa-b699-4cbc-a46a-b48fd784e64d",
+      "imageMob": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/6b75ebdb-287e-49ae-bed0-bb47a3feff17",
+      "url": "/text",
+      "title": "Descubra a praticidade dos produtos Pronta-Entrega!",
+      "subtitle": "Explore nossa seleção especial de produtos com entrega rápida e direta. Encontre exatamente o que precisa, sem esperas!",
+      "textAlign": "Centro",
+      "horizontalAlign": "Esquerda",
+      "verticalAlign": "Centro",
+      "maxWidth": 500
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductGridGallery.tsx",
+      "title": "IMPERDÍVEIS",
+      "products": {
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+        "props": {
+          "sort": "price:desc",
+          "collection": "184",
+          "count": 16,
+          "hideUnavailableItems": true
+        }
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductSliderGrid.tsx",
+      "title": "POR CATEGORIA",
+      "sliders": [
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "184",
+              "count": 16
+            }
+          },
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a7d8293d-266f-4931-bfad-a8660758564a",
+          "title": "REFRIGERAÇÃO COMERCIAL",
+          "showTitle": true
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "196",
+              "count": 16
+            }
+          },
+          "title": "MAQUINÁRIO DE PRODUÇÃO",
+          "showTitle": true,
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/adb8d0c7-9495-40eb-8644-9e6411a99321"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "186",
+              "count": 16
+            }
+          },
+          "title": "EXPOSITORES DE ALIMENTOS",
+          "showTitle": true,
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/88a1bca7-4893-45e5-81b3-04e6be112276"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "187",
+              "count": 16
+            }
+          },
+          "title": "EQUIPAMENTOS PARA COCÇÃO",
+          "showTitle": true,
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/04fb88dc-cb55-43ce-8bdd-2c4ff398367c"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "183",
+              "count": 16
+            }
+          },
+          "title": "PORTÁTEIS INDUSTRIAIS",
+          "showTitle": true,
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/dbe449c7-9016-4639-8912-f48b8d1aa7f8"
+        },
+        {
+          "products": {
+            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+            "props": {
+              "sort": "price:desc",
+              "collection": "181",
+              "count": 16
+            }
+          },
+          "title": "MOBILIÁRIO COMERCIAL",
+          "showTitle": true,
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/bf98cc00-f452-4750-8da9-288884070604"
+        }
+      ],
+      "carrouselProps": {
+        "layout": {
+          "itemWidth": 120,
+          "gap": {
+            "mobile": "8",
+            "desktop": "8"
+          },
+          "hide": {
+            "controls": true,
+            "indicators": false
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/ProductsFeatured.tsx",
+      "title": "DESTAQUE",
+      "products": {
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+        "props": {
+          "ids": [
+            "3614",
+            "3131"
+          ]
+        }
+      }
+    },
+    {
+      "__resolveType": "site/sections/Images/BannerSimples.tsx",
+      "imageDesk": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/91fb7986-4622-457f-acf0-0acf115d55fa",
+      "imageMob": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/053c639d-f4bd-4f74-ac65-cee576b269e2"
+    },
+    {
+      "__resolveType": "ChoiceUltrafeuDefault"
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "name": "Pronta Entrega",
+  "path": "/pronta-entrega",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  }
+}
