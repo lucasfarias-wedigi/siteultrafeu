@@ -56,9 +56,10 @@
           "children": [],
           "image": [],
           "url": "/215?map=productClusterIds",
-          "name": "Cervajeira",
-          "identifier": "Cervajeira",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2"
+          "name": "Cervejeira",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2",
+          "identifier": "Cervejeira",
+          "additionalType": "Cervejeira"
         },
         {
           "children": [],
