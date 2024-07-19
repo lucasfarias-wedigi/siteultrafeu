@@ -1,0 +1,58 @@
+{
+  "name": "Politica de entrega",
+  "path": "/institucional/politica-de-entrega",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx",
+      "levels": [
+        {
+          "link": "/",
+          "name": "HOME"
+        },
+        {
+          "link": "#",
+          "name": "INSTITUCIONAL"
+        },
+        {
+          "name": "QUEM SOMOS",
+          "link": "/institucional/quem-somos"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Institutional/InstitutionalWithSidebar.tsx",
+      "loader": {
+        "__resolveType": "Preview site/loaders/sidebarMenu.ts"
+      },
+      "sections": [
+        {
+          "__resolveType": "site/sections/Institutional/InstitutionalAboutUs.tsx",
+          "firstText": "<p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Como serão feitas as entregas de meus produtos? Qual o prazo para o recebimento das mercadorias?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">A entrega de nossos produtos será realizada por:</p><ul class=\"vtex-rich-text-0-x-list vtex-rich-text-0-x-list--description \"><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Correios;</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Transportadora;</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Frota própria Ultrafeu.</li></ul><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">O tipo de transporte dependerá do local de entrega, dimensões e peso do produto e será entregue no endereço cadastrado no pedido, somente em dias úteis e em horário comercial<br>ATENÇÃO: NÃO ENTREGAMOS EM ÁREAS RURAIS. Nesta situação, o produto será enviado à cidade mais próxima para que o cliente retire a mercadoria na sede da transportadora. Caso ainda possua interesse em receber na área rural, haverá o custo extra do veículo dedicado para tal deslocamento.<br>Em despachos via transportadora o descarregamento do produto é de responsabilidade do cliente, logo faz-se necessário o alinhamento junto à transportadora contratada se ocorrerá o descarregamento manual ou contratação de veículo especial para a operação. O custo extra será direcionado ao cliente, pois ressaltamos que o frete engloba apenas o deslocamento do equipamento da ULTRAFEU até o endereço de entrega.<br>O cliente poderá calcular o frete e a previsão de entrega em um campo específico no processo de compra. O prazo de entrega varia de acordo com a disponibilidade do produto e CEP de destino, e inicia sua contagem em dias úteis somente após a aprovação do pagamento pela instituição financeira, análise e confirmação de dados cadastrais. Após o fechamento do pedido, não é mais possível a mudança do endereço de entrega, em virtude da variação de frete e alíquotas de impostos, como por exemplo, o ICMS (Imposto sobre Circulação de Mercadorias e Serviços), bem como por questões de segurança. Para as próximas compras, atualize seu cadastro em “Minha Conta”.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"b vtex-rich-text-0-x-strong vtex-rich-text-0-x-strong--description\">IMPORTANTE</span>: Antes de realizar a compra certifique-se de que as dimensões do produto desejado estejam de acordo com o espaço físico a que ele se destina, bem como seu trajeto até ele, compreendendo tamanho de portas, corredores e elevadores. Não realizaremos montagem/desmontagem do produto e/ou portas e janelas, transporte pela escada ou içamento pelo lado externo do imóvel.<br>É igualmente importante certificar-se de que haverá pessoas para receberem a mercadoria em horário comercial. Não será possível realizar o agendamento da entrega. Em caso de ausência de responsável pelo recebimento da compra no momento da entrega, poderá ser cobrada uma taxa de reentrega para a realização de uma segunda tentativa de entrega do produto.<br>Todas as entregas são acompanhadas da DANFE dos produtos comprados.<br>Confira todos seus produtos antes de assinar o conhecimento da transportadora. Abra as caixas, desembale os produtos, verifique-os minuciosamente. Lembre-se: a assinatura sem ressalvas do conhecimento implicará em aceite do produto sem avarias ou danos.<br>Se a transportadora não esperar a conferência ou não a permitir, anote o fato no conhecimento: Transportadora não aguardou (ou não permitiu) a conferência dos produtos e eu não me responsabilizarei em caso de avarias.<br>Se encontrar avarias em seu produto, detalhe no conhecimento da transportadora e recuse o recebimento. NUNCA utilize os termos como caixa intacta, caixa lacrada, caixa em perfeito estado. Muitas vezes as transportadoras solicitam que esses termos sejam inseridos no conhecimento com a finalidade de se isentarem de pagar as indenizações ao remetente, portanto, nunca os utilize!<br>As transportadoras são responsáveis não apenas pelo transporte do(s) produto(s), mas também por fazê-lo em ordem!</p>",
+          "secondText": "<p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">É possível ocorrer atraso na entrega dos produtos?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Realizamos 95% de nossas entregas dentro do prazo informado ao cliente. Porém, alguns pontos podem acarretar num prazo ainda maior:</p><ul class=\"vtex-rich-text-0-x-list vtex-rich-text-0-x-list--description \"><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Atraso no recebimento da mercadoria por parte do fornecedor/fabricante.</li></ul><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Atraso na entrega por parte da transportadora devido:</p><ul class=\"vtex-rich-text-0-x-list vtex-rich-text-0-x-list--description \"><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Ausência de pessoa autorizada a receber a mercadoria no local de entrega;</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Recusa da entrega;</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Condições rodoviárias;</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Fenômenos climáticos;</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Inspeção fiscal.</li></ul><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">É possível rastrear/acompanhar a entrega dos produtos?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Para as entregas realizadas por:</p><ul class=\"vtex-rich-text-0-x-list vtex-rich-text-0-x-list--description \"><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Correios: logo após o produto ser postado, o cliente receberá por e-mail o código de rastreamento. A cada mudança de status, o sistema enviará novo e-mail ao cliente.</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Transportadora: após o envio do produto para a transportadora, o cliente receberá um e-mail que informará a transportadora e os dados para rastreio (Número de Nota Fiscal, site para rastreio etc.).</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Frota própria da Ultrafeu: Entre em contato por meio do telefone (16) 3600-9084.</li></ul><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Caso ainda tenha dificuldades para rastrear seu pedido, nos contate pelo WhatsApp Pós-Vendas <strong>(16 )99992-5839</strong>, estamos à disposição para melhor atendê-los.</p>",
+          "banners": {
+            "itemsPerLine": {
+              "mobile": 1,
+              "desktop": 2
+            },
+            "borderRadius": {
+              "mobile": "none",
+              "desktop": "none"
+            },
+            "banners": []
+          },
+          "lastText": "<p>.</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

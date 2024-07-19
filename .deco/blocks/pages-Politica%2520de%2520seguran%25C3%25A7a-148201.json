@@ -1,0 +1,58 @@
+{
+  "name": "Politica de segurança",
+  "path": "/institucional/politica-de-seguranca",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx",
+      "levels": [
+        {
+          "link": "/",
+          "name": "HOME"
+        },
+        {
+          "link": "#",
+          "name": "INSTITUCIONAL"
+        },
+        {
+          "name": "QUEM SOMOS",
+          "link": "/institucional/quem-somos"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Institutional/InstitutionalWithSidebar.tsx",
+      "loader": {
+        "__resolveType": "Preview site/loaders/sidebarMenu.ts"
+      },
+      "sections": [
+        {
+          "__resolveType": "site/sections/Institutional/InstitutionalAboutUs.tsx",
+          "firstText": "<p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Nós Ultrafeu, investimos intensamente em segurança de acordo com a Lei Geral de Proteção de Dados Pessoais (LGPD), para que sua compra seja definitivamente segura se tratando de suas informações pois, prezamos pela confiança depositada em nós para proteção dos seus dados pessoais, visto que os nossos principais valores ao mesmo tempo que corporação são guiados pela ética, honestidade, transparência e respeito aos titulares dos dados. Logo abaixo você encontrará os motivos pelos quais você poderá comprar em nosso site tranquilamente.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Como garantir uma conexão segura para meus dados pessoais e cartão de crédito? É seguro comprar neste site?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Primeiramente é importante que nossos clientes conheçam nossa estrutura tecnológica. Nossos servidores estão localizados em Seattle, estado de Washington nos EUA, e são hospedados pela Amazon, que também hospedam o site da amazon.com, maior site de vendas do mundo. Hoje, as principais empresas do Brasil terceirizam suas hospedagens principalmente pela questão da segurança e disponibilidade dos dados.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Para garantir que a conexão entre o seu computador e nossos servidores sejam realizados de maneira segura, possuímos o certificado digital da Digicert, uma entidade certificadora mundialmente conhecida. Para maiores detalhes acesse&nbsp;<a class=\"vtex-rich-text-0-x-link vtex-rich-text-0-x-link--description\" href=\"http://www.digicert.com/\" data-mce-href=\"http://www.digicert.com/\">www.digicert.com</a>. Portanto, um site com certificado digital da Digicert possui altíssima confiabilidade na questão da segurança.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Quando você digita os dados de cartão de crédito em nosso site, será aberta uma sessão segura conhecida por SSL (Secure Socket Layer). Tal sessão criptografará os dados para serem enviados aos responsáveis. Caso esses dados sejam interceptados por terceiros, seu conteúdo estará ilegível. Os dados poderão apenas ser lidos pelo destinatário especificado. Este tipo de protocolo é utilizado por todo o mundo para conexões seguras, que exigem alta credibilidade dos dados.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Os servidores armazenarão os dados de meu cartão de crédito?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">O cliente pode escolher pelo armazenamento ou não. Nossos servidores possuem a Certificação PCI Compliant, padrão internacional de segurança para transações eletrônicas, desta maneira tem a permissão de armazenar os dados do cartão de crédito, se autorizado pelo cliente. Queremos enfatizar que nossa empresa não possui acesso a estes dados.</p>",
+          "secondText": "<p>.</p>",
+          "banners": {
+            "itemsPerLine": {
+              "mobile": 1,
+              "desktop": 2
+            },
+            "borderRadius": {
+              "mobile": "none",
+              "desktop": "none"
+            },
+            "banners": []
+          },
+          "lastText": "<p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">E os meus dados pessoais, como nome, endereço e telefone, estarão seguros?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Os dados pessoais de nossos clientes ficam retidos em dois ambientes:</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Nossos servidores nos EUA, mesmos utilizados para os dados de cartão de crédito;</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Nosso sistema ERP, responsável pela emissão de Nota Fiscal Eletrônica.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Destacamos que apenas nossos colaboradores autorizados possuem acesso ao nosso sistema ERP. Ao serem contratados por nossa empresa, eles devem assinar o “Documento de Confidencialidade das Informações”, que determina que os dados de nossos compradores sejam utilizados apenas com a finalidade do funcionário desempenhar suas funções na Ultrafeu.</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

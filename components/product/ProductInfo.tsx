@@ -98,7 +98,7 @@ function ProductInfo({ page, mdColors }: Props) {
   return (
     <div class="flex flex-col px-4" id={id}>
       {/* Code, brand name, name and wishlist*/}
-      <div class="mt-4 sm:mt-8">
+      <div class="mt-4 sm:mt-0">
         <div class="flex justify-between items-center">
           <h1>
             <span class="font-semibold text-xl capitalize">
