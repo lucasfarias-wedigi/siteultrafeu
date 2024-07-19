@@ -2,8 +2,8 @@ import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
 import type { Platform } from "../../apps/site.ts";
-import { SendEventOnClick } from "../../components/Analytics.tsx";
-import Avatar from "../../components/ui/Avatar.tsx";
+import { SendEventOnClick } from "../Analytics.tsx";
+import Avatar from "../ui/Avatar.tsx";
 // import {
 //   default as WishlistButtonVtex,
 //   default as WishlistButtonWake,
@@ -13,6 +13,8 @@ import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
+// import AddToCartButtonVTEX from "../../islands/AddToCartButton/vtex.tsx";
+// import OutOfStock from "../../islands/OutOfStock.tsx";
 
 interface Props {
   product: Product;
@@ -35,22 +37,33 @@ function BusinessProductCard({
   // platform,
   index,
 }: Props) {
-  const { url, productID, name, image: images, offers, isVariantOf } = product;
+  const { url, productID, image: images, offers, isVariantOf } = product;
   const id = `product-card-${productID}`;
   const hasVariant = isVariantOf?.hasVariant ?? [];
   //   const productGroupID = isVariantOf?.productGroupID;
-  const description = product.description || isVariantOf?.description;
+  // const description = product.description || isVariantOf?.description;
   const [front, back] = images ?? [];
-  const { listPrice, price, installments } = useOffer(offers);
+  const {
+    listPrice,
+    price,
+    installments,
+    // seller = "1",
+    // availability,
+  } = useOffer(offers);
   const possibilities = useVariantPossibilities(hasVariant, product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const relativeUrl = relative(url);
+  // const eventItem = mapProductToAnalyticsItem({
+  //   product,
+  //   price,
+  //   listPrice,
+  // });
 
   return (
     <div
       id={id}
       data-deco="view-product"
-      class="w-full flex my-8 p-4 business-build-card"
+      class="w-full flex my-8 p-4 business-build-card gap-2"
     >
       {/* Add click event to dataLayer */}
       <SendEventOnClick
@@ -70,7 +83,7 @@ function BusinessProductCard({
           },
         }}
       />
-      <figure class="relative overflow-hidden w-[214px] h-[214px]">
+      <figure class="relative overflow-hidden min-w-[214px] h-[214px]">
         {/* Wishlist button */}
         {
           /* <div
@@ -142,35 +155,34 @@ function BusinessProductCard({
           />
         </a>
       </figure>
-      <div class="flex gap-2">
-        {/* SKU Selector */}
-        <ul class="flex items-center justify-center gap-2">
-          {variants
-            .map(([value, link]) => [value, relative(link)] as const)
-            .map(([value, link]) => (
-              <li>
-                <a href={link}>
-                  <Avatar
-                    content={value}
-                    variant={link === relativeUrl
-                      ? "active"
-                      : link
-                      ? "default"
-                      : "disabled"}
-                  />
-                </a>
-              </li>
-            ))}
-        </ul>
-
+      <div class="flex gap-2 flex-col w-full">
         {/* Name/Description */}
         <div class="flex flex-col">
           <h2
-            class="text-xs font-bold text-blackPrimary"
-            dangerouslySetInnerHTML={{ __html: name ?? "" }}
+            class="text-sm text-blackPrimary line-clamp-3 mb-1"
+            dangerouslySetInnerHTML={{ __html: isVariantOf?.name ?? "" }}
           />
-
-          <p class="truncate text-sm text-blackPrimary">{description}</p>
+          {/* <p class="truncate text-sm text-blackPrimary">{description}</p> */}
+          {/* SKU Selector */}
+          <p class="text-xs font-semibold my-2">SELECIONE A VOLTAGEM:</p>
+          <ul class="flex items-center gap-2 mb-2">
+            {variants
+              .map(([value, link]) => [value, relative(link)] as const)
+              .map(([value, link]) => (
+                <li class="flex flex-items justify-center border border-[#7A7A7A] py-2 px-6 shadow-md">
+                  <a href={link}>
+                    <Avatar
+                      content={value}
+                      variant={link === relativeUrl
+                        ? "active"
+                        : link
+                        ? "default"
+                        : "disabled"}
+                    />
+                  </a>
+                </li>
+              ))}
+          </ul>
           {/* Price from/to */}
           <div class="flex flex-col gap-2">
             <span class="line-through text-base text-grayPrimary">
@@ -185,11 +197,89 @@ function BusinessProductCard({
           </div>
 
           {/* Installments */}
-          <span class="gap-2 text-blackPrimary truncate">
-            Ou até {installments}
-          </span>
-
-          <a
+          {installments && (
+            <span class="text-blackPrimary truncate text-base">
+              Ou até {installments}
+            </span>
+          )}
+          <div class="mt-4 sm:mt-10 flex flex-col gap-2">
+            {
+              /* availability === "https://schema.org/InStock"
+              ? (
+                <>
+                  {platform === "vtex" && (
+                    <>
+                      <AddToCartButtonVTEX
+                        eventParams={{ items: [eventItem] }}
+                        productID={productID}
+                        seller={seller}
+                      />
+                      {
+                        /* <WishlistButtonVtex
+                    variant="full"
+                    productID={productID}
+                    productGroupID={productGroupID}
+                  />
+                      }
+                    </>
+                  )}
+                </>
+              )
+              : <OutOfStock productID={productID} /> */
+            }
+            <div class="flex items-center justify-end self-end gap-2">
+              <div class="font-bold leading-none text-base h-11 flex items-center justify-center border border-grayTertiary w-[102px] gap-[21px]">
+                <button class="text-xl leading-none">-</button>
+                <span>0</span>
+                <button class="text-xl leading-none">+</button>
+              </div>
+              <button
+                class={`bg-purplePrimary h-11 flex items-center justify-center gap-2.5 text-white w-[195px]`}
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 12L12.5401 11.455C14.5865 11.2845 15.0458 10.8375 15.2726 8.79667L15.75 4.5"
+                    stroke="white"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M4.5 4.5H16.5"
+                    stroke="white"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M4.5 16.5C5.32843 16.5 6 15.8284 6 15C6 14.1716 5.32843 13.5 4.5 13.5C3.67157 13.5 3 14.1716 3 15C3 15.8284 3.67157 16.5 4.5 16.5Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                  <path
+                    d="M12.75 16.5C13.5784 16.5 14.25 15.8284 14.25 15C14.25 14.1716 13.5784 13.5 12.75 13.5C11.9216 13.5 11.25 14.1716 11.25 15C11.25 15.8284 11.9216 16.5 12.75 16.5Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                  <path d="M6 15H11.25" stroke="white" stroke-linecap="round" />
+                  <path
+                    d="M1.5 1.5H2.2245C2.93301 1.5 3.55061 1.96844 3.72245 2.6362L5.95389 11.3074C6.06665 11.7456 5.97015 12.2098 5.69118 12.5712L4.9741 13.5"
+                    stroke="white"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M15.75 4.5H4.125L6.375 12C7.75 12 10.95 11.925 12.75 11.625C14.55 11.325 15 10.25 15 9.75L15.75 4.5Z"
+                    fill="white"
+                  />
+                </svg>
+                Selecionar
+              </button>
+            </div>
+          </div>
+          {
+            /* <a
             href={relativeUrl}
             aria-label="view product"
             class="flex w-full h-[41px] font-bold textsm items-center justify-center text-white bg-purplePrimary lg:hidden gap-2.5"
@@ -229,7 +319,8 @@ function BusinessProductCard({
               />
             </svg>
             Ver produto
-          </a>
+          </a> */
+          }
         </div>
       </div>
     </div>

@@ -34,46 +34,46 @@
       "__resolveType": "site/sections/BuildYourBusiness/BusinessCards.tsx",
       "businessCards": [
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/3169af8d-5f4d-4051-af1a-d71b19bc0a1c",
           "buttonText": "Escolher",
           "title": "AÇOUGUE",
-          "link": "/monte-seu-negocio/açougue"
+          "link": "/acougue"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/5a244c82-35fd-4dc6-8062-33b29d401a66",
           "buttonText": "Escolher",
-          "title": "AÇOUGUE",
-          "link": "#"
+          "title": "AMBULANTE",
+          "link": "/ambulantes"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/37f0fc98-4f12-4e37-bea2-10c899c40ca8",
           "buttonText": "Escolher",
-          "title": "AÇOUGUE",
-          "link": "#"
+          "title": "BAR E LANCHONETE",
+          "link": "/bar-e-lanchonete"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/07bbb61b-c820-4e3c-8d1f-6f9b2ad656d9",
           "buttonText": "Escolher",
-          "title": "AÇOUGUE",
-          "link": "#"
+          "link": "/conveniencia",
+          "title": "CONVENIÊNCIA"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/0fa8c363-dde3-49ef-8804-b4ee88cf7a00",
           "buttonText": "Escolher",
-          "title": "AÇOUGUE",
-          "link": "#"
+          "title": "PADARIA E CONFEITARIA",
+          "link": "/padaria-e-confeitaria"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/6366fcd0-5b57-4081-838b-749c6429a3e4",
           "buttonText": "Escolher",
-          "title": "AÇOUGUE",
-          "link": "#"
+          "title": "RESTAURANTE",
+          "link": "/restaurante"
         },
         {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f4b65ed2-4093-4c3b-821d-effa95fde1bb",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/1b23ea4b-a612-494f-a834-98c43a421c3d",
           "buttonText": "Escolher",
-          "title": "AÇOUGUE",
-          "link": "#"
+          "title": "SUPERMERCADO",
+          "link": "/supermercado"
         }
       ]
     },

@@ -59,7 +59,7 @@ function Alert({ alerts = [], interval = 5, liveStore, benefitsItems }: Props) {
           </div>
         )}
 
-        {liveStore && (
+        {liveStore?.link && (
           <a
             href={liveStore.link}
             class="hidden lg:flex items-center gap-2 text-sm font-medium bg-greenPrimary text-grayTertiary px-1.5 py-1"

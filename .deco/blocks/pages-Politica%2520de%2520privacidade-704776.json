@@ -1,0 +1,58 @@
+{
+  "name": "Politica de privacidade",
+  "path": "/institucional/politica-de-privacidade",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx",
+      "levels": [
+        {
+          "link": "/",
+          "name": "HOME"
+        },
+        {
+          "link": "#",
+          "name": "INSTITUCIONAL"
+        },
+        {
+          "name": "QUEM SOMOS",
+          "link": "/institucional/quem-somos"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Institutional/InstitutionalWithSidebar.tsx",
+      "loader": {
+        "__resolveType": "Preview site/loaders/sidebarMenu.ts"
+      },
+      "sections": [
+        {
+          "__resolveType": "site/sections/Institutional/InstitutionalAboutUs.tsx",
+          "firstText": "<p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Sua privacidade é assunto sério! A Ultrafeu não divulga suas informações pessoais. Leia abaixo mais sobre o assunto. Caso tenha alguma dúvida entre em contato por meio do e-mail&nbsp;<a class=\"vtex-rich-text-0-x-link vtex-rich-text-0-x-link--description\" href=\"mailto:sac@ultrafeu.com.br\" data-mce-href=\"mailto:sac@ultrafeu.com.br\">sac@ultrafeu.com.br</a>.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Observação: A Política de Privacidade é fortemente relacionada com a&nbsp;<a class=\"vtex-rich-text-0-x-link vtex-rich-text-0-x-link--description\" href=\"https://ultrafeu.myvtex.com/institucional/politica-de-seguranca\" data-mce-href=\"https://ultrafeu.myvtex.com/institucional/politica-de-seguranca\">Política de Segurança</a>. Para maiores detalhes sobre sistemas e segurança dos dados acesse esta política.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Quais dados terei que inserir no site ao realizar a compra?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">1 - Nome/Razão Social;</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">2 - CPF/CNPJ;</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">3 - Endereço de cobrança e/ou entrega (quando houver);</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">4 - Telefones de contato;</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">5 - E-mail;</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">6 - Dados do Cartão de Crédito (quando escolhido este meio de pagamento).</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Em que momento meus dados serão utilizados?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">1 - Processamento do cartão de crédito;</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">2 - Emissão da Nota Fiscal;</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">3 - Entrega do produto.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Quais dados pessoais a Ultrafeu terá acesso após a compra?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Após a entrega de seu produto, os dados pessoais (exceto cartão de crédito) permanecerão em nossos servidores. Caso o cliente queira, os dados de cartão de crédito poderão ser armazenados para agilizar compras futuras.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Caso eu opte pelo armazenamento de dados de cartão de crédito para agilizar compras futuras, a Ultrafeu terá acesso a eles? É um procedimento seguro?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">A Ultrafeu não terá acesso aos dados do cartão de crédito em nenhuma hipótese. Ao digitá-los e finalizar a compra, eles serão criptografados e enviados ao Banco e adquirente responsáveis. Em nenhum momento a Ultrafeu tem acesso a estes dados, mesmo se o cliente escolheu a opção de nossos servidores armazenarem os dados do cartão para agilizar compras futuras. É um procedimento absolutamente seguro. Visite a nossa&nbsp;<a class=\"vtex-rich-text-0-x-link vtex-rich-text-0-x-link--description\" href=\"https://ultrafeu.myvtex.com/institucional/politica-de-seguranca\" data-mce-href=\"https://ultrafeu.myvtex.com/institucional/politica-de-seguranca\">Política de Segurança</a>&nbsp;para maiores detalhes.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Algum dado pessoal será repassado a terceiros?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Não. Em nenhuma hipótese a Ultrafeu repassa e/ou divulga dado de seus clientes.</p>",
+          "secondText": "<p>Com foco em expandir nossos horizontes e atender todo o território brasileiro, inauguramos em 2016 nossa loja online, com a mesma tradição, qualidade e confiabilidade oferecidas aos clientes de nossa loja física. Você pode realizar suas compras a qualquer momento do dia, com total segurança e sem sair de casa, tendo acesso a grande variedade, preço justo e produtos das melhores marcas, com tecnologia de ponta sempre à disposição de seu negócio. </p><p>Nosso site utiliza as melhores tecnologias de segurança, e opera nos mais modernos navegadores. Compre pelo computador, tablet ou smartphone. Caso tenha quaisquer dúvidas no momento da compra, não hesite em nos contatar pelos telefones da seção Fale conosco que o orientaremos da melhor forma possível. Nosso setor de televendas terá enorme prazer em atendê-lo.</p><p>Encontrou na Internet um preço melhor do que o nosso? Não encontrou o produto que melhor te atenda? Entre em contato com nosso televendas, e converse com nossos vendedores, lhe auxiliaremos na busca da melhor solução, podendo inclusive verificar a possibilidade de personalização junto aos fabricantes para atender sua demanda. </p><p>Pensando em abrir ou ampliar o seu negócio? Ultrafeu, o seu negócio começa aqui!</p>",
+          "banners": {
+            "itemsPerLine": {
+              "mobile": 1,
+              "desktop": 2
+            },
+            "borderRadius": {
+              "mobile": "none",
+              "desktop": "none"
+            },
+            "banners": []
+          },
+          "lastText": "<p><br data-mce-bogus=\"1\"></p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -145,14 +145,15 @@ function Result({
     <>
       <div class="">
         {showSearchResultBreadcrumb.value &&
-          <BreadcrumbSlider
-            breadcrumb={breadcrumb}
-            items={SliderItems}
-            title={pageInfo.pageTypes && pageInfo.pageTypes[0] !== "Search"
-              ? formattedTitle
-              : "Resultado da busca"}
-          />
-        }
+          (
+            <BreadcrumbSlider
+              breadcrumb={breadcrumb}
+              items={SliderItems}
+              title={pageInfo.pageTypes && pageInfo.pageTypes[0] !== "Search"
+                ? formattedTitle
+                : "Resultado da busca"}
+            />
+          )}
         {(isFirstPage || !isPartial) && (
           <div class="flex border-y border-grayTertiary h-14 mb-8 items-center px-4 lg:px-0">
             <div class="max-w-7xl w-full m-auto flex items-center h-full">
@@ -241,16 +242,17 @@ function Result({
           {layout?.variant === "aside" &&
             filters.length > 0 &&
             (isFirstPage || !isPartial) && (
-              <aside
-                class={`hidden transition-all duration-500 sm:block ${openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
-                  } overflow-hidden`}
-              >
-                <h4 class="text-purplePrimary text-sm font-bold mb-5">
-                  FILTRO
-                </h4>
-                <Filters filters={filters} />
-              </aside>
-            )}
+            <aside
+              class={`hidden transition-all duration-500 sm:block ${
+                openFilter ? "min-w-[278px] opacity-1" : "min-w-0 opacity-0"
+              } overflow-hidden`}
+            >
+              <h4 class="text-purplePrimary text-sm font-bold mb-5">
+                FILTRO
+              </h4>
+              <Filters filters={filters} />
+            </aside>
+          )}
           <div class="flex-grow flex-col" id={id}>
             <ProductGallery
               products={products}
