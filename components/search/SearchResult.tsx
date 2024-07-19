@@ -1,7 +1,7 @@
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { SendEventOnView } from "../../components/Analytics.tsx";
-import Filters from "../../components/search/Filters.tsx";
+import Filters from "../../islands/Filters.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import SearchControls from "../../islands/SearchControls.tsx";
 import { useId } from "../../sdk/useId.ts";

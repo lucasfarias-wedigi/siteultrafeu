@@ -3,6 +3,8 @@ import Image from "apps/website/components/Image.tsx";
 import Slider from "../../../components/ui/Slider.tsx";
 import ProductImageZoom from "../../../islands/ProductImageZoom.tsx";
 import { useId } from "../../../sdk/useId.ts";
+import { useSignal } from "@preact/signals";
+
 export interface Props {
   /** @title Integration */
   page: ProductDetailsPage | null;
@@ -44,11 +46,13 @@ export default function GallerySlider(props: Props) {
   const { width, height } = layout || { width: 300, height: 370 };
   const aspectRatio = `${width} / ${height}`;
 
+  const selectedImage = useSignal(images[0]);
+
   return (
-    <div id={id} class="grid grid-flow-row lg:max-h-[735px]">
+    <div id={id} class="grid grid-flow-row">
       {/* Image Slider */}
-      <div class="bg-white relative flex justify-center lg:block lg:max-h-[735px]">
-        <Slider class="carousel carousel-center gap-6 w-screen sm:w-[41.7vw] lg:max-h-[735px] xl:w-[800px] lg:hidden">
+      <div class="bg-whitePrimary relative flex justify-center lg:block">
+        <Slider class="carousel carousel-center gap-6 w-screen sm:w-[41.7vw] xl:w-[800px] lg:hidden">
           {videoUrl && (
             <Slider.Item
               index={0}
@@ -84,7 +88,7 @@ export default function GallerySlider(props: Props) {
           ))}
         </Slider>
 
-        <div class="hidden lg:flex flex-wrap gap-6 w-screen sm:w-[41.7vw] lg:w-[63.7vw] xl:w-[800px] lg:max-h-[735px]">
+        <div class="hidden lg:block w-screen sm:w-[41.7vw] lg:w-[63.7vw] xl:w-[800px] lg:h-full relative">
           {videoUrl &&
             (
               <iframe
@@ -92,23 +96,37 @@ export default function GallerySlider(props: Props) {
                 width="800"
                 height="735"
                 src={`${videoUrl}?autoplay=1&mute=1`}
+                class="mb-4"
               >
               </iframe>
             )}
           {images.map((img, index) => (
-            <Image
-              class={`${
-                index === 0 && !videoUrl ? "w-full" : "w-[314px] xl:w-[388px]"
-              } object-contain lg:max-h-[735px]`}
-              sizes="(max-width: 640px) 100vw, 40vw"
-              style={{ aspectRatio }}
-              src={img.url!}
-              alt={img.alternateName}
-              width={width}
-              height={height}
-              preload={index === 0}
-              loading={index === 0 ? "eager" : "lazy"}
-            />
+            <div
+              class={`cursor-pointer inline-block ${index !== 0 && !videoUrl ? "sticky top-0 max-h-[388px]" : "mb-4"
+                } ${index % 2 === 0 && index !== 0 && !videoUrl ? "ml-6" : ""} ${videoUrl && index % 2 !== 0 ? "ml-6" : ""
+                }`}
+              key={index}
+              onClick={() => {
+                [images[0], images[index]] = [images[index], images[0]];
+                if (!videoUrl) selectedImage.value = images[0];
+              }}
+            >
+              <Image
+                class={`${index === 0 && !videoUrl ? "w-full" : "w-[314px] xl:w-[388px]"
+                  } object-contain`}
+                sizes="(max-width: 640px) 100vw, 40vw"
+                src={selectedImage.value.url === img.url
+                  ? images[0].url ?? ''
+                  : img.url ?? ''}
+                alt={selectedImage.value.url === img.url
+                  ? images[0].alternateName
+                  : img.alternateName}
+                width={width}
+                height={height}
+                preload={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
+              />
+            </div>
           ))}
         </div>
         {
