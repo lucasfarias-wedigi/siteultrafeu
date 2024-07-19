@@ -1,0 +1,58 @@
+{
+  "name": "Duvidas frequentes",
+  "path": "/institucional/duvidas-frequentes",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx",
+      "levels": [
+        {
+          "link": "/",
+          "name": "HOME"
+        },
+        {
+          "link": "#",
+          "name": "INSTITUCIONAL"
+        },
+        {
+          "name": "QUEM SOMOS",
+          "link": "/institucional/quem-somos"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Institutional/InstitutionalWithSidebar.tsx",
+      "loader": {
+        "__resolveType": "Preview site/loaders/sidebarMenu.ts"
+      },
+      "sections": [
+        {
+          "__resolveType": "site/sections/Institutional/InstitutionalAboutUs.tsx",
+          "firstText": "<p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Como proceder se meu pedido não ainda não chegou e o prazo de entrega já expirou?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Se você ainda não recebeu seu produto, primeiramente certifique-se de que o pagamento foi aprovado pela operadora de cartão de crédito, ou no caso de boleto, se o mesmo foi pago até a data de vencimento, caso contrário, seu pedido será cancelado automaticamente.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Verifique também se o endereço de entrega está correto no seu pedido, e se há alguma pessoa responsável pelo recebimento de mercadorias no endereço designado, em horário comercial.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Se os itens anteriores forem verificados e ainda assim o problema persistir, não hesite em entrar em contato conosco através do nosso SAC:&nbsp;<a class=\"vtex-rich-text-0-x-link vtex-rich-text-0-x-link--description\" href=\"mailto:sac@ultrafeu.com.br\" data-mce-href=\"mailto:sac@ultrafeu.com.br\">sac@ultrafeu.com.br</a>&nbsp;ou (16) 3600-9084.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Qual o horário de atendimento do Serviço de Atendimento ao Cliente?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Nosso SAC está disponível de segunda-feira a sexta-feira das 9:00h às 18:00 horas e as sábados das 9:00h às 13:00 horas.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Como posso tirar as dúvidas do produto que quero comprar?</span><br>Temos uma equipe de especialistas qualificados para lhe atender da melhor forma. Entre em contato pelo telefone (16) 3600-9084 ou pelo WhatsApp (16) 3322-4832.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Como posso realizar o pagamento de minha compra?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Você poderá realizar o pagamento de sua compra por meio de:</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Cartão de Crédito (todas as bandeiras);</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">1 - No momento de escolher a forma de pagamento no decorrer do processo de compra, selecione a opção CARTÃO DE CRÉDITO e siga as instruções do site. Você deverá escolher a bandeira de seu cartão, inserir o número do cartão, nome do titular, código de segurança e escolher a quantidade de parcelas. Lembrando que você tem a opção de realizar o pagamento de uma compra com 2 cartões diferentes.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Boleto bancário;</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">1 - No momento de escolher a forma de pagamento no decorrer do processo de compra, selecione a opção BOLETO BANCÁRIO. Imprima o documento gerado e pague até a data de vencimento especificada no mesmo.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"b vtex-rich-text-0-x-strong vtex-rich-text-0-x-strong--description\">IMPORTANTE: O prazo de entrega começa a contar apenas após a aprovação da compra pela instituição financeira ou compensação do boleto bancário.</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Como calcular prazo de entrega e valor do frete?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Durante o processo de compra você poderá utilizar nossa ferramenta de cálculo de frete, em que deverá inserir o CEP de destino, e o site retornará o prazo de entrega e o valor do frete.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Como buscar um produto no site?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">A qualquer momento é possível utilizar a barra de busca na parte superior da página, em que a procura por produtos é realizada por meio de palavras-chave.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Posso saber o status do meu pedido?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">A Ultrafeu enviará e-mails automáticos aos clientes nas seguintes etapas:</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Recebimento do pedido;</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Aprovação do pagamento pela Instituição Financeira;</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Quando o pedido sair para entrega.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Você também poderá acessar a área do cliente, acessar o pedido e verificar o status de sua compra.</p>",
+          "secondText": "<p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Ainda com dúvidas?</span></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Entre em contato através de nossos canais de atendimento:</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">E-mail:&nbsp;<a class=\"vtex-rich-text-0-x-link vtex-rich-text-0-x-link--description\" href=\"mailto:sac@ultrafeu.com.br\" data-mce-href=\"mailto:sac@ultrafeu.com.br\">sac@ultrafeu.com.br</a></p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><strong>Telefone: (16) 3600-9084</strong></p>",
+          "banners": {
+            "itemsPerLine": {
+              "mobile": 1,
+              "desktop": 2
+            },
+            "borderRadius": {
+              "mobile": "none",
+              "desktop": "none"
+            },
+            "banners": []
+          },
+          "lastText": "<p>.</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

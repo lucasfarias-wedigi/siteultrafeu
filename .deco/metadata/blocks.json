@@ -376,5 +376,17 @@
     "path": "/institucional/politica-de-entrega",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Duvidas%2520frequentes-670179.json": {
+    "name": "Duvidas frequentes",
+    "path": "/institucional/duvidas-frequentes",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Como%2520comprar-900001.json": {
+    "name": "Como comprar",
+    "path": "/institucional/como-comprar",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

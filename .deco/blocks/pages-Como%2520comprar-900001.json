@@ -1,0 +1,58 @@
+{
+  "name": "Como comprar",
+  "path": "/institucional/como-comprar",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx",
+      "levels": [
+        {
+          "link": "/",
+          "name": "HOME"
+        },
+        {
+          "link": "#",
+          "name": "INSTITUCIONAL"
+        },
+        {
+          "name": "QUEM SOMOS",
+          "link": "/institucional/quem-somos"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Institutional/InstitutionalWithSidebar.tsx",
+      "loader": {
+        "__resolveType": "Preview site/loaders/sidebarMenu.ts"
+      },
+      "sections": [
+        {
+          "__resolveType": "site/sections/Institutional/InstitutionalAboutUs.tsx",
+          "firstText": "<p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Caso não tenha o conhecimento do produto adequado para sanar a necessidade, consulte nossos consultores através dos telefones (16) 3600-9084.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Ao saber o produto certo, o passo a passo será o seguinte:</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Ao entrar em nosso site e clicar na barra branca com os dizeres “ O que você procura?” , aparecerão diversas opções para que você opte pelo equipamento que melhor atenderá sua necessidade.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Ao clicar sobre o produto selecionado, o produto aparecerá com todas as informações, especificações, a partir deste momento, você olhará as condições de pagamento, à vista ou à prazo. Ao ver que está tudo certo, informe o Cep no campo adequado para poder calcular o valor do frete e a previsão de entrega de seu equipamento. Definindo isto, será preciso selecionar (quando tiverem as opções):</p>",
+          "secondText": "<ul class=\"vtex-rich-text-0-x-list vtex-rich-text-0-x-list--description \"><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\"><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">cor;</p></li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\"><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">voltagem, se atentando de acordo com as instalações do local onde o equipamento será utilizado;</p></li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\"><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Dimensões, se atentando por onde o produto passará e aonde será instalado;</p></li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\"><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Potência, se atentando ao fato de saber se atende a sua demanda;</p></li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\"><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Temperaturas máximas e mínimas;</p></li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\"><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Material de fabricação de todas as partes do produto;</p></li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\"><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Especificações técnicas;</p></li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\"><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Quantidade desejada.</p></li></ul><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Após a finalização da compra, você deverá informar seu e-mail pessoal, após isto deverá informar os dados em pessoa física, caso queira em pessoa jurídica, deverá clicar em “Incluir dados para pessoas jurídicas”.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Após tudo informado, você deverá em ir para entrega onde deverá preencher todos os dados para entrega, se atentando para informar tudo correto.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Após tudo verificado e confirmado, você irá para a aba de pagamentos, onde terá as seguintes opções: PIX à vista, cartão de débito, crédito, BNDES, Boleto à vista. No caso de Cartão de crédito, poderá até utilizar dois diferentes, você clicará na opção desejada e será direcionado para clicar e selecionar os dados de acordo com a opção selecionada.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Depois de tudo preenchido, clicar em finalizar compra, caso tenha algum erro deverá revisar, com tudo certo a compra será finalizada. Você receberá no e-mail informado as seguintes mensagens: o status da compra, cópia de nota fiscal assim que emitida, o link para rastreio.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Possivelmente a equipe de Antifraude entrará em contato para confirmar os dados do pedido. Esta equipe foi criada e desenvolvida para proteger o cliente contra inconvenientes e imprevistos.</p>",
+          "banners": {
+            "itemsPerLine": {
+              "mobile": 1,
+              "desktop": 2
+            },
+            "borderRadius": {
+              "mobile": "none",
+              "desktop": "none"
+            },
+            "banners": []
+          },
+          "lastText": "<p>.</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
