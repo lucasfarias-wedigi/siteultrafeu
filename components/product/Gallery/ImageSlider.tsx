@@ -102,9 +102,11 @@ export default function GallerySlider(props: Props) {
             )}
           {images.map((img, index) => (
             <div
-              class={`cursor-pointer inline-block ${index !== 0 && !videoUrl ? "sticky top-0 max-h-[388px]" : "mb-4"
-                } ${index % 2 === 0 && index !== 0 && !videoUrl ? "ml-6" : ""} ${videoUrl && index % 2 !== 0 ? "ml-6" : ""
-                }`}
+              class={`cursor-pointer inline-block ${
+                index !== 0 && !videoUrl ? "sticky top-0 max-h-[388px]" : "mb-4"
+              } ${index % 2 === 0 && index !== 0 && !videoUrl ? "ml-6" : ""} ${
+                videoUrl && index % 2 !== 0 ? "ml-6" : ""
+              }`}
               key={index}
               onClick={() => {
                 [images[0], images[index]] = [images[index], images[0]];
@@ -112,12 +114,13 @@ export default function GallerySlider(props: Props) {
               }}
             >
               <Image
-                class={`${index === 0 && !videoUrl ? "w-full" : "w-[314px] xl:w-[388px]"
-                  } object-contain`}
+                class={`${
+                  index === 0 && !videoUrl ? "w-full" : "w-[314px] xl:w-[388px]"
+                } object-contain`}
                 sizes="(max-width: 640px) 100vw, 40vw"
                 src={selectedImage.value.url === img.url
-                  ? images[0].url ?? ''
-                  : img.url ?? ''}
+                  ? images[0].url ?? ""
+                  : img.url ?? ""}
                 alt={selectedImage.value.url === img.url
                   ? images[0].alternateName
                   : img.alternateName}

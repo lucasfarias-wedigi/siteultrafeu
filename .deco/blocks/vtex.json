@@ -1,7 +1,7 @@
 {
   "account": "ultrafeu",
   "platform": "vtex",
-  "publicUrl": "ultrafeu.com.br",
+  "publicUrl": "www.ultrafeu.com.br",
   "salesChannel": "1",
   "__resolveType": "decohub/apps/vtex.ts",
   "defaultSegment": {
