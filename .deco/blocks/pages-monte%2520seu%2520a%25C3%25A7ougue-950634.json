@@ -40,31 +40,18 @@
     },
     {
       "__resolveType": "site/sections/BuildYourBusiness/BusinessBuilder.tsx",
-      "tabIndex": 0,
       "tabs": [
         {
           "products": {
             "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
             "props": {
               "sort": "price:desc",
-              "collection": "153",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Frangueiras"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
               "collection": "206",
-              "count": 4,
+              "count": 3,
               "hideUnavailableItems": true
             }
           },
-          "title": "Seladoras"
+          "title": "teste 1"
         },
         {
           "products": {
@@ -76,67 +63,7 @@
               "hideUnavailableItems": true
             }
           },
-          "title": "Frangueiras"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "206",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Seladoras"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "153",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Frangueiras"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "206",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Seladoras"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "153",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Frangueiras"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "206",
-              "count": 4,
-              "hideUnavailableItems": true
-            }
-          },
-          "title": "Seladoras"
+          "title": "teste 2"
         }
       ]
     },
@@ -145,42 +72,6 @@
     },
     {
       "__resolveType": "Footer - 04"
-    },
-    {
-      "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
-      "tabs": [
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "159",
-              "hideUnavailableItems": true,
-              "count": 7
-            }
-          },
-          "title": "teste 2"
-        },
-        {
-          "products": {
-            "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-            "props": {
-              "sort": "price:desc",
-              "collection": "195",
-              "hideUnavailableItems": true,
-              "count": 6
-            }
-          },
-          "title": "teste 3"
-        }
-      ],
-      "layout": {
-        "headerAlignment": "left",
-        "headerfontSize": "Normal"
-      },
-      "description": "teste",
-      "title": "teste",
-      "tabIndex": 0
     }
   ],
   "seo": {
