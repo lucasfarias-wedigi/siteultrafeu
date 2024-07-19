@@ -107,8 +107,10 @@
           "children": [],
           "image": [],
           "name": "Marcas",
-          "url": "/marcas",
-          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b77ec8b6-e046-4daf-8fec-59e727c2f820"
+          "url": "/brand?layout=list&order=OrderByTopSaleDESC",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b77ec8b6-e046-4daf-8fec-59e727c2f820",
+          "additionalType": "Marca",
+          "identifier": "Marca"
         }
       ],
       "products": [],
