@@ -370,5 +370,11 @@
     "path": "/institucional/politica-de-privacidade",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Politica%2520de%2520seguran%25C3%25A7a-148201.json": {
+    "name": "Politica de segurança",
+    "path": "/institucional/politica-de-seguranca",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
