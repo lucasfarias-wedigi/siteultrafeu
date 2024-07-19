@@ -370,5 +370,17 @@
     "path": "/institucional/politica-de-seguranca",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-politica%2520de%2520privacidade-849327.json": {
+    "name": "politica de privacidade",
+    "path": "/institucional/politica-de-privacidade",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Politica%2520de%2520entrega-711748.json": {
+    "name": "Politica de entrega",
+    "path": "/institucional/politica-de-entrega",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
