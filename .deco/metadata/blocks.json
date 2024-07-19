@@ -388,5 +388,11 @@
     "path": "/institucional/como-comprar",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Prazos%2520e%2520formas%2520de%2520envio-724766.json": {
+    "name": "Prazos e formas de envio",
+    "path": "/institucional/prazos-e-formas-de-envio",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
