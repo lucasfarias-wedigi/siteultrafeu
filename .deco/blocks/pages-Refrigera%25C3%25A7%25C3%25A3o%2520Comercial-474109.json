@@ -1,0 +1,170 @@
+{
+  "name": "Refrigeração Comercial",
+  "path": "/refrigeracao-comercial",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Header/Header.tsx",
+      "cart": {
+        "freeShippingObjectiveQuantity": 600
+      },
+      "logo": {
+        "alt": "logo ultrafeu",
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/f830fdb0-79cf-44d8-bc64-d5d3e1fd46e7",
+        "width": 164,
+        "height": 22
+      },
+      "alerts": {
+        "0": "Frete grátis para todo o Brasil",
+        "1": "teste 2",
+        "2": "teste 3",
+        "alert": [
+          "EXCLUSIVO PIX E BOLETO 10% de desconto",
+          "7% DE DESCONTO À VISTA débito e crédito",
+          "CARTÃO BNDES Compre até 48x"
+        ],
+        "benefitsItems": [
+          {
+            "text": "Institucional",
+            "link": "/institucional/quem-somos",
+            "image": "ShoppingCartIcon"
+          },
+          {
+            "image": "DeliveryTruckIcon",
+            "text": "Refrigeração Comercial",
+            "link": "/refrigeracao-comercial"
+          },
+          {
+            "image": "SnowIcon",
+            "text": "Pronta-entrega",
+            "link": "/pronta-entrega"
+          },
+          {
+            "text": "Monte seu negócio",
+            "image": "BriefCase",
+            "link": "/monteseunegocio"
+          }
+        ]
+      },
+      "navItems": [
+        {
+          "children": [],
+          "image": [],
+          "url": "/215?map=productClusterIds",
+          "name": "Cervejeira",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2",
+          "identifier": "Cervejeira",
+          "additionalType": "Cervejeira"
+        },
+        {
+          "children": [],
+          "image": [],
+          "url": "/216?map=productClusterIds",
+          "name": "Vitrines",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2"
+        },
+        {
+          "children": [],
+          "image": [],
+          "url": "/222?map=productClusterIds",
+          "name": "Refrigeradores Comerciais",
+          "identifier": "Refrigeradores Comerciais",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2"
+        },
+        {
+          "children": [],
+          "image": [],
+          "url": "/218?map=productClusterIds",
+          "name": "Linha Conveniência ",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2"
+        },
+        {
+          "children": [],
+          "image": [],
+          "url": " /221?map=productClusterIds",
+          "name": "Balcões de Serviço/Encosto",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2"
+        },
+        {
+          "children": [],
+          "image": [],
+          "url": "/219?map=productClusterIds",
+          "name": "Freezers horizontais",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2"
+        },
+        {
+          "children": [],
+          "image": [],
+          "url": "/220?map=productClusterIds",
+          "name": "Freezers verticais",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2"
+        },
+        {
+          "children": [],
+          "image": [],
+          "name": "Marcas",
+          "url": "/brand?layout=list&order=OrderByTopSaleDESC",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b77ec8b6-e046-4daf-8fec-59e727c2f820",
+          "additionalType": "Marca",
+          "identifier": "Marca"
+        }
+      ],
+      "products": [],
+      "searchbar": {
+        "name": "q",
+        "action": "/s",
+        "loader": {
+          "data": {
+            "count": 4,
+            "__resolveType": "vtex/loaders/intelligentSearch/suggestions.ts"
+          },
+          "__resolveType": "resolved"
+        },
+        "placeholder": "Digite o que está buscando..."
+      },
+      "suggestions": {
+        "products": [],
+        "searches": []
+      },
+      "logoPosition": "left",
+      "liveStore": {
+        "text": "LOJA AO VIVO",
+        "link": "https://live.ultrafeu.com.br/"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Product/SearchResult.tsx",
+      "page": {
+        "__resolveType": "PLP Loader"
+      },
+      "layout": {
+        "columns": {
+          "mobile": 2,
+          "desktop": 3
+        },
+        "variant": "aside",
+        "pagination": "show-more",
+        "format": "Pagination"
+      },
+      "cardLayout": {
+        "__resolveType": "Product Card Layout - 01"
+      },
+      "startingPage": 0
+    },
+    {
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
+      "jsonLD": {
+        "__resolveType": "PLP Loader"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Theme/Theme.tsx"
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

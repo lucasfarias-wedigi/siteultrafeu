@@ -72,7 +72,6 @@ function FilterValues({ key, values }: FilterToggle) {
 }
 
 function Filters({ filters }: Props) {
-
   const [openFilterIndex, setOpenFilterIndex] = useState<number | null>(0);
 
   const toggleFilter = (index: number) => {
@@ -83,9 +82,18 @@ function Filters({ filters }: Props) {
     <ul class="flex flex-col gap-4 w-fit divide-y-4 divide-grayTertiary lg:divide-y-0 lg:w-full">
       {filters.filter(isToggle).map((filter, index) => (
         <li class="flex flex-col gap-4 p-4 lg:p-0">
-          <span onClick={() => toggleFilter(index)} class="text-sm font-bold text-purplePrimary cursor-pointer flex items-center justify-between">
+          <span
+            onClick={() => toggleFilter(index)}
+            class="text-sm font-bold text-purplePrimary cursor-pointer flex items-center justify-between"
+          >
             {filter.label}
-            <Icon class="mr-3" id={openFilterIndex === index ? "ChevronDown" : "ChevronUp"} width={24} height={24} strokeWidth={1} />
+            <Icon
+              class="mr-3"
+              id={openFilterIndex === index ? "ChevronDown" : "ChevronUp"}
+              width={24}
+              height={24}
+              strokeWidth={1}
+            />
           </span>
           {openFilterIndex === index && <FilterValues {...filter} />}
         </li>

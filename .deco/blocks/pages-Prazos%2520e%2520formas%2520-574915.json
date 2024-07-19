@@ -1,0 +1,58 @@
+{
+  "name": "Prazos e formas ",
+  "path": "/institucional/prazos-e-formas-de-envio",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx",
+      "levels": [
+        {
+          "link": "/",
+          "name": "HOME"
+        },
+        {
+          "link": "#",
+          "name": "INSTITUCIONAL"
+        },
+        {
+          "name": "QUEM SOMOS",
+          "link": "/institucional/quem-somos"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Institutional/InstitutionalWithSidebar.tsx",
+      "loader": {
+        "__resolveType": "Preview site/loaders/sidebarMenu.ts"
+      },
+      "sections": [
+        {
+          "__resolveType": "site/sections/Institutional/InstitutionalAboutUs.tsx",
+          "firstText": "<p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Quando meu produto será entregue?</span><br>O prazo de entrega varia entre:</p><ul class=\"vtex-rich-text-0-x-list vtex-rich-text-0-x-list--description \"><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Disponibilidade do produto;</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">CEP de entrega.</li></ul><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">Somente após a confirmação do pagamento, inicia-se o prazo de entrega por contagem em dias úteis. Produtos a pronta entrega são despachados imediatamente, caso não haja nenhuma especificação para confirmar com o cliente (transportadora com dúvidas no endereço de entrega, por exemplo). Produtos com um prazo muito extenso, pode ser motivo de não os ter a pronta entrega ou o CEP ser muito distante de nosso ponto de origem, atualmente em Araraquara-SP.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Por qual transportadora meu produto será entregue?</span><br>As formas de envio são por:</p><ul class=\"vtex-rich-text-0-x-list vtex-rich-text-0-x-list--description \"><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Correios;</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Transportadora;</li><li class=\"vtex-rich-text-0-x-listItem vtex-rich-text-0-x-listItem--description\">Frota própria Ultrafeu.</li></ul><p><br data-mce-bogus=\"1\"></p>",
+          "secondText": "<p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\">A seleção da transportadora varia pelas dimensões, peso do produto e CEP de entrega. Enviamos os produtos apenas com transportadoras nas quais dispomos de confiança em seus serviços. Vendemos e entregamos para todo território nacional brasileiro; as entregas são feitas somente por meio rodoviário.<br>Saiba mais em Política de entrega.</p><p class=\"lh-copy vtex-rich-text-0-x-paragraph vtex-rich-text-0-x-paragraph--description\"><span class=\"i vtex-rich-text-0-x-italic vtex-rich-text-0-x-italic--description\">Alguma dúvida?</span><br>Entre em contato conosco pelo telefone (16) 3600-9084 ou pelo WhatsApp (16)3322-4832. Estamos à disposição para melhor atendê-los.</p>",
+          "banners": {
+            "itemsPerLine": {
+              "mobile": 1,
+              "desktop": 2
+            },
+            "borderRadius": {
+              "mobile": "none",
+              "desktop": "none"
+            },
+            "banners": []
+          },
+          "lastText": "<p>.</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer - 04"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

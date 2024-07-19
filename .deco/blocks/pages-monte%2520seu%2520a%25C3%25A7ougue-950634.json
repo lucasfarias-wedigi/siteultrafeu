@@ -39,49 +39,39 @@
       "text": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Monte seu negócio de forma simples e rápida:</strong> selecione os maquinários necessários, opte pelo modelo ou marca de sua preferência e visualize suas escolhas com um resumo completo. Adicione todos os itens ao carrinho com um clique. Se precisar de ajuda, entre em contato conosco. Boas compras!</span></p>"
     },
     {
-      "__resolveType": "site/sections/BuildYourBusiness/BusinessBuilder.tsx"
-    },
-    {
-      "__resolveType": "DualBanners"
-    },
-    {
-      "__resolveType": "Footer - 04"
-    },
-    {
-      "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+      "__resolveType": "site/sections/BuildYourBusiness/BusinessBuilder.tsx",
       "tabs": [
         {
           "products": {
             "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
             "props": {
               "sort": "price:desc",
-              "collection": "159",
-              "hideUnavailableItems": true,
-              "count": 7
+              "collection": "206",
+              "count": 3,
+              "hideUnavailableItems": true
             }
           },
-          "title": "teste 2"
+          "title": "teste 1"
         },
         {
           "products": {
             "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
             "props": {
               "sort": "price:desc",
-              "collection": "195",
-              "hideUnavailableItems": true,
-              "count": 6
+              "collection": "153",
+              "count": 4,
+              "hideUnavailableItems": true
             }
           },
-          "title": "teste 3"
+          "title": "teste 2"
         }
-      ],
-      "layout": {
-        "headerAlignment": "left",
-        "headerfontSize": "Normal"
-      },
-      "description": "teste",
-      "title": "teste",
-      "tabIndex": 0
+      ]
+    },
+    {
+      "__resolveType": "DualBanners"
+    },
+    {
+      "__resolveType": "Footer - 04"
     }
   ],
   "seo": {

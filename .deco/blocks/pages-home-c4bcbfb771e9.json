@@ -900,16 +900,6 @@
       "__resolveType": "DualBanners"
     },
     {
-      "__resolveType": "site/sections/Social/InstagramPosts.tsx",
-      "title": "@ULTRAFEU",
-      "facebookToken": "IGQWROeVkyQ0ZAUNjFfVmJ5XzZAiVmVvMTVoSXlkY3hBNVRLQmZAxUy1TalVnUmZAiNmpSNTdoZAm9sUnUzSXNRS1lPc2J5VUhUaXZACY09JdVBxc0pnRDlEYkZAsMUNkeWJmZAGxUMGtYSVJwVTRmdE1RSG5UUmk5RUtXSDgZD",
-      "layout": {
-        "headerAlignment": "center",
-        "numberOfPosts": 5,
-        "postsPerLine": 1
-      }
-    },
-    {
       "__resolveType": "Preview site/sections/Brands.tsx"
     },
     {

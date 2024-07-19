@@ -20,13 +20,13 @@ import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
 import * as $$$4 from "./loaders/sidebarMenu.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
-import * as $$$$$$1 from "./sections/Brands.tsx";
-import * as $$$$$$2 from "./sections/BuildYourBusiness/BusinessBanner.tsx";
-import * as $$$$$$3 from "./sections/BuildYourBusiness/BusinessBreadCrumb.tsx";
-import * as $$$$$$4 from "./sections/BuildYourBusiness/BusinessBuilder.tsx";
-import * as $$$$$$5 from "./sections/BuildYourBusiness/BusinessCards.tsx";
-import * as $$$$$$6 from "./sections/BuildYourBusiness/BusinessGoBackLink.tsx";
-import * as $$$$$$7 from "./sections/BuildYourBusiness/BusinessProductCard.tsx";
+import * as $$$$$$1 from "./sections/BannerText.tsx";
+import * as $$$$$$2 from "./sections/Brands.tsx";
+import * as $$$$$$3 from "./sections/BuildYourBusiness/BusinessBanner.tsx";
+import * as $$$$$$4 from "./sections/BuildYourBusiness/BusinessBreadCrumb.tsx";
+import * as $$$$$$5 from "./sections/BuildYourBusiness/BusinessBuilder.tsx";
+import * as $$$$$$6 from "./sections/BuildYourBusiness/BusinessCards.tsx";
+import * as $$$$$$7 from "./sections/BuildYourBusiness/BusinessGoBackLink.tsx";
 import * as $$$$$$8 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$9 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
 import * as $$$$$$10 from "./sections/Cards/ImageCardsCarousel.tsx";
@@ -96,13 +96,13 @@ const manifest = {
   },
   "sections": {
     "site/sections/Animation/Animation.tsx": $$$$$$0,
-    "site/sections/Brands.tsx": $$$$$$1,
-    "site/sections/BuildYourBusiness/BusinessBanner.tsx": $$$$$$2,
-    "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx": $$$$$$3,
-    "site/sections/BuildYourBusiness/BusinessBuilder.tsx": $$$$$$4,
-    "site/sections/BuildYourBusiness/BusinessCards.tsx": $$$$$$5,
-    "site/sections/BuildYourBusiness/BusinessGoBackLink.tsx": $$$$$$6,
-    "site/sections/BuildYourBusiness/BusinessProductCard.tsx": $$$$$$7,
+    "site/sections/BannerText.tsx": $$$$$$1,
+    "site/sections/Brands.tsx": $$$$$$2,
+    "site/sections/BuildYourBusiness/BusinessBanner.tsx": $$$$$$3,
+    "site/sections/BuildYourBusiness/BusinessBreadCrumb.tsx": $$$$$$4,
+    "site/sections/BuildYourBusiness/BusinessBuilder.tsx": $$$$$$5,
+    "site/sections/BuildYourBusiness/BusinessCards.tsx": $$$$$$6,
+    "site/sections/BuildYourBusiness/BusinessGoBackLink.tsx": $$$$$$7,
     "site/sections/Cards/IconCardsCarousel.tsx": $$$$$$8,
     "site/sections/Cards/IconCardsCarouselWithImage.tsx": $$$$$$9,
     "site/sections/Cards/ImageCardsCarousel.tsx": $$$$$$10,

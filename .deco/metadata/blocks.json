@@ -364,5 +364,47 @@
     "path": "/gelopar",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Politica%2520de%2520seguran%25C3%25A7a-148201.json": {
+    "name": "Politica de segurança",
+    "path": "/institucional/politica-de-seguranca",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Politica%2520de%2520entrega-711748.json": {
+    "name": "Politica de entrega",
+    "path": "/institucional/politica-de-entrega",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Duvidas%2520frequentes-670179.json": {
+    "name": "Duvidas frequentes",
+    "path": "/institucional/duvidas-frequentes",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Como%2520comprar-900001.json": {
+    "name": "Como comprar",
+    "path": "/institucional/como-comprar",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Politica%2520de%2520privacidade-261354.json": {
+    "name": "Politica de privacidade",
+    "path": "/institucional/politica-de-privacidade",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Prazos%2520e%2520formas%2520-574915.json": {
+    "name": "Prazos e formas ",
+    "path": "/institucional/prazos-e-formas-de-envio",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Refrigera%25C3%25A7%25C3%25A3o%2520Comercial-474109.json": {
+    "name": "Refrigeração Comercial",
+    "path": "/refrigeracao-comercial",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

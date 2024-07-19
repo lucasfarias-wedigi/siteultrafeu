@@ -5,7 +5,7 @@ import { formatPrice } from "../../../sdk/format.ts";
 import { useUI } from "../../../sdk/useUI.ts";
 import CartItem, { Item, Props as ItemProps } from "./CartItem.tsx";
 import Coupon, { Props as CouponProps } from "./Coupon.tsx";
-import FreeShippingProgressBar from "./FreeShippingProgressBar.tsx";
+// import FreeShippingProgressBar from "./FreeShippingProgressBar.tsx";
 
 interface Props {
   items: Item[];
@@ -32,7 +32,7 @@ function Cart({
   loading,
   currency,
   discounts,
-  freeShippingTarget,
+  // freeShippingTarget,
   checkoutHref,
   itemToAnalyticsItem,
   onUpdateQuantity,
@@ -63,14 +63,16 @@ function Cart({
         : (
           <>
             {/* Free Shipping Bar */}
-            <div class="px-2 py-4 w-full">
+            {
+              /* <div class="px-2 py-4 w-full">
               <FreeShippingProgressBar
                 total={total}
                 locale={locale}
                 currency={currency}
                 target={freeShippingTarget}
               />
-            </div>
+            </div> */
+            }
 
             {/* Cart Items */}
             <ul
@@ -92,7 +94,7 @@ function Cart({
             </ul>
 
             {/* Cart Footer */}
-            <footer class="w-full">
+            <footer class="w-full" style={{ marginTop: "100%" }}>
               {/* Subtotal */}
               <div class="border-t border-base-200 py-2 flex flex-col">
                 {discounts > 0 && (
@@ -131,7 +133,7 @@ function Cart({
                 <a class="inline-block w-full" href={checkoutHref}>
                   <Button
                     data-deco="buy-button"
-                    class="btn-primary btn-block"
+                    class="btn-primary btn-block bg-greenPrimary text-white py-2 uppercase"
                     disabled={loading || isEmtpy}
                     onClick={() => {
                       sendEvent({

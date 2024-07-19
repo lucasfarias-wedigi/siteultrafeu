@@ -87,7 +87,7 @@ function Header({
   liveStore = {
     link: "#",
     text: "LOJA AO VIVO",
-    active: false
+    active: false,
   },
   searchbar,
   navItems = [
@@ -165,13 +165,15 @@ function Header({
           </VisibilityOnScroll>
         </div>
         <div
-          class={`flex items-center justify-center gap-16 lg:hidden fixed z-50 bottom-0 w-full bg-white ${openSearchMobile ? "" : "bg-opacity-10 backdrop-blur-sm shadow-lg"
-            } h-[66px]`}
+          class={`flex items-center justify-center gap-16 lg:hidden fixed z-50 bottom-0 w-full bg-white ${
+            openSearchMobile ? "" : "bg-opacity-10 backdrop-blur-sm shadow-lg"
+          } h-[66px]`}
         >
           <a class="" href="/account" aria-label="Account">
             <button
-              class={`shadow-lg flex items-center justify-center ${openSearchMobile ? "bg-white" : "bg-purplePrimary"
-                } w-[50px] h-[50px] rounded-full`}
+              class={`shadow-lg flex items-center justify-center ${
+                openSearchMobile ? "bg-white" : "bg-purplePrimary"
+              } w-[50px] h-[50px] rounded-full`}
             >
               <svg
                 id="LoginIcon"
@@ -231,16 +233,18 @@ function Header({
               )}
           </button>
           <div
-            class={`transition-all absolute ${openSearchMobile ? "bottom-[65px]" : "-bottom-[82px]"
-              } w-full bg-white`}
+            class={`transition-all absolute ${
+              openSearchMobile ? "bottom-[65px]" : "-bottom-[82px]"
+            } w-full bg-white`}
           >
             <Searchbar searchbar={searchbar && { ...searchbar, platform }} />
           </div>
           <button
-            class={`shadow-lg flex items-center justify-center ${openSearchMobile
-              ? "bg-white text-purplePrimary"
-              : "bg-purplePrimary text-white"
-              } w-[50px] h-[50px] rounded-full`}
+            class={`shadow-lg flex items-center justify-center ${
+              openSearchMobile
+                ? "bg-white text-purplePrimary"
+                : "bg-purplePrimary text-white"
+            } w-[50px] h-[50px] rounded-full`}
           >
             {platform === "vtex" && <CartButtonVTEX />}
           </button>
