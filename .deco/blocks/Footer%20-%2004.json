@@ -216,12 +216,16 @@
           "link": "/institucional/quem-somos"
         },
         {
-          "text": "Politica de Segurança",
-          "link": "/institucional/politica-de-seguranca"
+          "text": "Politica de Entrega",
+          "link": "/institucional/politica-de-entrega"
         },
         {
-          "link": "/institucional/politica-de-entrega",
-          "text": "Politica de Entrega"
+          "link": "/institucional/politica-de-seguranca",
+          "text": "Politica de Segurança"
+        },
+        {
+          "link": "/institucional/politica-de-privacidade",
+          "text": "Politica de Privacidade"
         }
       ],
       "title": "Institucional"
