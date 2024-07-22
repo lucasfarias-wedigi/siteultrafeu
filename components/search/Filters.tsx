@@ -1,5 +1,4 @@
 import Avatar from "../../components/ui/Avatar.tsx";
-import { useState } from "preact/hooks";
 import { formatPrice } from "../../sdk/format.ts";
 import type {
   Filter,
@@ -8,7 +7,6 @@ import type {
   ProductListingPage,
 } from "apps/commerce/types.ts";
 import { parseRange } from "apps/commerce/utils/filters.ts";
-import Icon from "../ui/Icon.tsx";
 
 export interface Props {
   filters: ProductListingPage["filters"];
@@ -72,30 +70,14 @@ function FilterValues({ key, values }: FilterToggle) {
 }
 
 function Filters({ filters }: Props) {
-  const [openFilterIndex, setOpenFilterIndex] = useState<number | null>(0);
-
-  const toggleFilter = (index: number) => {
-    setOpenFilterIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
-
   return (
-    <ul class="flex flex-col gap-4 w-fit divide-y-4 divide-grayTertiary lg:divide-y-0 lg:w-full">
-      {filters.filter(isToggle).map((filter, index) => (
+    <ul class="flex flex-col gap-4 w-fit divide-y-4 divide-grayTertiary lg:divide-y-0">
+      {filters.filter(isToggle).map((filter) => (
         <li class="flex flex-col gap-4 p-4 lg:p-0">
-          <span
-            onClick={() => toggleFilter(index)}
-            class="text-sm font-bold text-purplePrimary cursor-pointer flex items-center justify-between"
-          >
+          <span class="text-sm font-bold text-purplePrimary">
             {filter.label}
-            <Icon
-              class="mr-3"
-              id={openFilterIndex === index ? "ChevronDown" : "ChevronUp"}
-              width={24}
-              height={24}
-              strokeWidth={1}
-            />
           </span>
-          {openFilterIndex === index && <FilterValues {...filter} />}
+          <FilterValues {...filter} />
         </li>
       ))}
     </ul>

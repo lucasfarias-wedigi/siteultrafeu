@@ -60,7 +60,6 @@ export interface Props {
   liveStore?: {
     link: string;
     text: string;
-    active?: boolean;
   };
 
   /** @title Search Bar */
@@ -87,7 +86,6 @@ function Header({
   liveStore = {
     link: "#",
     text: "LOJA AO VIVO",
-    active: false,
   },
   searchbar,
   navItems = [
