@@ -1,0 +1,33 @@
+{
+  "__resolveType": "site/loaders/PagesHeader.ts",
+  "links": [
+    {
+      "url": "/institucional/quem-somos",
+      "label": "Institucional",
+      "imageActive": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/20aad35f-741c-4705-8139-07d81d8aaaf6",
+      "imageNormal": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/fc9764ab-7537-44f9-ac3c-fbfeff2c3a12",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/9f6ce98e-ae50-44fb-a27d-86e4fa142754"
+    },
+    {
+      "url": "/refrigeracao-comercial",
+      "label": "Refrigeração Comercial",
+      "imageActive": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/44329e09-7604-4ec0-99a8-0f8a700528b5",
+      "imageNormal": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/ff75b3d1-b938-462b-aec5-66950b316ca2",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/a829424b-24ce-4954-89a8-2be268c3d79d"
+    },
+    {
+      "url": "/pronta-entrega",
+      "label": "Pronta-entrega",
+      "imageActive": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/d6ed309b-b6b8-4684-a41a-7f447ee5c060",
+      "imageNormal": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/2e3d3fa1-7345-4153-b3de-d6ca13361bd1",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/908051b6-71f7-4058-92e3-8d94f9f0ed5d"
+    },
+    {
+      "url": "/monteseunegocio",
+      "label": "Monte seu negócio",
+      "imageActive": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/7f0d4ba7-29b6-4055-8748-d663bf4e7096",
+      "imageNormal": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/b473f772-af6d-42f6-afd4-40686cb25e84",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10728/4927083a-b909-4c00-b910-22407f8eda91"
+    }
+  ]
+}

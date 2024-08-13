@@ -38,7 +38,7 @@ function PromotionProductCard({
   // platform,
   index,
 }: Props) {
-  const { url, productID, name, image: images, offers } = product;
+  const { url, productID, isVariantOf, image: images, offers } = product;
   const id = `product-card-${productID}`;
   // const hasVariant = isVariantOf?.hasVariant ?? [];
   // const productGroupID = isVariantOf?.productGroupID;
@@ -177,8 +177,8 @@ function PromotionProductCard({
         <div class="flex flex-col">
           <div class="flex flex-col">
             <h2
-              class="truncate text-sm text-blackPrimary"
-              dangerouslySetInnerHTML={{ __html: name ?? "" }}
+              class="truncate text-sm text-blackPrimary max-w-[128px]"
+              dangerouslySetInnerHTML={{ __html: isVariantOf?.name ?? "" }}
             />
 
             {

@@ -5,7 +5,7 @@ import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import type { SectionProps } from "deco/types.ts";
-import Alert from "./Alert.tsx";
+import Alert from "../../islands/Header/Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import NavItem from "./NavItem.tsx";
 import VisibilityOnScroll from "../../islands/Header/VisibilityOnScroll.tsx";

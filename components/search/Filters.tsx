@@ -8,7 +8,7 @@ import type {
 } from "apps/commerce/types.ts";
 import { parseRange } from "apps/commerce/utils/filters.ts";
 
-interface Props {
+export interface Props {
   filters: ProductListingPage["filters"];
 }
 

@@ -34,19 +34,23 @@ function ProductShelf({ products, title, layout }: Props) {
   }
   const slideDesktop = {
     1: "md:w-full",
-    2: "md:w-1/2",
+    2: "md:w-[49%]",
     3: "md:w-1/3",
-    4: "md:w-1/4",
-    5: "md:w-1/5",
+    4: "md:w-[24%]",
+    5: "md:w-[19%]",
   };
 
   const slideMobile = {
     1: "w-full",
-    2: "w-1/2",
+    2: "w-[49%]",
     3: "w-1/3",
-    4: "w-1/4",
-    5: "w-1/5",
+    4: "w-[24%]",
+    5: "w-[19%]",
   };
+
+  const numberSlideDesk = layout?.numberOfSliders?.desktop ?? 4;
+  const numberSlideMob = layout?.numberOfSliders?.mobile ?? 2;
+
   return (
     <div
       id={id}
@@ -54,11 +58,11 @@ function ProductShelf({ products, title, layout }: Props) {
     >
       {
         /* <Header
-        title={title || ""}
-        description={description || ""}
-        fontSize={layout?.headerfontSize || "Large"}
-        alignment={layout?.headerAlignment || "center"}
-      /> */
+          title={title || ""}
+          description={description || ""}
+          fontSize={layout?.headerfontSize || "Large"}
+          alignment={layout?.headerAlignment || "center"}
+        /> */
       }
       <div class="relative flex items-center w-full">
         <CustomDivider>
@@ -96,11 +100,11 @@ function ProductShelf({ products, title, layout }: Props) {
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
-              class={clx(
-                "carousel-item",
-                slideDesktop[layout?.numberOfSliders?.desktop ?? 3],
-                slideMobile[layout?.numberOfSliders?.mobile ?? 1],
-              )}
+              class={`
+                carousel-item ${slideDesktop[numberSlideDesk]} ${
+                slideMobile[numberSlideMob]
+              }
+              `}
             >
               <ProductCard
                 product={product}
